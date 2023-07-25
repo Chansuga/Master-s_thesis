@@ -178,11 +178,31 @@ hideallsubsections]} %目次スライド
 
 \section{4.4 \ 固有値スペクトルとWに格納された情報}
 \begin{frame}[t]{4.4 \ 固有値スペクトルとWに格納された情報}
- 
+  \begin{figure}
+     \begin{center}
+         \includegraphics[height=3.5cm]{image/Figure16.png}
+     \end{center}
+  \end{figure}
+  \underline{図16からわかること}
+  \vspace{0.2cm}
+  \begin{itemize}
+    \item Type Lではいくつかの固有値だけが値が大きい\\
+    \vspace{0.2cm}
+    $\Rightarrow$ Type L RBMは，隠れ層のニューロンは少数で十分
+    \item Type Vでは固有値の値は緩やかに減少\\
+    \vspace{0.2cm}
+    $\Rightarrow$ Type V RBMは，すべての固有ベクトルが均等に利用されている
+  \end{itemize}
+  \vspace{0.2cm}
+  $\Rightarrow$広い温度範囲の特徴を学習するには，隠れ層に多くのニューロンが必要!!
 \end{frame}
 
 \begin{frame}[t]{4.4 \ 固有値スペクトルとWに格納された情報}
- 
+  \begin{figure}
+     \begin{center}
+         \includegraphics[height=4cm]{image/Figure17.png}
+     \end{center}
+  \end{figure}
 \end{frame}
 
 \end{document}

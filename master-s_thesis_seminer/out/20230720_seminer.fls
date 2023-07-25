@@ -130,7 +130,6 @@ INPUT c:/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
@@ -153,12 +152,11 @@ INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
@@ -170,6 +168,7 @@ INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex
+INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/latex/extsizes/size8.clo
 INPUT c:/texlive/2022/texmf-dist/tex/latex/extsizes/size8.clo
@@ -248,7 +247,6 @@ INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
@@ -285,7 +283,6 @@ INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfint.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
@@ -942,6 +939,13 @@ INPUT c:/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
+INPUT c:/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasenavigationsymbols.tex
+INPUT c:/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasenavigationsymbols.tex
+INPUT c:/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasenavigationsymbols.tex
+INPUT c:/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasenavigationsymbols.tex
+INPUT c:/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasenavigationsymbols.tex
+INPUT c:/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasenavigationsymbols.tex
+INPUT c:/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasenavigationsymbols.tex
 INPUT c:/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty
 INPUT c:/texlive/2022/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty
@@ -1377,7 +1381,6 @@ INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 INPUT c:/texlive/2022/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
@@ -1680,6 +1683,14 @@ INPUT extractbb -B cropbox -O image/Figure9.png
 INPUT out/20230720_seminer.toc
 INPUT out/20230720_seminer.toc
 INPUT out/20230720_seminer.toc
+INPUT out/image/Figure16.png
+INPUT out/image/Figure16.png
+INPUT out/image/Figure16.png
+INPUT extractbb -B cropbox -O image/Figure16.png
+INPUT out/image/Figure17.png
+INPUT out/image/Figure17.png
+INPUT out/image/Figure17.png
+INPUT extractbb -B cropbox -O image/Figure17.png
 OUTPUT out/20230720_seminer.nav
 OUTPUT out/20230720_seminer.toc
 OUTPUT out/20230720_seminer.snm
