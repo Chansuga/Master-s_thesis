@@ -1,0 +1,6 @@
+PWD c:/Users/sugay/Desktop/Master-s_thesis/master-s_thesis_seminer
+INPUT c:/texlive/2022/texmf.cnf
+INPUT c:/texlive/2022/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2022/texmf-var/web2c/eptex/platex.fmt
+INPUT c:/Users/sugay/Desktop/Master-s_thesis/master-s_thesis_seminer/1D_Ising_model.tex
+OUTPUT out/1D_Ising_model.log
