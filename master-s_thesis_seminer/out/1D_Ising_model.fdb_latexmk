@@ -1,12 +1,12 @@
 # Fdb version 4
-["dvipdf"] 1696511569 "out/1D_Ising_model.dvi" "out/1D_Ising_model.pdf" "out/1D_Ising_model" 1696511571 0
-  "out/1D_Ising_model.dvi" 1696511569 8244 380a42839106aad7d541c39728151351 "latex"
+["dvipdf"] 1696516369 "out/1D_Ising_model.dvi" "out/1D_Ising_model.pdf" "out/1D_Ising_model" 1696516371 0
+  "out/1D_Ising_model.dvi" 1696516369 8244 95f5277649c88d05d20c61cadea02ca1 "latex"
   (generated)
   "out/1D_Ising_model.pdf"
   (rewritten before read)
-["latex"] 1696511568 "c:/Users/sugay/Desktop/Master-s_thesis/master-s_thesis_seminer/1D_Ising_model.tex" "out/1D_Ising_model.dvi" "1D_Ising_model" 1696511571 0
-  "1D_Ising_model.tex" 1696511565 4681 766121fc03b8a14735a77f261cd6b0f2 ""
-  "c:/Users/sugay/Desktop/Master-s_thesis/master-s_thesis_seminer/1D_Ising_model.tex" 1696511565 4681 766121fc03b8a14735a77f261cd6b0f2 ""
+["latex"] 1696516367 "c:/Users/sugay/Desktop/Master-s_thesis/master-s_thesis_seminer/1D_Ising_model.tex" "out/1D_Ising_model.dvi" "1D_Ising_model" 1696516371 0
+  "1D_Ising_model.tex" 1696516365 4683 97b463e69499b150ebaff44c9ec67237 ""
+  "c:/Users/sugay/Desktop/Master-s_thesis/master-s_thesis_seminer/1D_Ising_model.tex" 1696516365 4683 97b463e69499b150ebaff44c9ec67237 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1669975561 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1669977894 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1669977894 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -69,7 +69,7 @@
   "c:/texlive/2022/texmf-dist/web2c/texmf.cnf" 1669973289 40171 cdab547de63d26590bebb3baff566530 ""
   "c:/texlive/2022/texmf-var/web2c/eptex/platex.fmt" 1669979661 3072963 b88c1ce93abd41d2fe340868b85cfaa5 ""
   "c:/texlive/2022/texmf.cnf" 1669979482 713 e69b156964470283e0530f5060668171 ""
-  "out/1D_Ising_model.aux" 1696511569 297 96196ad8af12d119349f90e52e2714fb "latex"
+  "out/1D_Ising_model.aux" 1696516369 297 96196ad8af12d119349f90e52e2714fb "latex"
   (generated)
   "out/1D_Ising_model.aux"
   "out/1D_Ising_model.dvi"
