@@ -1,0 +1,120 @@
+\documentclass[a4paper,11pt]{jsarticle}
+
+
+% 数式
+\usepackage{amsmath,amsfonts}
+\usepackage{bm}
+% 画像
+\usepackage[dvipdfmx]{graphicx}
+
+
+\begin{document}
+
+\title{1次元イジングモデルのくりこみ群}
+\author{須賀 勇貴}
+\date{\today}
+\maketitle
+
+\section{1次元イジングモデルの分配関数}
+ここでは，1次元イジングモデルの解析を行う．\\
+ハミルトニアンは以下のように書ける．
+\begin{equation*}
+  H = -J \sum_{i=1}^{N} S_i S_{i+1} - h \sum_{i=1}^{N} S_i
+\end{equation*}
+簡単のため，最近接間相互作用の強さ$J$と磁場$h$が添字$i$によらずすべて等しいとした．また，周期境界条件より$S_{N+1}=S_1$とする．\par
+1次元イジングモデルの，分配関数は以下のように書ける．
+\begin{align*}
+  Z 
+  &= \sum_{S_1, S_2, \cdots, S_N}\exp \left(\beta J \sum_{i=1}^{N} S_i S_{i+1} +\beta h \sum_{i=1}^{N} S_i \right)\\
+  &=  \sum_{S_1, S_2, \cdots, S_N}\exp \left( \beta J S_1 S_2 + \beta h S_1 + \beta h S_2 + \cdots + \beta J S_N S_1 + \beta h S_N \right)\\
+  &=  \sum_{S_1, S_2, \cdots, S_N}\exp \left[ \beta J S_1 S_2 + \frac{\beta h}{2}(S_1 + S_2) + \beta J S_2 S_3 + \frac{\beta h}{2}(S_2 + S_3) + \cdots + \beta J S_N S_1 + \frac{\beta h}{2}(S_N + S_1) \right]\\
+  &= \sum_{S_1, S_2, \cdots, S_N} T(S_1, S_2)T(S_2, S_3)\cdots T(S_N, S_1)
+\end{align*}
+ここで，$T(S_i, S_{i+1})$はとなりあったスピン変数に依存す関数で，
+\begin{equation*}
+  T(S_i, S_{i+1}) = \exp \left[ \beta J S_i S_{i+1} + \frac{\beta h}{2}(S_i + S_{i+1}) \right]
+\end{equation*}
+スピン変数はそれぞれ$\pm 1$の値をとるので，$(S_i, S_{i+1})$の組は全部で4通りになる．これらを行列の要素にした以下の$\hat{T}$を転送行列とよぶ．
+\begin{equation*}
+  \hat{T} = 
+  \begin{pmatrix}
+    T(1,1) & T(1,-1) \\
+    T(-1,1) & T(-1,-1) \\
+  \end{pmatrix}
+  =
+  \begin{pmatrix}
+    e^{\beta J + \beta h} & e^{-\beta J} \\
+    e^{-\beta J} & e^{\beta J - \beta h} \\
+  \end{pmatrix}
+\end{equation*}
+このとき，分配関数は転送行列の積のトレースを用いて
+\begin{equation*}
+  Z = \text{Tr} \  \hat{T}^N
+\end{equation*}
+と表すことができる．実際に$N=2$のときの場合で確かめると，
+\begin{align*}
+  \hat{T}^2 &= 
+  \begin{pmatrix}
+    T(1,1) & T(1,-1) \\
+    T(-1,1) & T(-1,-1) \\
+  \end{pmatrix}^2\\
+  &=
+  \begin{pmatrix}
+    T(1,1)^2 + T(1,-1)T(-1,1) & - \\
+    - & T(-1,-1)^2 + T(-1,1)T(1,-1) \\
+  \end{pmatrix}
+\end{align*}
+より，
+\begin{equation*}
+  \text{Tr} \ \hat{T}^2 = T(1,1)^2 + T(-1,-1)^2 + 2T(1,-1)T(-1,1)
+\end{equation*}
+となる．また，
+\begin{align*}
+  Z_{(N=2)} 
+  &= \sum_{S_1, S_2 = \pm 1} T(S_1, S_2) T(S_2, S_1)\\
+  &= T(1,1)^2 + 2T(1,-1) + T(-1,-1)^2\\ 
+\end{align*}
+であることから，
+\begin{equation*}
+   Z_{(N=2)} = \text{Tr} \ \hat{T}^2
+\end{equation*}
+が成り立つことがわかる．\par
+線形代数の公式から，行列$A$とその固有値$\lambda_i \ (i=1,\cdots,n)$には以下のような関係がある．
+\begin{equation*}
+  \text{Tr} \ A = \sum_{i=1}^{n} \lambda_i
+\end{equation*}
+これより，分配関数は転送行列の固有値の用いて表すことができる．つまり，転送行列の固有値を$\lambda_i \ \ (i=1,2,\cdots,n)$として，
+\begin{equation*}
+  Z = \sum_{i=1}^n (\lambda_i)^N
+\end{equation*}
+と表すことができる．ここで，送行列は対称行列なので，ある直交行列$\hat{U}$を用いて，
+\begin{equation*}
+  \hat{T} = \hat{U}^{\top} \hat{T_0} \hat{U}
+\end{equation*}
+のように対角化できるため，計算が簡単である．\\
+転送行列の固有値は
+\begin{equation*}
+  \lambda_{\pm} = \frac{1}{2}\left[ e^{\beta J + \beta h} + e^{\beta J - \beta h} \pm \sqrt{(e^{\beta J + \beta h} - e^{\beta J - \beta h})^2 - 4(e^{2\beta J}-e^{-2\beta J})} \right]
+\end{equation*}
+これより，
+\begin{equation*}
+  Z = \lambda_+^N + \lambda_-^N \rightarrow \lambda_+^N
+\end{equation*}
+矢印は熱力学的極限をとった場合である．
+
+\section{1次元イジングモデルのくりこみ群}
+ここでは，1次元イジングモデルを用いてくりこみ群の具体的な解析をおこなう．\par
+$K=\beta J,H=\beta h$とすると1次元イジングモデルの分配関数は
+\begin{equation*}
+  Z = \sum_{S_1, S_2, \cdots , S_N} \exp \left( K\sum_{i=1}^{N}S_i S_{i+1} + H \sum_{i=1}^{N}S_i \right)
+\end{equation*}
+と書ける．ここで，スピンの数$N$は偶数であるとし，周期境界条件$S_{N+1}=S_1$を課す．そして，偶数番目のスピンについて和をとることを考える．例として，スピン$S_2$に関する部分を抜き出すと，
+\begin{equation*}
+  \sum_{S_2=\pm 1} \exp (K S_1 S_2 + H S_2 + K S_2 S_3) = e^{K S_1 + H + K S_3} + e^{-K S_1 - H - K S_3}
+\end{equation*}
+
+
+
+
+
+\end{document}
