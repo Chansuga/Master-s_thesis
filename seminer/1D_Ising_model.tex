@@ -113,7 +113,39 @@ $K=\beta J,H=\beta h$とすると1次元イジングモデルの分配関数は
   \sum_{S_2=\pm 1} \exp (K S_1 S_2 + H S_2 + K S_2 S_3) = e^{K S_1 + H + K S_3} + e^{-K S_1 - H - K S_3}
 \end{equation*}
 
-
+\begin{align*}
+  e^{4K'} &= \frac{\cosh(2K+H)\cosh(2K-H)}{\cosh ^2H} \\
+  e^{2H'} &= e^{2H} \frac{\cosh(2K+H)}{\cosh(2K-H)} \\
+  e^{4A'} &= 16\cosh(2K+H)\cosh(2K-H)\cosh ^2H
+\end{align*}
+となる．\par
+ここで，いくつか特別な場合に$K'$と$H'$の具体的なふるまいをみていく，ただし，ここでは$A'$は自由エネルギーに寄与する量であるが，考えないことにする．
+\begin{itemize}
+  \item $H=0$
+  \begin{equation*}
+    e^{2K'} = \cosh(2K),  \ \ \  H'=0
+  \end{equation*}
+  $K'$の値は$K=0$のとき$0$，$K$の値が正のときは増加する．磁場は$0$から変化しない．
+  \item $K=0$
+  \begin{equation*}
+    K' = 0,  \ \ \  H' = H
+  \end{equation*}
+  $K$は相互作用がないことを意味するので，部分和をとっても$K$も$H$も影響しないことを意味する．
+  \item $K \rightarrow \infty$
+  \begin{equation*}
+    e^{4K'} \sim \frac{e^{4K}}{4\cosh^2 H}, \ \ \ H' \sim 2H
+  \end{equation*}
+  $K'$は無限大のままで，$H'$は増加する．ただし，$H=0$のときは$H'=0$で変わらない．
+  \item $H \rightarrow \infty$
+  \begin{equation*}
+    e^{4K'} \rightarrow 1 , \ \ \ H'=H
+  \end{equation*}
+  $K'$は急速に$0$に近づき，磁場は変化しない．
+\end{itemize}
+粗視化を何度も繰り返すと，一つの曲線が形成される．
+\begin{equation*}
+  e^{2K} \sinh H = \text{const} 
+\end{equation*}
 
 
 
