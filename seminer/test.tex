@@ -1,0 +1,58 @@
+\documentclass[a4paper,11pt]{jsarticle}
+
+
+% 数式
+\usepackage{amsmath,amsfonts}
+\usepackage{bm}
+% 画像
+\usepackage[dvipdfmx]{graphicx}
+
+
+\begin{document}
+
+\title{機械学習による2次元イジングモデルの相転移検出}
+\author{須賀勇貴}
+\date{最終更新日 \ : \ \today}
+\maketitle
+
+% 目次の出力
+\tableofcontents
+\clearpage
+
+% ここから本文
+\section{機械学習の基礎}
+\subsection{機械学習とは}
+  \subsection{教師あり学習とは}
+  教師あり学習(supervised learning)では，訓練データが入力データ(input)と教師データ(output)のペアの形をとるという特徴を持っている．つまり，入力データ$\{\bm{x}_i\}_{i=1,2,\dots,N}$，教師データ$\{\bm{y}_i\}_{i=1,2,\dots,N}$のとき，訓練データは
+  \begin{equation*}
+    \mathcal{D} = \{ (\bm{x}_1, \bm{y}_1), (\bm{x}_1, \bm{y}_1), \dots ,(\bm{x}_N, \bm{y}_N) \}
+  \end{equation*}
+  という形をとるということである．\par
+  教師あり学習ではベクトル値のペア$(\bm{x}_i, \bm{y}_i)$をたくさん($N$個)集めたものが機械に与える「経験」となる．機械とは，複数のパラメータを持つ関数$f_{\theta}$である．ここで，複数のパラメータをまとめて$\theta = \{ \theta_1, \theta_2, \cdots \}$で表している．つまり，機械に入力データを入力する．
+  \begin{equation*}
+    f_{\theta} : \bm{x} \rightarrow f_{\theta}(\bm{x})
+  \end{equation*}
+  したがって教師あり学習とは，何らかの$f_{theta}$を設定し，教師データを再現するうまい$\theta = \theta^*$を探し，
+  \begin{equation*}
+    f_{\theta^*}(\bm{x})_i \approx \bm{t}_i
+  \end{equation*}
+  を実現することである．
+
+  \subsection{教師なし学習とは}
+  教師なし学習(unsupervised learning)では，訓練データが入力データのみしか与えられない．例えば，機械に「猫の絵」を描かせたい場合，機械にたくさんの「猫の画像」入力データとして与える，そしてうまく機械に猫の特徴を学習させることで機械は「猫っぽい画像」を生成することができるようになる．このような機械学習モデルを教師なし学習の中でも生成モデルと呼ぶ．
+  \subsection{ディープラーニングとは}
+  \subsection{畳み込みニューラルネットワーク(CNN)とは}
+\section{2次元イジングモデルについて}
+\section{相転移検出について}
+  \subsection{配位生成の方法}
+  \subsection{機械学習モデル}
+  \subsection{相転移温度の算出方法}
+  \subsection{学習結果}
+\section{まとめ}
+  \subsection{これまでのまとめ}
+  \subsection{今後について}
+
+
+
+
+\end{document}
