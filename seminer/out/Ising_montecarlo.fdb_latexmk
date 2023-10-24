@@ -1,14 +1,13 @@
 # Fdb version 4
-["dvipdf"] 1696981498 "out/1D_Ising_model.dvi" "out/1D_Ising_model.pdf" "out/1D_Ising_model" 1696981500 0
-  "out/1D_Ising_model.dvi" 1696981498 10968 f6ae555224608fe01d11b0160c16ffec "latex"
+["dvipdf"] 1698128922 "out/Ising_montecarlo.dvi" "out/Ising_montecarlo.pdf" "out/Ising_montecarlo" 1698128923 0
+  "out/Ising_montecarlo.dvi" 1698128922 9308 37acbaad830e0b593f4d4c915010ad7c "latex"
   (generated)
-  "out/1D_Ising_model.pdf"
+  "out/Ising_montecarlo.pdf"
   (rewritten before read)
-["latex"] 1696981497 "c:/Users/sugay/Desktop/Master-s_thesis/seminer/1D_Ising_model.tex" "out/1D_Ising_model.dvi" "1D_Ising_model" 1696981500 0
-  "1D_Ising_model.tex" 1696981495 6432 04a9d0b1ae6bf4f525b27385cf8e2db6 ""
-  "c:/Users/sugay/Desktop/Master-s_thesis/seminer/1D_Ising_model.tex" 1696981495 6432 04a9d0b1ae6bf4f525b27385cf8e2db6 ""
+["latex"] 1698128921 "c:/Users/sugay/Desktop/Master-s_thesis/seminer/Ising_montecarlo.tex" "out/Ising_montecarlo.dvi" "Ising_montecarlo" 1698128923 0
+  "Ising_montecarlo.tex" 1698128921 5829 c9142d3ee66804f59fbf4b89da373438 ""
+  "c:/Users/sugay/Desktop/Master-s_thesis/seminer/Ising_montecarlo.tex" 1698128921 5829 c9142d3ee66804f59fbf4b89da373438 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1669975561 3524 cb3e574dea2d1052e39280babc910dc8 ""
-  "c:/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1669975194 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1669977894 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1669977894 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1669977894 856 7404843a5f798859944d7973a47821d5 ""
@@ -70,9 +69,9 @@
   "c:/texlive/2022/texmf-dist/web2c/texmf.cnf" 1669973289 40171 cdab547de63d26590bebb3baff566530 ""
   "c:/texlive/2022/texmf-var/web2c/eptex/platex.fmt" 1669979661 3072963 b88c1ce93abd41d2fe340868b85cfaa5 ""
   "c:/texlive/2022/texmf.cnf" 1669979482 713 e69b156964470283e0530f5060668171 ""
-  "out/1D_Ising_model.aux" 1696981498 297 3e45bea34c50618704af0e02dc94fa5d "latex"
+  "out/Ising_montecarlo.aux" 1698128922 209 cf82827a515ea4520154d135f8ed7203 "latex"
   (generated)
-  "out/1D_Ising_model.aux"
-  "out/1D_Ising_model.dvi"
-  "out/1D_Ising_model.log"
+  "out/Ising_montecarlo.aux"
+  "out/Ising_montecarlo.dvi"
+  "out/Ising_montecarlo.log"
   (rewritten before read)

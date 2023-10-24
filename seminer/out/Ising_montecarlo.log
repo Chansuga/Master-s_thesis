@@ -1,10 +1,10 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  11 OCT 2023 08:44
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  24 OCT 2023 15:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/sugay/Desktop/Master-s_thesis/seminer/1D_Ising_model.tex
-(c:/Users/sugay/Desktop/Master-s_thesis/seminer/1D_Ising_model.tex
+**c:/Users/sugay/Desktop/Master-s_thesis/seminer/Ising_montecarlo.tex
+(c:/Users/sugay/Desktop/Master-s_thesis/seminer/Ising_montecarlo.tex
 pLaTeX2e <2021-11-15> (based on LaTeX2e <2022-11-01> patch level 1)
 L3 programming layer <2022-11-02> (c:/texlive/2022/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 Document Class: jsarticle 2022/09/13 jsclasses (okumura, texjporg)
@@ -153,8 +153,8 @@ File: l3backend-dvips.def 2022-10-26 L3 backend support: dvips
 \g__pdf_backend_annotation_int=\count272
 \g__pdf_backend_link_int=\count273
 \g__pdf_backend_link_sf_int=\count274
-) (out/1D_Ising_model.aux)
-\openout1 = `1D_Ising_model.aux'.
+) (out/Ising_montecarlo.aux)
+\openout1 = `Ising_montecarlo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -198,43 +198,41 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 7.68799pt on input line 16.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 5.76599pt on input line 16.
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 18.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 18.
+(Font)              scaled to size 6.72699pt on input line 18.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 18.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 18.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 18.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 4.805pt on input line 18.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 26.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 26.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 18.
+(Font)              scaled to size 13.83836pt on input line 26.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 18.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 21.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 21.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 21.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 21.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 21.
-
-Overfull \hbox (47.4786pt too wide) detected at line 32
-[]
- []
-
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 52.
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 52.
+(Font)              scaled to size 13.83836pt on input line 26.
 [1
 
-] [2] [3] [4] (out/1D_Ising_model.aux) ) 
+]
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 45.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 71.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 71.
+[2] [3] (out/Ising_montecarlo.aux) ) 
 Here is how much of TeX's memory you used:
- 2098 strings out of 475427
- 31596 string characters out of 5791344
- 400687 words of memory out of 5000000
+ 2097 strings out of 475427
+ 31619 string characters out of 5791344
+ 393691 words of memory out of 5000000
  23818 multiletter control sequences out of 15000+600000
- 489131 words of font info for 116 fonts, out of 8000000 for 9000
+ 489292 words of font info for 117 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 55i,14n,62p,277b,264s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,11n,62p,401b,264s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/1D_Ising_model.dvi (4 pages, 10968 bytes).
+Output written on out/Ising_montecarlo.dvi (3 pages, 9308 bytes).
