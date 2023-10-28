@@ -89,6 +89,32 @@
 のように期待値を計算できる．$N_{\text{disc}}$は配位ごとの物理量を観察して初期配位の影響がなくなったあたりの番号をとればよい．
 
 \subsection*{イジングモデルの熱浴法}
+次に熱浴法(heatbath algorothm)をみる．このアルゴリズムは機械学習の文脈ではギブスサンプリング(Gibbs sampling)と呼ばれる．熱浴法は，ある1自由度を着目し，その周りの自由度を熱浴とみなして更新するマルコフ連鎖モンテカルロ法の一種である．\par
+熱浴法は条件付き確率
+\begin{equation}
+  P(A|B) = \frac{P(A,B)}{P(B)}
+\end{equation}
+から導出される．イジングモデルのあるサイト$j$に着目し，そのサイト以外を熱浴をみなしたときにサイト$j$がどうなるかを条件付き確率に従って決めるのである．\par
+例えば，
+\begin{align}
+  & A = A_j \text{：サイト$j$にあるスピンの状態} \\
+  & B \text{：サイト$j$以外のスピンの状態}
+\end{align}
+とする．ある配位を与える確率を
+\begin{equation}
+  P(A_j,B) = \frac{1}{Z}\exp{\left[ -\beta J s_j \sum_{k\in \mathcal{N}(j)} s_k + (s_j\text{を含まない項}) \right]}
+\end{equation}
+と書く．ここで，サイト$j$の最近接サイトをまとめて$\mathcal{N}(j)$と書いた．\par
+$A_j$の状態(サイト$j$のスピン状態)を足し上げて周辺化した確率$P(B)$は，$P(B)=\sum_{A_j}P(A_j,B)$を使うと$A_j$は$s_j=\{+1,-1\}$をとるので，全て足し上げて
+\begin{equation}
+  P(B) = \frac{1}{Z}\sum_{s_j=\pm 1}\exp{\left[ -\beta J s_j \sum_{k\in \mathcal{N}(j)} s_k + (s_j\text{を含まない項}) \right]}
+\end{equation}
++
+
+
+
+
+
 
 
 

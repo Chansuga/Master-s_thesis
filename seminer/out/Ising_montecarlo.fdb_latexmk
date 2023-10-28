@@ -1,12 +1,12 @@
 # Fdb version 4
-["dvipdf"] 1698128922 "out/Ising_montecarlo.dvi" "out/Ising_montecarlo.pdf" "out/Ising_montecarlo" 1698128923 0
-  "out/Ising_montecarlo.dvi" 1698128922 9308 37acbaad830e0b593f4d4c915010ad7c "latex"
+["dvipdf"] 1698458657 "out/Ising_montecarlo.dvi" "out/Ising_montecarlo.pdf" "out/Ising_montecarlo" 1698458658 0
+  "out/Ising_montecarlo.dvi" 1698458656 11716 2aac572f1a4998f46977673a32d1dbdf "latex"
   (generated)
   "out/Ising_montecarlo.pdf"
   (rewritten before read)
-["latex"] 1698128921 "c:/Users/sugay/Desktop/Master-s_thesis/seminer/Ising_montecarlo.tex" "out/Ising_montecarlo.dvi" "Ising_montecarlo" 1698128923 0
-  "Ising_montecarlo.tex" 1698128921 5829 c9142d3ee66804f59fbf4b89da373438 ""
-  "c:/Users/sugay/Desktop/Master-s_thesis/seminer/Ising_montecarlo.tex" 1698128921 5829 c9142d3ee66804f59fbf4b89da373438 ""
+["latex"] 1698458655 "c:/Users/sugay/Desktop/Master-s_thesis/seminer/Ising_montecarlo.tex" "out/Ising_montecarlo.dvi" "Ising_montecarlo" 1698458658 0
+  "Ising_montecarlo.tex" 1698458653 7347 966dd6a4b2804210c6e671ae9e267ba4 ""
+  "c:/Users/sugay/Desktop/Master-s_thesis/seminer/Ising_montecarlo.tex" 1698458653 7347 966dd6a4b2804210c6e671ae9e267ba4 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1669975561 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1669977894 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1669977894 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -69,7 +69,7 @@
   "c:/texlive/2022/texmf-dist/web2c/texmf.cnf" 1669973289 40171 cdab547de63d26590bebb3baff566530 ""
   "c:/texlive/2022/texmf-var/web2c/eptex/platex.fmt" 1669979661 3072963 b88c1ce93abd41d2fe340868b85cfaa5 ""
   "c:/texlive/2022/texmf.cnf" 1669979482 713 e69b156964470283e0530f5060668171 ""
-  "out/Ising_montecarlo.aux" 1698128922 209 cf82827a515ea4520154d135f8ed7203 "latex"
+  "out/Ising_montecarlo.aux" 1698458656 209 cf82827a515ea4520154d135f8ed7203 "latex"
   (generated)
   "out/Ising_montecarlo.aux"
   "out/Ising_montecarlo.dvi"
