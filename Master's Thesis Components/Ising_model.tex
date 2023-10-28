@@ -1,0 +1,48 @@
+\documentclass[a4paper,11pt]{jsarticle}
+
+
+% 数式
+\usepackage{amsmath,amsfonts}
+\usepackage{bm}
+% 画像
+\usepackage[dvipdfmx]{graphicx}
+
+
+\begin{document}
+
+\title{イジングモデル基礎まとめ}
+\author{須賀勇貴}
+\date{最終更新日： \today}
+\maketitle
+
+福嶋さんの「基礎からの物理学とディープラーニング入門」の３章の３．３をまとめたものです．\par
+
+\section*{Ising模型}
+Lenzはスピンの向きが上向きと下向きだけに限定された理論模型を考えた．そしてLenzの指導学生だったIsingが，その模型を1次元の場合で解き，相転移が存在しないことをしました．それにより現在ではこの模型をIsing模型と呼ばれている．\par
+Ising模型では$\sigma_i$という量を導入して，i番目のスピンが上向きなら$\sigma_i = +1$，下向きなら$\sigma_i = -1$で表す．すべてのスピンを要素にした，$\bm{\sigma}=\{ \sigma_1, \sigma_2, \cdots, \sigma_N \}$のことをスピン配位と呼び，それぞれのスピンが$\pm 1$の値をとるため，独立なスピン配位は全部で$2^N$通りあるということになる．\par
+Ising模型では，個々のスピン配位$\bm{\sigma}$のエネルギーは
+\begin{equation}
+  E(\bm{\sigma}) = -J\sum_{i,j \in E(G)}\sigma_i \sigma_j -H \sum_{i \in V(G)} \sigma_i
+\end{equation}
+で与えられる．第1項目はスピン同士の相互作用による寄与で$J$は結合の強さを表す定数で結合定数と呼ばれる．第2項目は外部からの磁場$H$によって個々のスピンに働く力の影響による寄与を表している．そしてエネルギー$E(\bm{\sigma})$を最小にするようなスピン配位$\bm{\sigma}$がこの模型の基底状態になる．\par
+統計力学では，エネルギーが$E$である状態が混ざる確率を適当な規格化定数$Z$を用いて
+\begin{equation}
+  P(E) = \frac{1}{Z}e^{E/(k_B T)} \label{イジングモデル}
+\end{equation}
+であるとして，この確率分布をカノニカル分布と呼ぶ．指数の分母に現れる$K_B$はBoltzmann定数で，温度をエネルギーに変換するために必要なものである．Boltzmann定数は温度$T$との積の形で出現することが多いため，$\beta = 1/(k_B T)$で定義される逆温度を導入すると便利である．\par
+式(\ref{イジングモデル})は特定の模型によらない一般的な表式であったが，Ising模型ではスピン配位が決まればそのエネルギー$E(\bm{\sigma})$が決まるので，以下では$\bm{\sigma}$が出現する確率を
+\begin{equation}
+  P(E(\bm{\sigma})) = \frac{1}{Z}e^{-\beta E(\bm{\sigma})}
+\end{equation}
+と書くことにする．ここで，規格化因子である$Z$は分配関数と呼ばれ，
+\begin{equation}
+  Z = \sum_{\bm{\sigma}} e^{\beta E(\bm{\sigma})}
+\end{equation}
+で与えられる．この和は可能なすべてのスピン配位$\bm{\sigma}$についてとっている．スピン配位によって定まる物理量$O(\bm{\sigma})$の期待値は
+\begin{equation}
+  \langle O \rangle = \sum_{\bm{\sigma}}O(\bm{\sigma}) P(\bm{\sigma})
+\end{equation}
+で与えられる．\par
+
+
+\end{document}
