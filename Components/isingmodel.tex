@@ -15,7 +15,7 @@
 \date{最終更新日： \today}
 \maketitle
 
-福嶋さんの「基礎からの物理学とディープラーニング入門」の３章の３．３をまとめたものです．\par
+福嶋さんの「基礎からの物理学とディープラーニング入門」の３章の３．３をまとめたものです．\cite{Witten:1998qj}\par
 
 \section*{Ising模型}
 Lenzはスピンの向きが上向きと下向きだけに限定された理論模型を考えた．そしてLenzの指導学生だったIsingが，その模型を1次元の場合で解き，相転移が存在しないことをしました．それにより現在ではこの模型をIsing模型と呼ばれている．\par
@@ -51,30 +51,30 @@ Ising模型のもっとも簡単な例として，2つのスピン1,2が相互�
 \end{equation}
 となる．$\sigma_i = \pm 1 = \pm$と書いて，全ての配位に対するエネルギーを求めると
 \begin{align}
-  E(+,+) &= -J -2H \\
-  E(+,-) &= E(-,+) = J \\
-  E(-,-) &= -J +2H
+  E(+,+) & = -J -2H     \\
+  E(+,-) & = E(-,+) = J \\
+  E(-,-) & = -J +2H
 \end{align}
 となる．これより分配関数は
 \begin{align}
-  Z 
-  &= \sum_{\sigma_1,\sigma_2} e^{-\beta E(\sigma_1, \sigma_2)} \notag \\
-  &= e^{\beta(J+2H)} + e^{\beta(J-2H)} + 2e^{-\beta J} \notag \\
-  &= 2e^{\beta J}\cosh{(2\beta H)} + 2e^{-\beta J} \label{eq:分配関数}
+  Z
+   & = \sum_{\sigma_1,\sigma_2} e^{-\beta E(\sigma_1, \sigma_2)} \notag \\
+   & = e^{\beta(J+2H)} + e^{\beta(J-2H)} + 2e^{-\beta J} \notag         \\
+   & = 2e^{\beta J}\cosh{(2\beta H)} + 2e^{-\beta J} \label{eq:分配関数}
 \end{align}
 となる．また，それぞれのスピン配位の確率分布は
 \begin{align}
-  P(+,+) &= \frac{1}{Z} e^{\beta(J + 2H)} \notag \\
-  P(-,-) &= \frac{1}{Z} e^{\beta(J - 2H)} \notag \\
-  P(+,-) &= P(-,+) = \frac{1}{Z} e^{-\beta J} 
+  P(+,+) & = \frac{1}{Z} e^{\beta(J + 2H)} \notag \\
+  P(-,-) & = \frac{1}{Z} e^{\beta(J - 2H)} \notag \\
+  P(+,-) & = P(-,+) = \frac{1}{Z} e^{-\beta J}
 \end{align}
 となる．以上の結果から，式(\ref{期待値})を用いてスピン期待値を計算してみると
 \begin{align}
-  \langle M \rangle 
-  &= \frac{1}{2}\sum_{\sigma_1,\sigma_2}(\sigma_1 + \sigma_2)P(\sigma_1, \sigma_2) \notag \\
-  &= P(+,+) + P(-,-) \notag \\
-  &= \frac{e^{\beta(J + 2H)} - e^{\beta(J - 2H)}}{Z} \notag \\
-  &= \frac{\sinh{(2\beta H)}}{\cosh{(2\beta H)} + e^{-\beta J}} \label{eq:スピン期待値}
+  \langle M \rangle
+   & = \frac{1}{2}\sum_{\sigma_1,\sigma_2}(\sigma_1 + \sigma_2)P(\sigma_1, \sigma_2) \notag \\
+   & = P(+,+) + P(-,-) \notag                                                               \\
+   & = \frac{e^{\beta(J + 2H)} - e^{\beta(J - 2H)}}{Z} \notag                               \\
+   & = \frac{\sinh{(2\beta H)}}{\cosh{(2\beta H)} + e^{-\beta J}} \label{eq:スピン期待値}
 \end{align}
 と導ける．$\langle M \rangle$を$2\beta J$の関数としてプロットしたものが，図\ref{fig:spin_graph}である．\par
 \begin{figure}[htbp]
@@ -97,5 +97,8 @@ Ising模型のもっとも簡単な例として，2つのスピン1,2が相互�
   \langle E \rangle = -\frac{\partial}{\partial \beta} \ln{Z} = \sum_{\bm{\sigma}} E(\bm{\sigma}) P(\bm{\sigma})
 \end{equation}
 が一般的に成り立つ．
+
+\bibliographystyle{junsrt}
+\bibliography{refe}
 
 \end{document}

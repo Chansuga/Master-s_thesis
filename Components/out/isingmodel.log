@@ -1,10 +1,10 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  1 NOV 2023 07:22
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  1 NOV 2023 19:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/sugay/Desktop/Master-s_thesis/Components/midterm_report.tex
-(c:/Users/sugay/Desktop/Master-s_thesis/Components/midterm_report.tex
+**c:/Users/sugay/Desktop/Master-s_thesis/Components/isingmodel.tex
+(c:/Users/sugay/Desktop/Master-s_thesis/Components/isingmodel.tex
 pLaTeX2e <2021-11-15> (based on LaTeX2e <2022-11-01> patch level 1)
 L3 programming layer <2022-11-02> (c:/texlive/2022/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 Document Class: jsarticle 2022/09/13 jsclasses (okumura, texjporg)
@@ -153,8 +153,8 @@ File: l3backend-dvips.def 2022-10-26 L3 backend support: dvips
 \g__pdf_backend_annotation_int=\count272
 \g__pdf_backend_link_int=\count273
 \g__pdf_backend_link_sf_int=\count274
-) (out/midterm_report.aux)
-\openout1 = `midterm_report.aux'.
+) (out/isingmodel.aux)
+\openout1 = `isingmodel.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -198,46 +198,68 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 7.68799pt on input line 16.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 5.76599pt on input line 16.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 19.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 19.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 19.
+(Font)              scaled to size 13.83836pt on input line 20.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 19.
+(Font)              scaled to size 13.83836pt on input line 20.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 19.
+(Font)              scaled to size 13.83836pt on input line 20.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 19.
-(out/midterm_report.toc
+(Font)              scaled to size 13.83836pt on input line 20.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 2.
+(Font)              scaled to size 6.72699pt on input line 22.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 2.
+(Font)              scaled to size 4.805pt on input line 22.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 2.
+(Font)              scaled to size 9.60999pt on input line 22.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 2.
-)
-\tf@toc=\write3
-\openout3 = `midterm_report.toc'.
-
+(Font)              scaled to size 6.72699pt on input line 22.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 4.805pt on input line 22.
 [1
 
 ]
+File: graph/fukushima(3_140).png Graphic file (type bmp)
+<graph/fukushima(3_140).png>
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 83.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 83.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 83.
+[2]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 95.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 24.
-[2
+(Font)              scaled to size 9.60999pt on input line 95.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 95.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 95.
 
-] [3] (out/midterm_report.aux) ) 
+LaTeX Warning: Reference `コンパクトスピン期待値' on page 3 undefined on input line 95.
+
+(out/isingmodel.bbl
+LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 6.
+LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 6.
+) [3] (out/isingmodel.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2104 strings out of 475427
- 31707 string characters out of 5791344
- 391687 words of memory out of 5000000
- 23821 multiletter control sequences out of 15000+600000
- 489408 words of font info for 117 fonts, out of 8000000 for 9000
+ 2142 strings out of 475427
+ 32205 string characters out of 5791344
+ 395679 words of memory out of 5000000
+ 23847 multiletter control sequences out of 15000+600000
+ 491792 words of font info for 127 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 55i,6n,62p,433b,264s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,9n,62p,479b,428s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/midterm_report.dvi (3 pages, 8980 bytes).
+Output written on out/isingmodel.dvi (3 pages, 10496 bytes).
