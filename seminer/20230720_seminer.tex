@@ -83,24 +83,24 @@ hideallsubsections]} %目次スライド
 
 \begin{frame}{4.2 \ $WW^{\top}$におけるスピン相関}
   \begin{columns}
-     \begin{column}{0.4\textwidth}
+    \begin{column}{0.4\textwidth}
       \underline{図からわかること}
       \vspace{0.2cm}
       \begin{itemize}
         \item $WW^{\top}$の相関は高温でより急速に減少\\
-        $\Rightarrow$RBMは相関距離(クラスターのサイズ)を正確に学習している
-        \vspace{0.5cm}
+              $\Rightarrow$RBMは相関距離(クラスターのサイズ)を正確に学習している
+              \vspace{0.5cm}
         \item TypeVはT=2とT=3の間\\
-        $\Rightarrow$TypeVのRBMは$T_c$付近の配位と似た特徴を取得した
+              $\Rightarrow$TypeVのRBMは$T_c$付近の配位と似た特徴を取得した
       \end{itemize}
-     \end{column}
-     \begin{column}{0.6\textwidth}
+    \end{column}
+    \begin{column}{0.6\textwidth}
       \begin{figure}
         \begin{center}
           \includegraphics[height=4.6cm]{image/Figure13.png}
         \end{center}
       \end{figure}
-     \end{column}
+    \end{column}
   \end{columns}
 \end{frame}
 
@@ -113,10 +113,10 @@ hideallsubsections]} %目次スライド
   入力の配位ベクトル$v^{(0)}$は固有値ベクトルを使って$v^{(0)}=\sum_{a}c_a u_a \ $(規格化条件： $\sum_{a}(c_a)^2$=1)のように分解することができるので
   \begin{align*}
     v^{(0)\top}WW^{\top}v^{(0)\top}
-    &= \left(\sum_a c_a u_a\right)^{\top}WW^{\top}\left(\sum_a c_a u_a\right)\\
-    &= \left(\sum_a c_a u_a\right)^{\top}\left(\sum_a c_a \lambda_a u_a\right)\\
-    &= \sum_a \sum_{a'} c_a c_{a'} \lambda_{a'} (u_a)^{\top}u_{a'}\\
-    &= \sum_a c_a^2 \lambda_a
+     & = \left(\sum_a c_a u_a\right)^{\top}WW^{\top}\left(\sum_a c_a u_a\right)  \\
+     & = \left(\sum_a c_a u_a\right)^{\top}\left(\sum_a c_a \lambda_a u_a\right) \\
+     & = \sum_a \sum_{a'} c_a c_{a'} \lambda_{a'} (u_a)^{\top}u_{a'}             \\
+     & = \sum_a c_a^2 \lambda_a
   \end{align*}
   $\Rightarrow$ $v^{(0)}$が$WW^{\top}$の固有値の要素を多く含んでいれば$v^{(0)\top}WW^{\top}v^{(0)\top}$の値が大きくなる
 \end{frame}
@@ -166,11 +166,11 @@ hideallsubsections]} %目次スライド
   \vspace{0.2cm}
   \begin{itemize}
     \item $N_h$が大きい時と小さいと時で臨界点付近での値の変化量が異なる\\
-    \vspace{0.2cm}
-    $\rightarrow$この違いが図6と図9のRBMフローの違いを引き起こす原因?
+          \vspace{0.2cm}
+          $\rightarrow$この違いが図6と図9のRBMフローの違いを引き起こす原因?
     \item $H_h$が大きいときは高温の時も値が大きい\\
-    \vspace{0.2cm}
-    $\rightarrow$$N_h$が大きいRBMは高温における特徴をより多く学習しているのではないか?
+          \vspace{0.2cm}
+          $\rightarrow$$N_h$が大きいRBMは高温における特徴をより多く学習しているのではないか?
   \end{itemize}
   \vspace{0.2cm}
   これは第3.2節の2番目の予想に他ならず，これは，4.2章のスピン相関の振舞いで裏付けられている!!!
@@ -179,19 +179,19 @@ hideallsubsections]} %目次スライド
 \section{4.4 \ 固有値スペクトルとWに格納された情報}
 \begin{frame}[t]{4.4 \ 固有値スペクトルとWに格納された情報}
   \begin{figure}
-     \begin{center}
-         \includegraphics[height=3.5cm]{image/Figure16.png}
-     \end{center}
+    \begin{center}
+      \includegraphics[height=3.5cm]{image/Figure16.png}
+    \end{center}
   \end{figure}
   \underline{図16からわかること}
   \vspace{0.2cm}
   \begin{itemize}
     \item Type Lではいくつかの固有値だけが値が大きい\\
-    \vspace{0.2cm}
-    $\Rightarrow$ Type L RBMは，隠れ層のニューロンは少数で十分
+          \vspace{0.2cm}
+          $\Rightarrow$ Type L RBMは，隠れ層のニューロンは少数で十分
     \item Type Vでは固有値の値は緩やかに減少\\
-    \vspace{0.2cm}
-    $\Rightarrow$ Type V RBMは，すべての固有ベクトルが均等に利用されている
+          \vspace{0.2cm}
+          $\Rightarrow$ Type V RBMは，すべての固有ベクトルが均等に利用されている
   \end{itemize}
   \vspace{0.2cm}
   $\Rightarrow$広い温度範囲の特徴を学習するには，隠れ層に多くのニューロンが必要!!
@@ -199,9 +199,9 @@ hideallsubsections]} %目次スライド
 
 \begin{frame}[t]{4.4 \ 固有値スペクトルとWに格納された情報}
   \begin{figure}
-     \begin{center}
-         \includegraphics[height=4cm]{image/Figure17.png}
-     \end{center}
+    \begin{center}
+      \includegraphics[height=4cm]{image/Figure17.png}
+    \end{center}
   \end{figure}
 \end{frame}
 
