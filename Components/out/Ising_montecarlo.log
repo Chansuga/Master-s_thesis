@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  3 NOV 2023 19:24
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  7 NOV 2023 23:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -199,33 +199,33 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 5.76599pt on input line 16.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 18.
+(Font)              scaled to size 6.72699pt on input line 20.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 18.
+(Font)              scaled to size 4.805pt on input line 20.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 18.
+(Font)              scaled to size 9.60999pt on input line 20.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 18.
+(Font)              scaled to size 6.72699pt on input line 20.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 18.
+(Font)              scaled to size 4.805pt on input line 20.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 26.
+(Font)              scaled to size 13.83836pt on input line 28.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 26.
+(Font)              scaled to size 13.83836pt on input line 28.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 26.
+(Font)              scaled to size 13.83836pt on input line 28.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 26.
+(Font)              scaled to size 13.83836pt on input line 28.
 [1
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 45.
+(Font)              scaled to size 11.53198pt on input line 47.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 71.
+(Font)              scaled to size 6.72699pt on input line 73.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 71.
-[2] [3] (out/Ising_montecarlo.aux) ) 
+(Font)              scaled to size 4.805pt on input line 73.
+[2] [3] [4] (out/Ising_montecarlo.aux) ) 
 Here is how much of TeX's memory you used:
  2097 strings out of 475427
  31628 string characters out of 5791344
@@ -235,4 +235,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  55i,13n,62p,404b,264s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Ising_montecarlo.dvi (3 pages, 11704 bytes).
+Output written on out/Ising_montecarlo.dvi (4 pages, 14124 bytes).
