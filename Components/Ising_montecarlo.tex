@@ -120,8 +120,12 @@ $A_j$の状態(サイト$j$のスピン状態)を足し上げて周辺化した�
    & = \frac{\exp{\left[ -\beta J s_j \sum_{k\in \mathcal{N}(j)} s_k\right]}}{\exp{\left[ -\beta J \sum_{k\in \mathcal{N}(j)} s_k \right]} + \exp{\left[ +\beta J \sum_{k\in \mathcal{N}(j)} s_k \right]}}
 \end{align}
 となる．最後の式を見ると，サイト$j$の周りのスピン配位だけでサイト$j$の状態が決まるということがわかる．また，ここでもメトロポリス法のときと同様に分配関数$Z$の計算が必要なくなっている．\par
-
-
+例えば，サイト$j$のスピンが$+1$である場合は
+\begin{equation}
+  P(s_j = +1)
+  = \frac{\exp{\left[\beta J \sum_{k \in \mathcal{N}(j)}s_k\right]}}{\exp{\left[\beta J \sum_{k \in \mathcal{N}(j)}s_k\right]} + \exp{\left[-\beta J \sum_{k \in \mathcal{N}(j)}s_k\right]}}
+\end{equation}
+となる．なのでこの確率に従って次の配位におけるサイト$j$のスピンを決定(更新)すればよい．この確率の評価はメトロポリス法の乱数を使っている個所と同じように乱数を用いて評価すればよい．また$P(s_j = -1|B) = 1 - P(s_j =+1|B)$である．そして空間全部のスピンについて繰り返せば次の配位が得られる．
 
 
 
