@@ -1,11 +1,11 @@
 # Fdb version 4
-["dvipdf"] 1699424922 "out/gradient_descent.dvi" "out/gradient_descent.pdf" "out/gradient_descent" 1699424923 0
-  "out/gradient_descent.dvi" 1699424922 16132 1be460cbe645be74fc4b5c80c322db60 "latex"
+["dvipdf"] 1699515286 "out/canonical_distribution.dvi" "out/canonical_distribution.pdf" "out/canonical_distribution" 1699515287 0
+  "out/canonical_distribution.dvi" 1699515286 7328 3e4171fe870f33dd99cde54c8e41fa46 "latex"
   (generated)
-  "out/gradient_descent.pdf"
+  "out/canonical_distribution.pdf"
   (rewritten before read)
-["latex"] 1699424921 "c:/Users/sugay/Desktop/Master-s_thesis/Components/gradient_descent.tex" "out/gradient_descent.dvi" "gradient_descent" 1699424923 0
-  "c:/Users/sugay/Desktop/Master-s_thesis/Components/gradient_descent.tex" 1699424919 11760 c89193802e54bee83b121a50d9ec4cf0 ""
+["latex"] 1699515285 "c:/Users/sugay/Desktop/Master-s_thesis/Components/canonical_distribution.tex" "out/canonical_distribution.dvi" "canonical_distribution" 1699515287 0
+  "c:/Users/sugay/Desktop/Master-s_thesis/Components/canonical_distribution.tex" 1699515284 4306 d2d316c33937ab38dc6f3a062e557e8a ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1697430804 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1697432237 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1697432237 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -69,11 +69,11 @@
   "c:/texlive/2023/texmf-dist/web2c/texmf.cnf" 1697429716 40745 87bb86a62d462f93a1efc6b0c65c872e ""
   "c:/texlive/2023/texmf-var/web2c/eptex/platex.fmt" 1697433389 7883360 2823e4b201269767ae948fcaf94d5904 ""
   "c:/texlive/2023/texmf.cnf" 1697433260 713 e69b156964470283e0530f5060668171 ""
-  "gradient_descent.tex" 1699424919 11760 c89193802e54bee83b121a50d9ec4cf0 ""
-  "graph/gradient_decent.png" 1699415471 75159 8d0de4671cdbb0cb26a434b4d7709bcf ""
-  "out/gradient_descent.aux" 1699424922 960 df1513609b68597e6127c81da02f67ab "latex"
+  "canonical_distribution.tex" 1699515284 4306 d2d316c33937ab38dc6f3a062e557e8a ""
+  "graph/canonical.png" 1699512916 20268 ec3f5a12418a6680d9fef818f440b808 ""
+  "out/canonical_distribution.aux" 1699515286 367 6d83d802143a411f6546b24beab1fd2e "latex"
   (generated)
-  "out/gradient_descent.aux"
-  "out/gradient_descent.dvi"
-  "out/gradient_descent.log"
+  "out/canonical_distribution.aux"
+  "out/canonical_distribution.dvi"
+  "out/canonical_distribution.log"
   (rewritten before read)

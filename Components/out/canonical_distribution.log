@@ -1,10 +1,10 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.10.16)  8 NOV 2023 16:21
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.10.16)  9 NOV 2023 16:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/sugay/Desktop/Master-s_thesis/Components/Phase_Transitions_History.tex
-(c:/Users/sugay/Desktop/Master-s_thesis/Components/Phase_Transitions_History.tex
+**c:/Users/sugay/Desktop/Master-s_thesis/Components/canonical_distribution.tex
+(c:/Users/sugay/Desktop/Master-s_thesis/Components/canonical_distribution.tex
 pLaTeX2e <2023-02-14>+1 (based on LaTeX2e <2022-11-01> patch level 1)
 L3 programming layer <2023-02-22> (c:/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 Document Class: jsarticle 2023/02/23 jsclasses (okumura, texjporg)
@@ -154,8 +154,8 @@ File: l3backend-dvips.def 2023-01-16 L3 backend support: dvips
 \g__pdf_backend_annotation_int=\count272
 \g__pdf_backend_link_int=\count273
 \g__pdf_backend_link_sf_int=\count274
-) (out/Phase_Transitions_History.aux)
-\openout1 = `Phase_Transitions_History.aux'.
+) (out/canonical_distribution.aux)
+\openout1 = `canonical_distribution.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
@@ -199,33 +199,68 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 7.68799pt on input line 16.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 5.76599pt on input line 16.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 20.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 20.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 20.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 20.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 22.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 24.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 24.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 24.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 23.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 23.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 24.
-
-LaTeX Warning: Reference `(' on page 1 undefined on input line 24.
-
+(Font)              scaled to size 9.60999pt on input line 23.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 23.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 4.805pt on input line 23.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 23.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 23.
 [1
 
-] [2] (out/Phase_Transitions_History.aux)
+]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 55.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 55.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 55.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 55.
+
+LaTeX Warning: Reference `' on page 2 undefined on input line 55.
+
+
+LaTeX Warning: Reference `' on page 2 undefined on input line 69.
+
+
+LaTeX Warning: Reference `' on page 2 undefined on input line 70.
+
+File: graph/canonical.png Graphic file (type bmp)
+<graph/canonical.png>
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 94.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 94.
+[2] [3] (out/canonical_distribution.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2068 strings out of 476693
- 31358 string characters out of 5808556
- 1849203 words of memory out of 5000000
- 22520 multiletter control sequences out of 15000+600000
- 526448 words of font info for 94 fonts, out of 8000000 for 9000
+ 2112 strings out of 476693
+ 31884 string characters out of 5808556
+ 1852203 words of memory out of 5000000
+ 22550 multiletter control sequences out of 15000+600000
+ 533089 words of font info for 125 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 55i,6n,62p,669b,264s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,10n,62p,574b,382s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Phase_Transitions_History.dvi (2 pages, 6172 bytes).
+Output written on out/canonical_distribution.dvi (3 pages, 7328 bytes).
