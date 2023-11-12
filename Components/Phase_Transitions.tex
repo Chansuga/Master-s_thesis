@@ -32,7 +32,7 @@
 統計力学で最も多く用いられる確率分布模型は，カノニカル分布(canonical distribution)である．考察対象である系の大きさと比べて十分大きい熱浴を用いて，系と熱浴の間にエネルギーのやり取りを許す．このとき，系の状態を指定する指標となるのはエネルギーではなく，熱浴の状態数を用いて定義される温度である．温度一定であることが，系が熱浴と接して熱平衡状態を保っていることを表している．このような設定の下で系が各々の微視的状態を取る確率が与えられ，その確率分布を用いて熱力学量が求められる．\par
 カノニカル分布に基づいて熱力学量を計算する処方箋は次のとおりである．多体系のハミルトニアン$H$が与えられたとき，分配関数を
 \begin{equation}
-  Z = \operatorname{Tr}e^{-\beta T}
+  Z = \operatorname{Tr}e^{-\beta H}
 \end{equation}
 と定義する．$\beta=1/T$は逆温度と呼ばれる．本来はBoltzmann定数$k_B$を用いて$\beta=\frac{1}{k_B T}$とするが，ここでは$k_B=1$とする自然単位系を用いるため省略する．このとき温度$T$はエネルギーの単位をもつ．$\operatorname{Tr}$はとりうる微視的状態すべてについての和を表している．和が離散的か連続的かは考えている系による．分配関数自体は熱力学量ではないが，ここ型すべての熱力学量が計算される.\par
 Helmholtzの自由エネルギーは次のように定義される．
@@ -51,7 +51,15 @@ Helmholtzの自由エネルギーは次のように定義される．
 \begin{equation}
   F = E -TS
 \end{equation}
-によって特徴づけられる．この$F$と$E$の関係はLegendre変換にほかならない．自由エネルギーは温度の関数であるが，エネルギーはエントロピーの関数である．また，Helmholtzの自由エネルギーは体積$V$の関数でもあるのだが，Legendre変換を用いるとGibbsの自由エネルギー
+によって特徴づけられる．実際，
+\begin{align*}
+  E - TS
+   & = \frac{\partial}{\partial \beta}(\beta F) - \beta \frac{\partial F}{\partial \beta}                                  \\
+   & = -\frac{\partial}{\partial \beta} \ln{Z} + \beta \frac{\partial}{\partial \beta}\left( \frac{1}{\beta}\ln{Z} \right) \\
+   & = -\frac{\partial}{\partial \beta} \ln{Z} - \frac{1}{\beta} \ln{Z} + \frac{\partial}{\partial \beta} \ln{Z}           \\
+   & = - \frac{1}{\beta} \ln{Z} = F
+\end{align*}
+となって，正しいことが確かめられる．そして，この$F$と$E$の関係はLegendre変換にほかならない．自由エネルギーは温度の関数であるが，エネルギーはエントロピーの関数である．また，Helmholtzの自由エネルギーは体積$V$の関数でもあるのだが，Legendre変換を用いるとGibbsの自由エネルギー
 \begin{equation}
   G = F + pV, \ \ p = -\frac{\partial F}{\partial V}
 \end{equation}
@@ -61,9 +69,14 @@ Helmholtzの自由エネルギーは次のように定義される．
   Z = \sum_{n} e^{-\beta E_n}
 \end{equation}
 これを上の公式に代入すると，エネルギーの表式が得られる．
-\begin{equation}
-  E = \frac{1}{Z} \sum_{n} E_n e^{-\beta E_n}
-\end{equation}
+\begin{align}
+  E
+    & = - \frac{\partial}{\partial \beta} \ln{Z} \notag                                            \\
+    & = - \frac{1}{Z}\frac{\partial Z}{\partial \beta} \notag                                      \\
+    & = - \frac{1}{Z}\frac{\partial}{\partial \beta} \left( \sum_{n} e^{-\beta E_n} \right) \notag \\
+    & = \frac{1}{Z} \sum_{n} E_n e^{-\beta E_n}                                                    \\
+  ( & = \sum_{n} E_n P_n) \notag                                                                   \\
+\end{align}
 つまり，状態$n$が実現される確率はBoltzmann因子$\exp{-\beta E_n}$を分配関数で割ったもの
 \begin{equation}
   P_n = \frac{1}{Z} e^{-\beta E_n}
