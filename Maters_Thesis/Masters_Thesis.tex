@@ -1,0 +1,128 @@
+\documentclass[a4paper,11pt]{jsreport}
+
+\usepackage{comment}
+\usepackage{float}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{url}
+\usepackage{underscore}
+\usepackage{colortbl}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{ulem}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage[ipaex]{pxchfon}
+
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+
+  \vspace{20mm}
+  {\Large\noindent 2024年度 修士論文}\\
+  \vspace{40mm}
+  {\huge\noindent\textbf{機械学習を用いた}}\\
+  \medskip
+  {\huge\noindent\textbf{イジング模型の臨界現象に関する研究}}\\
+  \vspace{\baselineskip}
+  \vspace{40mm}
+
+  {\Large\noindent
+    2024年2月00日\\
+    \vspace{\baselineskip}
+    指導教員 \ 藤原高徳    \\
+    \vspace{\baselineskip}
+    茨城大学大学院\\
+    理工学研究科 \ 量子線科学専攻 \\
+    \vspace{\baselineskip}
+    22NM021S \ 須賀 勇貴\\
+  }
+  \vspace{40mm}
+
+\end{center}
+
+\thispagestyle{empty}
+\clearpage
+
+%=====================================================================================
+\renewcommand{\abstractname}{要旨}
+
+\begin{abstract}
+  研究の要旨を書く．
+\end{abstract}
+
+\thispagestyle{empty}
+\clearpage
+
+%=====================================================================================
+
+% 目次の表示
+\tableofcontents
+
+%=====================================================================================
+\pagestyle{fancy}
+\lhead{\rightmark}
+\renewcommand{\chaptermark}[1]{\markboth{第\ \normalfont\thechapter\ 章~~#1}{}}
+%=====================================================================================
+\chapter{はじめに} %章
+\section{研究背景}
+\section{研究目的}
+
+
+\chapter{イジング模型の数理}
+\section{イジング模型とは}
+\section{自由エネルギー}
+
+\chapter{機械学習}
+機械学習の基礎について書く
+\section{機械学習とは}
+機械学習(machine learning)とは，人間がこなすような学習や知的作業を計算機に実行させるためのアプローチの研究，あるいはその手法そのもののことを意味する．機械学習では，知識を人間が直接アルゴリズムに具体的に書き込んだり教え込んだりせず，データという具体例の集まりから計算機に自動的に学ばせるという方法をとる．\par
+機械学習の定義としてT. M. ミッシェル(Tom Michael Mitchell)の書籍で書かれている定義が有名である．それは
+\begin{quote}
+  コンピュータプログラムが，ある種のタスクTとパフォーマンス評価尺度Pにおいて，経験Eから学習するとは，タスクTにおけるその性能をPによって評価した際に，経験Eによってそれが改善されている場合である．
+  \hfill T. M. ミッシェル
+\end{quote}
+である．ここで，タスクTとは解きたい問題のこと，パフォーマンス評価尺度Pは精度，誤差率などの評価指標，経験Eはデータセットのことを指す．
+
+
+\subsection{---}
+\subsection{---}
+\section{深層学習とは}
+\subsection{ニューラルネットワーク}
+\subsection{畳み込みニューラルネットワーク}
+\section{ボルツマンマシンの基礎}
+
+\chapter{イジング模型の相転移検出に関する研究}
+\section{相の分類器による相転移検出}
+\section{温度測定器による相転移検出}
+\section{相転移検出がなせ可能なのか？}
+
+\chapter{機械学習と繰り込み群}
+\section{繰り込み群と特徴抽出}
+
+
+\chapter{まとめ}
+研究のまとめを書く．
+
+%=====================================================================================
+\chapter*{謝辞} %章を付けずにタイトル表示
+\addcontentsline{toc}{chapter}{謝辞} %章立てせずに目次に追加するおまじない
+謝辞を書く．
+
+%=====================================================================================
+
+% \addcontentsline{toc}{chapter}{参考文献} %章立てせずに目次に追加するおまじない
+\renewcommand{\bibname}{参考文献} %これがないと，タイトルが「関連図書」になってしまう
+\bibliography{reference} %bibtexファイルの読み込み
+\bibliographystyle{junsrt} %本文に\cite{}を入れることで，参考文献表示
+
+\end{document}
