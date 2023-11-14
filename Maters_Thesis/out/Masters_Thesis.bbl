@@ -1,3 +1,8 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{Tom1997Machine}
+Tom~Michael Mitchell.
+\newblock {\em Machine Learning}.
+\newblock Mc Graw-Hill, 1997.
 
 \end{thebibliography}
