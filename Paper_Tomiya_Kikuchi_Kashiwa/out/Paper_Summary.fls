@@ -261,4 +261,33 @@ INPUT c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT ./image/Figure1.png
+INPUT ./image/Figure1.png
+INPUT image/Figure1.png
+INPUT extractbb -B cropbox -O image/Figure1.png
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib9.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy9.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT ./image/Figure2.png
+INPUT ./image/Figure2.png
+INPUT image/Figure2.png
+INPUT extractbb -B cropbox -O image/Figure2.png
+INPUT ./image/Figure3.png
+INPUT ./image/Figure3.png
+INPUT image/Figure3.png
+INPUT extractbb -B cropbox -O image/Figure3.png
+INPUT ./image/Figure4.png
+INPUT ./image/Figure4.png
+INPUT image/Figure4.png
+INPUT extractbb -B cropbox -O image/Figure4.png
 INPUT out/Paper_Summary.aux
