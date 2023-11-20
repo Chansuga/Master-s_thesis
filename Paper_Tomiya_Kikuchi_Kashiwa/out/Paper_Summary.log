@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.10.16)  20 NOV 2023 12:59
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.10.16)  20 NOV 2023 14:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -228,17 +228,6 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 4.805pt on input line 45.
 [3]
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 88.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 88.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 88.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 88.
-
-LaTeX Warning: Reference `' on page 4 undefined on input line 88.
-
 File: image/Figure1.png Graphic file (type bmp)
 <image/Figure1.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
@@ -258,6 +247,14 @@ File: image/Figure3.png Graphic file (type bmp)
 File: image/Figure4.png Graphic file (type bmp)
 <image/Figure4.png>
 [6] [7]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 208.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 208.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 208.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 208.
 
 LaTeX Warning: Reference `' on page 8 undefined on input line 208.
 
@@ -280,12 +277,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2168 strings out of 476693
- 32825 string characters out of 5808556
+ 2169 strings out of 476693
+ 32837 string characters out of 5808556
  1858203 words of memory out of 5000000
- 22592 multiletter control sequences out of 15000+600000
+ 22593 multiletter control sequences out of 15000+600000
  535537 words of font info for 135 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 55i,22n,62p,1112b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 55i,22n,62p,1110b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Paper_Summary.dvi (14 pages, 59300 bytes).
+Output written on out/Paper_Summary.dvi (14 pages, 59296 bytes).
