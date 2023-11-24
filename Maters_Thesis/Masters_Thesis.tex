@@ -107,7 +107,7 @@
     \caption{機械学習の大まかな流れ}
   \end{center}
 \end{figure}
-
+メトロポリス法とメトロポリス・ヘイスティング法は同じですか
 \subsection{代表的なタスク}
 ここでは，機械学習で解きたい問題であるタスクの代表的な例として「クラス分類」と「回帰」を紹介する．
 \subsection*{クラス分類}
@@ -165,5 +165,19 @@
 \renewcommand{\bibname}{参考文献} %これがないと，タイトルが「関連図書」になってしまう
 \bibliography{reference} %bibtexファイルの読み込み
 \bibliographystyle{junsrt} %本文に\cite{}を入れることで，参考文献表示
+
+% 付録
+\appendix
+\renewcommand{\thechapter}{\Alph{chapter}}
+\renewcommand{\thesection}{\Alph{chapter}.\arabic{section}}
+\setcounter{section}{0}
+\renewcommand{\theequation}{\Alph{chapter}.\arabic{equation}}
+\setcounter{equation}{0}
+
+\chapter{aaa}
+aaa
+\section{bbb}
+bbb
+
 
 \end{document}

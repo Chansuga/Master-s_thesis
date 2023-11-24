@@ -23,3 +23,5 @@
 \contentsline {chapter}{\numberline {第6章}まとめ}{10}{}%
 \contentsline {chapter}{謝辞}{11}{}%
 \contentsline {chapter}{参考文献}{12}{}%
+\contentsline {chapter}{\numberline {付録A}aaa}{13}{}%
+\contentsline {section}{\numberline {A.1}bbb}{13}{}%
