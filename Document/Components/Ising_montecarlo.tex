@@ -1,0 +1,137 @@
+\documentclass[a4paper,11pt]{jsarticle}
+
+
+% 数式
+\usepackage{amsmath,amsfonts}
+\usepackage{bm}
+% 画像
+\usepackage[dvipdfmx]{graphicx}
+
+
+\begin{document}
+
+\title{イジングモデルのモンテカルロ法}
+\author{須賀勇貴}
+\date{最終更新日：\today}
+\maketitle
+ここではイジングモデルに対するメトロポリス法と熱浴法についてまとめる．主に富谷先生の「これならわかる機械学習入門」の10章を参考にして作成した.\par
+\vspace{1cm}
+
+モンテカルロ法とは乱数を使って積分や和を行う手法である．ここでは，期待値の和を乱数を用いて調べる．あるスピン配位$C$の実現確率を
+\begin{equation}
+  \label{スピン配位の実現確率}
+  P(C)=\frac{1}{Z}e^{-\beta E[C]}
+\end{equation}
+として確率的にスピン配位$C$を生成して，生成したスピン配位$C$を使った平均を用いて期待値を推定する手法をとる．\par
+しかし，スピン配位$C$の実現確率(\ref{スピン配位の実現確率})は直接計算できない．なぜなら，分母の分配関数$Z$を計算するために，結局全ての配位の和を計算する必要があるからである．そこで，分配関数$Z$の計算を避けてスピン配位を生成できつ手法であるマルコフ連鎖モンテカルロ法(Markov chain Monte-Carlo)を以下で説明する．
+
+\section{マルコフ連鎖モンテカルロ法}
+今，調べたい期待値は一般的に
+\begin{equation}
+  \mathbb{E}[f(C)] = \sum_{C} f(C)P(C)
+\end{equation}
+と書ける．ここで$f(C)$は配位の関数で，例えば磁化率などである．また，$\sum_{C}$は可能なスピン配位についての足し上げを表す．格子点の数が$K$個であるとき，イジングモデルなら$2^K$個の足し算になる．これを
+\begin{equation}
+  \mathcal{C} = \{ C_1, C_2, C_3, \cdots \}
+\end{equation}
+という$2^K$よりもずっと短い列の平均に置き換え，
+\begin{equation}
+  \mathbb{E}[f(C)] \approx \frac{1}{|\mathcal{C|}}\sum_{C_k \in \mathcal{C}}f(C_k)
+\end{equation}
+を代わりに評価したい．ここで$|\mathcal{C}|$は配位の数を表す．当然，適当に作った列では正しい期待値を与えないが，以下を満たす$P(C_a|C_b)$に従って$C$を生成すれば正しい期待値を与えることが知られている．
+\begin{equation}
+  P(C_a|C_b)P(C_b) = P(C_b|C_a)P(C_a)
+\end{equation}
+この証明は大数の法則による．ここで条件付き確率$P(C_a|C_b)$は遷移確率とよばれ，この式は詳細釣り合い(detailed balance)の式と呼ばれている．乱数を使ったアルゴリズムをモンテカルロ法と呼ぶが，上のような確率的に配位の列を作るアルゴリズムをマルコフ連鎖モンテカルロ法という．\par
+
+\subsection*{イジングモデルに対するメトロポリス法}
+マルコフ連鎖モンテカルロ法の中で最もシンプルな手法であるメトロポリス法について見ていく．ある配位$C_b$と$C_a$を比較したときに$C_a$のエネルギーの方が低い場合，つまり$E(C_b)>E(C_a)$を考える．この場合は$C_a$の方がエネルギー的に安定なので，$C_b$から$C_a$への遷移確率を
+\begin{equation}
+  P(C_a|C_b) = 1
+\end{equation}
+ととることにする．このとき，詳細釣り合いの式は
+\begin{equation}
+  P(C_b) = P(C_b|C_a)P(C_a)
+\end{equation}
+となる．これより，$C_a$から$C_b$の遷移確率が決まってしまい，
+\begin{equation}
+  P(C_b|C_a) = \frac{P(C_b)}{P(C_a)} = \frac{e^{-\beta E(C_b)}/Z}{e^{-\beta E(C_a)}/Z} = e^{ -\beta\Big( E(C_b)-E(C_a) \Big)}
+\end{equation}
+となる．\par
+したがって，$C_a$から$C_b$の遷移確率として，
+\begin{equation}
+  P(C_b|C_a)=
+  \begin{cases}
+    \exp\Big[ -\beta\Big( E(C_b)-E(C_a) \Big) \Big], & E(C_b)>E(C_a) \\
+    1,                                               & E(C_b)<E(C_a)
+  \end{cases}
+\end{equation}
+ととると詳細釣り合いの式を満たすことになる．このアルゴリズムをメトロポリス法と呼ぶ．\par
+メトロポリス法をイジングモデルに適用する場合の手順をまとめる．
+\begin{enumerate}
+  \item 適当な配位$C_1$を用意する．
+  \item 以下を$i = 1,2,3,\cdots,N_{\text{conf}}$まで繰り返す，
+        \begin{enumerate}
+          \item $C_i$のあるサイトのスピンを反転し，その配位を$C'_i$とおく．
+          \item エネルギー$E(C_i)$と$E(C'_i)$を計算する．
+          \item $E(C_i)>E(C'_i)$なら$C_{i+1}=C'_i$とし，$i \rightarrow i+1$とおいて(a)へ戻る．(受理(accept))
+          \item 乱数$r \in [0,1]$を用意し，$\Delta E = E(C'_i)-E(C_i)$に対して，$r < \exp(-\beta\Delta E)$ならば$C_{i+1}=C'_i$とし，$i \rightarrow i+1$とおいて(a)へ戻る．(受理(accept))
+          \item $C_{i+1}=C_i$とし，$i \rightarrow i+1$とおいて(a)へ戻る．(棄却(reject))
+        \end{enumerate}
+\end{enumerate}
+ここで，「棄却」は提案された配位を使わずに前の配位をそのまま次の配位として受け入れるという意味であることに注意してほしい．\par
+上記の手順に従うと，配位の列
+\begin{equation}
+  \mathcal{C} = \{ C_1,C_2,C_3,\cdots,C_{N_{\text{conf}}} \}
+\end{equation}
+が得られる．しかし最初の方の配位は適当に選んだ初期配位の影響を受けているため，期待値の計算に含めてはいけない．例えば$N_{\text{disc}}(1<N_{\text{disc}}<<N_{\text{conf}})$番目(discはdiscardの略)まで除いたとすると，
+\begin{equation}
+  \mathbb{E}[f(C)] \approx \frac{1}{N_{\text{disc}} - N_{\text{conf}}}\sum_{k=N_{\text{disc}}}^{N_{\text{conf}}}f(C_k)
+\end{equation}
+のように期待値を計算できる．$N_{\text{disc}}$は配位ごとの物理量を観察して初期配位の影響がなくなったあたりの番号をとればよい．
+
+\subsection*{イジングモデルの熱浴法}
+次に熱浴法(heatbath algorothm)をみる．このアルゴリズムは機械学習の文脈ではギブスサンプリング(Gibbs sampling)と呼ばれる．熱浴法は，ある1自由度を着目し，その周りの自由度を熱浴とみなして更新するマルコフ連鎖モンテカルロ法の一種である．\par
+熱浴法は条件付き確率
+\begin{equation}
+  P(A|B) = \frac{P(A,B)}{P(B)}
+\end{equation}
+から導出される．イジングモデルのあるサイト$j$に着目し，そのサイト以外を熱浴をみなしたときにサイト$j$がどうなるかを条件付き確率に従って決めるのである．\par
+例えば，
+\begin{align}
+   & A = A_j \text{：サイト$j$にあるスピンの状態} \\
+   & B \text{：サイト$j$以外のスピンの状態}
+\end{align}
+とする．ある配位を与える確率を
+\begin{equation}
+  P(A_j,B) = \frac{1}{Z}\exp{\left[ -\beta J s_j \sum_{k\in \mathcal{N}(j)} s_k + (s_j\text{を含まない項}) \right]}
+\end{equation}
+と書く．ここで，サイト$j$の最近接サイトをまとめて$\mathcal{N}(j)$と書いた．\par
+$A_j$の状態(サイト$j$のスピン状態)を足し上げて周辺化した確率$P(B)$は，$P(B)=\sum_{A_j}P(A_j,B)$を使うと$A_j$は$s_j=\{+1,-1\}$をとるので，全て足し上げて
+\begin{equation}
+  P(B) = \frac{1}{Z}\sum_{s_j=\pm 1}\exp{\left[ -\beta J s_j \sum_{k\in \mathcal{N}(j)} s_k + (s_j\text{を含まない項}) \right]}
+\end{equation}
+とわかる．ここから条件付き確率$P(A_j|B)$は，定義$P(A_j|B)=P(A_j,B)/P(B)$から
+\begin{align}
+  P(A_j|B)
+   & = \frac{1}{Z}\exp{\left[ -\beta J s_j \sum_{k\in \mathcal{N}(j)} s_k + (s_j\text{を含まない項}) \right]} \Bigg/                                                                                                      \notag            \\
+   & \hspace{0.5cm} \frac{1}{Z}\sum_{s_j=\pm 1}\exp{\left[ -\beta J s_j \sum_{k\in \mathcal{N}(j)} s_k + (s_j\text{を含まない項}) \right]}                                                                                           \notag \\
+   & = \frac{\exp{\left[ -\beta J s_j \sum_{k\in \mathcal{N}(j)} s_k\right]}}{\sum_{s_j=\pm 1}\exp{\left[ -\beta J s_j \sum_{k\in \mathcal{N}(j)} s_k \right]}}                                             \notag                    \\
+   & = \frac{\exp{\left[ -\beta J s_j \sum_{k\in \mathcal{N}(j)} s_k\right]}}{\exp{\left[ -\beta J \sum_{k\in \mathcal{N}(j)} s_k \right]} + \exp{\left[ +\beta J \sum_{k\in \mathcal{N}(j)} s_k \right]}}
+\end{align}
+となる．最後の式を見ると，サイト$j$の周りのスピン配位だけでサイト$j$の状態が決まるということがわかる．また，ここでもメトロポリス法のときと同様に分配関数$Z$の計算が必要なくなっている．\par
+例えば，サイト$j$のスピンが$+1$である場合は
+\begin{equation}
+  P(s_j = +1)
+  = \frac{\exp{\left[\beta J \sum_{k \in \mathcal{N}(j)}s_k\right]}}{\exp{\left[\beta J \sum_{k \in \mathcal{N}(j)}s_k\right]} + \exp{\left[-\beta J \sum_{k \in \mathcal{N}(j)}s_k\right]}}
+\end{equation}
+となる．なのでこの確率に従って次の配位におけるサイト$j$のスピンを決定(更新)すればよい．この確率の評価はメトロポリス法の乱数を使っている個所と同じように乱数を用いて評価すればよい．また$P(s_j = -1|B) = 1 - P(s_j =+1|B)$である．そして空間全部のスピンについて繰り返せば次の配位が得られる．
+
+
+
+
+
+
+
+
+\end{document}

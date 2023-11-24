@@ -1,11 +1,19 @@
-# Ising
-Isingモデルの関する資料
-
-# master-s_thesis_seminer
-修論ゼミで使った発表資料
-
-# Paper_storage
+# Document
+資料置き場
+## Commonent
+研究で必要な基礎知識についてまとめた資料
+## Masters_Thesis
+修論
+## Seminer
+ゼミの発表資料
+## Paper_storage
 気になった論文を保管場所
 
-# tomiya_lecture
-"CNNと相転移検出"のレクチャーノート
+# Paper_Carrasquilla_Meilo
+CarrasquillaとMeiloの論文
+
+# Paper_Tomiya_Kikuchi_Kashiwa
+富谷さんと菊池さんと柏さんの論文
+
+# Paper_Tomiya_Tanaka
+富谷さんと田中さんの論文
