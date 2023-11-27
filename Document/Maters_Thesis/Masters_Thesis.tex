@@ -7,6 +7,7 @@
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{wrapfig}
 \usepackage{graphicx}
+\usepackage{tikz}
 \usepackage{bm}
 \usepackage{url}
 \usepackage{underscore}
@@ -21,7 +22,7 @@
 \usepackage{xcolor}
 \usepackage[ipaex]{pxchfon}
 \usepackage[version=4]{mhchem} % 化学式をかくため
-
+\usetikzlibrary{positioning, intersections, calc, arrows.meta,math} %tikzのlibrary
 
 \begin{document}
 
@@ -111,35 +112,132 @@
 ここで，イジング模型の逆温度$\beta$での平衡状態を調べる．この場合，カノニカル分布で平衡状態を記述するのが自然である．\par
 分配関数は
 \begin{equation}
-  Z_L(\beta, H) = \sum_{(\sigma_1,\dots,\sigma_N)} \exp{[-\beta E_{(\sigma_1,\dots,\sigma_N)}]}
+  Z_L(\beta, H) = \sum_{(\sigma_1,\dots,\sigma_N)} \exp{[-\beta E_{(\sigma_1,\dots,\sigma_N)}]} \label{イジング分配関数}
 \end{equation}
-である．和は$2_N$通りのすべてのスピン配位についてとる．後の便利のために格子サイズを$L$とした．物理量$\hat{g}$の期待値は
+である．和は$2^N$通りのすべてのスピン配位についてとる．後の便利のために格子サイズを$L$とした．物理量$\hat{g}$の期待値は
 \begin{equation}
   \langle \hat{g} \rangle_{\beta, H}^{\text{can}}
   := \frac{1}{Z_L(\beta, H)}  \sum_{(\sigma_1,\dots,\sigma_N)} g_{(\sigma_1,\dots,\sigma_N)} \exp{[-\beta E_{(\sigma_1,\dots,\sigma_N)}]}
 \end{equation}
 である．ここで，$g_{(\sigma_1,\dots,\sigma_N)}$は状態$(\sigma_1,\dots,\sigma_N)$における$\hat{g}$の値である．スピン一つあたりの自由エネルギーを
 \begin{equation}
-  f_L(\beta, H) := -\frac{1}{\beta H} \ln{Z_L(\beta, H)}
+  f_L(\beta, H) := -\frac{1}{\beta H} \ln{Z_L(\beta, H)} \label{自由エネルギー}
 \end{equation}
 ，物理量としての磁化を
 \begin{equation}
   \hat{m} := \frac{1}{N} \sum_{j=1}^{N} \mu_0 \hat{\sigma}_j
 \end{equation}
 と定義する．このとき，磁化の期待値は
-\begin{equation}
-  m_L(\beta, H) := \langle \hat{m} \rangle_{\beta, H}^{\text{can}} = -\frac{\partial}{\partial H} f_L(\beta, H)
-\end{equation}
+\begin{align}
+   & m_L(\beta, H) := \langle \hat{m} \rangle_{\beta, H}^{\text{can}} \notag                                                                                       \\
+   & = \frac{1}{Z_L(\beta, H)} \sum_{(\sigma_1, \dots, \sigma_N)} m_{(\sigma_1,\dots,\sigma_N)} \exp{[-\beta E_{(\sigma_1,\dots,\sigma_N)}]} \notag                \\
+   & = \frac{1}{Z_L(\beta, H)} \sum_{(\sigma_1, \dots, \sigma_N)} \frac{1}{N} \sum_{j=1}^N \mu_0 \sigma_j \exp{[-\beta E_{(\sigma_1,\dots,\sigma_N)}]} \notag      \\
+   & = \frac{1}{Z_L(\beta, H)} \sum_{(\sigma_1, \dots, \sigma_N)} \frac{1}{\beta N} \frac{\partial}{\partial H} \exp{[-\beta E_{(\sigma_1,\dots,\sigma_N)}]}\notag \\
+   & = \frac{1}{\beta N} \frac{1}{Z_L(\beta, H)} \frac{\partial}{\partial H} Z_L(\beta, H)  \notag                                                                 \\
+   & = \frac{1}{\beta N}\frac{\partial}{\partial H} \ln{Z_L (\beta, H)} \notag                                                                                     \\
+   & = -\frac{\partial}{\partial H} f_L(\beta, H) \label{磁化と自由エネルギーの関係式}
+\end{align}
 と書ける．これ以降，期待値$\langle \hat{m} \rangle_{\beta, H}^{\text{can}}$のことも，単に磁化と呼ぶ．磁化とは「系がどの程度磁石になっているか」の目安である．それに対して，「系がどの程度磁石になりやすいか」の目安になるのがゼロ磁場での磁化率は
 \begin{equation}
-  \xi_L(\beta) := \left.\frac{\partial m_L(\beta, H)}{\partial H}\right|_{H=0}
+  \chi_L(\beta) := \left.\frac{\partial m_L(\beta, H)}{\partial H}\right|_{H=0}
 \end{equation}
 である．
 \subsection{絶対零度}
 まずは，絶対零度での系のふるまいを見ていく．つまり，基底状態を求めるということである．\par
-相互作用項$-J\sigma_i \sigma_j$を最小化するには，式(\ref{相互作用項場合分け})にあるように$\sigma_i = \sigma_j$とすればよい．
+式(\ref{相互作用項場合分け})から，一つのスピンに着目すれば，$\sigma_i = \sigma_j$のときエネルギーが最小になる．したがって，相互作用項$-J\sigma_i \sigma_j$を最小化する状態は，すべてのスピンが等しくなっているときであることがわかる．つまり，すべての$i$について$\sigma_i = +1$もしくは$\sigma_i = -1$のいずれかの状態である．\par
+一方，外部磁場とスピンの相互作用項$-\mu_0 H \sigma_i$を最小化する状態は，磁場の符号によって変わってくる．式(\ref{イジングエネルギー})の第二項を最小化するのは，$H>0$なら，すべての$i$について$\sigma_i=1$とした状態であり，$H<0$なら，すべての$i$について$\sigma_i=-1$とした状態である．$H=0$のときは，値は常に$0$になるため，すべてのスピン配位で最小値を与える．\par
+以上をまとめると，$H \geq 0$のときはすべての$i$について，$\sigma_i=+1$としたものが基底状態となり，$H \leq 0$のときはすべての$i$について，$\sigma_i=-1$としたものが基底状態となる(図\ref{絶対零度スピン配位})．\par
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[height=5cm]{image/絶対零度スピン配位.png}
+    \caption{絶対零度でのイジングモデルの基底状態．$H>0$のときはスピンはすべて上向きになり，$H<0$のときはスピンがすべて下向きになる$H=0$のときは，これら両方の状態が基底状態になる． \label{絶対零度スピン配位}}
+  \end{center}
+\end{figure}
+これに基づいて，絶対零度での磁化のふるまいを見てみる．すべてのスピンが$+1$の状態での磁化は$\mu_0$，すべてのスピンが$-1$の状態での磁化は$-\mu_0$なので，
+\begin{equation}
+  m_L(\infty, H) =
+  \begin{cases}
+    -\mu_0, & H \leq 0 \text{のとき} \\
+    \mu_0,  & H \geq 0 \text{のとき}
+  \end{cases}
+\end{equation}
+とわかる．(図\ref{絶対零度磁化})
+\begin{figure}[h]
+  \begin{center}
+    \begin{tikzpicture}[scale=1]
+      \draw[->,>=stealth,semithick](-3,0)--(3,0)node[below]{$H$};%x軸
+      \draw[->,>=stealth,semithick](0,-3)--(0,3)node[above]{$m(\infty, H)$};%y軸
+      \draw[draw=magenta,thick,domain=0:3] plot(\x,2);
+      \draw[draw=magenta,thick,domain=-3:0] plot(\x,-2);
+      \draw (0,0) node[below left]{0}; %原点
+      \draw (0,2) node[left]{$\mu_0$};
+      \draw (0,-2) node[right]{$-\mu_0$};
+    \end{tikzpicture}
+    \caption{絶対零度でのイジングモデルの磁化のふるまい．$H=0$を境に，$-\mu_0$から$\mu_0$に不連続に変化する．\label{絶対零度磁化}}
+  \end{center}
+\end{figure}
+つまり，磁化は$H$の関数として不連続である．もちろん，これはエネルギーを最小化する状態が入れ替わったことの単純な反映にすぎない．これに対して，同じような不連続性が$0$でない温度で見られるかどうかは，本質的に難しい問題である．
 
-\section{自由エネルギー}
+\subsection{無限体積の極限}
+有限温度での相転移や臨界現象を調べるには，自由エネルギー$f_L(\beta, H)$や磁化$m_L(\beta, H)$といった物理量を計算し，それらの振る舞いを見ればよいと思える．しかし，このとき格子サイズ$L$はどの程度の大きさにとればよいのか？．実は格子サイズが有限である場合，相転移を起こさないことが示せる．ここではこれを証明する．\par
+まず，格子サイズ$L$が任意の有限な整数とする．このとき，式(\ref{自由エネルギー})の形から明らかなように自由エネルギー$f_L(\beta, H)$は$\beta, H$について何度も微分できる．よって，磁化$m_L(\sigma, H)$は$H$の連続関数であることがわかる．そして，系の対称性を考える．あるスピン配位$(\sigma_1,\dots,\sigma_N)$が与えられたとき，これらすべてのスピンを反転させた新しいスピン配位を$(\tilde{\sigma}_1,\dots,\tilde{\sigma}_N)$で定義する．つまり，すべての$i$に対して$\tilde{\sigma}_i := -\sigma_i$とするということである．このとき，エネルギーの表式(\ref{イジングエネルギー})をスピン反転した変数を使って書き直せば，$\tilde{\sigma}_i \tilde{\sigma}_j = \sigma_i \sigma_j$が成り立つことを使って
+\begin{equation}
+  E_{(\sigma_1,\dots,\sigma_N)} = -J \sum_{\langle i,j \rangle} \tilde{\sigma}_i \tilde{\sigma}_j -\mu_0 (-H) \sum_{i=1}^{N} \tilde{\sigma}_i
+\end{equation}
+のように，磁場を反転させた，元のエネルギーと同じ表式が得られる．つまり，すべてのスピンを反転させることは，磁場を反転させることと等価ということである．すべての$(\sigma_1,\dots,\sigma_N)$について足し上げることは，すべての$(\tilde{\sigma}_1,\dots,\tilde{\sigma}_N)$について足し上げることと同じなので，分配関数の表式(\ref{イジング分配関数})を，
+\begin{align}
+  Z_L(\beta, H)
+   & = \sum_{(\tilde{\sigma}_1,\dots,\tilde{\sigma}_N)} \exp{[-\beta E_{(\sigma_1,\dots,\sigma_N)}]} \notag                                                                                                        \\
+   & = \sum_{(\tilde{\sigma}_1,\dots,\tilde{\sigma}_N)} \exp{\left[ \beta\left( J \sum_{\langle i,j \rangle} \tilde{\sigma}_i \tilde{\sigma}_j +\mu_0 (-H) \sum_{i=1}^{N} \tilde{\sigma}_i \right) \right]} \notag \\
+   & = \sum_{(\sigma_1,\dots,\sigma_N)} \exp{\left[ \beta\left( J \sum_{\langle i,j \rangle} \sigma_i \sigma_j +\mu_0 (-H) \sum_{i=1}^{N} \sigma_i \right) \right]} \notag                                         \\
+   & = Z_L(\beta, -H)
+\end{align}
+となり，磁場を反転させても分配関数は変わらないという結果になる．自由エネルギーの定義である式(\ref{自由エネルギー})より
+\begin{equation}
+  f_L(\beta, H) = f_L(\beta, -H)
+\end{equation}
+という自由エネルギーの対称性が示せる．さらに磁化は式(\ref{磁化と自由エネルギーの関係式})より，$f_L(\beta, H)$の$H$微分で書けるので，
+\begin{equation}
+  m_L(\beta, H) = -m_L(\beta, -H) \label{磁化反対称性}
+\end{equation}
+のように書け，磁化は磁場の反転について反対称になることがわかる．\par
+$f_L(\beta, H)$が微分可能なので，$m_L(\beta, H)$はすべての$\beta, H$において定義されている．よって式(\ref{磁化反対称性})で$H=0$とすれば，$m_L(\beta, 0) = -m_L(\beta, 0)$となり，$m_L(\beta, 0)=0$が得られる．したがって，有限系では$0\leq \beta < \infty$の任意の逆温度$\beta$で磁化がゼロになり，相転移を示さないことがわかる．
+
+\section{一次元イジング模型}
+ここでは，最も簡単な一次元のイジングモデルを考える．一次元系では，$L=N$であり，エネルギーは
+\begin{equation}
+  E_{(\sigma_1,\dots,\sigma_L)} = -J \sum_{i=1}^L \sigma_i \sigma_j - \mu_0 H \sum_{i=1}^L \sigma_i \label{一次元イジングエネルギー}
+\end{equation}
+と書ける．そして，周期的境界条件$\sigma_{L+1} = \sigma_{1}$を課す．\par
+逆温度$\beta$，外部磁場$H$の平衡状態を考える．計算すべき分配関数は
+\begin{equation}
+  Z_L(\beta, H) = \sum_{(\sigma_i,\dots,\sigma_L)} \exp{\left[ \beta\left( J \sum_{i=1}^L \sigma_i \sigma_j + \mu_0 H \sum_{i=1}^L \sigma_i \right) \right]} \label{一次元イジング分配関数}
+\end{equation}
+となる．この分配関数の計算は行列を利用することで比較的簡単に行うことができる．まず，式(\ref{一次元イジングエネルギー})を
+\begin{equation}
+  E_{(\sigma_1,\dots,\sigma_L)} = -\sum_{i=1}^L \left\{ J\sigma_i \sigma_{i+1} + \mu_0 H \frac{\sigma_i + \sigma_{i+1}}{2} \right\}
+\end{equation}
+と書き換える．これより，分配関数(\ref{一次元イジング分配関数})は，
+\begin{align}
+  z_L(\beta,H)
+   & = \sum_{(\sigma_i,\dots,\sigma_L)} \prod_{i=1}^L \exp{\left[ \beta \left( J \sigma_i \sigma_{i+1} + \mu_0 H \frac{\sigma_i + \sigma_{i+1}}{2}\right) \right]} \notag \\
+   & = \sum_{\sigma_1=\pm{1}}\sum_{\sigma_2=\pm{1}}\cdots\sum_{\sigma_L=\pm{1}} \prod_{i=1}^L (M)_{\sigma_i, \sigma_{i+1}}
+\end{align}
+と書ける．ここで，$\sigma,\sigma'=\pm{1}$について，
+\begin{equation}
+  (\mathrm{M})_{\sigma,\sigma'} := \exp{\left[ \beta \left( J\sigma\sigma' + \mu_0 H \frac{\sigma+\sigma'}{2} \right) \right]}
+\end{equation}
+という量を定義した．\par
+$\sigma$と$\sigma'$はそれぞれ$\pm{1}$の二つの値をとるため，四つの量が定義されている．これらを成分とした行列
+\begin{equation}
+  \mathrm{M} =
+  \begin{pmatrix}
+    e^{\beta(J+\mu_0 H)} & e^{-\beta J}         \\
+    e^{-\beta J}         & e^{\beta(J-\mu_0 H)}
+  \end{pmatrix}
+\end{equation}
+を転送行列という．\par
+
 
 \chapter{機械学習と深層学習}
 ここでは，イジングモデルに対して機械学習，深層学習による手法を応用する上で必要となる機械学習と深層学習の基礎知識について説明する．
