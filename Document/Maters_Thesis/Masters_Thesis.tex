@@ -22,6 +22,9 @@
 \usepackage{xcolor}
 \usepackage[ipaex]{pxchfon}
 \usepackage[version=4]{mhchem} % 化学式をかくため
+\usepackage[hang,small,bf]{caption}
+\usepackage[subrefformat=parens]{subcaption}
+\captionsetup{compatibility=false}
 \usetikzlibrary{positioning, intersections, calc, arrows.meta,math} %tikzのlibrary
 
 \begin{document}
@@ -166,7 +169,7 @@
   \begin{center}
     \begin{tikzpicture}[scale=1]
       \draw[->,>=stealth,semithick](-3,0)--(3,0)node[below]{$H$};%x軸
-      \draw[->,>=stealth,semithick](0,-3)--(0,3)node[above]{$m(\infty, H)$};%y軸
+      \draw[->,>=stealth,semithick](0,-2.5)--(0,2.5)node[above]{$m(\infty, H)$};%y軸
       \draw[draw=magenta,thick,domain=0:3] plot(\x,2);
       \draw[draw=magenta,thick,domain=-3:0] plot(\x,-2);
       \draw (0,0) node[below left]{0}; %原点
@@ -228,7 +231,7 @@ $f_L(\beta, H)$が微分可能なので，$m_L(\beta, H)$はすべての$\beta, 
   (\mathrm{M})_{\sigma,\sigma'} := \exp{\left[ \beta \left( J\sigma\sigma' + \mu_0 H \frac{\sigma+\sigma'}{2} \right) \right]}
 \end{equation}
 という量を定義した．\par
-$\sigma$と$\sigma'$はそれぞれ$\pm{1}$の二つの値をとるため，四つの量が定義されている．これらを成分とした行列
+$\sigma$と$\sigma'$はそれぞれ$\pm{1}$の二つの値をとるため，四つの量が定義されている．これらを成分とした実対称行列
 \begin{equation}
   \mathrm{M} =
   \begin{pmatrix}
@@ -236,7 +239,34 @@ $\sigma$と$\sigma'$はそれぞれ$\pm{1}$の二つの値をとるため，四�
     e^{-\beta J}         & e^{\beta(J-\mu_0 H)}
   \end{pmatrix}
 \end{equation}
-を転送行列という．\par
+を
+
+\begin{figure}[htbp]
+  \begin{minipage}[b]{0.45\linewidth}
+    \centering
+    \begin{tikzpicture}[scale=1,samples=300]
+      \draw[->,>=stealth,semithick](-3,0)--(3,0)node[below]{$\psi$};%x軸
+      \draw[->,>=stealth,semithick](0,-2)--(0,2)node[left]{$y$};%y軸
+      \draw[draw=gray,semithick,domain=-2:2] plot(\x,\x);
+      \draw[draw=magenta,thick,domain=-3:3] plot(\x,{1.5*tanh(0.5*\x)});
+    \end{tikzpicture}
+    \subcaption{$\beta zJ \leq 1$}
+  \end{minipage}
+  \begin{minipage}[b]{0.45\linewidth}
+    \centering
+    \begin{tikzpicture}[scale=1,samples=300]
+      \draw[->,>=stealth,semithick](-3,0)--(3,0)node[below]{$\psi$};%x軸
+      \draw[->,>=stealth,semithick](0,-2)--(0,2)node[left]{$y$};%y軸
+      \draw[draw=gray,semithick,domain=-2:2] plot(\x,\x);
+      \draw[draw=magenta,thick,domain=-3:3] plot(\x,{1.5*tanh(2*\x)});
+    \end{tikzpicture}
+    \subcaption{$\beta zJ > 1$}
+  \end{minipage}
+  \caption{$h=0$での自己整合方程式$\psi = \tanh{(\beta ZJ\psi)}$}
+\end{figure}
+
+
+
 
 
 \chapter{機械学習と深層学習}
