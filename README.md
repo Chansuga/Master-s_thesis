@@ -1,7 +1,7 @@
 # Document
 資料置き場
-## Commonent
-研究で必要な基礎知識についてまとめた資料
+## Component
+基礎知識についてまとめた資料
 ## Masters_Thesis
 修論
 ## Seminer
