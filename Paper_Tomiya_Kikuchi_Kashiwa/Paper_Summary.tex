@@ -266,14 +266,14 @@ No-dimensional output spaceにおいて．この手法により，出力次元$N
   P(\{ \sigma_i \} ; K )
   = \frac{e^{-KE(\{ \sigma_i \})}}{Z(K)}
   = e^{-KE(\{ \sigma_i \}) - \ln{Z(K)}}
-  = e^{-KE(\{ \sigma_i \}) - F(K)}
+  = e^{-KE(\{ \sigma_i \}) + F(K)}
 \end{equation}
 と表せされる．したがって，${\sigma_i}$ が温度$K$で生成される尤度は,
 次の「確率」で表される．
 \begin{equation}
   y_K^{\text{theory}} = \frac{P(\{\sigma_i ; K \})}{\sum_{K'}P(\{\sigma_i ; K' \})} = \text{softmax}(-KE + F)
 \end{equation}
-ここで，$F = \ln{Z(K)}$は自由エネルギーで$K'$はすべてのターゲット温度での足し上げを意味する．このとき，私たちが得る推定温度は
+ここで，$F = -\ln{Z(K)}$は自由エネルギーで$K'$はすべてのターゲット温度での足し上げを意味する．このとき，私たちが得る推定温度は
 \begin{equation}
   K^{\text{output}} =
   \underset{K} {\operatorname{argmax}} \left[\text{softmax}(-KE + F)\right]

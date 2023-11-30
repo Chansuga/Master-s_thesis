@@ -1,14 +1,12 @@
 # Fdb version 4
-["dvipdf"] 1699695027 "out/Ising_renormalization_group.dvi" "out/Ising_renormalization_group.pdf" "out/Ising_renormalization_group" 1699695028 0
-  "out/Ising_renormalization_group.dvi" 1699695027 11628 1414db9991df3731930c64f0a99bef6e "latex"
+["dvipdf"] 1701175079 "out/solvable_model.dvi" "out/solvable_model.pdf" "out/solvable_model" 1701175081 0
+  "out/solvable_model.dvi" 1701175079 10856 b67125312b7e9cac81a8d774776c083c "latex"
   (generated)
-  "out/Ising_renormalization_group.pdf"
+  "out/solvable_model.pdf"
   (rewritten before read)
-["latex"] 1699695026 "c:/Users/sugay/Desktop/Master-s_thesis/Components/Ising_renormalization_group.tex" "out/Ising_renormalization_group.dvi" "Ising_renormalization_group" 1699695028 0
-  "Ising_renormalization_group.tex" 1699695026 7238 7811aed27764b20707584cef8039d9cf ""
-  "c:/Users/sugay/Desktop/Master-s_thesis/Components/Ising_renormalization_group.tex" 1699695026 7238 7811aed27764b20707584cef8039d9cf ""
+["latex"] 1701175077 "c:/Users/sugay/Desktop/Master-s_thesis/Document/Components/solvable_model.tex" "out/solvable_model.dvi" "solvable_model" 1701175081 0
+  "c:/Users/sugay/Desktop/Master-s_thesis/Document/Components/solvable_model.tex" 1701175076 6606 a16b54b1c36521d92b1e88d94873ffaf ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1669975561 3524 cb3e574dea2d1052e39280babc910dc8 ""
-  "c:/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1669975194 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1669977894 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1669977894 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1669977894 856 7404843a5f798859944d7973a47821d5 ""
@@ -70,9 +68,10 @@
   "c:/texlive/2022/texmf-dist/web2c/texmf.cnf" 1669973289 40171 cdab547de63d26590bebb3baff566530 ""
   "c:/texlive/2022/texmf-var/web2c/eptex/platex.fmt" 1669979661 3072963 b88c1ce93abd41d2fe340868b85cfaa5 ""
   "c:/texlive/2022/texmf.cnf" 1669979482 713 e69b156964470283e0530f5060668171 ""
-  "out/Ising_renormalization_group.aux" 1699695027 247 b831e481bccd54500ce12fb657f54484 "latex"
+  "out/solvable_model.aux" 1701175079 415 0fc436d35966ce24bf6827a60fefb5e6 "latex"
+  "solvable_model.tex" 1701175076 6606 a16b54b1c36521d92b1e88d94873ffaf ""
   (generated)
-  "out/Ising_renormalization_group.aux"
-  "out/Ising_renormalization_group.dvi"
-  "out/Ising_renormalization_group.log"
+  "out/solvable_model.aux"
+  "out/solvable_model.dvi"
+  "out/solvable_model.log"
   (rewritten before read)

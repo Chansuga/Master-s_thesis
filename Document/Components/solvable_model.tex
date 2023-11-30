@@ -1,0 +1,95 @@
+\documentclass[a4paper,11pt]{jsarticle}
+
+
+% 数式
+\usepackage{amsmath,amsfonts}
+\usepackage{bm}
+% 画像
+\usepackage[dvipdfmx]{graphicx}
+
+
+\begin{document}
+
+\title{可解模型}
+\author{須賀勇貴}
+\date{最終更新日：\today}
+\maketitle
+西森先生の本の6章をまとめた
+
+\section{2次元イジング模型の高温展開}
+次に，二次元イジング模型を扱う．二次元イジング模型はOnsagerによって厳密解が求められた．Onsagerは，転送行列を対角化することで磁場のないときの自由エネルギーを求め，比熱がある温度で発散することを示した．いくつかの解法が知られているが，ここでは，高温展開を用いた解法を扱う．高温展開は，温度が高いとして自由エネルギーを$\beta J$のべきで展開する方法である．十分高温であれば，その展開を数項で打ち切って自由エネルギーの近似値とする．計算が比較的簡単なため，汎用的な手法として用いられているが，近似の正当性に十分注意する必要がある．この近似のみを用いて相転移を調べることはできない．有限項の和から特異性が生じることはないからである．本節では，無限和を計算することにより厳密解を求め，特異性が生じることを示す．\par
+なお，
+\subsection{高温展開}
+$H=0$の場合に高温展開を行う．二次元イジング模型の分配関数は，
+\begin{equation}
+  Z = \mathrm{Tr}\prod_{\langle i,j \rangle} \exp{(\beta J S_i S_j)}
+\end{equation}
+と書ける．積はスピンの最近接対についてとる．スピン変数が$S_i^2=1$であることを用いると，
+\begin{align}
+  Z
+   & = \mathrm{Tr} \prod{\langle i,j \rangle} (\cosh{\beta J} + S_i S_j \tanh{\beta J}) \notag               \\
+   & = (\cosh{\beta J})^{N_B}\mathrm{Tr} \prod{\langle i,j \rangle}(1 + S_i S_j \tanh{\beta J}) \label{6.26}
+\end{align}
+と書ける．$N_B=Nz/2=2N$は最近接対の数を表す．$v=\tanh{\beta J}$は有限温度で$1$より小さい非負の量なので，(\ref{6.26})を$v$について次のように展開してみる．
+\begin{equation}
+  \prod{\langle i,j \rangle}(1 + v S_i S_j)
+  = 1 + v\sum_{\langle i,j \rangle} S_i S_j + v^2 \sum_{\langle i,j \rangle, \langle k,l \rangle} S_i S_j S_k S_l + \cdots
+\end{equation}
+この展開の項数は膨大であるが，スピン和をとると$\mathrm{Tr}S_i=0$のため多くが$0$になる．有限に残るのは各変数$S_i$が偶数べきに練っている項である．各項は図(\ref{})のようにスピンを結ぶボンドをつなぐ線が閉じている(ループになっている)ときのみである．すべてのスピン変数についての和は$2^N$個あるので$\mathrm{Tr}1=2^N$であり，$l$本のボンドで作ることができるループの数を$g(l)$とすると，
+\begin{equation}
+  Z = 2^N(\cosh{\beta J})^{N_B} \sum_{l=0}^{\infty} g(l) v_l
+\end{equation}
+と書ける．ただし，$g(0)=1, \ l>N_B$のとき，$g(l)=0$とする．この$g(l)$を求めて和をとることができれば解が得られる．$v$は高温では小さいから，展開を低次の項で打ち切って近似値を得ることができる．これが高温展開の方法である．\par
+一次元と二次元のイジング模型では，この無限和を厳密に計算することができる．一次元の場合，周期的境界条件をとるとループを作ることができるのは$l=N$のときの一つだけである．よって
+\begin{equation}
+  Z = 2^N (\cosh{\beta J})^N (1 + v^N) \rightarrow (2 \cosh{\beta J})^N
+\end{equation}
+となり，前節の結果と一致する．二次元の場合，ループの計算は非常に複雑である．
+
+\subsection{二次元イジング模型の解}
+$N \rightarrow \infty$のときのエネルギー密度は
+\begin{equation}
+  -\beta f = \ln{[2 \cosh{\beta J}]} + \frac{1}{2} \int_{0}^{2\pi} \frac{d^2 \bm{k}}{(2 \pi)^2} \ln{\left[ 1 - \frac{t}{2}(\cos{k_1} + \cos{k_2}) \right]}
+\end{equation}
+と書ける．ここでパラメータ$t$を次のように導入した．
+\begin{equation}
+  t = \frac{2 \sinh{2\beta J}}{\cosh^2(2\beta J)}
+\end{equation}
+このパラメータのとりうる値は$0 \leq t \leq 1$である．$T=0$で$0$であり，温度を上げると最大$1$になるまで単調増加し，その点を境に単調減少に転じる．以下で見るように，$t=1$となる温度が相転移店を表す．\par
+特異性が生じていることを見るために比熱を計算する．まず内部エネルギーを計算すると，
+\begin{equation}
+  \epsilon = -\frac{J}{\tanh{(2\beta J)}}\left\{1 - [1 - 2\tanh^2{2 \beta J}] \frac{2}{\pi} K(t) \right\}
+\end{equation}
+となる．$K(t)$は第一種完全楕円積分を表しており，次のようにして出てくる．
+\begin{equation}
+  \int_0^{2\pi} \frac{d^2 \bm{k}}{(2\pi)^2}\frac{1}{1 - \frac{t}{2}(\cos{k_1}+\cos{k_2})}
+  =\frac{2}{\pi} \int_0^{\pi/2} \frac{\theta}{\sqrt{1 - t^2 \sin^2{\theta}}} = \frac{2}{\pi} K(t)
+\end{equation}
+内部エネルギーを微分することで比熱が得られる．次の楕円積分の微分を用いる．
+\begin{equation}
+  \frac{d K(t)}{dt} = \frac{E(t)}{t(1-t^2)} - \frac{K(t)}{t}
+\end{equation}
+\begin{equation}
+  E(t) = \int_0^{2\pi} d\theta \sqrt{1 - t^2 \sin^2{\theta}}
+\end{equation}
+$E(t)$は第二種完全楕円積分である．こうして，比熱は次のように求められる．
+\begin{equation}
+  c = \frac{4}{\pi}\left[ \frac{\beta J}{\tanh{(2\beta J)}} \right]^2
+  \left( K(t) - E(t) - \frac{1}{\cosh^2{(2\beta J)}} \left\{ \frac{\pi}{2} - [1 - 2\tanh^2{(2\beta J)}] K(t) \right\} \right)
+\end{equation}
+比熱の特異性は楕円積分の特異性を見ることでわかる．$0 \leq t \leq 1$の範囲において，$K(t)$は$t=1$で発散し，$E(t)$で有限値をとる．よって比熱は$t=1$で発散する．これが二次元イジング模型の相転移である．このときの温度は
+\begin{equation}
+  \sinh(2\beta J) = 1
+\end{equation}
+より，
+\begin{equation}
+  \beta_c J = \frac{1}{2} \ln(1+\sqrt{2}) \approx 0.4407, \ \ \ \frac{T_c}{J} \approx 2.269
+\end{equation}
+と求められる．なお，内部エネルギーは(\ref{})も楕円積分を含むが，発散は生じない．それは楕円積分にかかる係数$1-2\tanh^2(2\beta J)$が$T=T_c$で$0$となり，発散を打ち消すからである．
+
+
+
+
+
+
+\end{document}
