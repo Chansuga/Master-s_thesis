@@ -373,7 +373,64 @@ $h=0$の場合に高温展開を行う．二次元イジング模型の分配関
 \end{equation}
 ここで，$\langle i, j \rangle \neq \langle k, l \rangle$である．
 
+\begin{equation}
+  v\sigma_i \sigma_j \longleftrightarrow
+  \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
+    \draw[very thick](0,0)--(0,-1);
+    \fill(0,0)circle(0.1)node[left]{$i$};
+    \fill(0,-1)circle(0.1)node[left]{$j$};
+  \end{tikzpicture}
+\end{equation}
 
+\begin{equation}
+  v^2\sigma_i \sigma_j \sigma_k \sigma_l \longleftrightarrow
+  \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
+    \draw[very thick](0,0)--(0,-1);
+    \draw[very thick](1,0)--(1,-1);
+    \fill(0,0)circle(0.1)node[left]{$i$};
+    \fill(0,-1)circle(0.1)node[left]{$j$};
+    \fill(1,0)circle(0.1)node[right]{$k$};
+    \fill(1,-1)circle(0.1)node[right]{$l$};
+  \end{tikzpicture}, \ \ \
+  v^2\sigma_i \sigma_j^2 \sigma_k \longleftrightarrow
+  \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
+    \draw[very thick](0,0)--(0,-1);
+    \draw[very thick](0,0)--(1,0);
+    \fill(0,0)circle(0.1)node[left]{$i$};
+    \fill(0,-1)circle(0.1)node[left]{$j$};
+    \fill(1,0)circle(0.1)node[right]{$k$};
+  \end{tikzpicture}
+\end{equation}
+
+\begin{equation}
+  Z = (\cosh{\beta J})^{N_B}\mathrm{Tr}
+  \left[
+    1 + \sum
+    \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
+      \draw[very thick](0,0)--(0,-1);
+      \fill(0,0)circle(0.1);
+      \fill(0,-1)circle(0.1);
+    \end{tikzpicture}
+    + \sum
+    \left(
+    \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
+      \draw[very thick](0,0)--(0,-1);
+      \draw[very thick](1,0)--(1,-1);
+      \fill(0,0)circle(0.1);
+      \fill(0,-1)circle(0.1);
+      \fill(1,0)circle(0.1);
+      \fill(1,-1)circle(0.1);
+    \end{tikzpicture} +
+    \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
+      \draw[very thick](0,0)--(0,-1);
+      \draw[very thick](0,0)--(1,0);
+      \fill(0,0)circle(0.1);
+      \fill(0,-1)circle(0.1);
+      \fill(1,0)circle(0.1);
+    \end{tikzpicture}
+    \right) + \cdots
+    \right]
+\end{equation}
 
 
 \chapter{機械学習と深層学習}
