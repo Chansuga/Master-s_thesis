@@ -802,6 +802,7 @@ INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 OUTPUT out/Masters_Thesis.toc
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
@@ -819,7 +820,6 @@ INPUT c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
 INPUT ./image/絶対零度スピン配位.png
 INPUT ./image/絶対零度スピン配位.png
 INPUT image/絶対零度スピン配位.png

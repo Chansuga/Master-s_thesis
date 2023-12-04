@@ -185,14 +185,14 @@
 有限温度での相転移や臨界現象を調べるには，自由エネルギー$f_L(\beta, H)$や磁化$m_L(\beta, H)$といった物理量を計算し，それらの振る舞いを見ればよいと思える．しかし，このとき格子サイズ$L$はどの程度の大きさにとればよいのか？．実は格子サイズが有限である場合，相転移を起こさないことが示せる．ここではこれを証明する．\par
 まず，格子サイズ$L$が任意の有限な整数とする．このとき，式(\ref{自由エネルギー})の形から明らかなように自由エネルギー$f_L(\beta, H)$は$\beta, H$について何度も微分できる．よって，磁化$m_L(\sigma, H)$は$H$の連続関数であることがわかる．そして，系の対称性を考える．あるスピン配位$(\sigma_1,\dots,\sigma_N)$が与えられたとき，これらすべてのスピンを反転させた新しいスピン配位を$(\tilde{\sigma}_1,\dots,\tilde{\sigma}_N)$で定義する．つまり，すべての$i$に対して$\tilde{\sigma}_i := -\sigma_i$とするということである．このとき，エネルギーの表式(\ref{イジングエネルギー})をスピン反転した変数を使って書き直せば，$\tilde{\sigma}_i \tilde{\sigma}_j = \sigma_i \sigma_j$が成り立つことを使って
 \begin{equation}
-  E_{(\sigma_1,\dots,\sigma_N)} = -J \sum_{\langle i,j \rangle} \tilde{\sigma}_i \tilde{\sigma}_j -\mu_0 (-H) \sum_{i=1}^{N} \tilde{\sigma}_i
+  E_{(\sigma_1,\dots,\sigma_N)} = -J \sum_{\langle i,j \rangle} \tilde{\sigma}_i \tilde{\sigma}_j -H \sum_{i=1}^{N} \tilde{\sigma}_i
 \end{equation}
 のように，磁場を反転させた，元のエネルギーと同じ表式が得られる．つまり，すべてのスピンを反転させることは，磁場を反転させることと等価ということである．すべての$(\sigma_1,\dots,\sigma_N)$について足し上げることは，すべての$(\tilde{\sigma}_1,\dots,\tilde{\sigma}_N)$について足し上げることと同じなので，分配関数の表式(\ref{イジング分配関数})を，
 \begin{align}
   Z_L(\beta, H)
-   & = \sum_{(\tilde{\sigma}_1,\dots,\tilde{\sigma}_N)} \exp{[-\beta E_{(\sigma_1,\dots,\sigma_N)}]} \notag                                                                                                        \\
-   & = \sum_{(\tilde{\sigma}_1,\dots,\tilde{\sigma}_N)} \exp{\left[ \beta\left( J \sum_{\langle i,j \rangle} \tilde{\sigma}_i \tilde{\sigma}_j +\mu_0 (-H) \sum_{i=1}^{N} \tilde{\sigma}_i \right) \right]} \notag \\
-   & = \sum_{(\sigma_1,\dots,\sigma_N)} \exp{\left[ \beta\left( J \sum_{\langle i,j \rangle} \sigma_i \sigma_j +\mu_0 (-H) \sum_{i=1}^{N} \sigma_i \right) \right]} \notag                                         \\
+   & = \sum_{(\tilde{\sigma}_1,\dots,\tilde{\sigma}_N)} \exp{[-\beta E_{(\sigma_1,\dots,\sigma_N)}]} \notag                                                                                               \\
+   & = \sum_{(\tilde{\sigma}_1,\dots,\tilde{\sigma}_N)} \exp{\left[ \beta\left( J \sum_{\langle i,j \rangle} \tilde{\sigma}_i \tilde{\sigma}_j -H \sum_{i=1}^{N} \tilde{\sigma}_i \right) \right]} \notag \\
+   & = \sum_{(\sigma_1,\dots,\sigma_N)} \exp{\left[ \beta\left( J \sum_{\langle i,j \rangle} \sigma_i \sigma_j -H \sum_{i=1}^{N} \sigma_i \right) \right]} \notag                                         \\
    & = Z_L(\beta, -H)
 \end{align}
 となり，磁場を反転させても分配関数は変わらないという結果になる．自由エネルギーの定義である式(\ref{自由エネルギー})より
@@ -207,36 +207,67 @@
 $f_L(\beta, H)$が微分可能なので，$m_L(\beta, H)$はすべての$\beta, H$において定義されている．よって式(\ref{磁化反対称性})で$H=0$とすれば，$m_L(\beta, 0) = -m_L(\beta, 0)$となり，$m_L(\beta, 0)=0$が得られる．したがって，有限系では$0\leq \beta < \infty$の任意の逆温度$\beta$で磁化がゼロになり，相転移を示さないことがわかる．
 
 \section{一次元イジング模型}
-ここでは，最も簡単な一次元のイジングモデルを考える．一次元系では，$L=N$であり，エネルギーは
+一次元のイジング模型を考える．ハミルトニアンは
 \begin{equation}
-  E_{(\sigma_1,\dots,\sigma_L)} = -J \sum_{i=1}^L \sigma_i \sigma_j - \mu_0 H \sum_{i=1}^L \sigma_i \label{一次元イジングエネルギー}
+  H = -J \sum_{i=1}^N \sigma_i \sigma_j - h \sum_{i=1}^L \sigma_i \label{一次元イジングエネルギー}
 \end{equation}
-と書ける．そして，周期的境界条件$\sigma_{L+1} = \sigma_{1}$を課す．\par
-逆温度$\beta$，外部磁場$H$の平衡状態を考える．計算すべき分配関数は
+なり，周期的境界条件$\sigma_{N+1} = \sigma_{1}$を課す．分配関数は
 \begin{equation}
-  Z_L(\beta, H) = \sum_{(\sigma_i,\dots,\sigma_L)} \exp{\left[ \beta\left( J \sum_{i=1}^L \sigma_i \sigma_j + \mu_0 H \sum_{i=1}^L \sigma_i \right) \right]} \label{一次元イジング分配関数}
+  Z = \sum_{(\sigma_i,\dots,\sigma_N)} \exp{\left[ \beta J \sum_{i=1}^L \sigma_i \sigma_j + \beta h \sum_{i=1}^N \sigma_i \right]} \label{一次元イジング分配関数}
 \end{equation}
-となる．この分配関数の計算は行列を利用することで比較的簡単に行うことができる．まず，式(\ref{一次元イジングエネルギー})を
+となる．ここで，直交行列$\mathrm{T}$を定義する．
 \begin{equation}
-  E_{(\sigma_1,\dots,\sigma_L)} = -\sum_{i=1}^L \left\{ J\sigma_i \sigma_{i+1} + \mu_0 H \frac{\sigma_i + \sigma_{i+1}}{2} \right\}
+  (\mathrm{T})_{\sigma_i, \sigma_{i+1}} = \exp{\left[ \beta J \sigma_i \sigma_{i+1} + \frac{\beta h}{2}(\sigma_i + \sigma_{i+1}) \right]},
+\end{equation}
+\begin{equation}
+  \mathrm{T} = \begin{pmatrix}
+    (\mathrm{T})_{1,1}  & (\mathrm{T})_{1,-1}  \\
+    (\mathrm{T})_{-1,1} & (\mathrm{T})_{-1,-1}
+  \end{pmatrix}=
+  \begin{pmatrix}
+    e^{\beta J + \beta h} & e^{-\beta J}          \\
+    e^{-\beta J}          & e^{\beta J - \beta h}
+  \end{pmatrix}
+\end{equation}
+このようにすることで，分配関数(\ref{一次元イジング分配関数})を
+\begin{align}
+  Z
+   & = \sum_{(\sigma_i,\dots,\sigma_L)} (\mathrm{T})_{\sigma_1, \sigma_2} (\mathrm{T})_{\sigma_2, \sigma_3} \cdots (\mathrm{T})_{\sigma_N, \sigma_1} \notag \\
+   & = \sum_{(\sigma_i,\dots,\sigma_L)} \prod_{i = 1}^N (\mathrm{T})_{\sigma_i, \sigma_{i+1}}
+\end{align}
+を書くことができる．スピン変数はそれぞれ$\pm{1}$の値をとるため，$(\sigma_i, \sigma_{i+1})$の組のとりうる値は4通りであっる．これを次のように行列で表す．
+\begin{equation}
+  \hat{T} = \begin{pmatrix}
+    T(1,1) & T(1,1) \\
+    T(2,1) & T(2,2)
+  \end{pmatrix}=
+  \begin{pmatrix}
+    e^{\beta J + \beta h} & e^{-\beta J}          \\
+    e^{-\beta J}          & e^{\beta J - \beta h}
+  \end{pmatrix}
+\end{equation}
+
+式(\ref{一次元イジングエネルギー})を
+\begin{equation}
+  E_{(\sigma_1,\dots,\sigma_L)} = -\sum_{i=1}^L \left\{ J\sigma_i \sigma_{i+1} + h \frac{\sigma_i + \sigma_{i+1}}{2} \right\}
 \end{equation}
 と書き換える．これより，分配関数(\ref{一次元イジング分配関数})は，
 \begin{align}
   z_L(\beta,H)
-   & = \sum_{(\sigma_i,\dots,\sigma_L)} \prod_{i=1}^L \exp{\left[ \beta \left( J \sigma_i \sigma_{i+1} + \mu_0 H \frac{\sigma_i + \sigma_{i+1}}{2}\right) \right]} \notag \\
+   & = \sum_{(\sigma_i,\dots,\sigma_L)} \prod_{i=1}^L \exp{\left[ \beta \left( J \sigma_i \sigma_{i+1} + H \frac{\sigma_i + \sigma_{i+1}}{2}\right) \right]} \notag \\
    & = \sum_{\sigma_1=\pm{1}}\sum_{\sigma_2=\pm{1}}\cdots\sum_{\sigma_L=\pm{1}} \prod_{i=1}^L (M)_{\sigma_i, \sigma_{i+1}}
 \end{align}
 と書ける．ここで，$\sigma,\sigma'=\pm{1}$について，
 \begin{equation}
-  (\mathrm{M})_{\sigma,\sigma'} := \exp{\left[ \beta \left( J\sigma\sigma' + \mu_0 H \frac{\sigma+\sigma'}{2} \right) \right]}
+  (\mathrm{M})_{\sigma,\sigma'} := \exp{\left[ \beta \left( J\sigma\sigma' + H \frac{\sigma+\sigma'}{2} \right) \right]}
 \end{equation}
 という量を定義した．\par
 $\sigma$と$\sigma'$はそれぞれ$\pm{1}$の二つの値をとるため，四つの量が定義されている．これらを成分とした実対称行列
 \begin{equation}
   \mathrm{M} =
   \begin{pmatrix}
-    e^{\beta(J+\mu_0 H)} & e^{-\beta J}         \\
-    e^{-\beta J}         & e^{\beta(J-\mu_0 H)}
+    e^{\beta(J + H)} & e^{-\beta J}     \\
+    e^{-\beta J}     & e^{\beta(J - H)}
   \end{pmatrix}
 \end{equation}
 を
@@ -265,6 +296,33 @@ $\sigma$と$\sigma'$はそれぞれ$\pm{1}$の二つの値をとるため，四�
   \caption{$h=0$での自己整合方程式$\psi = \tanh{(\beta ZJ\psi)}$}
 \end{figure}
 
+\section{二次元イジング模型}
+\section{二次元イジング模型の高温展開}
+二次元イジング模型の厳密解はOnsagerによって求められた．Onsagerは，転送行列を対角化することで磁場のないときの自由エネルギーを求め，比熱をある温度で発散することを示した．いくつかの解法があるが，ここでは，高温展開を用いた解法を説明する．高温展開は，温度が高いとして自由エネルギーを$\beta J$のべきで展開する方法である．十分高温であれば，その展開を数項で打ち切って自由エネルギーの近似値とする．計算が比較的簡単なため，汎用的な手法として用いられているが，近似の正当性に十分に注意する必要がある．この近似のみを用いて相転移を調べることはできない．有限項の和から特異性が生じることはないからである．本節では，無限和を計算することにより厳密解を求め，特異性が生じることを示す．\par
+\subsection{高温展開}
+$h=0$の場合に高温展開を行う．二次元イジング模型の分配関数は
+\begin{equation}
+  Z = \mathrm{Tr}\prod_{\langle i, j \rangle} \exp{(\beta J \sigma_i \sigma_j)}
+\end{equation}
+と書ける．積はスピンの最近近接についてとる．スピン変数に関する恒等式
+\begin{align}
+  e^{x\sigma_i \sigma_j}
+   & = \frac{e^x + e^{-x}}{2} + \sigma_i \sigma_j \frac{e^x + e^{-x}}{2} \notag \\
+   & = \cosh{x} + \sigma_i \sigma_j \sinh{x}
+\end{align}
+を用いれば，
+\begin{align}
+  Z
+   & = \mathrm{Tr}\prod_{\langle i, j \rangle}(\cosh{\beta J} + \sigma_i \sigma_j \sinh{\beta J}) \notag                \\
+   & = (\cosh{\beta J})^{N_B}\mathrm{Tr}\prod_{\langle i, j \rangle}(1 + \sigma_i \sigma_j \tanh{\beta J}) \label{分配関数}
+\end{align}
+と書ける．$N_B$は最近接の数を表す．$v = \tanh{\beta J}$は有限温度で$1$より有限温度で$1$より小さい非負の量なので，(\ref{分配関数})を$v$について次のように展開する．
+\begin{equation}
+  \prod_{\langle i, j \rangle}(1 + v \sigma_i \sigma_j)
+  = 1 + v \sum_{\langle i, j \rangle} \sigma_i \sigma_j
+  + v^2 \sum_{\langle i, j \rangle, \langle k, l \rangle} \sigma_i \sigma_j \sigma_k \sigma_l + \cdots
+\end{equation}
+ここで，$\langle i, j \rangle \neq \langle k, l \rangle$である．
 
 
 

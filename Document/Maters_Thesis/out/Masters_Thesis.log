@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  27 NOV 2023 21:53
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  2 DEC 2023 15:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -669,14 +669,22 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) [1
+
+
+])
 \tf@toc=\write5
 \openout5 = `Masters_Thesis.toc'.
 
-[1
-
-
-]
+LaTeX Font Info:    Font shape `JT1/mc/m/sl' in size <10> not available
+(Font)              Font shape `JT1/mc/m/n' tried instead on input line 82.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 82.
+LaTeX Font Info:    Font shape `JY1/mc/m/sl' in size <10> not available
+(Font)              Font shape `JY1/mc/m/n' tried instead on input line 82.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 82.
+[2]
 第1章
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 19.9311pt on input line 82.
@@ -698,7 +706,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 87.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 87.
-[2
+[3
 
 ]
 第2章
@@ -714,18 +722,9 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 90.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 4.805pt on input line 90.
-[3
+[4
 
-]
-LaTeX Font Info:    Font shape `JT1/mc/m/sl' in size <10> not available
-(Font)              Font shape `JT1/mc/m/n' tried instead on input line 119.
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 119.
-LaTeX Font Info:    Font shape `JY1/mc/m/sl' in size <10> not available
-(Font)              Font shape `JY1/mc/m/n' tried instead on input line 119.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 119.
-[4] [5]
+] [5] [6]
 File: image/絶対零度スピン配位.png Graphic file (type bmp)
 <image/絶対零度スピン配位.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
@@ -747,52 +746,52 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6] [7] [8]
+[7] [8] [9]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <8> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 253.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 284.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 253.
+(Font)              scaled to size 7.68799pt on input line 284.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 253.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 284.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 253.
-[9]
+(Font)              scaled to size 7.68799pt on input line 284.
+[10] [11]
 第3章
 File: image/モデル概略図.png Graphic file (type bmp)
 <image/モデル概略図.png>
-[10
+[12
 
 ]
 File: image/機械学習概要図.png Graphic file (type bmp)
 <image/機械学習概要図.png>
-[11] [12] [13]
+[13] [14] [15]
 第4章
-[14
+[16
 
 ]
 第5章
-[15
+[17
 
 ]
 第6章
-[16
+[18
 
-] (out/Masters_Thesis.bbl [17
+] (out/Masters_Thesis.bbl [19
 
-]) [18
+]) [20
 
 ]
 付録A
-[19
+[21
 
 ] (out/Masters_Thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 19519 strings out of 475427
- 394446 string characters out of 5791344
- 758997 words of memory out of 5000000
- 40871 multiletter control sequences out of 15000+600000
+ 19520 strings out of 475427
+ 394456 string characters out of 5791344
+ 762349 words of memory out of 5000000
+ 40872 multiletter control sequences out of 15000+600000
  493356 words of font info for 137 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 84i,12n,89p,777b,846s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,89p,803b,846s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Masters_Thesis.dvi (21 pages, 98264 bytes).
+Output written on out/Masters_Thesis.dvi (23 pages, 104176 bytes).
