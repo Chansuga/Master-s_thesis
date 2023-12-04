@@ -185,7 +185,7 @@
 有限温度での相転移や臨界現象を調べるには，自由エネルギー$f_L(\beta, H)$や磁化$m_L(\beta, H)$といった物理量を計算し，それらの振る舞いを見ればよいと思える．しかし，このとき格子サイズ$L$はどの程度の大きさにとればよいのか？．実は格子サイズが有限である場合，相転移を起こさないことが示せる．ここではこれを証明する．\par
 まず，格子サイズ$L$が任意の有限な整数とする．このとき，式(\ref{自由エネルギー})の形から明らかなように自由エネルギー$f_L(\beta, H)$は$\beta, H$について何度も微分できる．よって，磁化$m_L(\sigma, H)$は$H$の連続関数であることがわかる．そして，系の対称性を考える．あるスピン配位$(\sigma_1,\dots,\sigma_N)$が与えられたとき，これらすべてのスピンを反転させた新しいスピン配位を$(\tilde{\sigma}_1,\dots,\tilde{\sigma}_N)$で定義する．つまり，すべての$i$に対して$\tilde{\sigma}_i := -\sigma_i$とするということである．このとき，エネルギーの表式(\ref{イジングエネルギー})をスピン反転した変数を使って書き直せば，$\tilde{\sigma}_i \tilde{\sigma}_j = \sigma_i \sigma_j$が成り立つことを使って
 \begin{equation}
-  E_{(\sigma_1,\dots,\sigma_N)} = -J \sum_{\langle i,j \rangle} \tilde{\sigma}_i \tilde{\sigma}_j -H \sum_{i=1}^{N} \tilde{\sigma}_i
+  E_{(\sigma_1,\dots,\sigma_N)} = -J \sum_{\langle i,j \rangle} \tilde{\sigma}_i \tilde{\sigma}_j -h \sum_{i=1}^{N} \tilde{\sigma}_i
 \end{equation}
 のように，磁場を反転させた，元のエネルギーと同じ表式が得られる．つまり，すべてのスピンを反転させることは，磁場を反転させることと等価ということである．すべての$(\sigma_1,\dots,\sigma_N)$について足し上げることは，すべての$(\tilde{\sigma}_1,\dots,\tilde{\sigma}_N)$について足し上げることと同じなので，分配関数の表式(\ref{イジング分配関数})を，
 \begin{align}
@@ -209,13 +209,13 @@ $f_L(\beta, H)$が微分可能なので，$m_L(\beta, H)$はすべての$\beta, 
 \section{一次元イジング模型}
 一次元のイジング模型を考える．ハミルトニアンは
 \begin{equation}
-  H = -J \sum_{i=1}^N \sigma_i \sigma_j - h \sum_{i=1}^L \sigma_i \label{一次元イジングエネルギー}
+  H = -J \sum_{i=1}^N \sigma_i \sigma_j - h \sum_{i=1}^N \sigma_i \label{一次元イジングエネルギー}
 \end{equation}
 なり，周期的境界条件$\sigma_{N+1} = \sigma_{1}$を課す．分配関数は
 \begin{equation}
-  Z = \sum_{(\sigma_i,\dots,\sigma_N)} \exp{\left[ \beta J \sum_{i=1}^L \sigma_i \sigma_j + \beta h \sum_{i=1}^N \sigma_i \right]} \label{一次元イジング分配関数}
+  Z = \sum_{(\sigma_i,\dots,\sigma_N)} \exp{\left[ \beta J \sum_{i=1}^N \sigma_i \sigma_j + \beta h \sum_{i=1}^N \sigma_i \right]} \label{一次元イジング分配関数}
 \end{equation}
-となる．ここで，直交行列$\mathrm{T}$を定義する．
+となる．ここで，次のような対称行列$\mathrm{T}$を定義する．
 \begin{equation}
   (\mathrm{T})_{\sigma_i, \sigma_{i+1}} = \exp{\left[ \beta J \sigma_i \sigma_{i+1} + \frac{\beta h}{2}(\sigma_i + \sigma_{i+1}) \right]},
 \end{equation}
@@ -232,45 +232,94 @@ $f_L(\beta, H)$が微分可能なので，$m_L(\beta, H)$はすべての$\beta, 
 このようにすることで，分配関数(\ref{一次元イジング分配関数})を
 \begin{align}
   Z
-   & = \sum_{(\sigma_i,\dots,\sigma_L)} (\mathrm{T})_{\sigma_1, \sigma_2} (\mathrm{T})_{\sigma_2, \sigma_3} \cdots (\mathrm{T})_{\sigma_N, \sigma_1} \notag \\
-   & = \sum_{(\sigma_i,\dots,\sigma_L)} \prod_{i = 1}^N (\mathrm{T})_{\sigma_i, \sigma_{i+1}}
+   & = \sum_{(\sigma_i,\dots,\sigma_N)} (\mathrm{T})_{\sigma_1, \sigma_2} (\mathrm{T})_{\sigma_2, \sigma_3} \cdots (\mathrm{T})_{\sigma_N, \sigma_1} \notag \\
+   & = \sum_{(\sigma_i,\dots,\sigma_N)} \prod_{i = 1}^N (\mathrm{T})_{\sigma_i, \sigma_{i+1}}
 \end{align}
-を書くことができる．スピン変数はそれぞれ$\pm{1}$の値をとるため，$(\sigma_i, \sigma_{i+1})$の組のとりうる値は4通りであっる．これを次のように行列で表す．
+を書くことができる．行列の積の定義より，
 \begin{equation}
-  \hat{T} = \begin{pmatrix}
-    T(1,1) & T(1,1) \\
-    T(2,1) & T(2,2)
-  \end{pmatrix}=
-  \begin{pmatrix}
-    e^{\beta J + \beta h} & e^{-\beta J}          \\
-    e^{-\beta J}          & e^{\beta J - \beta h}
-  \end{pmatrix}
+  \sum_{\sigma_k = \pm{1}}(\mathrm{T}^n)_{\sigma_i, \sigma_k}(\mathrm{T}^m)_{\sigma_k, \sigma_j}
+  = (\mathrm{T}^{n+m})_{\sigma_i, \sigma_j}
 \end{equation}
-
-式(\ref{一次元イジングエネルギー})を
-\begin{equation}
-  E_{(\sigma_1,\dots,\sigma_L)} = -\sum_{i=1}^L \left\{ J\sigma_i \sigma_{i+1} + h \frac{\sigma_i + \sigma_{i+1}}{2} \right\}
-\end{equation}
-と書き換える．これより，分配関数(\ref{一次元イジング分配関数})は，
+であることを用いると，分配関数は
 \begin{align}
-  z_L(\beta,H)
-   & = \sum_{(\sigma_i,\dots,\sigma_L)} \prod_{i=1}^L \exp{\left[ \beta \left( J \sigma_i \sigma_{i+1} + H \frac{\sigma_i + \sigma_{i+1}}{2}\right) \right]} \notag \\
-   & = \sum_{\sigma_1=\pm{1}}\sum_{\sigma_2=\pm{1}}\cdots\sum_{\sigma_L=\pm{1}} \prod_{i=1}^L (M)_{\sigma_i, \sigma_{i+1}}
+  Z
+   & = \sum_{\sigma_1 = \pm{1}}\sum_{\sigma_2 = \pm{1}} \cdots \sum_{\sigma_N = \pm{1}} (\mathrm{T})_{\sigma_1, \sigma_2} (\mathrm{T})_{\sigma_2, \sigma_3} \cdots (\mathrm{T})_{\sigma_N, \sigma_1} \notag   \\
+   & = \sum_{\sigma_1 = \pm{1}}\sum_{\sigma_3 = \pm{1}} \cdots \sum_{\sigma_N = \pm{1}} (\mathrm{T}^2)_{\sigma_1, \sigma_3} (\mathrm{T})_{\sigma_3, \sigma_4} \cdots (\mathrm{T})_{\sigma_N, \sigma_1} \notag \\
+   & = \sum_{\sigma_1 = \pm{1}}\sum_{\sigma_4 = \pm{1}} \cdots \sum_{\sigma_N = \pm{1}} (\mathrm{T}^3)_{\sigma_1, \sigma_4} (\mathrm{T})_{\sigma_4, \sigma_5} \cdots (\mathrm{T})_{\sigma_N, \sigma_1} \notag \\
+   & = \cdots \notag                                                                                                                                                                                          \\
+   & = \sum_{\sigma_1 = \pm{1}} (\mathrm{T}^N)_{\sigma_1, \sigma_1} \notag                                                                                                                                    \\
+   & = \mathrm{Tr}\left[ \mathrm{T}^N \right] \label{1Dイジング分配関数トレース}
 \end{align}
-と書ける．ここで，$\sigma,\sigma'=\pm{1}$について，
+と表すことができる．対称行列$\mathrm{T}$は，スピン間の相互作用を次々と伝える役割を果たしているため，転送行列(transfer matrix)と呼ばれる．\par
+分配関数(\ref{1Dイジング分配関数トレース})は，初等的な線形代数の知識で計算することができる．実対称であるため，転送行列$\mathrm{T}$は適当な直行行列$\mathrm{O}$を用いて，
 \begin{equation}
-  (\mathrm{M})_{\sigma,\sigma'} := \exp{\left[ \beta \left( J\sigma\sigma' + H \frac{\sigma+\sigma'}{2} \right) \right]}
-\end{equation}
-という量を定義した．\par
-$\sigma$と$\sigma'$はそれぞれ$\pm{1}$の二つの値をとるため，四つの量が定義されている．これらを成分とした実対称行列
-\begin{equation}
-  \mathrm{M} =
+  \mathrm{O}^{-1} \mathrm{T} \mathrm{O} =
   \begin{pmatrix}
-    e^{\beta(J + H)} & e^{-\beta J}     \\
-    e^{-\beta J}     & e^{\beta(J - H)}
+    \lambda_{+} & 0           \\
+    0           & \lambda_{-}
   \end{pmatrix}
 \end{equation}
-を
+と対角化できる．転送行列$\mathrm{T}$の固有値は
+\begin{equation}
+  \lambda_{\pm{1}}
+  = e^{\beta} \left\{ \cosh{\beta h} \pm{\sqrt{(\sinh{\beta h})^2 + e^{-4\beta J}}} \right\}
+\end{equation}
+より，(\ref{1Dイジング分配関数トレース})はさらに
+\begin{align}
+  Z
+   & = \mathrm{Tr} \left[ \left\{ \mathrm{O}
+  \begin{pmatrix}
+      \lambda_{+} & 0           \\
+      0           & \lambda_{-}
+    \end{pmatrix} \mathrm{O}^{-1} \right\}^N \right] \notag   \\
+   & = \mathrm{Tr} \left[
+  \begin{pmatrix}
+      \lambda_{+} & 0           \\
+      0           & \lambda_{-}
+    \end{pmatrix}^N \right] \notag                            \\
+   & = (\lambda_{+})^N + (\lambda_{-})^N \label{1Dイジング分配関数}
+\end{align}
+と表すことができる．\par
+(\ref{1Dイジング分配関数})より，スピン一つあたりの自由エネルギー$f$は
+\begin{align}
+  f
+   & = -\frac{1}{\beta L} \ln{Z} \notag                                                                                              \\
+   & = -\frac{1}{\beta L} \ln{(\lambda_{+})^N + (\lambda_{-})^N} \notag                                                              \\
+   & = -\frac{1}{\beta} \ln{\lambda_{+}} - \frac{1}{\beta L} \left\{ 1 + \left( \frac{\lambda_{-}}{\lambda_{+}} \right)^{L} \right\}
+\end{align}
+と表すことができる．ここで，$\lambda{-}/\lambda_{+}<1$に注意して，$L \nearrow \infty$とすると，
+\begin{align}
+  f
+   & = \lim_{L \nearrow \infty} f = -\frac{1}{\beta} \ln{\lambda_{+}} \notag                                                   \\
+   & = -\frac{1}{\beta} \ln{e^{\beta} \left\{ \cosh{\beta h} \pm{\sqrt{(\sinh{\beta h})^2 + e^{-4\beta J}}}\right\}} \notag    \\
+   & = -1 -\frac{1}{\beta} \ln{\left\{\cosh{\beta h} \pm{\sqrt{(\sinh{\beta h})^2 + e^{-4\beta J}}}\right\}} \label{1D自由エネルギー}
+\end{align}
+となり，無限体積極限での自由エネルギーを厳密に計算することができる．\par
+自由エネルギーの表式(\ref{1D自由エネルギー})から，磁化を計算すると，
+\begin{align}
+  m(\beta, h)
+   & = -\frac{\partial}{\partial h} f(\beta, h) \notag                                                                                                                                                   \\
+   & = \frac{\partial}{\partial (\beta h)} \ln{\left\{ \cosh{\beta h} + \sqrt{(\sinh{\beta h})^2 + e^{-4\beta J}} \right\}} \notag                                                                       \\
+   & = \frac{1}{\cosh{\beta h} + \sqrt{(\sinh{\beta h})^2 + e^{-4\beta J}}} \frac{\partial}{\partial (\beta h)}\left\{ \cosh{\beta h} + \sqrt{(\sinh{\beta h})^2 + e^{-4\beta J}} \right\} \notag        \\
+   & =  \frac{1}{\cosh{\beta h} + \sqrt{(\sinh{\beta h})^2 + e^{-4\beta J}}} \left\{ \sinh{\beta h} + \frac{2\sinh{\beta h} \cosh{\beta h}}{2 \sqrt{(\sinh{\beta h})^2 + e^{-4\beta J}}} \right\} \notag \\
+   & = \frac{\sinh{\beta h}}{\sqrt{(\sinh{\beta h})^2 + e^{-4\beta J}}}
+\end{align}
+となる．これは明らかに$\beta$と$h$について連続な関数である．特に$h=0$のとすれば$m(\beta, 0) = 0$となる．つまり，有限温度の一次元イジング模型での自発磁化は$0$であり，この系は相転移を示さないことがわかる．\par
+さらに，この結果を使って磁化率$\chi(\beta)$を求めると，
+\begin{align}
+  \chi(\beta)
+   & = \left.\frac{\partial}{\partial h} m(\beta, h)\right|_{h=0} \notag                                                                                                                                       \\
+   & = \left.\frac{\partial}{\partial h} \frac{\sinh{\beta h}}{\sqrt{(\sinh{\beta h})^2 + e^{-4\beta J}}}\right|_{h=0} \notag                                                                                  \\
+   & = \beta \left.\frac{\partial}{\partial (\beta h)} \frac{\sinh{\beta h}}{\sqrt{(\sinh{\beta h})^2 + e^{-4\beta J}}}\right|_{h=0} \notag                                                                    \\
+   & = \beta \left.\left[ \frac{\cosh{\beta h}}{\sqrt{(\sinh{\beta h})^2 + e^{-4\beta J}}} +\frac{(\sinh{\beta h})^2 \cosh{\beta h}}{\{(\sinh{\beta h})^2 + e^{-4\beta J}\}^{3/2}} \right]\right|_{h=0} \notag \\
+   & = \beta e^{2\beta J}
+\end{align}
+となる．$\beta J \ll 1$が成り立つ高温領域では，$\chi(\beta) \simeq \beta$となり，相互作用のない場合の振る舞い(キュリーの法則)が成り立つ．一方，低温に向かい$\beta \rightarrow \infty$となると，相互作用のない場合の磁化率との比$e^{2\beta J}$は限りなく大きくなる．これは，低温で無限個のスピンが互いにそろい合おうとすることの現れとみることができる．\par
+
+\section{イジング模型の平均場近似}
+
+
+
 
 \begin{figure}[htbp]
   \begin{minipage}[b]{0.45\linewidth}

@@ -10,27 +10,28 @@
 \contentsline {subsection}{\numberline {2.2.3}絶対零度}{7}{}%
 \contentsline {subsection}{\numberline {2.2.4}無限体積の極限}{8}{}%
 \contentsline {section}{\numberline {2.3}一次元イジング模型}{9}{}%
-\contentsline {section}{\numberline {2.4}二次元イジング模型}{10}{}%
-\contentsline {section}{\numberline {2.5}二次元イジング模型の高温展開}{10}{}%
-\contentsline {subsection}{\numberline {2.5.1}高温展開}{11}{}%
-\contentsline {chapter}{\numberline {第3章}機械学習と深層学習}{12}{}%
-\contentsline {section}{\numberline {3.1}機械学習の定義}{12}{}%
-\contentsline {subsection}{\numberline {3.1.1}代表的なタスク}{13}{}%
-\contentsline {section}{\numberline {3.2}統計入門}{14}{}%
-\contentsline {subsection}{\numberline {3.2.1}標本と推定}{14}{}%
-\contentsline {subsection}{\numberline {3.2.2}教師あり学習と教師なし学習，強化学習}{15}{}%
-\contentsline {section}{\numberline {3.3}深層学習とは}{15}{}%
-\contentsline {subsection}{\numberline {3.3.1}ニューラルネットワーク}{15}{}%
-\contentsline {subsection}{\numberline {3.3.2}畳み込みニューラルネットワーク}{15}{}%
-\contentsline {section}{\numberline {3.4}ボルツマンマシンの基礎}{15}{}%
-\contentsline {chapter}{\numberline {第4章}イジング模型の相転移検出に関する研究}{16}{}%
-\contentsline {section}{\numberline {4.1}相の分類器による相転移検出}{16}{}%
-\contentsline {section}{\numberline {4.2}温度測定器による相転移検出}{16}{}%
-\contentsline {section}{\numberline {4.3}相転移検出がなぜ可能なのか？}{16}{}%
-\contentsline {chapter}{\numberline {第5章}機械学習と繰り込み群}{17}{}%
-\contentsline {section}{\numberline {5.1}繰り込み群と特徴抽出}{17}{}%
-\contentsline {chapter}{\numberline {第6章}まとめ}{18}{}%
-\contentsline {chapter}{謝辞}{19}{}%
-\contentsline {chapter}{参考文献}{20}{}%
-\contentsline {chapter}{\numberline {付録A}aaa}{21}{}%
-\contentsline {section}{\numberline {A.1}bbb}{21}{}%
+\contentsline {section}{\numberline {2.4}イジング模型の平均場近似}{12}{}%
+\contentsline {section}{\numberline {2.5}二次元イジング模型}{12}{}%
+\contentsline {section}{\numberline {2.6}二次元イジング模型の高温展開}{12}{}%
+\contentsline {subsection}{\numberline {2.6.1}高温展開}{13}{}%
+\contentsline {chapter}{\numberline {第3章}機械学習と深層学習}{14}{}%
+\contentsline {section}{\numberline {3.1}機械学習の定義}{14}{}%
+\contentsline {subsection}{\numberline {3.1.1}代表的なタスク}{15}{}%
+\contentsline {section}{\numberline {3.2}統計入門}{16}{}%
+\contentsline {subsection}{\numberline {3.2.1}標本と推定}{16}{}%
+\contentsline {subsection}{\numberline {3.2.2}教師あり学習と教師なし学習，強化学習}{17}{}%
+\contentsline {section}{\numberline {3.3}深層学習とは}{17}{}%
+\contentsline {subsection}{\numberline {3.3.1}ニューラルネットワーク}{17}{}%
+\contentsline {subsection}{\numberline {3.3.2}畳み込みニューラルネットワーク}{17}{}%
+\contentsline {section}{\numberline {3.4}ボルツマンマシンの基礎}{17}{}%
+\contentsline {chapter}{\numberline {第4章}イジング模型の相転移検出に関する研究}{18}{}%
+\contentsline {section}{\numberline {4.1}相の分類器による相転移検出}{18}{}%
+\contentsline {section}{\numberline {4.2}温度測定器による相転移検出}{18}{}%
+\contentsline {section}{\numberline {4.3}相転移検出がなぜ可能なのか？}{18}{}%
+\contentsline {chapter}{\numberline {第5章}機械学習と繰り込み群}{19}{}%
+\contentsline {section}{\numberline {5.1}繰り込み群と特徴抽出}{19}{}%
+\contentsline {chapter}{\numberline {第6章}まとめ}{20}{}%
+\contentsline {chapter}{謝辞}{21}{}%
+\contentsline {chapter}{参考文献}{22}{}%
+\contentsline {chapter}{\numberline {付録A}aaa}{23}{}%
+\contentsline {section}{\numberline {A.1}bbb}{23}{}%
