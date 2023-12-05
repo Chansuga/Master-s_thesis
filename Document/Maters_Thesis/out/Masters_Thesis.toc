@@ -1,7 +1,7 @@
 \contentsline {chapter}{\numberline {第1章}はじめに}{3}{}%
 \contentsline {section}{\numberline {1.1}研究背景}{3}{}%
 \contentsline {section}{\numberline {1.2}研究目的}{3}{}%
-\contentsline {chapter}{\numberline {第2章}イジング模型における相転移}{4}{}%
+\contentsline {chapter}{\numberline {第2章}イジング模型の相転移}{4}{}%
 \contentsline {section}{\numberline {2.1}相転移，臨界現象とは}{4}{}%
 \contentsline {subsection}{\numberline {2.1.1}物質の三態と相転移}{4}{}%
 \contentsline {section}{\numberline {2.2}強磁性イジング模型}{5}{}%
@@ -20,18 +20,30 @@
 \contentsline {section}{\numberline {3.2}統計入門}{16}{}%
 \contentsline {subsection}{\numberline {3.2.1}標本と推定}{16}{}%
 \contentsline {subsection}{\numberline {3.2.2}教師あり学習と教師なし学習，強化学習}{17}{}%
-\contentsline {section}{\numberline {3.3}深層学習とは}{17}{}%
-\contentsline {subsection}{\numberline {3.3.1}ニューラルネットワーク}{17}{}%
-\contentsline {subsection}{\numberline {3.3.2}畳み込みニューラルネットワーク}{17}{}%
-\contentsline {section}{\numberline {3.4}ボルツマンマシンの基礎}{17}{}%
-\contentsline {chapter}{\numberline {第4章}イジング模型の相転移検出に関する研究}{18}{}%
-\contentsline {section}{\numberline {4.1}相の分類器による相転移検出}{18}{}%
-\contentsline {section}{\numberline {4.2}温度測定器による相転移検出}{18}{}%
-\contentsline {section}{\numberline {4.3}相転移検出がなぜ可能なのか？}{18}{}%
-\contentsline {chapter}{\numberline {第5章}機械学習と繰り込み群}{19}{}%
-\contentsline {section}{\numberline {5.1}繰り込み群と特徴抽出}{19}{}%
-\contentsline {chapter}{\numberline {第6章}まとめ}{20}{}%
-\contentsline {chapter}{謝辞}{21}{}%
-\contentsline {chapter}{参考文献}{22}{}%
-\contentsline {chapter}{\numberline {付録A}aaa}{23}{}%
-\contentsline {section}{\numberline {A.1}bbb}{23}{}%
+\contentsline {section}{\numberline {3.3}勾配降下法}{17}{}%
+\contentsline {subsection}{\numberline {3.3.1}勾配降下法}{17}{}%
+\contentsline {subsection}{\numberline {3.3.2}局所的最小値の問題}{18}{}%
+\contentsline {subsection}{\numberline {3.3.3}確率的勾配降下法}{19}{}%
+\contentsline {subsection}{\numberline {3.3.4}ミニバッチの作り方}{20}{}%
+\contentsline {section}{\numberline {3.4}改良された勾配降下法}{20}{}%
+\contentsline {subsection}{\numberline {3.4.1}勾配降下法の課題}{20}{}%
+\contentsline {subsection}{\numberline {3.4.2}モーメンタム法}{21}{}%
+\contentsline {subsection}{\numberline {3.4.3}AdaGrad}{22}{}%
+\contentsline {subsection}{\numberline {3.4.4}RMSprop}{23}{}%
+\contentsline {subsection}{\numberline {3.4.5}AdaDelta}{23}{}%
+\contentsline {subsection}{\numberline {3.4.6}Adam}{24}{}%
+\contentsline {section}{\numberline {3.5}深層学習とは}{24}{}%
+\contentsline {subsection}{\numberline {3.5.1}ニューラルネットワーク}{24}{}%
+\contentsline {subsection}{\numberline {3.5.2}畳み込みニューラルネットワーク}{24}{}%
+\contentsline {section}{\numberline {3.6}ボルツマンマシンの基礎}{24}{}%
+\contentsline {chapter}{\numberline {第4章}機械学習によるイジング模型の相転移検出}{25}{}%
+\contentsline {section}{\numberline {4.1}相の分類器による相転移検出}{25}{}%
+\contentsline {section}{\numberline {4.2}温度測定器による相転移検出}{25}{}%
+\contentsline {section}{\numberline {4.3}相転移検出がなぜ可能なのか？}{25}{}%
+\contentsline {chapter}{\numberline {第5章}機械学習と繰り込み群}{26}{}%
+\contentsline {section}{\numberline {5.1}繰り込み群と特徴抽出}{26}{}%
+\contentsline {chapter}{\numberline {第6章}まとめ}{27}{}%
+\contentsline {chapter}{謝辞}{28}{}%
+\contentsline {chapter}{参考文献}{29}{}%
+\contentsline {chapter}{\numberline {付録A}aaa}{30}{}%
+\contentsline {section}{\numberline {A.1}bbb}{30}{}%
