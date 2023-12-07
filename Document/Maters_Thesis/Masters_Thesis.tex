@@ -21,9 +21,19 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage[ipaex]{pxchfon}
+\usepackage[dvipdfmx]{hyperref} % ハイパーリンク
+\usepackage{pxjahyper}
 \usepackage[version=4]{mhchem} % 化学式をかくため
 \usepackage[hang,small,bf]{caption}
 \usepackage[subrefformat=parens]{subcaption}
+\hypersetup{
+setpagesize=false,
+ bookmarksnumbered=true,%
+ bookmarksopen=true,%
+ colorlinks=true,%
+ linkcolor=black,
+ citecolor=black,
+} % 目次の赤線を表示させないようにする
 \captionsetup{compatibility=false}
 \usetikzlibrary{positioning, intersections, calc, arrows.meta,math} %tikzのlibrary
 
@@ -505,6 +515,39 @@ $h=0$の場合に高温展開を行う．二次元イジング模型の分配関
 \subsection*{教師あり学習}
 
 \subsection*{教師なし学習}
+
+
+
+
+\section{ニューラルネットワーク}
+\subsection{神経細胞のネットワーク}
+
+\subsection{形式ニューロン}
+深層学習の起源は，1943年のW.マカロックとW.ピッツによる論文が源流と言われている．彼らはニューロンの活動が数理論理学的な手法でモデル化できることを発見した．それにより，神経活動の数理モデルと論理回路との対応が明らかになた．彼らは，形式ニューロンや人工ニューロンとよばれる素子を定義した．形式ニューロンは実際のニューロンの活動をモデル化したものである．実際のニューロンのように，形式ニューロンも他の多数の形式ニューロン$i=1,2,\dots,$から入力信号$x_i$を受け入れる．図では入り込んでくる複数の矢印として入力を表している．ただし，ニューロンを出す信号はオンとオフの情報しかない物として，$x_i$の値は$0$か$1$しかとらないものとする．しかしシナプスごとに，ニューロン同士の結合の強さを表す重み$w_i$を導入して，層への総入力を
+\begin{equation}
+  u = \sum_{i} w_i x_i
+\end{equation}
+と定義する．$u$は細胞体に実際に入ってくる電気信号の総量に相当する．\par
+この総入力を受けて，ニューロンは「軸索」方向へ出力を出すが，そこには閾値があるはずである．その状況をヘビサイドの階段行列
+\begin{equation}
+  \theta(x+b) = \begin{cases}
+    1 & (x \geq -b) \\
+    0 & (x \leq -b) \\
+  \end{cases}
+\end{equation}
+でモデル化する．$b$は閾値を与えるパラメータである．すると，この形式ニューロンの出力は結局
+\begin{equation}
+  z = \theta(u + b) = \theta\left( \sum_{i} w_i x_i + b \right)
+\end{equation}
+となる．ここで用いた階段関数のように，総入力$u$を出力$z$へ変換する関数を一般的に活性化関数という．$z$の値もまた，$0$か$1$の2値で，それを再び他のニューロンへの入力とすることができる．\par
+マカロックとピッツの形式ニューロンを多数組み合わせることで，計算機と同じようにどんな論理演算でも実現することができる．
+
+\subsection{パーセプトロン}
+
+\subsection{順伝播型ニューラルネットワーク}
+
+\subsection{活性化関数}
+
 
 \section{勾配降下法}
 ニューラルネットワークの学習は損失関数の最小化によって行われる．つまり，ネットワークパラメータの空間上でスカラー関数$L(\bm{\theta})$の最小値を探すという最適化問題を解くことになる．
