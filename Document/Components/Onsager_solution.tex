@@ -1,0 +1,138 @@
+\documentclass[a4paper,11pt]{jsarticle}
+
+
+% 数式
+\usepackage{amsmath,amsfonts}
+\usepackage{bm}
+\usepackage{braket}
+% 画像
+\usepackage[dvipdfmx]{graphicx}
+
+
+\begin{document}
+
+\title{オンサガー解}
+\author{須賀勇貴}
+\date{最終更新日：\today}
+\maketitle
+
+\section{2次元イジングモデルの定式化}
+
+\subsection*{行列処方}
+モデルの正確な解に向けた予備ステップとして，行列の観点から2次元イジングモデルを定式化する．図15.1に示すように、$n$行$n$列からなる$N = n^2$スピンの正方格子を考えてみよう．$(n+1)$番目の行および列の構成がそれぞれ最初の行および列の構成と同一であるという要件で，格子が1行および1列ずつ拡大されると想像してみよう．この境界条件により，図15.2に示すように，格子にトーラスのトポロジーが与えられる．$\mu_{\alpha} \ (\alpha = 1, \dots, n)$が $\alpha$行目のすべてのスピン座標のコレクションを表すものとする．
+\begin{equation}
+  \mu_{\alpha} 
+  = \{s_1, s_2, ..., s_n \}_{\alpha \text{th row}}
+\end{equation}
+トロイダル境界条件は次の定義を意味する．
+\begin{equation}
+  \mu_{n+1} = \mu_1
+\end{equation}
+格子全体の構成は$\{\mu_1, \dots, \mu_n \}$によって指定される．仮定により，$\alpha$番目の行は$(\alpha + 1)$番目および$(\alpha -1)$番目の行とのみ相互作用する．$E(\mu_{\alpha}, \mu_{\alpha+1})$を$\alpha$番目の行と$\alpha+1$番目の行の間の相互作用エネルギーとする．$\alpha$行内のスピンの相互作用エネルギーに外部磁場との相互作用エネルギーを加えたものを$E(\mu_{\alpha})$とする．これは次のように書ける．
+\begin{align}
+  E(\mu, \mu') 
+  &= -\epsilon \sum_{k=1}^n s_k s'_k \\
+  E(\mu) 
+  &= -\epsilon \sum_{k=1}^n s_k s_{k+1} - H \sum_{k=1}^n s_k
+\end{align}
+ここで，$\mu$と$\mu'$はそれぞれ，2つの隣接する行のスピンコーディナーの集合を示す．
+\begin{align}
+  \mu &\equiv \{s_1, \dots, s_n \} \\
+  \mu &\equiv \{s_1, \dots, s_n \}
+\end{align}
+トロイダル境界条件は，各行で次のことを意味する．
+\begin{equation}
+  s_{n+1} \equiv s_1
+\end{equation}
+配位$\{\mu_1, \dots, \mu_n \}$での格子の全エネルギーは次のように与えられる．
+\begin{equation}
+  E_T\{\mu_1, \dots, \mu_n \}
+  = \sum_{\alpha=1}^n [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})]
+\end{equation}
+分配関数は
+\begin{equation}
+  Z(H,T) 
+  = \sum_{\mu_1} \cdots \sum_{\mu_n} \exp{\left\{ -\beta \sum_{\alpha=1}^n [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})] \right\}}
+\end{equation}
+
+ここで，要素が以下のように定義された$2^n \times 2^n$の行列$\mathrm{P}$を考える．
+\begin{equation}
+  \bra{\mu} \mathrm{P} \ket{\mu'} \equiv e^{-\beta [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})]}
+\end{equation}
+このとき，
+\begin{align}
+  Z(H,T)
+  &= \sum_{\mu_1} \cdots \sum_{\mu_n} \bra{\mu_1} \mathrm{P} \ket{\mu2}\bra{\mu_2} \mathrm{P} \ket{\mu_3}\cdots\bra{\mu_n} \mathrm{P} \ket{\mu_1} \\
+  &= \sum_{\mu_1}\bra{\mu_1} \mathrm{P}^n \ket{\mu_1} = \mathrm{Tr} \ \mathrm{P}^n
+\end{align}
+行列のトレースは行列の表現から独立しているため，上式のトレースは，以下から$\mathrm{P}$をその対角に持ち込むことによって評価できる．
+\begin{equation}
+  \mathrm{P} = \begin{bmatrix}
+    \lambda_1 & & & \\
+     & \lambda_2 & & \\
+     & & \ddots & \\
+     & & & \lambda_{2^n} \\
+  \end{bmatrix}
+\end{equation}
+ここで，$\lambda_1, \lambda_2, \dots, \lambda_{2^n}$は$\mathrm{P}$の固有値である．$\mathrm{P}^n$もまた対角行列であり，対角成分は$(\lambda_1)^n, (\lambda_2)^n, \dots, (\lambda_{2^n})^n$である．したがって，
+\begin{equation}
+  Z(H,T)
+  = \sum_{\alpha=1}^{2^n} (\lambda_\alpha)^n
+\end{equation}
+式(10)の形式から，$E(\mu, \mu')$と$E(\mu)$は$n$のオーダーであるため、$n$が大きい場合，$\mathcal{P}$の固有値は一般に$e^n$のオーダーであることが予想される．もし，$\lambda_{\text{max}}$が$\mathrm{P}$の最大固有値ならば，
+\begin{equation}
+  \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\lambda}_{\text{max}}
+  = \text{finite number}
+\end{equation}
+と予想される．そして，もしこれが正しく，すべての固有値$\lambda_{\alpha}$が正ならば，
+\begin{equation}
+  (\lambda_{\text{max}})^n \leq Z \leq 2^n (\lambda_{\max})^n
+\end{equation}
+もしくは
+\begin{equation}
+  \frac{1}{n}\ln{\lambda_{\text{max}}}
+  \leq \frac{1}{n^2}\ln{Z}
+  \leq \frac{1}{n}\ln{\lambda_{\text{max}}} + \frac{1}{n} \ln{2}
+\end{equation}
+したがって
+\begin{equation}
+  \lim_{N \rightarrow \infty} \frac{1}{N} \ln{Z}
+  = \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\lambda_{\text{max}}}
+\end{equation}
+ここで，$N=n^2$．式(15) が真であり，すべての固有値$\lambda_{\alpha}$が正であることがわかる．したがって，$P$の最大の固有値を見つけるだけで十分である．このセクションの残りの部分は，$P$の明示的な表現の説明に当てられる．\par
+
+\subsection*{行列$P$}
+(10)と(3),(4)式から私たちは$P$の行列要素
+\begin{equation}
+  \bra{s_1,\dots,s_n}\mathrm{P}\ket{s'_1,\dots,s'_n} 
+  = \prod_{k=1}^n e^{\beta H s_k} e^{\beta \epsilon s_k s_{k+1}} e^{\beta \epsilon s_k s'_k}
+\end{equation}
+ここで，$2^n \times 2^n$の3つの行列$V'_1, V_2, V_3$を定義する．
+\begin{align}
+  \bra{s_1,\dots,s_n}V'_1\ket{s'_1,\dots,s'_n}
+  &\equiv \prod_{k=1}^n e^{\beta \epsilon s_k s'_k} \\
+  \bra{s_1,\dots,s_n}V_2\ket{s'_1,\dots,s'_n}
+  &\equiv \delta_{s_1 s'_1}\dots\delta_{s_n s'_n} \prod_{k=1}^n e^{\beta \epsilon s_k s_{k+1}} \\
+  \bra{s_1,\dots,s_n}V_3\ket{s'_1,\dots,s'_n}
+  &\equiv \delta_{s_1 s'_1}\dots\delta_{s_n s'_n} \prod_{k=1}^n e^{\beta \epsilon H s_k} \\
+\end{align}
+ここで，$\delta_{ss'}$はクロネッカーのデルタ記号である．したがって，この表現では$V2$と$V3$は対角行列になる．それは簡単に示せる．
+\begin{equation}
+  \mathrm{P} = V_3 V_2 V'_1
+\end{equation}
+行列乗算の通常の意味で，つまり
+\begin{align}
+  &\bra{s_1,\dots,s_n}\mathrm{P}\ket{s'_1,\dots,s'_n} \\
+  &= \sum_{s''_1, \dots, s''_n} \sum_{s''_1, \dots, s''_n} \bra{s_1,\dots,s_n}V_3\ket{s''_1,\dots,s''_n} \\
+  &\times \bra{s''_1,\dots,s''_n}V_2\ket{s'''_1,\dots,s'''_n} \bra{s'''_1,\dots,s'''_n}V'_1\ket{s'_1,\dots,s'_n} 
+\end{align}
+
+\subsection*{行列の直積}
+行列$V_3,V_2,V_1$を表す便利な方法を説明する前に，行列の直積の概念を紹介する．$A$と$B$を2つの$m \times m$の行列とし，その行列要素がそれぞれ$\bra{i}A\ket{j}$と$\bra{i}B\ket{j}$であるとする．ここで，$i$と$j$は独立して値$1,2,\dots,m$をとる．
+
+
+
+
+
+
+\end{document}
