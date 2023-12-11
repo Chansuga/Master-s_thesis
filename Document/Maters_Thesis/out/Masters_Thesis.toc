@@ -20,34 +20,35 @@
 \contentsline {section}{\numberline {3.3}統計入門}{16}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}標本と推定}{16}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}点推定}{17}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}教師あり学習と教師なし学習，強化学習}{18}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}ニューラルネットワーク}{18}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}神経細胞のネットワーク}{18}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}形式ニューロン}{19}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}パーセプトロン}{21}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}順伝播型ニューラルネットワーク}{21}{subsection.3.4.4}%
-\contentsline {section}{\numberline {3.5}ニューラルネットワークによる機械学習}{25}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}活性化関数}{28}{subsection.3.5.1}%
-\contentsline {section}{\numberline {3.6}畳み込みニューラルネットワーク}{28}{section.3.6}%
-\contentsline {section}{\numberline {3.7}勾配降下法}{28}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}勾配降下法}{28}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}局所的最小値の問題}{29}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}確率的勾配降下法}{30}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}ミニバッチの作り方}{31}{subsection.3.7.4}%
-\contentsline {section}{\numberline {3.8}改良された勾配降下法}{31}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}勾配降下法の課題}{31}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}モーメンタム法}{32}{subsection.3.8.2}%
-\contentsline {subsection}{\numberline {3.8.3}AdaGrad}{32}{subsection.3.8.3}%
-\contentsline {subsection}{\numberline {3.8.4}RMSprop}{34}{subsection.3.8.4}%
-\contentsline {subsection}{\numberline {3.8.5}AdaDelta}{34}{subsection.3.8.5}%
-\contentsline {subsection}{\numberline {3.8.6}Adam}{34}{subsection.3.8.6}%
-\contentsline {section}{\numberline {3.9}誤差逆伝播法}{35}{section.3.9}%
-\contentsline {chapter}{\numberline {第4章}機械学習によるイジング模型の相転移検出}{36}{chapter.4}%
-\contentsline {section}{\numberline {4.1}配位データの生成方法}{36}{section.4.1}%
-\contentsline {section}{\numberline {4.2}相の分類器による相転移検出}{36}{section.4.2}%
-\contentsline {section}{\numberline {4.3}温度測定器による相転移検出}{36}{section.4.3}%
-\contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{36}{section.4.4}%
-\contentsline {chapter}{謝辞}{38}{chapter*.23}%
-\contentsline {chapter}{参考文献}{39}{chapter*.24}%
-\contentsline {chapter}{\numberline {付録A}aaa}{40}{appendix.A}%
-\contentsline {section}{\numberline {A.1}bbb}{40}{section.A.1}%
+\contentsline {subsubsection}{ガウス分布の場合}{18}{section*.12}%
+\contentsline {subsection}{\numberline {3.3.3}教師あり学習と教師なし学習，強化学習}{19}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}ニューラルネットワーク}{20}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}神経細胞のネットワーク}{20}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}形式ニューロン}{21}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}パーセプトロン}{22}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}順伝播型ニューラルネットワーク}{23}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}ニューラルネットワークによる機械学習}{26}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}活性化関数}{29}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6}畳み込みニューラルネットワーク}{29}{section.3.6}%
+\contentsline {section}{\numberline {3.7}勾配降下法}{29}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}勾配降下法}{30}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}局所的最小値の問題}{31}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}確率的勾配降下法}{31}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}ミニバッチの作り方}{32}{subsection.3.7.4}%
+\contentsline {section}{\numberline {3.8}改良された勾配降下法}{33}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}勾配降下法の課題}{33}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}モーメンタム法}{33}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}AdaGrad}{34}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}RMSprop}{35}{subsection.3.8.4}%
+\contentsline {subsection}{\numberline {3.8.5}AdaDelta}{36}{subsection.3.8.5}%
+\contentsline {subsection}{\numberline {3.8.6}Adam}{36}{subsection.3.8.6}%
+\contentsline {section}{\numberline {3.9}誤差逆伝播法}{36}{section.3.9}%
+\contentsline {chapter}{\numberline {第4章}機械学習によるイジング模型の相転移検出}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}配位データの生成方法}{37}{section.4.1}%
+\contentsline {section}{\numberline {4.2}相の分類器による相転移検出}{37}{section.4.2}%
+\contentsline {section}{\numberline {4.3}温度測定器による相転移検出}{37}{section.4.3}%
+\contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{37}{section.4.4}%
+\contentsline {chapter}{謝辞}{39}{chapter*.27}%
+\contentsline {chapter}{参考文献}{40}{chapter*.28}%
+\contentsline {chapter}{\numberline {付録A}aaa}{41}{appendix.A}%
+\contentsline {section}{\numberline {A.1}bbb}{41}{section.A.1}%
