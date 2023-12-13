@@ -6,7 +6,7 @@
 \usepackage{multicol}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{wrapfig}
-\usepackage{graphicx}
+\usepackage{graphicx} 
 \usepackage{tikz}
 \usepackage{bm}
 \usepackage{url}
@@ -20,6 +20,7 @@
 \usepackage{algorithmic}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{braket}
 \usepackage[ipaex]{pxchfon}
 \usepackage[dvipdfmx]{hyperref} % ハイパーリンク
 \usepackage{pxjahyper}
@@ -442,6 +443,241 @@ $h=0$の場合に高温展開を行う．二次元イジング模型の分配関
     \right]
 \end{equation}
 
+\subsection{行列を用いた定式化}
+2次元イジング模型の厳密解に向けた前段階として，行列の観点で2次元イジングモデルの定式化を行う．$n$行$n$列の正方格子上にある$N=n^2$個のスピンを考える．そして，周期的境界条件を課す．\par
+スピン座標の$\alpha$列にあるスピンをまとめて次のように表す．
+\begin{equation}
+  \mu_{\alpha} 
+  \equiv \{\sigma_1, \sigma_2, \dots, \sigma_n\} 
+\end{equation}
+境界条件より，
+\begin{align}
+  \mu_{n+1} &= \mu_1 \\
+  \sigma_{n+1} &= \sigma_1
+\end{align}
+が成り立つ．また，配位全体を$\{\mu_1, \dots, \mu_n\}$と表す．仮定より，$\alpha$列のスピンと相互作用するのは$(\alpha-1)$列と$(\alpha+1)$列である．ここで，$\alpha$列と$\alpha+1$列との相互作用エネルギーを$E(\mu_{\alpha}, \mu_{\alpha+1})$，$\alpha$列のスピン内でのスピン同士の相互作用エネルギーと磁場との相互作用エネルギーを$E(\mu_{\alpha})$とすると，それぞれ次のように書ける．
+\begin{align}
+  E(\mu, \mu') 
+  &= -\epsilon \sum_{k=1}^n s_k s'_k \\
+  E(\mu) 
+  &= -\epsilon \sum_{k=1}^n s_k s_{k+1} - H \sum_{k=1}^n s_k
+\end{align}
+ここで，$\mu$と$\mu'$はそれぞれ，隣り合った列のスピン座標の集まりである．
+\begin{align}
+  \mu &\equiv \{s_1, \dots, s_n \} \notag \\
+  \mu' &\equiv \{s'_1, \dots, s'_n \}
+  \label{イジングエネルギー２}
+\end{align}
+配位$\{\mu_1, \dots, \mu_n\}$における全エネルギーは
+\begin{equation}
+  E_t\{\mu_1, \dots, \mu_n \}
+  = \sum_{\alpha=1}^n [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})]
+\end{equation}
+となり，分配関数は
+\begin{equation}
+  Z(H,T) 
+  = \sum_{\mu_1} \cdots \sum_{\mu_n} \exp{\left\{ -\beta \sum_{\alpha=1}^n [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})] \right\}}
+\end{equation}
+となる．\par
+ここで，次のように行列要素が定義された，$2^n \times 2^n$行列$\mathrm{P}$を考える．
+\begin{equation}
+  \bra{\mu} \mathrm{P} \ket{\mu'} \equiv e^{-\beta [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})]}
+  \label{行列要素}
+\end{equation}
+これを用いると分配関数は
+\begin{align}
+  Z(H,T)
+  &= \sum_{\mu_1} \cdots \sum_{\mu_n} \bra{\mu_1} \mathrm{P} \ket{\mu_2}\bra{\mu_2} \mathrm{P} \ket{\mu_3}\cdots\bra{\mu_n} \mathrm{P} \ket{\mu_1} \\
+  &= \sum_{\mu_1}\bra{\mu_1} \mathrm{P}^n \ket{\mu_1} = \mathrm{Tr} \ \mathrm{P}^n
+\end{align}
+と$\mathrm{P}^n$のトレースで表せることがわかる．行列のトレースは行列の表現から独立しているため，上式のトレースは，以下のような対角化された$\mathrm{P}$で評価しても結果に影響を与えない．
+\begin{equation}
+  \mathrm{P} = \begin{bmatrix}
+    \lambda_1 & & & \\
+     & \lambda_2 & & \\
+     & & \ddots & \\
+     & & & \lambda_{2^n} \\
+  \end{bmatrix}
+\end{equation}
+ここで，$\lambda_1, \lambda_2, \dots, \lambda_{2^n}$は$\mathrm{P}$の固有値である．$\mathrm{P}^n$もまた対角行列であり，対角成分は$(\lambda_1)^n, (\lambda_2)^n, \dots, (\lambda_{2^n})^n$である．したがって，分配関数は
+\begin{equation}
+  Z(H,T)
+  = \sum_{\alpha=1}^{2^n} (\lambda_\alpha)^n
+\end{equation}
+で表される．$E(\mu, \mu')$と$E(\mu)$は$n$のオーダーであるため，式(\ref{行列要素})の形式から，$n$が大きい場合，$\mathcal{P}$の固有値は一般に$e^n$のオーダーであることが予想される．$\lambda_{\text{max}}$を$\mathrm{P}$の最大固有値とすると，
+\begin{equation}
+  \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\lambda}_{\text{max}}
+  = \text{finite number}
+  \label{最大固有値有限}
+\end{equation}
+と予想される．そして，もしこれが正しく，すべての固有値$\lambda_{\alpha}$が正ならば，
+\begin{equation}
+  (\lambda_{\text{max}})^n \leq Z \leq 2^n (\lambda_{\max})^n
+\end{equation}
+もしくは
+\begin{equation}
+  \frac{1}{n}\ln{\lambda_{\text{max}}}
+  \leq \frac{1}{n^2}\ln{Z}
+  \leq \frac{1}{n}\ln{\lambda_{\text{max}}} + \frac{1}{n} \ln{2}
+\end{equation}
+となる．したがって，はさみうちの原理より，
+\begin{equation}
+  \lim_{N \rightarrow \infty} \frac{1}{N} \ln{Z}
+  = \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\lambda_{\text{max}}}
+\end{equation}
+か成り立つことがわかる．ここで，$N=n^2$．式(\ref{最大固有値有限}) が真であり，すべての固有値$\lambda_{\alpha}$が正であることがわかる．したがって，$P$の最大の固有値を見つけるだけで十分である．このセクションの残りの部分は，$P$の明示的な表現の説明に当てられる．
+
+\subsection{行列$\mathrm{P}$}
+式(\ref{行列要素})と式(\ref{イジングエネルギー２})から我々は$\mathrm{P}$の行列要素を
+\begin{align}
+  \bra{s_1,\dots,s_n}\mathrm{P}\ket{s'_1,\dots,s'_n}
+  &= e^{-\beta[E(\mu, \mu') + E(\mu)]} \notag \\
+  &= e^{\beta \sum_{k=1}^{n}} \left( \epsilon s_k s'_k + \epsilon s_k s_{k+1} + H s_k \right) \notag \\
+  &= \prod_{k=1}^n e^{\beta H s_k} e^{\beta \epsilon s_k s_{k+1}} e^{\beta \epsilon s_k s'_k}
+\end{align}
+のように得た．ここで，$2^n \times 2^n$の3つの行列$V'_1, V_2, V_3$を定義する．それぞれ行列要素は次のように与える．
+\begin{align}
+  \bra{s_1,\dots,s_n}V'_1\ket{s'_1,\dots,s'_n}
+  &\equiv \prod_{k=1}^n e^{\beta \epsilon s_k s'_k} \label{V1}\\
+  \bra{s_1,\dots,s_n}V_2\ket{s'_1,\dots,s'_n}
+  &\equiv \delta_{s_1 s'_1}\dots\delta_{s_n s'_n} \prod_{k=1}^n e^{\beta \epsilon s_k s_{k+1}} \\
+  \bra{s_1,\dots,s_n}V_3\ket{s'_1,\dots,s'_n}
+  &\equiv \delta_{s_1 s'_1}\dots\delta_{s_n s'_n} \prod_{k=1}^n e^{\beta \epsilon H s_k} \\
+\end{align}
+ここで，$\delta_{ss'}$はクロネッカーのデルタ記号である．したがって，この表現では$V_2$と$V_3$は対角行列になる．それは簡単に示せる．
+\begin{equation}
+  \mathrm{P} = V_3 V_2 V'_1
+\end{equation}
+行列乗算の通常の意味で，つまり
+\begin{align}
+  &\bra{s_1,\dots,s_n}\mathrm{P}\ket{s'_1,\dots,s'_n} \\
+  &= \sum_{s''_1, \dots, s''_n} \sum_{s'''_1, \dots, s'''_n} \bra{s_1,\dots,s_n}V_3\ket{s''_1,\dots,s''_n} \\
+  &\times \bra{s''_1,\dots,s''_n}V_2\ket{s'''_1,\dots,s'''_n} \bra{s'''_1,\dots,s'''_n}V'_1\ket{s'_1,\dots,s'_n} 
+\end{align}
+
+\subsection{行列の直積}
+ここで，$V_3, V_2, V'_1$による便利な方法を述べる前に，行列の積の概念を導入する．\par
+$m \times m$の２つの行列$A, B$を考える．行列要素はそれぞれ，$\bra{i}A\ket{j}, \bra{i}B\ket{j}$である．$i, j$はそれぞれ$1, 2, \dots, m$の値をとる．このとき，直積$A \times B$は$m^2 \times m^2$の行列となり，行列要素は
+\begin{equation}
+  \bra{ii'}A \times B\ket{jj'} 
+  \equiv \bra{i} A \ket{j} \bra{i'} B \ket{j'}
+\end{equation}
+と定義する．3つ以上の行列の直積$A \times B \times \cdots \times C$にも拡張でき，行列要素は
+\begin{equation}
+  \bra{ii' \cdots i''} A \times B \times \cdots \times C \ket{jj' \cdots j''}
+  \equiv \bra{i}A\ket{j} \bra{i'}B\ket{j'} \cdots \bra{i''}A\ket{j''} 
+\end{equation}
+で表される．もし$AB$が通常の行列乗算のもとでの行列AとBの積を表すなら，次のようになる．
+\begin{equation}
+  (A \times B)(C \times D) = (AC) \times (BD)
+\end{equation}
+これは以下のように示せる．
+\begin{align*}
+  \bra{ii'} (A \times B)(C \times D) \ket{jj'}
+  &= \sum_{kk'} \bra{ii'} A \times B \ket{kk'} \bra{kk'} C \times D \ket{jj'} \\
+  &= \bra{i} AC \ket{j} \bra{i'} BD \ket{j'} \\
+  &= \bra{ii'} (AC) \times (BD) \ket{jj'}
+  \label{直積公式}
+\end{align*}
+式(\ref{直積公式})を一般化した，以下の等式も成り立つ．
+\begin{equation}
+  (A \times B \times \cdots \times C) (D \times E \times \cdots \times F) 
+  = (AD) \times (BE) \times \cdots \times (CF) 
+\end{equation}
+
+\subsection{スピン行列}
+ここで，$V'_1, V_2, V_3$を便利に表現できる特別な行列をいくつか紹介する．よく知られた3つの$2 \times 2$パウリスピン行列を$X, Y, Z$とする．
+\begin{equation}
+  X \equiv \begin{pmatrix}
+    0 & 1 \\ 1 & 0
+  \end{pmatrix}, \ \ \
+  Y \equiv \begin{pmatrix}
+    0 & -i \\ i & 0
+  \end{pmatrix}, \ \ \
+  Z \equiv \begin{pmatrix}
+    1 & 0 \\ 0 & -1
+  \end{pmatrix}
+\end{equation}
+これらパウリ行列は次の関係式を満たす．\par
+\begin{equation*}
+  X^2 = Y^2 = Z^2 = 1
+\end{equation*}
+\begin{equation}
+  XY + YX = 0, \ \ YZ + ZY = 0, \ \ ZX + XZ = 0
+  \label{スピン行列性質}
+\end{equation}
+\begin{equation*}
+  XY = iZ, \ \ YZ = iX, \ \ ZX = iY
+\end{equation*}
+ここで，$2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\alpha}$を定義する．
+\begin{align}
+  \mathrm{X}_{\alpha} \equiv 1 \times 1 \times \cdots \times \mathrm{X} \times \cdots \times 1 \notag \\ 
+  \mathrm{Y}_{\alpha} \equiv 1 \times 1 \times \cdots \times \mathrm{Y} \times \cdots \times 1  \\ 
+  \mathrm{Z}_{\alpha} \equiv 1 \times 1 \times \cdots \times \mathrm{Z} \times \cdots \times 1 \notag  
+\end{align}
+$\alpha \neq \beta$のとき以下の関係式が成り立つ．
+\begin{align}
+  &[\mathrm{X}_{\alpha}, \mathrm{X}_{\beta}] 
+  = [\mathrm{Y}_{\alpha}, \mathrm{Y}_{\beta}]
+  = [\mathrm{Z}_{\alpha}, \mathrm{Z}_{\beta}]
+  = 0 \notag \\
+  &[\mathrm{X}_{\alpha}, \mathrm{Y}_{\beta}] 
+  = [\mathrm{X}_{\alpha}, \mathrm{Z}_{\beta}]
+  = [\mathrm{Y}_{\alpha}, \mathrm{Z}_{\beta}]
+  = 0 
+\end{align}
+$2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\alpha}$は(\ref{スピン行列性質})のすべての関係式を満たす．
+
+\subsection{行列$V'_1, V_2, V_3$}
+式(\ref{V1})から，$\mathrm{V}'_1$が$n$個の同じ$2 \times 2$行列の直積で表せることがわかる．
+\begin{equation}
+  V_1'=\bm{a} \times \bm{a} \times \cdots \times \bm{a}
+\end{equation}
+ここで，
+\begin{equation}
+  \bra{s}\bm{a} \ket{s'}
+  =e^{\beta \epsilon s s'}
+\end{equation}
+である．したがって，
+\begin{equation}
+  \bm{a}=\left[\begin{array}{cc}
+    e^{\beta \epsilon} & e^{-\beta \epsilon} \\
+    e^{-\beta \epsilon} & e^{\beta \epsilon}
+    \end{array}\right]=e^{\beta \epsilon}+e^{-\beta \epsilon} X
+\end{equation}
+である．式(\ref{})を用いることで以下を得る
+\begin{equation}
+  \bm{a}
+  =\sqrt{2 \sinh (2 \beta \epsilon)} e^{\theta X}
+\end{equation}
+ここで，
+\begin{equation}
+  \tanh \theta \equiv e^{-2 \beta \epsilon}
+\end{equation}
+である．したがって
+\begin{equation}
+  \mathrm{V}_1'=[2 \sinh (2 \beta \epsilon)]^{\frac{1}{2}} e^{\theta X} \times e^{\theta X} \times \cdots \times e^{\theta X}
+\end{equation}
+\begin{equation}
+  e^{\theta X} \times e^{\theta X} \times \cdots \times e^{\theta X}=e^{\theta \mathrm{X}_1} e^{\theta \mathrm{X}}{ }_2 \cdots e^{\theta \mathrm{X}_n}=e^{\theta\left(\mathrm{X}_1+\mathrm{X}_2+\cdots+\mathrm{X}_n\right)}
+\end{equation}
+\begin{align}
+  \mathrm{V}_1'
+  &=[2 \sinh (2 \beta \epsilon)]^{\frac{1}{2}} \mathrm{~V}_1 \\
+  \mathrm{~V}_1
+  &=\prod_{\alpha=1}^n e^{0 \mathrm{x}_x}, \quad \tanh \theta \equiv e^{-2 \beta \epsilon}
+\end{align}
+\begin{align}
+  \mathrm{V}_2
+  &=\prod_{\alpha=1}^n e^{\beta \epsilon \mathbf{Z}_\alpha \mathbf{Z}_{\alpha+1}} \\
+  \mathrm{~V}_3
+  &=\prod_{\alpha=1}^n e^{\beta B \mathbf{Z}_\alpha} \quad, \quad \mathbf{Z}_{n+1} \equiv \mathbf{Z}_1
+\end{align}
+\begin{equation}
+  \mathrm{P}
+  = [2 \sinh (2 \beta \epsilon)]^{\frac{1}{2}} \mathrm{V}_3 \mathrm{V}_2 \mathrm{V}_1
+\end{equation}
+
 
 \chapter{機械学習と深層学習}
 ここでは，イジングモデルに対して機械学習，深層学習による手法を応用する上で必要となる機械学習と深層学習の基礎知識について説明する．
@@ -558,7 +794,7 @@ $\mu$と$\sigma^2$の2つを決めればこの分布が定まるため，この2
 \end{align}
 では，$\sigma^2$はどうなっているか．
 \begin{align}
-  E_{\mathcal{N}}[(\mathcal{X}_n - \mu)^2]
+  \mathrm{E}_{\mathcal{N}}[(\mathcal{X}_n - \mu)^2]
   &= \int_{-\infty}^{\infty} (x_n - \mu)^2 P(x_n) dx_n \notag \\
   &= \sigma^2
 \end{align}
@@ -567,7 +803,12 @@ $\mu$と$\sigma^2$の2つを決めればこの分布が定まるため，この2
   \hat{\sigma}^2
   = \frac{1}{N} \sum_{n=1}^N (x_n - \hat{\mu})^2
 \end{equation}
-
+これが不偏であるか見るために期待値を計算する．
+\begin{align}
+  \mathrm{E}_{\mathcal{N}}[(\mathrm{x}_n - \hat{\mu})^2]
+  &= \mathrm{E}_{\mathcal{N}}[(\mathrm{x}_n - \mu)^2 -2(\mathrm{x}_n - \mu)^2 - 2(\mathrm{x}_n - \mu)(\hat{\mu} - \mu) + (\hat{\mu} - \mu)^2] \notag \\
+  &= \sigma^2 -2 \frac{\sigma^2}{N} + \frac{\sigma^2}{N}
+\end{align}
 
 
 
