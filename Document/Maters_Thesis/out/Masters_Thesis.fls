@@ -1265,3 +1265,17 @@ INPUT extractbb -B cropbox -O image/勾配法課題(a).png
 INPUT ./image/勾配法課題(b).png
 INPUT image/勾配法課題(b).png
 INPUT extractbb -B cropbox -O image/勾配法課題(b).png
+INPUT ./image/勾配法課題(c).png
+INPUT image/勾配法課題(c).png
+INPUT extractbb -B cropbox -O image/勾配法課題(c).png
+INPUT ./image/モーメンタム法.png
+INPUT ./image/モーメンタム法.png
+INPUT image/モーメンタム法.png
+INPUT extractbb -B cropbox -O image/モーメンタム法.png
+INPUT out/Masters_Thesis.bbl
+INPUT out/Masters_Thesis.bbl
+INPUT out/Masters_Thesis.bbl
+INPUT out/Masters_Thesis.bbl
+INPUT out/Masters_Thesis.aux
+INPUT out/Masters_Thesis.out
+INPUT out/Masters_Thesis.out
