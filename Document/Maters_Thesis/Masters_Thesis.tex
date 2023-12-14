@@ -447,25 +447,25 @@ $h=0$の場合に高温展開を行う．二次元イジング模型の分配関
 2次元イジング模型の厳密解に向けた前段階として，行列の観点で2次元イジングモデルの定式化を行う．$n$行$n$列の正方格子上にある$N=n^2$個のスピンを考える．そして，周期的境界条件を課す．\par
 スピン座標の$\alpha$列にあるスピンをまとめて次のように表す．
 \begin{equation}
-  \mu_{\alpha} 
-  \equiv \{\sigma_1, \sigma_2, \dots, \sigma_n\} 
+  \mu_{\alpha}
+  \equiv \{\sigma_1, \sigma_2, \dots, \sigma_n\}
 \end{equation}
 境界条件より，
 \begin{align}
-  \mu_{n+1} &= \mu_1 \\
-  \sigma_{n+1} &= \sigma_1
+  \mu_{n+1}    & = \mu_1    \\
+  \sigma_{n+1} & = \sigma_1
 \end{align}
 が成り立つ．また，配位全体を$\{\mu_1, \dots, \mu_n\}$と表す．仮定より，$\alpha$列のスピンと相互作用するのは$(\alpha-1)$列と$(\alpha+1)$列である．ここで，$\alpha$列と$\alpha+1$列との相互作用エネルギーを$E(\mu_{\alpha}, \mu_{\alpha+1})$，$\alpha$列のスピン内でのスピン同士の相互作用エネルギーと磁場との相互作用エネルギーを$E(\mu_{\alpha})$とすると，それぞれ次のように書ける．
 \begin{align}
-  E(\mu, \mu') 
-  &= -\epsilon \sum_{k=1}^n s_k s'_k \\
-  E(\mu) 
-  &= -\epsilon \sum_{k=1}^n s_k s_{k+1} - H \sum_{k=1}^n s_k
+  E(\mu, \mu')
+   & = -\epsilon \sum_{k=1}^n s_k s'_k                         \\
+  E(\mu)
+   & = -\epsilon \sum_{k=1}^n s_k s_{k+1} - H \sum_{k=1}^n s_k
 \end{align}
 ここで，$\mu$と$\mu'$はそれぞれ，隣り合った列のスピン座標の集まりである．
 \begin{align}
-  \mu &\equiv \{s_1, \dots, s_n \} \notag \\
-  \mu' &\equiv \{s'_1, \dots, s'_n \}
+  \mu  & \equiv \{s_1, \dots, s_n \} \notag \\
+  \mu' & \equiv \{s'_1, \dots, s'_n \}
   \label{イジングエネルギー２}
 \end{align}
 配位$\{\mu_1, \dots, \mu_n\}$における全エネルギーは
@@ -475,7 +475,7 @@ $h=0$の場合に高温展開を行う．二次元イジング模型の分配関
 \end{equation}
 となり，分配関数は
 \begin{equation}
-  Z(H,T) 
+  Z(H,T)
   = \sum_{\mu_1} \cdots \sum_{\mu_n} \exp{\left\{ -\beta \sum_{\alpha=1}^n [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})] \right\}}
 \end{equation}
 となる．\par
@@ -487,16 +487,16 @@ $h=0$の場合に高温展開を行う．二次元イジング模型の分配関
 これを用いると分配関数は
 \begin{align}
   Z(H,T)
-  &= \sum_{\mu_1} \cdots \sum_{\mu_n} \bra{\mu_1} \mathrm{P} \ket{\mu_2}\bra{\mu_2} \mathrm{P} \ket{\mu_3}\cdots\bra{\mu_n} \mathrm{P} \ket{\mu_1} \\
-  &= \sum_{\mu_1}\bra{\mu_1} \mathrm{P}^n \ket{\mu_1} = \mathrm{Tr} \ \mathrm{P}^n
+   & = \sum_{\mu_1} \cdots \sum_{\mu_n} \bra{\mu_1} \mathrm{P} \ket{\mu_2}\bra{\mu_2} \mathrm{P} \ket{\mu_3}\cdots\bra{\mu_n} \mathrm{P} \ket{\mu_1} \\
+   & = \sum_{\mu_1}\bra{\mu_1} \mathrm{P}^n \ket{\mu_1} = \mathrm{Tr} \ \mathrm{P}^n
 \end{align}
 と$\mathrm{P}^n$のトレースで表せることがわかる．行列のトレースは行列の表現から独立しているため，上式のトレースは，以下のような対角化された$\mathrm{P}$で評価しても結果に影響を与えない．
 \begin{equation}
   \mathrm{P} = \begin{bmatrix}
-    \lambda_1 & & & \\
-     & \lambda_2 & & \\
-     & & \ddots & \\
-     & & & \lambda_{2^n} \\
+    \lambda_1 &           &        &               \\
+              & \lambda_2 &        &               \\
+              &           & \ddots &               \\
+              &           &        & \lambda_{2^n} \\
   \end{bmatrix}
 \end{equation}
 ここで，$\lambda_1, \lambda_2, \dots, \lambda_{2^n}$は$\mathrm{P}$の固有値である．$\mathrm{P}^n$もまた対角行列であり，対角成分は$(\lambda_1)^n, (\lambda_2)^n, \dots, (\lambda_{2^n})^n$である．したがって，分配関数は
@@ -531,18 +531,18 @@ $h=0$の場合に高温展開を行う．二次元イジング模型の分配関
 式(\ref{行列要素})と式(\ref{イジングエネルギー２})から我々は$\mathrm{P}$の行列要素を
 \begin{align}
   \bra{s_1,\dots,s_n}\mathrm{P}\ket{s'_1,\dots,s'_n}
-  &= e^{-\beta[E(\mu, \mu') + E(\mu)]} \notag \\
-  &= e^{\beta \sum_{k=1}^{n}} \left( \epsilon s_k s'_k + \epsilon s_k s_{k+1} + H s_k \right) \notag \\
-  &= \prod_{k=1}^n e^{\beta H s_k} e^{\beta \epsilon s_k s_{k+1}} e^{\beta \epsilon s_k s'_k}
+   & = e^{-\beta[E(\mu, \mu') + E(\mu)]} \notag                                                        \\
+   & = e^{\beta \sum_{k=1}^{n}} \left( \epsilon s_k s'_k + \epsilon s_k s_{k+1} + H s_k \right) \notag \\
+   & = \prod_{k=1}^n e^{\beta H s_k} e^{\beta \epsilon s_k s_{k+1}} e^{\beta \epsilon s_k s'_k}
 \end{align}
 のように得た．ここで，$2^n \times 2^n$の3つの行列$V'_1, V_2, V_3$を定義する．それぞれ行列要素は次のように与える．
 \begin{align}
   \bra{s_1,\dots,s_n}V'_1\ket{s'_1,\dots,s'_n}
-  &\equiv \prod_{k=1}^n e^{\beta \epsilon s_k s'_k} \label{V1}\\
+   & \equiv \prod_{k=1}^n e^{\beta \epsilon s_k s'_k} \label{V1}                                 \\
   \bra{s_1,\dots,s_n}V_2\ket{s'_1,\dots,s'_n}
-  &\equiv \delta_{s_1 s'_1}\dots\delta_{s_n s'_n} \prod_{k=1}^n e^{\beta \epsilon s_k s_{k+1}} \\
+   & \equiv \delta_{s_1 s'_1}\dots\delta_{s_n s'_n} \prod_{k=1}^n e^{\beta \epsilon s_k s_{k+1}} \\
   \bra{s_1,\dots,s_n}V_3\ket{s'_1,\dots,s'_n}
-  &\equiv \delta_{s_1 s'_1}\dots\delta_{s_n s'_n} \prod_{k=1}^n e^{\beta \epsilon H s_k} \\
+   & \equiv \delta_{s_1 s'_1}\dots\delta_{s_n s'_n} \prod_{k=1}^n e^{\beta \epsilon H s_k}       \\
 \end{align}
 ここで，$\delta_{ss'}$はクロネッカーのデルタ記号である．したがって，この表現では$V_2$と$V_3$は対角行列になる．それは簡単に示せる．
 \begin{equation}
@@ -550,22 +550,22 @@ $h=0$の場合に高温展開を行う．二次元イジング模型の分配関
 \end{equation}
 行列乗算の通常の意味で，つまり
 \begin{align}
-  &\bra{s_1,\dots,s_n}\mathrm{P}\ket{s'_1,\dots,s'_n} \\
-  &= \sum_{s''_1, \dots, s''_n} \sum_{s'''_1, \dots, s'''_n} \bra{s_1,\dots,s_n}V_3\ket{s''_1,\dots,s''_n} \\
-  &\times \bra{s''_1,\dots,s''_n}V_2\ket{s'''_1,\dots,s'''_n} \bra{s'''_1,\dots,s'''_n}V'_1\ket{s'_1,\dots,s'_n} 
+   & \bra{s_1,\dots,s_n}\mathrm{P}\ket{s'_1,\dots,s'_n}                                                            \\
+   & = \sum_{s''_1, \dots, s''_n} \sum_{s'''_1, \dots, s'''_n} \bra{s_1,\dots,s_n}V_3\ket{s''_1,\dots,s''_n}       \\
+   & \times \bra{s''_1,\dots,s''_n}V_2\ket{s'''_1,\dots,s'''_n} \bra{s'''_1,\dots,s'''_n}V'_1\ket{s'_1,\dots,s'_n}
 \end{align}
 
 \subsection{行列の直積}
 ここで，$V_3, V_2, V'_1$による便利な方法を述べる前に，行列の積の概念を導入する．\par
 $m \times m$の２つの行列$A, B$を考える．行列要素はそれぞれ，$\bra{i}A\ket{j}, \bra{i}B\ket{j}$である．$i, j$はそれぞれ$1, 2, \dots, m$の値をとる．このとき，直積$A \times B$は$m^2 \times m^2$の行列となり，行列要素は
 \begin{equation}
-  \bra{ii'}A \times B\ket{jj'} 
+  \bra{ii'}A \times B\ket{jj'}
   \equiv \bra{i} A \ket{j} \bra{i'} B \ket{j'}
 \end{equation}
 と定義する．3つ以上の行列の直積$A \times B \times \cdots \times C$にも拡張でき，行列要素は
 \begin{equation}
   \bra{ii' \cdots i''} A \times B \times \cdots \times C \ket{jj' \cdots j''}
-  \equiv \bra{i}A\ket{j} \bra{i'}B\ket{j'} \cdots \bra{i''}A\ket{j''} 
+  \equiv \bra{i}A\ket{j} \bra{i'}B\ket{j'} \cdots \bra{i''}A\ket{j''}
 \end{equation}
 で表される．もし$AB$が通常の行列乗算のもとでの行列AとBの積を表すなら，次のようになる．
 \begin{equation}
@@ -574,15 +574,15 @@ $m \times m$の２つの行列$A, B$を考える．行列要素はそれぞれ�
 これは以下のように示せる．
 \begin{align*}
   \bra{ii'} (A \times B)(C \times D) \ket{jj'}
-  &= \sum_{kk'} \bra{ii'} A \times B \ket{kk'} \bra{kk'} C \times D \ket{jj'} \\
-  &= \bra{i} AC \ket{j} \bra{i'} BD \ket{j'} \\
-  &= \bra{ii'} (AC) \times (BD) \ket{jj'}
+   & = \sum_{kk'} \bra{ii'} A \times B \ket{kk'} \bra{kk'} C \times D \ket{jj'} \\
+   & = \bra{i} AC \ket{j} \bra{i'} BD \ket{j'}                                  \\
+   & = \bra{ii'} (AC) \times (BD) \ket{jj'}
   \label{直積公式}
 \end{align*}
 式(\ref{直積公式})を一般化した，以下の等式も成り立つ．
 \begin{equation}
-  (A \times B \times \cdots \times C) (D \times E \times \cdots \times F) 
-  = (AD) \times (BE) \times \cdots \times (CF) 
+  (A \times B \times \cdots \times C) (D \times E \times \cdots \times F)
+  = (AD) \times (BE) \times \cdots \times (CF)
 \end{equation}
 
 \subsection{スピン行列}
@@ -611,20 +611,20 @@ $m \times m$の２つの行列$A, B$を考える．行列要素はそれぞれ�
 \end{equation*}
 ここで，$2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\alpha}$を定義する．
 \begin{align}
-  \mathrm{X}_{\alpha} \equiv 1 \times 1 \times \cdots \times \mathrm{X} \times \cdots \times 1 \notag \\ 
-  \mathrm{Y}_{\alpha} \equiv 1 \times 1 \times \cdots \times \mathrm{Y} \times \cdots \times 1  \\ 
-  \mathrm{Z}_{\alpha} \equiv 1 \times 1 \times \cdots \times \mathrm{Z} \times \cdots \times 1 \notag  
+  \mathrm{X}_{\alpha} \equiv 1 \times 1 \times \cdots \times \mathrm{X} \times \cdots \times 1 \notag \\
+  \mathrm{Y}_{\alpha} \equiv 1 \times 1 \times \cdots \times \mathrm{Y} \times \cdots \times 1        \\
+  \mathrm{Z}_{\alpha} \equiv 1 \times 1 \times \cdots \times \mathrm{Z} \times \cdots \times 1 \notag
 \end{align}
 $\alpha \neq \beta$のとき以下の関係式が成り立つ．
 \begin{align}
-  &[\mathrm{X}_{\alpha}, \mathrm{X}_{\beta}] 
+   & [\mathrm{X}_{\alpha}, \mathrm{X}_{\beta}]
   = [\mathrm{Y}_{\alpha}, \mathrm{Y}_{\beta}]
   = [\mathrm{Z}_{\alpha}, \mathrm{Z}_{\beta}]
-  = 0 \notag \\
-  &[\mathrm{X}_{\alpha}, \mathrm{Y}_{\beta}] 
+  = 0 \notag                                   \\
+   & [\mathrm{X}_{\alpha}, \mathrm{Y}_{\beta}]
   = [\mathrm{X}_{\alpha}, \mathrm{Z}_{\beta}]
   = [\mathrm{Y}_{\alpha}, \mathrm{Z}_{\beta}]
-  = 0 
+  = 0
 \end{align}
 $2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\alpha}$は(\ref{スピン行列性質})のすべての関係式を満たす．
 
@@ -641,8 +641,8 @@ $2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\al
 である．したがって，
 \begin{equation}
   \bm{a}=\left[\begin{array}{cc}
-    e^{\beta \epsilon} & e^{-\beta \epsilon} \\
-    e^{-\beta \epsilon} & e^{\beta \epsilon}
+      e^{\beta \epsilon}  & e^{-\beta \epsilon} \\
+      e^{-\beta \epsilon} & e^{\beta \epsilon}
     \end{array}\right]=e^{\beta \epsilon}+e^{-\beta \epsilon} X
 \end{equation}
 である．式(\ref{})を用いることで以下を得る
@@ -663,15 +663,15 @@ $2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\al
 \end{equation}
 \begin{align}
   \mathrm{V}_1'
-  &=[2 \sinh (2 \beta \epsilon)]^{\frac{1}{2}} \mathrm{~V}_1 \\
+   & =[2 \sinh (2 \beta \epsilon)]^{\frac{1}{2}} \mathrm{~V}_1                               \\
   \mathrm{~V}_1
-  &=\prod_{\alpha=1}^n e^{0 \mathrm{x}_x}, \quad \tanh \theta \equiv e^{-2 \beta \epsilon}
+   & =\prod_{\alpha=1}^n e^{0 \mathrm{x}_x}, \quad \tanh \theta \equiv e^{-2 \beta \epsilon}
 \end{align}
 \begin{align}
   \mathrm{V}_2
-  &=\prod_{\alpha=1}^n e^{\beta \epsilon \mathbf{Z}_\alpha \mathbf{Z}_{\alpha+1}} \\
+   & =\prod_{\alpha=1}^n e^{\beta \epsilon \mathbf{Z}_\alpha \mathbf{Z}_{\alpha+1}}                      \\
   \mathrm{~V}_3
-  &=\prod_{\alpha=1}^n e^{\beta B \mathbf{Z}_\alpha} \quad, \quad \mathbf{Z}_{n+1} \equiv \mathbf{Z}_1
+   & =\prod_{\alpha=1}^n e^{\beta B \mathbf{Z}_\alpha} \quad, \quad \mathbf{Z}_{n+1} \equiv \mathbf{Z}_1
 \end{align}
 \begin{equation}
   \mathrm{P}
@@ -748,7 +748,7 @@ $2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\al
 \subsubsection*{バイアスが小さい}
 推定量のバイアスとは，推定量の期待値$\mathrm{E} \left[ \hat{\bm{\theta}} \right]$と真の値$\bm{\theta}^*$との差のことである．
 \begin{equation}
-  b\left( \hat{\bm{\theta}} \right) 
+  b\left( \hat{\bm{\theta}} \right)
   = \mathrm{E} \left[ \hat{\bm{\theta}} \right] - \bm{\theta}^*
 \end{equation}
 ここでの期待値は，データ生成分布での期待値なので，たくさんのデータ集合を用意して計算した平均値である．バイアスが小さいとは，推定量の偏りが小さく真の値から不要にズレていないということである．特にバイアスがゼロのものを不偏推定量と呼び，典型的な望ましい推定量である．一方でバイアスがあるものの，データの数が増えるにつれゼロへ漸近する状況$\lim_{N \rightarrow \infty} = 0$を漸近不偏推定量と呼ぶ．
@@ -771,8 +771,8 @@ $2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\al
 \subsubsection{ガウス分布の場合}
 ガウス分布とは実数値をとる確率変数$x$上の次のような分布である．
 \begin{equation}
-  P(x) 
-  = \mathcal{N}(x; \mu, \sigma^2) 
+  P(x)
+  = \mathcal{N}(x; \mu, \sigma^2)
   = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}
 \end{equation}
 $\mu$と$\sigma^2$の2つを決めればこの分布が定まるため，この2つがパラメータである．では，ガウス分布から無作為に取り出した$N$個のデータからパラメータを推定するにはそうすればよいか．今，どのサンプルも無作為に抽出されているとしたため，任意のデータ点$\mathrm{x}_n$はガウス分布に従う独立な確率変数である．したがって，その期待値は分布のパラメータ$\mu$に一致している．
@@ -789,14 +789,14 @@ $\mu$と$\sigma^2$の2つを決めればこの分布が定まるため，この2
 すると，これは見事に不偏推定量になっている．
 \begin{align}
   E_{\mathcal{N}}[\hat{\mu}]
-  &= \frac{1}{N} \sum_{i=1}^N \mathrm{E}[\mathrm{x}_n] \notag \\
-  &= \mu 
+   & = \frac{1}{N} \sum_{i=1}^N \mathrm{E}[\mathrm{x}_n] \notag \\
+   & = \mu
 \end{align}
 では，$\sigma^2$はどうなっているか．
 \begin{align}
   \mathrm{E}_{\mathcal{N}}[(\mathcal{X}_n - \mu)^2]
-  &= \int_{-\infty}^{\infty} (x_n - \mu)^2 P(x_n) dx_n \notag \\
-  &= \sigma^2
+   & = \int_{-\infty}^{\infty} (x_n - \mu)^2 P(x_n) dx_n \notag \\
+   & = \sigma^2
 \end{align}
 となる．したがって安直には，再びこの期待値をサンプル平均で近似すれば推定量$\hat{\sigma}^2$が得られると思う．
 \begin{equation}
@@ -806,19 +806,310 @@ $\mu$と$\sigma^2$の2つを決めればこの分布が定まるため，この2
 これが不偏であるか見るために期待値を計算する．
 \begin{align}
   \mathrm{E}_{\mathcal{N}}[(\mathrm{x}_n - \hat{\mu})^2]
-  &= \mathrm{E}_{\mathcal{N}}[(\mathrm{x}_n - \mu)^2 -2(\mathrm{x}_n - \mu)^2 - 2(\mathrm{x}_n - \mu)(\hat{\mu} - \mu) + (\hat{\mu} - \mu)^2] \notag \\
-  &= \sigma^2 -2 \frac{\sigma^2}{N} + \frac{\sigma^2}{N}
+   & = \mathrm{E}_{\mathcal{N}}[(\mathrm{x}_n - \mu)^2 -2(\mathrm{x}_n - \mu)^2 - 2(\mathrm{x}_n - \mu)(\hat{\mu} - \mu) + (\hat{\mu} - \mu)^2] \notag \\
+   & = \sigma^2 -2 \frac{\sigma^2}{N} + \frac{\sigma^2}{N}
 \end{align}
 
+\begin{align*}
+  \mathrm{E}_\mathcal{N}\left[\hat{\sigma}^2\right]
+   & =\mathrm{E}_\mathcal{N}\left[\frac{1}{N} \sum_{n=1}^N\left(\mathrm{x}_n-\hat{\mu}\right)^2\right]                                                                                                                                       \\
+   & =\frac{1}{N} \mathrm{E}_\mathcal{N}\left[\sum_{n=1}^N\left\{\left(\mathrm{x}_n-\mu\right)^2-2\left(\mathrm{x}_n-\mu\right)(\hat{\mu}-\mu)+(\hat{\mu}-\mu)^2\right\}\right]                                                                       \\
+   & =\frac{1}{N}\left\{\sum_{n=1}^N \mathrm{E}_\mathcal{N}\left[\left(\mathrm{x}_n-\mu\right)^2\right]-2 \sum_{n=1}^N \mathrm{E}_N\left[\left(\mathrm{x}_n-\mu\right)(\hat{\mu}-\mu)\right]+N \mathrm{E}_N\left[(\hat{\mu}-\mu)^2\right]\right\}                       \\
+   & =\sigma^2-\frac{2}{N^2} \sum_{n=1}^N \sum_{m=1}^N \mathrm{E}_\mathcal{N}\left[\left(\mathrm{x}_n-\mu\right)\left(\mathrm{x}_m-\mu\right)\right]+\frac{1}{N^2} \sum_{n=1}^N \sum_{m=1}^N \mathrm{E}_\mathcal{N}\left[\left(\mathrm{x}_n-\mu\right)\left(\mathrm{x}_m-\mu\right)\right] \\
+   & =\sigma^2-\frac{1}{N^2} \sum_{n=1}^N \mathrm{E}_\mathcal{N}\left[\left(\mathrm{x}_n-\mu\right)^2\right]                                                                                                                                 \\
+   & =\sigma^2-\frac{1}{N} \sigma^2                                                                                                                                                                              \\
+   & =\left(1-\frac{1}{N}\right) \sigma^2
+\end{align*}
+となり，不偏ではない．ただし，$N \rightarrow \infty$の極限でこの期待値は$\sigma^2$に一致するため，漸近的不偏推定量になっている．また，バイアスのない推定量は余分な係数を除いたものなので，
+\begin{equation}
+  \hat{\tilde{\sigma}}^2 
+  = \frac{1}{N - 1} \hat{\sigma^2} = \frac{1}{N - 1} \sum_{n=1}^N (\mathrm{x}_n - \hat{\mu})^2
+\end{equation}
+と与えられる．
+
+\subsubsection{ベルヌーイ分布の場合}
+コイン投げの結果が表裏どちらかなど，2つのランダムな値をとる現象を記述するのがベルヌーイ分布である．確率変数を0か1の離散値をとるものとし，$\mathrm{x}$が1をとる確率を$p$とすると，この分布は，
+\begin{equation}
+  P(x) = p^x (1 - p)^{1-x}
+\end{equation}
+と書ける．パラメータは$p$のみである．ベルヌーイ分布の期待値と分散は，
+\begin{equation}
+  \mathrm{E}_{P}[\mathrm{x}] 
+  = \sum_{\mathrm{x} = 0,1} x P(x) 
+  = 1 \cdot P(1) 
+  = p
+\end{equation}
+\begin{align}
+  \mathrm{E}_{P}[(\mathrm{x} - p)^2] 
+  &= \sum_{\mathrm{x} = 0,1} (x -2px + p^2) P(x) \notag \\
+  &= p^2 \cdots P(0) + (1 - 2p + p^2) \cdot P(1) \notag \\
+  &= p(1-p)
+\end{align}
+と書くことができる．すると，パラメータの推定量は再びサンプル平均
+\begin{equation}
+  \hat{p} 
+  = \frac{1}{N} \sum_{n=1}^N x_n
+\end{equation}
+がよさそうである．実際，
+\begin{equation*}
+  \mathrm{E}_{P}[\hat{p}] = \frac{1}{N} \sum_{N=1}^{n} E_P[\mathrm{x}_n]  
+\end{equation*}
+であり，データサイズが大きくなるほど推定値のばらつきがゼロに近づいていく，したがって大きなデータに対して分散は小さくなるような推定量である．
+
+\subsection{最尤推定}
+これまで，発見的な方法で推定量を探してきたが，これでは複雑な分布の場合はどうしようもない．ところがパラメトリックな場合には，実は広く使える強力な手法がある．これが最尤推定法である．\par
+データ生成分布のパラメトリックモデル$P_{\text{model}}(\mathrm{x}; \bm{\theta})$が与えられているとする．与えられたサンプル$\mathcal{D} = \{x_1, x_2, \dots, x_N\}$は，この分布から無作為に抽出されていると近似する．すると，これらは独立に同じモデルから生成された実現値なので，このデータ集合が得られる同時確率は
+\begin{equation*}
+  P(x_1, x_2, \dots, x_N; \bm{\theta}) 
+  = \prod_{n=1}^N P_{\text{model}}(x_n; \bm{\theta})
+\end{equation*}
+である．これを変数$\bm{\theta}$に対する量とみなして$L(\bm{\theta}) = P(x_1, x_2, \dots, x_N; \bm{\theta})$と書き，尤度関数と呼ぶ．データ値が$\{ x_1, x_2, \dots, x_N \}$という観測値を取ったのは，パラメータ$\bm{\theta}$の値が確率$P(x_1, x_2, \dots, x_N; \bm{\theta})$を大きくするようなものであったからであると考える．つまり，$L(\bm{\theta})$を最大にするようなパラメータ値であるためにデータ$\{ x_1, x_2, \dots, x_N \}$が実現されやすかったと解釈するのである．すると，与えられたデータに対して尤もらしいパラメータの値は尤度を最大化したものということになる．
+\begin{equation}
+  \bm{\theta}_{ML} = \underset{\bm{\theta}} {\operatorname{argman}} L(\bm{\theta})
+\end{equation}
+ただし，尤度は確率の積であるため，1以下の数値を何回も掛け合わせた値になる．値が小さすぎると計算機上でアンダーフローを起こしうるため，実用上，対数尤度関数を最大化する．\par
+\begin{equation}
+  \bm{\theta}_{ML} = \underset{\bm{\theta}} {\operatorname{argman}} \ln{L(\bm{\theta})}
+\end{equation}
+このように何らかの目的関数を最大化，あるいは最小化することで推定に用いる最適なパラメータ値を決定するのが機械学習における常套手段である．実際，多くの機械学習アルゴリズムは最尤法を基礎に構築される．機械学習では，最大値よりも最小値をして問題を書くことが多いので，負の対数尤度を目的関数とした最小化問題として表現する．
+\begin{equation}
+  \bm{\theta}_{ML} = \underset{\bm{\theta}} {\operatorname{argmin}} (-\ln{L(\bm{\theta})})
+\end{equation}
+
+\subsubsection{ガウス分布の場合}
+ガウス分布の例を考える．$N$個のデータに対する尤度関数は
+\begin{equation}
+  L(\bm{\theta})
+  = \prod_{n=1}^N \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(x_n - \mu)^2}{2 \sigma^2}}
+\end{equation}
+である．ただし，$\bm{\theta} = (\mu, \sigma^2)$として2つのパラメータをまとめて表記した．対数尤度関数はもう少しシンプルで
+\begin{equation}
+  \ln{L(\bm{\theta})}
+  = -\frac{N}{2} \ln{\sigma^2} - \sum_{n} (x_n - \mu)^2 + \text{const.}
+\end{equation}
+となる．この関数の最大値を探すには，微分係数がゼロの場所を求めればよいので，
+\begin{align}
+& \left.\frac{\partial \ln L(\bm{\theta})}{\partial \mu}\right|_{M L}
+= \frac{1}{\sigma_{M L}^2} \sum_{n=1}^N\left(x_n-\mu_{m L}\right) = 0 \\
+& \left.\frac{\partial \ln L(\bm{\theta})}{\partial \sigma^2}\right|_{\mu L}
+= -\frac{N}{2 \sigma_{M L}^2}+\frac{1}{2\left(\sigma_{M L}^2\right)^2} \sum_{n=1}^N\left(x_n-\mu_{M L}\right)^2 = 0
+\end{align}
+を解けばよい．これはすぐに解け，得られる推定量$(\mu_{ML}, \sigma_{ML}^2)$は先ほど見つけた推定量$(\hat{\mu}, \hat{\sigma^2})$と一致する．
+
+\subsubsection{ベルヌーイ分布の場合}
+ベルヌーイ分布に対しては，対数尤度は
+\begin{equation}
+  L(p) = \prod_{n=1}^{N} p^{x_n} (1 - p)^{1 - x_n}
+\end{equation}
+となる．よって対数尤度は
+\begin{equation}
+  \ln{L(p)} = \sum_{n=1}^{N} (x_n \ln{p} + (1 - x_n)\ln{(1 - p)})
+\end{equation}
+となる．これを解いて得られる最尤推定量$p_{ML}$もまた，先ほど求めた推定量と一致している．このように最尤法は推定量を求めるための汎用性のある方法である．
+
+\section{機械学習の基礎}
+機械学習ではデータ集合を学習アルゴリズムで処理することでコンピュータプログラムを学習させる．それによって，プログラムが与えられたタスクをよりうまくこなせるようにすることを目標にする．データ(集合)は機械学習の文脈では訓練データと呼ばれる．\par
+学習を担うのは，人間がデザインする学習機械(アーキテクチャ)である．アーキテクチャの学習プロセスを決めているのが学習アルゴリズムで，これもまた人間が設計する．アルゴリズムの詳細は学習させたいタスクやデータの種類によって変わる．ただし，一般的な設計思想は，まず与えられたタスクに対するパフォーマンスの良さを測る尺度を導入し，その値を改善するようなアルゴリズムを実現するというものである．この評価尺度を損失関数や誤差関数と呼ぶ．
+
+\subsection{教師あり学習}
+機械学習には教師あり学習や教師なし学習，強化学習など，いくつもの枠組が知られているが，深層学習の基礎になるものは教師あり学習である．教師あり学習の特徴は，用意すべき訓練データが必ず入力$\bm{x}$と出力$\bm{y}$のペアの形をとることである．つまり，訓練データは$\mathcal{D} = \{ (\bm{x_1}, \bm{y_1}), \dots, (\bm{x_N}, \bm{y_N}) \}$という形をしている．機械学習の目的はこの入出力間の関係を推定することで，新しい未知の$\bm{x}$が与えられたときに対応する出力$\bm{y}$を適切に予測できるようになることである．\par
+\begin{equation}
+  \bm{x} \longrightarrow \bm{y}
+\end{equation}
+統計学的な用語でいえば，説明変数$\mathrm{x}$と目標変数$\mathrm{y}$の間の関係式を知り，常に目標変数を予測できるモデルを作ろうということである．そのために目標変数の適切な推定量$\hat{y}$を探すのが学習である．実際には推定量の関数モデルを仮定して，そのパラメータを訓練データから最適化する学習アルゴリズムを実装する．
+
+\subsection{最小二乗法による線形回帰}
+入力$\bm{x}$から出力$y$を予測するのが回帰であった．ここでは出力がベクトルではなくスカラーの場合を考える．そして，ここではパラメトリックなモデルを考える．つまり，常に$y$はある関数$\hat{y} = f(\bm{x}; \bm{w})$で表される規則で$\bm{x}$が決まっているとする．ただし，この関数のパラメータ$\bm{w}$はまだ未知であり，与えられたデータから最適なパラメータ値を決める作業が学習に相当する．また，データの観測には常にランダムなプロセスに起因する不確実な要素が介在するため，その効果をノイズ$\epsilon$として，
+\begin{equation}
+  y = f(\bm{x}; \bm{w}) + \epsilon
+\end{equation}
+のようにモデル化する．ここで$\epsilon$は確率変数で，ランダムなノイズによる規則性のかき乱しを表す．その一方で我々が知りたいのは$\bm{x}$と$y$の間の対応規則を捉える項$f(\bm{x}; \bm{w})$である．\par
+ここで考えるのは，特に規則性の部分がパラメータの１次関数であることを仮定した回帰モデルである．
+\begin{equation}
+  f(\bm{x}; \bm{w})
+  = \bm{w}^{\top} \bm{h}(x) 
+  = \sum_{j=0} w_j h_j(\bm{x})
+\end{equation}
+これはパラメータに対して線形であるため線形回帰と呼ばれる．一方で$h_j(\bm{x})$は必ずしも線形関数である必要はない．例えば，入力$x$がベクトルではなくスカラーの場合，$h_j(x) = x^j$という単項式を選んだ場合がいわゆる多項式回帰である．
+\begin{equation}
+  f(x; \bm{w}) = \bm{w}^{\top} \bm{h}(x) = \sum_{j=0}^M w_j x^j
+\end{equation}
+この多項式回帰も線形回帰の一種であることに注意．\par
+回帰分析ではモデル$f(\bm{x}; \bm{w})$が与えられたデータ$\mathcal{D}$の入出力が満たす対応関係によく当てはまるように，モデルのパラメータ$\bm{w}$を調整する．そのためにはモデルがどの程度データに当てはまっているかを測る尺度が必要である．機械学習では特に，モデル$f(\bm{x}; \bm{w})$をパフォーマンスの悪さを測る尺度である誤差関数を最小化することにより最適パラメータ$\bm{w}^*$を決定する．最も有名で理解しやすい誤差関数として，平均二乗誤差がある．
+\begin{equation}
+  E_{\mathcal{D}}(\bm{w})
+  = \frac{1}{N} \sum_{n=1}^{N}(\hat{y}(\bm{x}_n; \bm{w}) - y_n)^2
+\end{equation}
+$\hat{y}(\bm{x}_n; \bm{w})$はモデルに$n$番目の入力データを入れて得られるモデル予測であり，$y_n$が実際にデータに対応した出力値である．したがって，$(\hat{y}(\bm{x}_n; \bm{w}) - y_n)^2$は予測と正解の差を2乗したものである．これはまさに予測と正解のズレを測っており，それを全サンプルについて平均したものがこの誤差関数である．平均二乗誤差を最小化するこの方法が，平均二乗法である．\par
+探したいモデルは，できるだけデータへ当てはまりがよいものであるため，この誤差関数を最小化するようなパラメータ値
+\begin{equation}
+  \bm{w}^* = \underset{\bm{\theta}} {\operatorname{argmin}} (E_{\mathcal{D}}(\bm{w}))
+\end{equation}
+を$\hat{y}$のパラメータ値に選んだものが探していたモデルということになる．\par
+ここで1つ概念的な注意を述べておく．機械学習の本来の目的は，手持ちの訓練データだけでなく，ありとあらゆるデータに対してよい性能を示すモデルを作ることである．訓練データをもとにして学習機械を訓練し，未知のデータに対してまでよく働く状況が実現されることを汎化という．したがって汎化を達成するために本来最小化すべき誤差関数は汎化誤差ということになる．
+\begin{equation}
+  E_{\text{gen}}(\bm{w}) 
+  = \mathrm{E}_{(\mathbf{x}, \mathrm{y}) \sim P_{\text{data}}} \left[ (\hat{\mathrm{y}}(\mathbf{x}; \bm{w}) - y)^2 \right]
+\end{equation}
+しかしながら，有限な能力しかない我々には，可能なすべてのデータを集めてくることはできない．したがって，この「本物」誤差を最小化することは不可能である．そこで機械学習では手持ちのデータのサンプル平均で汎化誤差を近似的に見積もり，それを最小化している．式(\ref{})のようなサンプル平均で作った誤差を訓練誤差という．訓練誤差を小さくしただけでは，汎化がそう易々と実現するとはなかなか言えない．しかし驚くべきことに，訓練誤差の最小化によって汎化に近づくことができる．
+
+\subsection{過適合と汎化}
+ここでは，汎化の実現がそう簡単ではないことを説明する．\par
+簡単のために1次元データの多項式回帰を考える．つまり，与えられた入力$x$から出力$y$を予測する規則性を推定するために，多項式モデル
+\begin{equation}
+  \hat{y} = \sum_{j=0}^M w_j x^j
+\end{equation}
+をデータにフィッティングする．この際，多項式の次数$M$は我々が選ばなくてはならない．このようにモデルの選択時に決めなければならないパラメータをハイパーパラメータと呼び，学習されるパラメータを区別する．ハイパーパラメータ自体は学習アルゴリズムでは一切修正されない．この場合，$M$の重みパラメータの個数も決定しているため，まさにモデルの自由度を与えている．図\ref{線形回帰}はフィッティングの結果である．$M=1$に対応する図\ref{線形回帰}(a)のように，データの豊かさに対してモデルの自由度が小さすぎると，データの構造を捉えることはまったくできない．つまり，訓練誤差の値が大きすぎて，これでは何の予測能力の得られないだろう．このような状況はアンダーフィッティングと呼ばれる．\par
+そこで$M$をどんどん大きくしていくことで，データの複雑な構造をよりよく捉えられるようになるのではないかと考えられる．しかし，不必要に大きな自由度をもったモデルは，異なる問題を引き起こす．というのも，モデルの自由度が大きすぎると，学習データのもつノイズ(統計的なゆらぎ)までをも多項式モデルが正確にフィッティングしてしまうのである．これが図\ref{線形回帰}(c)の状況である．すると，与えられた訓練データに関する誤差関数に値は確かにどんどん小さくできるが，未知のデータに対してはどんどん予測能力を失っていく．この状況は過学習と呼ばれる．\par
+このようにモデルの自由度を減らしていくと過学習は下げられるがどんどん訓練誤差が大きくなり，逆に自由度を大きくしていくと訓練誤差をいくらでも小さくできる一方で過学習が起こって汎化誤差が増え始めてしまうトレードオフの状況になっている．すると，我々が見つけたい汎化の状況は2状態の中間である図(\ref{})(b)にあると考えられる．これはモデルの自由度と学習すべきデータを含む情報の豊かさがつり合う状況である．したがって機械学習をうまくいかせるためには，まずちょうどよいモデルパラメータの数，つまりモデルの自由度を見積もらなくてはならない．自由度の見積もりにはいろいろな基準があるが，残念なことに深層学習のような複雑なモデルではどれもあまり役立たないのが現状である．そこで実務の場面では，学習に用いるデータとは別に検証用のデータを用意して
+検証用データに関する誤差を目安に，仮定したモデルがよいものかどうかを見極めることになる．
+\begin{figure}[htbp]
+  \begin{minipage}[b]{0.3\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, scale=0.3]{image/多項式回帰(a).png}
+    \subcaption{アンダーフィッティング}
+  \end{minipage}
+  \begin{minipage}[b]{0.3\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, scale=0.3]{image/多項式回帰(b).png}
+    \subcaption{適切なパラメータ数}
+  \end{minipage}
+  \begin{minipage}[b]{0.3\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, scale=0.3]{image/多項式回帰(c).png}
+    \subcaption{過学習}
+  \end{minipage}
+  \caption{1次元データの線形回帰の例}
+  \label{線形回帰}
+\end{figure}
+
+\subsection{正則化}
+過学習を避けるための一番わかりやすい方法は，自由度の数が大きすぎないモデルをはじめから選んでおくことである．自由度を実質的に減らしてしまうさまざまな手法は正則化と呼ばれる．実はモデル自体を修正することなく，学習アルゴリズムを少し変更するだけで実質的な自由度を減らすことができる．一般的にこのような正則化は，最適化すべき誤差関数の変更として表現することができる．
+\begin{equation}
+  E_{\text{new}}(\bm{w}) 
+  = E(\bm{w}) + \lambda R(\bm{w})
+\end{equation}
+$\lambda$は正則化の効果の大きさを調整するための正則化パラメータである．\par
+重み減衰(weight decay)はこのような正則化の代表例である．多項式回帰の例からわかるように，もし強制的に多くのパラメータの値を0に制限することができれば，はじめから調整できるパラメータが少ないため自由度を減らしたことと同じことになる．そこで最小化する誤差関数に，次のような項を加えてみる．
+\begin{equation}
+  E_{\text{wd}}(\bm{w}) 
+  = E(\bm{w}) + \lambda \bm{w}^{\top} \bm{w}
+\end{equation}
+新たに項に加わった右辺全体を最小化するということは，重みベクトルのノルム$\bm{w}^{\top} \bm{w}$をできる限り小さくする解$\bm{w}^*$がより好まれるようになるということである．そのため，このように修正された後の最適解では，可能な限りの$\bm{w}$の成分がほぼゼロになっている．したがって重み減衰はモデル自体を変えずに，最小化する誤差関数へのパラメータ数を減らすペナルティ項を加える正則化である．回帰に重み減衰を適用したものはRidge回帰と呼ばれる．\par
+Ridge回帰以外にも，さまざまな回帰の正則化が存在する．その一例は
+\begin{equation}
+  E_{\text{wd}}(\bm{w}) 
+  = E(\bm{w}) + \lambda \sum_i |w_i|
+\end{equation}
+という誤差関数と用いるLASSO回帰である．この手法もまた，不要な重みをできるだけゼロへ近づける効果がある．\par
+与えられたタスクのパフォーマンス向上という目標は維持しつつも，モデルの自由度を減らして過学習を避ける正則化の手法は，汎化性能の実現を目指す機械学習では極めて重要な位置を占める．
 
 
-\subsection{教師あり学習と教師なし学習，強化学習}
-機械学習には大きく3つに分類することができる．それは教師あり学習と教師なし学習，そして強化学習である．そのうち，ここでは本研究に関係する教師あり学習と教師なし学習について説明する．
-\subsection*{教師あり学習}
+\subsection{クラス分類}
+クラス分類の教師あり学習について説明する．クラス分類とは与えられた入力$\bm{x}$を$K$個のクラス$\mathcal{C}_1, \mathcal{C}_2, \dots, \mathcal{C}_K$へ分類する作業である．これらのクラスは互いに排他的であり，1つの入力が複数のクラスにまたがって所属することはないとする．また，入力には，必ず1つの所属先があるものとする．回帰のように数値的に扱うために，離散的な目標変数を導入する．
+\subsubsection*{2値分類の場合}
+分類先が2つしかない状況では，1つ目のクラスに属していることを$y=1$，2つ目のクラスに属していることを$y=0$として表現する2値変$y$を用いればよい．
+\subsubsection*{多クラス分類の場合}
+手書き数字$0 \sim 9$のどれかを判定する場合など，分類先クラスが複数ある場合はいろいろなアプローチがある．最もシンプルなものは，$K$個のクラスそれぞれに対応して$y = 1, 2, \dots, K$という$K$個の値をとる離散変数を用いる方法である．手書き数字の例では$K = 10$である．この変数を，ベクトルを用いた別の表現である，1-of-hot符号化に写像できる．$y$によって決まる$K$成分ベクトル
+\begin{equation}
+  bm{t}(y) = \begin{pmatrix}
+    t(y)_1 & t(y)_2 & \cdots & t(y)_K
+  \end{pmatrix}^{\top}
+\end{equation}
+が1-of-hot符号化である．この手法では入力が$k$番目のクラスに属している．つまり，$y=k$であることを，第$k$成分が$t(y=k)_{k} = 1$でそれ以外の成分$t(y=k)_{l \neq k}$はすべて0であることで表現している．このような表現法をone-hot表現と呼ぶ．例えば一番のクラスに属しているのであれば，
+\begin{equation}
+  \bm{t}(y=1) = \begin{pmatrix}
+    1 & 0 & \cdots & 0
+  \end{pmatrix}^{\top}
+\end{equation}
+ということである．ここで，クロネッカーのデルタ記号
+\begin{equation}
+  \delta_{i, j} 
+  = \begin{cases}
+    1 & (i = j) \\
+    0 & (i \neq j)
+  \end{cases}
+\end{equation}
+を使うと，one-hot表現ベクトルの成分は
+\begin{equation}
+  t(y)_k = \delta_{y, k}
+\end{equation}
+と書くことができる．
 
-\subsection*{教師なし学習}
+\subsection{クラス分類へのアプローチ}
+クラス分類では与えられた入力に対し，離散的な目標変数を予測したいわけだが，そのためには複数のアプローチが考えられる．
 
+\subsubsection*{関数モデル}
+関数モデルは，入力と出力の間の関係を関数としてモデル化する方法である．
+\begin{equation}
+  \hat{y} = y(\bm{x}; \bm{w})
+\end{equation}
+例えば0,1の2値をとる目標変数に対し，
+\begin{equation}
+  y(\bm{x}; \bm{w}) = f(\bm{w}^{\top} \bm{x} + b)
+\end{equation}
+というモデルを仮定すると，これは1層ニューラルネットワークになっている．
 
+\subsubsection*{生成モデル}
+関数モデルによるアプローチ以外の手法では，データを確率的に取り扱う．生成モデルではデータに潜むランダム性を同時分布$P(\bm{x}, \bm{y})$のモデル化により表現し，このモデルをデータにフィットさせる．$k$成分だけが1の$\bm{t}(\bm{y})^{\top} = \begin{pmatrix} 0 & \cdots & 0 & 1 & 0 & \cdots & 0 \end{pmatrix}$に対する$P(\bm{x}, \bm{y})$は，入力が$\bm{x}$で所属クラスが$\mathcal{C}_k$である確率を意味する．この代わりに$P(\bm{x}, \mathcal{C}_k)$をモデル化しても同じことである．\par
+この確率をすべてのクラスについて求めたあと，$\bm{x}$について周辺化して$P(\bm{x})$を求めてベイズの公式を使うことで条件付き確率$P(\mathcal{C}_k | \bm{x})$を求める．$P(\mathcal{C}_k | \bm{x})$がわかれば任意のデータ$\bm{x}$がわかれば任意のデータ$\bm{x}$が各クラスに属している確率が評価でき，得られた確率の値がもっとも大きくなるクラス$\mathcal{C}_k$を$\bm{x}$の所属先と予測することになる．
+
+\subsubsection*{識別モデル}
+生成モデルではまず同時分布を得て，そこから条件付き確率分布$P(\mathcal{C}_k | \bm{x})$を計算していた．このような回りくどいことをせずに$P(\mathcal{C}_k | \bm{x})$おモデル化してデータに学習させるのが認識モデルである．予測する方法は生成モデルと同様である．
+
+\subsection{ロジスティック回帰}
+クラス分類を例にとって，識別モデルをもう少し詳しく見ていく．まずは2クラス分類から考える．この場合はクラスが2つしかないため，確率分布は$P(\mathcal{C} | \bm{x}) = P(\bm{x} | \mathcal{C}) = 1$を満たす．ここでシグモイド関数
+\begin{equation}
+  \sigma(u) 
+  = \frac{1}{1 + e^{-u}}
+  = \frac{e^u}{1 + e^u}
+\end{equation}
+を導入する．今考えていた，条件付き確率は
+\begin{equation}
+  P(\mathcal{C}_1 | \bm{x})
+\end{equation}
+とシグモイド関数で書くことができる．ここで，$u$は対数オッズと呼ばれる因子で
+\begin{equation}
+  u 
+  = \ln{\frac{P(\mathcal{C}_1 | \bm{x})}{1 - P(\mathcal{C}_1 | \bm{x})}}
+  = \ln{\frac{P(\mathcal{C}_1 | \bm{x})}{P(\mathcal{C}_2 | \bm{x})}}
+\end{equation}
+である．
+\begin{equation}
+  e^u
+  = \frac{P(\mathcal{C}_1 | \bm{x})}{P(\mathcal{C}_2 | \bm{x})}
+\end{equation}
+がオッズ比と呼ばれ，$\mathcal{C}_1$である確率とそうでない確率の比率を表す．対数オッズが0を超えると$\mathcal{C}_1$である確率が$\mathcal{C}_2$である確率を上回ることになる．したがって対数オッズも明快な意味をもつため，確率モデルを設計する際に基本的な道具となる．\par
+実際多くのクラス分類では，対数オッズ$u$が入力に関する線形関数であることを仮定した単純な確率モデルが用いられる．
+\begin{equation}
+  u = \bm{w}^{\top} \bm{x} + b
+\end{equation}
+$\bm{w}$はモデルのパラメータをまとめて表したベクトルである．このモデルは統計分析においてロジスティック回帰と呼ばれ，ベルヌーイ分布の統計分析法として広く用いられている．また，ロジスティック回帰は，一般化線形モデルという重要な統計モデルの典型例である．\par
+訓練データとのフィッティングには最尤法を用いる．これもまた，一般化線形モデル全般に通じる方法である．まず離散数値をとる目標変数$y$は，$y=1$が1つ目のクラス$\mathcal{C}_1$に入っている場合，$y=0$が$\mathcal{C}_2$に入っている場合を表していた．つまり，
+\begin{equation}
+  P(y=1 | \bm{x})
+  = P(\mathcal{C}_1 | \bm{x}), \quad
+  P(y=0 | \bm{x})
+  = 1 - P(\mathcal{C}_1 | \bm{x}), \quad
+\end{equation}
+である．$P(y | \bm{x})$はベルヌーイ分布なので，一般的に次のように書ける．
+\begin{equation}
+  P(y|\bm{x})
+  = \left( P(\mathcal{C}_1)|\bm{x} \right)^y \left( 1 - P(\mathcal{C}_1)|\bm{x} \right)^{1 - y}
+\end{equation}
+これは右辺に$y = 1$と$y = 0$を実際に代入すればすぐに理解できる．したがって，これをデータ$\{ (\bm{x}_1, y_1), \cdots, (\bm{x}_N, y_N) \}$によって学習させるには，最尤法に従って，次の尤度関数
+\begin{equation}
+  L(\bm{w}) 
+  = \prod_{n=1}^N \left( P(\mathcal{C}_1)|\bm{x}_n \right)^{y_n} \left( 1 - P(\mathcal{C}_1)|\bm{x}_n \right)^{1 - y_n}
+\end{equation}
+を最大化すればよかった．ここでロジスティック回帰のパラメータ$\bm{w}$は，対数オッズの部分を線形関数でモデル化した際に式(\ref{})で挿入されたパラメータであったことを思い出しておこう．機械学習の実装で用いられるのは対数尤度であったので，負の対数尤度で誤差関数を定義する．
+\begin{equation}
+  E(\bm{w}) 
+  = -\sum_{n=1}^{N} \left( y_n \ln{P(\mathcal{C}_1|\bm{x}_n)} + (1 - y_n)\ln{(1 - P(\mathcal{C}_1|\bm{x}_n))} \right)
+\end{equation}
+これはデータの経験分布とモデル分布の間の交差エントロピーと呼ばれ，深層学習でもよく登場する重要な誤差関数の1つである．
+
+\subsection{ソフトマックス関数}
 
 
 \section{ニューラルネットワーク}
@@ -855,7 +1146,7 @@ $\mu$と$\sigma^2$の2つを決めればこの分布が定まるため，この2
   \begin{tabular}{c|cccc}
     $(x_1, x_2)$ & $(0,0)$ & $(1,0)$ & $(0,1)$ & $(1,1)$ \\ \hline
     $y$          & $1$     & $1$     & $1$     & $0$     \\
-  \end{tabular}    
+  \end{tabular}
 \end{equation*}
 NANDゲートの出力を実現する形式ニューロンの回路を考えてみる．回路には，まず2つの入力値$x_1, x_2$を放出するだけの形式ニューロンが2つある．これらを入力ユニットと呼んでおく．入力ニューロンからの入力を受けてNANDと同じ出力値$y(x_1, x_2)$を出すニューロンを出力ニューロンと呼ぶことにする．このような回路全体を書いたのが図\ref{}である．\par
 このような簡単なニューロン回路でNANDを再現するには，例えば
@@ -864,10 +1155,10 @@ NANDゲートの出力を実現する形式ニューロンの回路を考えて�
 \end{equation}
 とすればよい．実際
 \begin{align*}
-  y(0,0) &= \theta(1.5) = 1  \\
-  y(1,0) &= \theta(0.5) = 1  \\
-  y(0,1) &= \theta(0.5) = 1  \\
-  y(1,1) &= \theta(-0.5) = 0  \\
+  y(0,0) & = \theta(1.5) = 1  \\
+  y(1,0) & = \theta(0.5) = 1  \\
+  y(0,1) & = \theta(0.5) = 1  \\
+  y(1,1) & = \theta(-0.5) = 0 \\
 \end{align*}
 となり，これは論理回路そのものであることが確かめられる．\par
 このようなニューロン回路を複雑に組み合わせることで，形式ニューロンを使ってどんな論理演算も実現できる．
@@ -935,8 +1226,8 @@ NANDゲートの出力を実現する形式ニューロンの回路を考えて�
       \draw (-5,-3) node{$x_2$};
       \draw (5,0) node{$y$};
     \end{tikzpicture}
-      \caption{2層からなるパーセプトロン}
-      \label{2層パーセプトロン}
+    \caption{2層からなるパーセプトロン}
+    \label{2層パーセプトロン}
   \end{center}
 \end{figure}
 形式ニューロンを複数組み合わせることで作ったニューロン回路をパーセプトロンと呼ぶ．パーセプトロンは層構造をなしている．図\ref{2層パーセプトロン}は2層構造をもつパーセプトロンの例である．ただし，入力層は層数には数えない．丸の中には，その形式ニューロンの出力値が書かれている．\par
@@ -1081,8 +1372,8 @@ NANDゲートの出力を実現する形式ニューロンの回路を考えて�
       \draw (10,-2) node{$l=3$};
       \draw (15,-2) node{$l=4$};
     \end{tikzpicture}
-      \caption{入力層と3層からなる順伝播ニューラルネットワークの例．ユニットを表す丸の中に書かれた変数は，各ユニットの出力値を意味する．}
-      \label{順伝播ニューラルネットワークの例}
+    \caption{入力層と3層からなる順伝播ニューラルネットワークの例．ユニットを表す丸の中に書かれた変数は，各ユニットの出力値を意味する．}
+    \label{順伝播ニューラルネットワークの例}
   \end{center}
 \end{figure}
 
@@ -1099,8 +1390,8 @@ NANDゲートの出力を実現する形式ニューロンの回路を考えて�
 となる．ただし$w_{ji}^{(l)}$は，第$l-1$層のユニット$i$を第$l$層のユニット$j$の間の結合の重みである．\par
 ユニットの出力は，活性$u_j^{(l)}$にユニット固有のバイアス$b_j^{(l)}$を加え，さらに活性化関数$f^{(l)}$を作用させたもの
 \begin{equation}
-  z_j^{(l)} 
-  = f^{(l)} \left( u_j^{(l)} + b_j^{(l)} \right) 
+  z_j^{(l)}
+  = f^{(l)} \left( u_j^{(l)} + b_j^{(l)} \right)
   = f^{(l)} \left( \sum_i w_{ji}^{(l)} z_i^{(l-1)} + b_j^{(l)} \right)
 \end{equation}
 で与えられる．活性化関数は$f^{(l)}$はユニットごとに変えてもかまわないが，一般的には層ごとに共通の関数を用いる．\par
@@ -1109,14 +1400,14 @@ NANDゲートの出力を実現する形式ニューロンの回路を考えて�
   \bm{W}^{(l)}
   =\begin{pmatrix}
     w_{11}^{(l)} & w_{11}^{(l)} & \cdots \\
-    w_{21}^{(l)} & w_{22}^{(l)} &  \\
-    \vdots &  & \ddots \\
+    w_{21}^{(l)} & w_{22}^{(l)} &        \\
+    \vdots       &              & \ddots \\
   \end{pmatrix}
 \end{equation}
 も導入する．さらにバイアスのまとめて縦ベクトル$\bm{b}^{(l)} = \left( b_j^{(l)} \right)$で表記することにすると，中間層が行う演算処理は
 \begin{equation}
-  \bm{u}^{(l)} 
-  = \bm{W}^{(l)} \bm{z}^{(l-1)}, \ \ \ \bm{z}^{(l)} = f^{(l)}\left( \bm{u}^{(l)} + \bm{b}^{(l)} \right) 
+  \bm{u}^{(l)}
+  = \bm{W}^{(l)} \bm{z}^{(l-1)}, \ \ \ \bm{z}^{(l)} = f^{(l)}\left( \bm{u}^{(l)} + \bm{b}^{(l)} \right)
 \end{equation}
 とまとめることができる．ただし，一般のベクトル$\bm{v}^{\top} = (v_1 v_2 v_3 \cdots)$に対する関数$f$の作用は，次のように各成分にそれぞれ作用するものとして定義することにする．\par
 \begin{equation}
@@ -1125,7 +1416,7 @@ NANDゲートの出力を実現する形式ニューロンの回路を考えて�
   \end{pmatrix} = \begin{pmatrix}
     (f(\bm{v}))_1 \\ (f(\bm{v}))_2 \\ (f(\bm{v}))_3 \\ \vdots
   \end{pmatrix} \equiv \begin{pmatrix}
-    f(v_1) \\ f(v_2) \\ f(v_3) \\ \vdots 
+    f(v_1) \\ f(v_2) \\ f(v_3) \\ \vdots
   \end{pmatrix}
 \end{equation}
 これまで重みとバイアスを区別して書いたが，バイアスも重みに含めてしまうことができる．それを理解するためにすべての中間層(と入力層)に，常に$1$という出力をするユニットを1つ加える．そしてそれを$i=0$というラベルで呼ぶことにする．
@@ -1134,20 +1425,20 @@ NANDゲートの出力を実現する形式ニューロンの回路を考えて�
 \end{equation}
 第$l-1$層の$i=0$と第$l$層の$j \neq 0$の間に重み$w_{j0}^{l}$を導入する．すると，これはバイアスそのものになる．なぜなら$w_{j0}^l = b_j^l$とおくと，
 \begin{equation}
-  \sum_{i=0} w_{ji}^l z_i^{l-1} 
+  \sum_{i=0} w_{ji}^l z_i^{l-1}
   = \sum_{i=1} w_{ji}^l z_i^{l-1} + w_{j0}^l
   = \sum_{i=1} w_{ji}^l z_i^{l-1} + b_j^l
 \end{equation}
 となるからである．そのため，今後，必要のない場合は重みの中にバイアスも含めてしまい，バイアスをあらわに書かない次のような表記を用いることにする．\par
 \begin{equation}
-  \bm{u}^{(l)} 
+  \bm{u}^{(l)}
   = \bm{W}^{(l)} \bm{z}^{(l-1)}, \ \ \ \bm{z}^{(l)} = f^{(l)}\left( \bm{u}^{(l)} \right)
 \end{equation}
 最後に出力層について考える．$L-1$層からなる順伝播型ニューラルネットを考える．すると最後の第$L$層が出力層に相当する．出力層は，手前の第$L-1$層から$\bm{z}^{(L-1)}$を入力され，それを変換することでニューラルネットの最終出力$\bm{y}=\bm{z}^{(L-1)}$を出力する．出力層の役割は，回帰など機械学習で実行したいタスクを処理することである．つまり，$\bm{h}=\bm{z}^{(L-1)}$が入力$\bm{x}$の表現であり，この表現$\bm{h}$の回帰分析を通じて$\bm{x}$と$\bm{y}$の関係を推定するのが出力層の役割である．\par
 \begin{equation}
-  \hat{\bm{y}} 
-  = \bm{z}^{(L)} 
-  = f^{(L)}\left( \bm{u}^{(L)} \right), \ \ \ 
+  \hat{\bm{y}}
+  = \bm{z}^{(L)}
+  = f^{(L)}\left( \bm{u}^{(L)} \right), \ \ \
   \bm{u}^{(L)}
   = \bm{W}^{(L)} \bm{h}
 \end{equation}
@@ -1178,7 +1469,7 @@ NANDゲートの出力を実現する形式ニューロンの回路を考えて�
 \subsection*{回帰}
 もし表現$\bm{h}$について線形回帰を行いたいのであれば，自明な活性化関数，つまり単なる恒等写像を用いた出力層を用意すればよい．
 \begin{equation}
-  \bm{y} 
+  \bm{y}
   = \bm{W}^{(L)} \bm{h}
 \end{equation}
 このようなユニットは線形ユニットと呼ばれる．ただし多くの場合は線形ではない一般的な回帰を行いたいため，何らかの非自明な活性化関数を考える．
@@ -1216,8 +1507,8 @@ NANDゲートの出力を実現する形式ニューロンの回路を考えて�
 \end{equation}
 を推定することと同じであるため，この分布の負の対数尤度を誤差関数にすればよい．したがって出力$y(\bm{x}_n; \bm{\theta}) = P(y=1 | \bm{x}_n; \bm{\theta})$に対し，
 \begin{equation}
-  E(\bm{\theta}) 
-  = -\sum_{n=1}^N \left( y_n \ln{y(\bm{x}_n; \bm{\theta})} 
+  E(\bm{\theta})
+  = -\sum_{n=1}^N \left( y_n \ln{y(\bm{x}_n; \bm{\theta})}
   + (1 - y_n) \ln{1 - y(\bm{x}_n; \bm{\theta})} \right)
 \end{equation}
 が誤差関数であり，これを最小化するパラメータを見つけることが学習である．\par
@@ -1227,16 +1518,16 @@ NANDゲートの出力を実現する形式ニューロンの回路を考えて�
 最後に多クラス分類について考える．例えば手書き文字認識や画像認識は典型的な多クラス分類である．いまクラスが$K$個だけあるとする．$K$が3以上の場合は，表現$\bm{h}=\bm{z}^{(L-1)}$をソフトマックス回帰する出力層を作ればよい．\par
 各クラスに対して目標変数が$y=1,2,\dots,K$という値をとるものとする．そして出力層には$K$個のユニットを用意し，それらの各ユニットは出力値として，入力$\bm{x}$が$y=k$番目のクラスに属する確率$P(y=k | \bm{x})$を推定するものとする．この出力層でソフトマックス回帰を表現するためには，出力層の$k$番目のユニットは次の出力値をもてばよい．
 \begin{align}
-  y_k(\bm{x}; \bm{\theta}) = P(y=k | \bm{x}; \bm{\theta}) 
+  y_k(\bm{x}; \bm{\theta}) = P(y=k | \bm{x}; \bm{\theta})
   = \text{softmax}_k \left( u_1^{(L)},\dots ,u_K^{(L)} \right) \\
   \bm{u}^{(L)} = \bm{W}^{(L)} \bm{h}
 \end{align}
 ここで出力層の活性化関数はソフトマックス関数である．学習済みニューラルネットワークへ分析したいデータ$\bm{x}$を入力し，出力$y_k$が最大になる$k$を所属クラスと判定する．\par
 ソフトマックス関数には，目標変数をベクトル表示するのが便利である．
 \begin{equation}
-  y \ \ \longleftrightarrow \ \ 
-  \bm{t}(y) 
-  = (t(y)_j) 
+  y \ \ \longleftrightarrow \ \
+  \bm{t}(y)
+  = (t(y)_j)
   = \begin{pmatrix}
     0 & \cdots & 0 & 1 & 0 & \cdots & 0
   \end{pmatrix}^{\top}
@@ -1244,7 +1535,7 @@ NANDゲートの出力を実現する形式ニューロンの回路を考えて�
 右辺は$y=k$のとき，第$k$成分のみが1で他の成分は0のベクトルである．訓練データも，この$t$にかんして与えることにする．
 \begin{equation}
   \mathcal{D}
-  = \{ (\bm{x}_n, \bm{t}_n) \}_{n=1,\dots,N} 
+  = \{ (\bm{x}_n, \bm{t}_n) \}_{n=1,\dots,N}
 \end{equation}
 このベクトル$\bm{t}_n$の第$k$成分を$t_{n,k}$と書くと，ニューラルネットワークのソフトマックス出力に対する交差エントロピーは
 \begin{equation}
