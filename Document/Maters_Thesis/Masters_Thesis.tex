@@ -450,12 +450,11 @@ $h=0$の場合に高温展開を行う．二次元イジング模型の分配関
   \mu_{\alpha}
   \equiv \{\sigma_1, \sigma_2, \dots, \sigma_n\}
 \end{equation}
-境界条件より，
-\begin{align}
-  \mu_{n+1}    & = \mu_1    \\
-  \sigma_{n+1} & = \sigma_1
-\end{align}
-が成り立つ．また，配位全体を$\{\mu_1, \dots, \mu_n\}$と表す．仮定より，$\alpha$列のスピンと相互作用するのは$(\alpha-1)$列と$(\alpha+1)$列である．ここで，$\alpha$列と$\alpha+1$列との相互作用エネルギーを$E(\mu_{\alpha}, \mu_{\alpha+1})$，$\alpha$列のスピン内でのスピン同士の相互作用エネルギーと磁場との相互作用エネルギーを$E(\mu_{\alpha})$とすると，それぞれ次のように書ける．
+ここで，$\mu$について次の境界条件が成り立つ
+\begin{equation}
+  \mu_{n+1} = \mu_1 
+\end{equation}
+また，スピン配位全体を$\{\mu_1, \dots, \mu_n\}$で表す．イジング模型では，$\alpha$列にあるスピンと相互作用する列は$(\alpha-1)$列と$(\alpha+1)$列のみある．そこで，$\alpha$列と$\alpha+1$列との相互作用エネルギーを$E(\mu_{\alpha}, \mu_{\alpha+1})$，$\alpha$列のスピン内でのスピン同士の相互作用エネルギーと磁場との相互作用エネルギーの総和を$E(\mu_{\alpha})$とすると，それぞれ次のようになる．
 \begin{align}
   E(\mu, \mu')
    & = -\epsilon \sum_{k=1}^n s_k s'_k                         \\
@@ -526,7 +525,8 @@ $h=0$の場合に高温展開を行う．二次元イジング模型の分配関
   = \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\lambda_{\text{max}}}
   \label{n極限}
 \end{equation}
-か成り立つことがわかる．ここで，$N=n^2$．式(\ref{最大固有値有限}) が真であり，すべての固有値$\lambda_{\alpha}$が正であることがわかる．したがって，$P$の最大の固有値を見つけるだけで十分である．このセクションの残りの部分は，$P$の明示的な表現の説明に当てられる．
+か成り立つことがわかる．$N=n^2$．式(\ref{最大固有値有限}) が真であり，すべての固有値$\lambda_{\alpha}$が正であるという仮定が正しいことは後でわかる．したがって，$P$の最大の固有値が分かれば$n \rightarrow \infty$での分配関数が分かる．このセクションの残りの部分は，$P$の明示的な表現の説明に当てられる．
+
 
 \subsection{行列$\mathrm{P}$}
 式(\ref{行列要素})と式(\ref{イジングエネルギー２})から我々は$\mathrm{P}$の行列要素を
@@ -617,9 +617,9 @@ $m \times m$の２つの行列$A, B$を考える．行列要素はそれぞれ�
 \end{equation*}
 ここで，$2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\alpha}$を定義する．
 \begin{align}
-  \mathrm{X}_{\alpha} \equiv 1 \times 1 \times \cdots \times \mathrm{X} \times \cdots \times 1 \notag \\
-  \mathrm{Y}_{\alpha} \equiv 1 \times 1 \times \cdots \times \mathrm{Y} \times \cdots \times 1        \\
-  \mathrm{Z}_{\alpha} \equiv 1 \times 1 \times \cdots \times \mathrm{Z} \times \cdots \times 1 \notag
+  \mathrm{X}_{\alpha} \equiv 1 \otimes 1 \otimes \cdots \otimes \mathrm{X} \otimes \cdots \otimes 1 \notag \\
+  \mathrm{Y}_{\alpha} \equiv 1 \otimes 1 \otimes \cdots \otimes \mathrm{Y} \otimes \cdots \otimes 1        \\
+  \mathrm{Z}_{\alpha} \equiv 1 \otimes 1 \otimes \cdots \otimes \mathrm{Z} \otimes \cdots \otimes 1 \notag
 \end{align}
 $\alpha \neq \beta$のとき以下の関係式が成り立つ．
 \begin{align}
