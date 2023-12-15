@@ -504,7 +504,7 @@ $h=0$の場合に高温展開を行う．二次元イジング模型の分配関
   Z(H,T)
   = \sum_{\alpha=1}^{2^n} (\lambda_\alpha)^n
 \end{equation}
-で表される．$E(\mu, \mu')$と$E(\mu)$は$n$のオーダーであるため，式(\ref{行列要素})の形式から，$n$が大きい場合，$\mathcal{P}$の固有値は一般に$e^n$のオーダーであることが予想される．$\lambda_{\text{max}}$を$\mathrm{P}$の最大固有値とすると，
+で表される．$E(\mu, \mu')$と$E(\mu)$は$n$のオーダーであるため，式(\ref{行列要素})の形式から，$n$が大きい場合，$\mathrm{P}$の固有値は一般に$e^n$のオーダーであることが予想される．$\lambda_{\text{max}}$を$\mathrm{P}$の最大固有値とすると，
 \begin{equation}
   \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\lambda}_{\text{max}}
   = \text{finite number}
@@ -524,6 +524,7 @@ $h=0$の場合に高温展開を行う．二次元イジング模型の分配関
 \begin{equation}
   \lim_{N \rightarrow \infty} \frac{1}{N} \ln{Z}
   = \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\lambda_{\text{max}}}
+  \label{n極限}
 \end{equation}
 か成り立つことがわかる．ここで，$N=n^2$．式(\ref{最大固有値有限}) が真であり，すべての固有値$\lambda_{\alpha}$が正であることがわかる．したがって，$P$の最大の固有値を見つけるだけで十分である．このセクションの残りの部分は，$P$の明示的な表現の説明に当てられる．
 
@@ -549,14 +550,19 @@ $h=0$の場合に高温展開を行う．二次元イジング模型の分配関
   \mathrm{P} = V_3 V_2 V'_1
 \end{equation}
 行列乗算の通常の意味で，つまり
-\begin{align}
-   & \bra{s_1,\dots,s_n}\mathrm{P}\ket{s'_1,\dots,s'_n}                                                            \\
-   & = \sum_{s''_1, \dots, s''_n} \sum_{s'''_1, \dots, s'''_n} \bra{s_1,\dots,s_n}V_3\ket{s''_1,\dots,s''_n}       \\
-   & \times \bra{s''_1,\dots,s''_n}V_2\ket{s'''_1,\dots,s'''_n} \bra{s'''_1,\dots,s'''_n}V'_1\ket{s'_1,\dots,s'_n}
-\end{align}
+\begin{align*}
+  & \bra{s_1,\dots,s_n}\mathrm{V}_3\mathrm{V}_2\mathrm{V}'_1\ket{s'_1,\dots,s'_n}                                                            \\
+  & = \sum_{s''_1, \dots, s''_n} \sum_{s'''_1, \dots, s'''_n} \bra{s_1,\dots,s_n}\mathrm{V}_3\ket{s''_1,\dots,s''_n} \bra{s''_1,\dots,s''_n}\mathrm{V}_2\ket{s'''_1,\dots,s'''_n}       \\
+  & \times \bra{s'''_1,\dots,s'''_n}\mathrm{V}'_1\ket{s'_1,\dots,s'_n} \\
+  & = \sum_{s''_1, \dots, s''_n} \sum_{s'''_1, \dots, s'''_n}
+  \delta_{s_1s''_1} \cdots \delta_{s_ns''_n} \delta_{s''_1s'''_1} \cdots \delta_{s''_ns'''_n} \prod_{k =1}^{n} e^{\beta H s_k} e^{\beta \epsilon s''_k s'''_{k+1}} e^{\beta \epsilon s'''_k s'_k} \\
+  & = \sum_{s''_1, \dots, s''_n} 
+  \delta_{s_1s''_1} \cdots \delta_{s_ns''_n} \prod_{k =1}^{n} e^{\beta H s_k} e^{\beta \epsilon s''_k s''_{k+1}} e^{\beta \epsilon s''_k s'_k} \\
+  & = \prod_{k =1}^{n} e^{\beta H s_k} e^{\beta \epsilon s_k s_{k+1}} e^{\beta \epsilon s_k s'_k}
+\end{align*}
 
 \subsection{行列の直積}
-ここで，$V_3, V_2, V'_1$による便利な方法を述べる前に，行列の積の概念を導入する．\par
+ここで，$\mathrm{V}_3, \mathrm{V}_2, \mathrm{V}'_1$による便利な方法を述べる前に，行列の積の概念を導入する．\par
 $m \times m$の２つの行列$A, B$を考える．行列要素はそれぞれ，$\bra{i}A\ket{j}, \bra{i}B\ket{j}$である．$i, j$はそれぞれ$1, 2, \dots, m$の値をとる．このとき，直積$A \times B$は$m^2 \times m^2$の行列となり，行列要素は
 \begin{equation}
   \bra{ii'}A \times B\ket{jj'}
@@ -586,7 +592,7 @@ $m \times m$の２つの行列$A, B$を考える．行列要素はそれぞれ�
 \end{equation}
 
 \subsection{スピン行列}
-ここで，$V'_1, V_2, V_3$を便利に表現できる特別な行列をいくつか紹介する．よく知られた3つの$2 \times 2$パウリスピン行列を$X, Y, Z$とする．
+ここで，$\mathrm{V}'_1, \mathrm{V}_2, \mathrm{V}_3$を便利に表現できる特別な行列をいくつか紹介する．よく知られた3つの$2 \times 2$パウリスピン行列を$X, Y, Z$とする．
 \begin{equation}
   X \equiv \begin{pmatrix}
     0 & 1 \\ 1 & 0
@@ -628,10 +634,10 @@ $\alpha \neq \beta$のとき以下の関係式が成り立つ．
 \end{align}
 $2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\alpha}$は(\ref{スピン行列性質})のすべての関係式を満たす．
 
-\subsection{行列$V'_1, V_2, V_3$}
+\subsection{行列$\mathrm{V}'_1, \mathrm{V}_2, \mathrm{V}_3$}
 式(\ref{V1})から，$\mathrm{V}'_1$が$n$個の同じ$2 \times 2$行列の直積で表せることがわかる．
 \begin{equation}
-  V_1'=\bm{a} \times \bm{a} \times \cdots \times \bm{a}
+  \mathrm{V}_1'=\bm{a} \times \bm{a} \times \cdots \times \bm{a}
 \end{equation}
 ここで，
 \begin{equation}
@@ -644,39 +650,68 @@ $2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\al
       e^{\beta \epsilon}  & e^{-\beta \epsilon} \\
       e^{-\beta \epsilon} & e^{\beta \epsilon}
     \end{array}\right]=e^{\beta \epsilon}+e^{-\beta \epsilon} X
+    \label{a行列}
 \end{equation}
-である．式(\ref{})を用いることで以下を得る
+である．ここで，$\alpha$と$\theta$を定数として
+\begin{equation}
+  \bm{a} 
+  = \alpha e^{\theta X}
+  = \alpha (\cosh{\theta} + X \sinh{\theta})
+\end{equation}
+として，式(\ref{a行列})と係数比較すれば，
+\begin{equation}
+  \begin{cases}
+    e^{\beta \epsilon} = \alpha \cosh{\theta} \\
+    e^{- \beta \epsilon} = \alpha \sinh{\theta}
+  \end{cases}
+\end{equation}
+となり，これを解くことで
 \begin{equation}
   \bm{a}
-  =\sqrt{2 \sinh (2 \beta \epsilon)} e^{\theta X}
-\end{equation}
-ここで，
-\begin{equation}
+  =\sqrt{2 \sinh (2 \beta \epsilon)} e^{\theta X}, \quad
   \tanh \theta \equiv e^{-2 \beta \epsilon}
 \end{equation}
 である．したがって
 \begin{equation}
-  \mathrm{V}_1'=[2 \sinh (2 \beta \epsilon)]^{\frac{1}{2}} e^{\theta X} \times e^{\theta X} \times \cdots \times e^{\theta X}
+  \mathrm{V}_1'=[2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} e^{\theta X} \otimes e^{\theta X} \otimes \cdots \otimes e^{\theta X}
 \end{equation}
-\begin{equation}
-  e^{\theta X} \times e^{\theta X} \times \cdots \times e^{\theta X}=e^{\theta \mathrm{X}_1} e^{\theta \mathrm{X}}{ }_2 \cdots e^{\theta \mathrm{X}_n}=e^{\theta\left(\mathrm{X}_1+\mathrm{X}_2+\cdots+\mathrm{X}_n\right)}
-\end{equation}
+と表せる．ここで，
+\begin{align}
+  &e^{\theta X} \otimes e^{\theta X} \otimes \cdots \otimes e^{\theta X} \\
+  &= (e^{\theta X} \otimes 1 \otimes \cdots \otimes 1) (1 \otimes e^{\theta X} \otimes \cdots \otimes 1) \cdots (1 \otimes 1 \otimes \cdots \otimes e^{\theta X}) \\
+  &= e^{\theta \mathrm{X}_1} e^{\theta \mathrm{X}_2} \cdots e^{\theta \mathrm{X}_n} \\
+  &= e^{\theta\left(\mathrm{X}_1+\mathrm{X}_2+\cdots+\mathrm{X}_n\right)}
+\end{align}
+と表せることを使う．2つ目の等式では$1 \otimes \cdots \otimes e^{\theta X} \otimes \cdots \otimes 1 = e^{\theta (1 \otimes \cdots \otimes X \otimes \cdots 1)}$を使った．これより，$\mathrm{V}'_1$は次のように書ける．
 \begin{align}
   \mathrm{V}_1'
-   & =[2 \sinh (2 \beta \epsilon)]^{\frac{1}{2}} \mathrm{~V}_1                               \\
-  \mathrm{~V}_1
-   & =\prod_{\alpha=1}^n e^{0 \mathrm{x}_x}, \quad \tanh \theta \equiv e^{-2 \beta \epsilon}
+   & =[2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{~V}_1                               \\
+  \mathrm{V}_1
+   & =\prod_{\alpha=1}^n e^{\theta \mathrm{x}_{\alpha}}, \quad \tanh \theta \equiv e^{-2 \beta \epsilon}
 \end{align}
+同様な考えより，$\mathrm{V}_2, \mathrm{V}_3$に関しても，
 \begin{align}
   \mathrm{V}_2
    & =\prod_{\alpha=1}^n e^{\beta \epsilon \mathbf{Z}_\alpha \mathbf{Z}_{\alpha+1}}                      \\
   \mathrm{~V}_3
-   & =\prod_{\alpha=1}^n e^{\beta B \mathbf{Z}_\alpha} \quad, \quad \mathbf{Z}_{n+1} \equiv \mathbf{Z}_1
+   & =\prod_{\alpha=1}^n e^{\beta H \mathbf{Z}_\alpha} \quad, \quad \mathbf{Z}_{n+1} \equiv \mathbf{Z}_1
 \end{align}
+が示せる．したがって
 \begin{equation}
   \mathrm{P}
-  = [2 \sinh (2 \beta \epsilon)]^{\frac{1}{2}} \mathrm{V}_3 \mathrm{V}_2 \mathrm{V}_1
+  = [2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{V}_3 \mathrm{V}_2 \mathrm{V}_1
+  \label{行列P最終形態}
 \end{equation}
+と表すことができる．$H=0$のとき，つまり$V_3 = 1$のとき，2次元イジング模型を完全に定式化できる．
+
+\subsection{厳密解}
+磁場がない場合，式(\ref{n極限})と式(\ref{行列P最終形態})は次のようになる．
+\begin{equation}
+  \lim_{N \rightarrow \infty} \frac{1}{N} \ln{Z(0, T)} 
+  = \frac{1}{2} \ln{[2 \sinh{2 \beta \epsilon}]}
+  + \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\Lambda}
+\end{equation}
+ここで，$\Lambda$は$\mathrm{V} = \mathrm{V}_1 \mathrm{V}_2$の最大固有値である．また，$\mathrm{V}_1$は式(\ref{})で与えられ，$\mathrm{V}_1$は(\ref{})で与えられる．これらの式は，Vの固有値がすべて正で，$\lim_{n \rightarrow \infty} n^{-1}\ln{\Lambda}$が存在する場合に成り立つ．我々の主な仕事は行列$\mathrm{V}$を対角化することである．
 
 
 \chapter{機械学習と深層学習}
@@ -1109,7 +1144,46 @@ $\bm{w}$はモデルのパラメータをまとめて表したベクトルであ
 \end{equation}
 これはデータの経験分布とモデル分布の間の交差エントロピーと呼ばれ，深層学習でもよく登場する重要な誤差関数の1つである．
 
-\subsection{ソフトマックス関数}
+\subsection{ソフトマックス回帰}
+多クラス分類の識別モデルについて考える．この場合もロジスティック回帰の一般化で取り扱うことができる．次の式に注目する．
+\begin{equation}
+  P(y | \bm{x}) 
+  = \prod_{k=1}^{K} (P(\mathcal{C}_k | \bm{x}))^{t(y)_k}
+\end{equation}
+これが正しい式であることは，one-hot表現の定義である式(\ref{})からわかる．例えば，これは$\bm{t}(y) = \begin{pmatrix} 1 & 0 & 0 & \dots \end{pmatrix}^{\top}$に対応した$y$を考えたならば，式(\ref{})の右辺は$P(\mathcal{C} | \bm{x})$となるからである．この分布はベルヌーイ分布の多値変数への自然な拡張である，マルチヌーイ分布やカテゴリカル分布と呼ばれる．この分布を少し書き換えてみると，$\sum_{k=1}^{K} t(y)_k = 1$が常に成り立っているため，
+\begin{align}
+  P(y | \bm{x}) 
+  &= \prod_{k=1}^{K-1} (P(\mathcal{C}_k | \bm{x}))^{t(y)_k} (P(\mathcal{C}_K | \bm{x}))^{1 - \sum_{k=1}^{K-1} t(y)_k} \notag \\
+  &= (P(\mathcal{C}_K | \bm{x})) \prod_{k=1}^{K-1} \left( \frac{P(\mathcal{C}_k | \bm{x})}{P(\mathcal{C}_k | \bm{x})} \right)^{t(y)_k} \notag \\
+  &= (P(\mathcal{C}_K | \bm{x})) \prod_{k=1}^{K-1} e^{t(y)_k u_k} \notag \\
+  &= (P(\mathcal{C}_K | \bm{x})) e^{\sum_{k=1}^{K} t(y)_k u_k} 
+\end{align}
+が得られる．$u_k$は対数オッズを多クラス問題に一般化した
+\begin{equation}
+  u_k = \ln{\frac{P(\mathcal{C}_k | \bm{x})}{P(\mathcal{C}_k | \bm{x})}}
+\end{equation}
+である．\par
+このように多クラス分類でも，対数オッズは分布を記述するためのよいパラメータである．対数オッズの定義からただちに$P(\mathcal{C}_K | \bm{x}) e^{u_k} = P(\mathcal{C}_k | \bm{x})$が得られるが，右辺の和を取ると全確率の法則から$\sum_{k} P(\mathcal{k} | \bm{x}) = 1$なので，
+\begin{equation}
+  P(\mathcal{C}_K | \bm{x})
+  = \frac{1}{\sum_{k=1}^{K} e^{u_k}}
+\end{equation}
+という関係式が得られる．これを元の式$P(\mathcal{C}_K | \bm{x}) e^{u_k} = P(\mathcal{C}_k | \bm{x})$に入れ直すことで，各クラスの分布をソフトマックス関数で書き表すことがわかった．
+\begin{equation}
+  P(\mathcal{C}_k | \bm{x})
+  = \text{softmax}_k (u_1, u_2, \dots, u_K) 
+  = \frac{e^{u_k}}{\sum_{k'=1}^{K} e^{u_{k'}}}
+\end{equation}
+このように，カテゴリカル分布は対数オッズを引数とするソフトマックス関数で書き表すことができた．そこで，ロジスティック回帰に倣い，その対数オッズを線形関数でモデル化する．
+\begin{equation}
+  u_k = \bm{w}_k^{\top} \bm{x} + b_k, \quad (k = 1,2,\dots,K-1)
+\end{equation}
+この線形の対数オッズを用いた識別モデルをソフトマックス回帰と呼ぶ．ソフトマックス回帰を最尤法で取り扱う方法も，ロジスティック回帰の場合とまったく同じである．つまり，負の対数尤度関数
+\begin{equation}
+  E(\bm{w}_1,\dots,\bm{w}_{K-1})
+  = -\sum_{n=1}^{N}\sum_{k=1}^{K} t(y_n) \ln{P(\mathcal{C}_k | \bm{x}_n)}
+\end{equation}
+を最小化することでパラメータを最適化する．ただし，$\sum_{k} P(\mathcal{C}_k | \bm{x}_n) = 1$と$\sum_{k} t(y_n)_k = 1$という条件が付いていることに注意である．そのため余分な1自由度が消去され，式(\ref{})により，$u_K=0$となっている．したがって，$K$番目のクラスにはパラメータ$\bm{w}_K$が付与されていない．
 
 
 \section{ニューラルネットワーク}
