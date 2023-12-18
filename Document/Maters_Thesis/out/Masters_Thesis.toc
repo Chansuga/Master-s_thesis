@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {3.3}統計入門}{22}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}標本と推定}{22}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}点推定}{23}{subsection.3.3.2}%
-\contentsline {subsubsection}{ガウス分布の場合}{24}{section*.12}%
+\contentsline {subsubsection}{ガウス分布の場合}{25}{section*.12}%
 \contentsline {subsubsection}{ベルヌーイ分布の場合}{26}{section*.13}%
 \contentsline {subsection}{\numberline {3.3.3}最尤推定}{27}{subsection.3.3.3}%
 \contentsline {subsubsection}{ガウス分布の場合}{28}{section*.14}%
@@ -66,7 +66,7 @@
 \contentsline {section}{\numberline {4.2}相の分類器による相転移検出}{54}{section.4.2}%
 \contentsline {section}{\numberline {4.3}温度測定器による相転移検出}{54}{section.4.3}%
 \contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{54}{section.4.4}%
-\contentsline {chapter}{謝辞}{56}{chapter*.34}%
-\contentsline {chapter}{参考文献}{57}{chapter*.35}%
+\contentsline {chapter}{謝辞}{56}{chapter*.35}%
+\contentsline {chapter}{参考文献}{57}{chapter*.36}%
 \contentsline {chapter}{\numberline {付録A}aaa}{58}{appendix.A}%
 \contentsline {section}{\numberline {A.1}bbb}{58}{section.A.1}%
