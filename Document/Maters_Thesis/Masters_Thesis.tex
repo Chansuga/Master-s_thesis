@@ -763,7 +763,7 @@ $2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\al
 MNISTデータベース(Mixed National Institude of Standards and Technology database)はアメリカの国立標準技術研究所(NIST)，昔の国立標準局が提供した手書き数字のデータベースをシャッフルして作られたデータ集合である(図\ref{MNIST})．国勢調査局職員と高校生から集められた手書き数字の画像データが訓練用に6万枚，テスト用に1万枚用意されている．それぞれのサンプルはグレースケールの$28 \times 28$ピクセル画像に整えられている．
 \begin{figure}[H]
   \begin{center}
-      \includegraphics[height=2cm]{image/mnist.png}
+      \includegraphics[height=1.8cm]{image/mnist.png}
       \caption{MNISTデータセットの一部}
       \label{MNIST}
   \end{center}
@@ -810,10 +810,10 @@ ImageNetは，約1400万枚の自然画像からなる巨大なデータベー�
 \subsubsection*{バイアスが小さい}
 推定量の期待値$\mathrm{E} \left[ \hat{\bm{\theta}} \right]$と真の値$\bm{\theta}^*$との差
 \begin{equation}
-  b\left( \hat{\bm{\theta}} \right)
+  b(\hat{\bm{\theta}})
   = \mathrm{E} \left[ \hat{\bm{\theta}} \right] - \bm{\theta}^*
 \end{equation}
-のことをバイアスという．ここでの期待値は，データ生成分布での期待値なので，たくさんのデータ集合を用意して計算した平均値である．バイアスが小さいとは，推定量の偏りが小さく真の値から不要にズレていないということである．特にバイアスがゼロのものを不偏推定量と呼び，典型的な望ましい推定量である．一方でバイアスがあるものの，データの数が増えるにつれゼロへ漸近する状況$\lim_{N \rightarrow \infty} = 0$を漸近不偏推定量と呼ぶ．
+のことをバイアスという．ここでの期待値は，データ生成分布での期待値なので，たくさんのデータ集合を用意して計算した平均値である．バイアスが小さいとは，推定量の偏りが小さく真の値から不要にズレていないということである．特にバイアスがゼロのものを不偏推定量と呼び，典型的な望ましい推定量である．一方でバイアスがあるものの，データの数が増えるにつれゼロへ漸近する状況$\lim_{N \rightarrow \infty} b(\hat{\bm{\theta}}) = 0$を漸近不偏推定量と呼ぶ．
 
 \subsubsection*{分散が小さい}
 分散は，真の値に対してどれだけ推定量がばらつくかを測っている．したがって，これが小さいことは望ましいのは明らかである．
@@ -831,47 +831,47 @@ ImageNetは，約1400万枚の自然画像からなる巨大なデータベー�
 となるということである．この性質を満たす推定量を一致推定量と呼ぶ．
 
 \subsubsection{ガウス分布の場合}
-ガウス分布とは実数値をとる確率変数$x$上の次のような分布である．
+点推定の例としてガウス分布を考える．ガウス分布とは実数値をとる確率変数$\mathrm{x}$上の次のような分布である．
 \begin{equation}
-  P(x)
-  = \mathcal{N}(x; \mu, \sigma^2)
-  = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+  P(\mathrm{x})
+  = \mathcal{N}(\mathrm{x}; \mu, \sigma^2)
+  = \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(\mathrm{x}-\mu)^2}{2\sigma^2}}
 \end{equation}
-$\mu$と$\sigma^2$の2つを決めればこの分布が定まるため，この2つがパラメータである．では，ガウス分布から無作為に取り出した$N$個のデータからパラメータを推定するにはそうすればよいか．今，どのサンプルも無作為に抽出されているとしたため，任意のデータ点$\mathrm{x}_n$はガウス分布に従う独立な確率変数である．したがって，その期待値は分布のパラメータ$\mu$に一致している．
-\begin{equation}
+この場合，$\bm{\theta} = \{ \mu, \sigma^2 \}$であり，$\mu$は平均，$\sigma^2$は分散を表している．したがってこの2つのパラメータが決ればこの分布が定まる．では，ガウス分布から無作為に取り出した$N$個のデータからパラメータ$\{ \mu, \sigma^2 \}$を推定するにはどうすればよいか？\par
+まず，$\mu$の推定量$\hat{\mu}$について考える．今，どのサンプルも無作為に抽出されているとしたため，任意のデータ点$\mathrm{x}_n$はガウス分布に従う独立な確率変数である．したがって，その期待値は
+\begin{align}
   E_{\mathcal{N}}[\mathrm{x}_n]
-  = \int_{-\infty}^{\infty} x_n P(x_n) dx_n
-  = \mu
-\end{equation}
-これはもちろん分布に対する期待値だが，それを与えられたデータ$\mathcal{D} = \{ x_1, x_2, \dots, x_N \}$に関する平均値で近似してみる．つまり，本当の期待値であるガウス分布の期待値をサンプル平均で置き換えたものを$\mu$の推定量$\hat{\mu}$とするのである．
+  &= \int_{-\infty}^{\infty} x_n P(x_n) dx_n \notag \\
+  &= \frac{1}{\sqrt{2 \pi \sigma^2}} \int_{-\infty}^{\infty} x_n e^{-\frac{(x - \mu)^2}{2\sigma^2}} dx_n \notag \\
+  &= \frac{1}{\sqrt{2 \pi \sigma^2}} \int_{-\infty}^{\infty} ({x'}_n + \mu) e^{-\frac{{x'}_n^2}{2\sigma^2}} dx'_n \notag \\
+  &= \frac{\mu}{\sqrt{2 \pi \sigma^2}} \int_{-\infty}^{\infty} e^{-\frac{{x'}_n^2}{2\sigma^2}} dx'_n \notag \\
+  &= \mu
+\end{align}
+となり，分布のパラメータ$\mu$に一致していることがわかる．
+そこで，$\mu$の推定量$\hat{\mu}$を，与えられたデータ$\mathcal{D} = \{ x_1, x_2, \dots, x_N \}$に関する平均値
 \begin{equation}
   \hat{\mu}
   = \frac{1}{N} \sum_{n=1}^{N} \mathrm{x}_n
 \end{equation}
-すると，これは見事に不偏推定量になっている．
-\begin{align}
+とする．そうすると，この推定量の期待値は
+\begin{equation}
   E_{\mathcal{N}}[\hat{\mu}]
-   & = \frac{1}{N} \sum_{i=1}^N \mathrm{E}[\mathrm{x}_n] \notag \\
-   & = \mu
-\end{align}
-では，$\sigma^2$はどうなっているか．
+  = \frac{1}{N} \sum_{i=1}^N \mathrm{E}[\mathrm{x}_n] = \mu
+\end{equation}
+と見事に$\mu$と一致し，不変推定量になっていることがわかる．\par
+次に$\sigma^2$の推定量はどう決めればよいか？$\sigma^2$の期待値を計算してみると
 \begin{align}
-  \mathrm{E}_{\mathcal{N}}[(\mathcal{X}_n - \mu)^2]
+  \mathrm{E}_{\mathcal{N}}[(\mathrm{x}_n - \mu)^2]
    & = \int_{-\infty}^{\infty} (x_n - \mu)^2 P(x_n) dx_n \notag \\
+   & = \frac{1}{\sqrt{2 \pi \sigma^2}}\int_{-\infty}^{\infty} {x'}_n^2 e^{-\frac{{x'}_n^2}{2 \sigma^2}} dx'_n \notag \\
    & = \sigma^2
 \end{align}
-となる．したがって安直には，再びこの期待値をサンプル平均で近似すれば推定量$\hat{\sigma}^2$が得られると思う．
+となることから，安直には$\mu$のときと同様に，サンプル平均
 \begin{equation}
   \hat{\sigma}^2
-  = \frac{1}{N} \sum_{n=1}^N (x_n - \hat{\mu})^2
+  = \frac{1}{N} \sum_{n=1}^N (\mathrm{x}_n - \hat{\mu})^2
 \end{equation}
-これが不偏であるか見るために期待値を計算する．
-\begin{align}
-  \mathrm{E}_{\mathcal{N}}[(\mathrm{x}_n - \hat{\mu})^2]
-   & = \mathrm{E}_{\mathcal{N}}[(\mathrm{x}_n - \mu)^2 -2(\mathrm{x}_n - \mu)^2 - 2(\mathrm{x}_n - \mu)(\hat{\mu} - \mu) + (\hat{\mu} - \mu)^2] \notag \\
-   & = \sigma^2 -2 \frac{\sigma^2}{N} + \frac{\sigma^2}{N}
-\end{align}
-
+を用いればよいと思う．しかし，これの期待値を計算すると
 \begin{align*}
   \mathrm{E}_\mathcal{N}\left[\hat{\sigma}^2\right]
    & =\mathrm{E}_\mathcal{N}\left[\frac{1}{N} \sum_{n=1}^N\left(\mathrm{x}_n-\hat{\mu}\right)^2\right]                                                                                                                                       \\
@@ -882,19 +882,19 @@ $\mu$と$\sigma^2$の2つを決めればこの分布が定まるため，この2
    & =\sigma^2-\frac{1}{N} \sigma^2                                                                                                                                                                              \\
    & =\left(1-\frac{1}{N}\right) \sigma^2
 \end{align*}
-となり，不偏ではない．ただし，$N \rightarrow \infty$の極限でこの期待値は$\sigma^2$に一致するため，漸近的不偏推定量になっている．また，バイアスのない推定量は余分な係数を除いたものなので，
+となり，不偏推定量ではないという結果になる．ただし，$N \rightarrow \infty$の極限でこの期待値は$\sigma^2$に一致するため，漸近的不偏推定量になっている．余分な係数を除けば，バイアスがゼロになるため
 \begin{equation}
   \hat{\tilde{\sigma}}^2 
   = \frac{1}{N - 1} \hat{\sigma^2} = \frac{1}{N - 1} \sum_{n=1}^N (\mathrm{x}_n - \hat{\mu})^2
 \end{equation}
-と与えられる．
+とすれば不変推定量が得られる．
 
 \subsubsection{ベルヌーイ分布の場合}
-コイン投げの結果が表裏どちらかなど，2つのランダムな値をとる現象を記述するのがベルヌーイ分布である．確率変数を0か1の離散値をとるものとし，$\mathrm{x}$が1をとる確率を$p$とすると，この分布は，
+次にベルヌーイ分布の場合を考える．ベルヌーイ分布とはコイン投げの結果が表裏どちらかなど，2つのランダムな値をとる現象を記述する分布である．確率変数を0か1の離散値をとるものとし，$\mathrm{x}$が1をとる確率を$p$とすると，この分布は，
 \begin{equation}
-  P(x) = p^x (1 - p)^{1-x}
+  P(\mathrm{x}) = p^\mathrm{x} (1 - p)^{1-\mathrm{x}}
 \end{equation}
-と書ける．パラメータは$p$のみである．ベルヌーイ分布の期待値と分散は，
+と書ける．このときパラメータは$p$のみである．ベルヌーイ分布の期待値と分散は，
 \begin{equation}
   \mathrm{E}_{P}[\mathrm{x}] 
   = \sum_{\mathrm{x} = 0,1} x P(x) 
@@ -904,59 +904,75 @@ $\mu$と$\sigma^2$の2つを決めればこの分布が定まるため，この2
 \begin{align}
   \mathrm{E}_{P}[(\mathrm{x} - p)^2] 
   &= \sum_{\mathrm{x} = 0,1} (x -2px + p^2) P(x) \notag \\
-  &= p^2 \cdots P(0) + (1 - 2p + p^2) \cdot P(1) \notag \\
+  &= p^2 \cdot P(0) + (1 - 2p + p^2) \cdot P(1) \notag \\
   &= p(1-p)
 \end{align}
-と書くことができる．すると，パラメータの推定量は再びサンプル平均
+であるため，パラメータの推定量は再びサンプル平均
 \begin{equation}
   \hat{p} 
   = \frac{1}{N} \sum_{n=1}^N x_n
 \end{equation}
 がよさそうである．実際，
 \begin{equation*}
-  \mathrm{E}_{P}[\hat{p}] = \frac{1}{N} \sum_{N=1}^{n} E_P[\mathrm{x}_n]  
+  \mathrm{E}_{P}[\hat{p}] 
+  = \frac{1}{N} \sum_{N=1}^{n} E_P[\mathrm{x}_n]  
+  = p
 \end{equation*}
-であり，データサイズが大きくなるほど推定値のばらつきがゼロに近づいていく，したがって大きなデータに対して分散は小さくなるような推定量である．
+となり，不変推定量であることがわかる．\par
+では，分散はどうなるか？期待値を計算してみると
+\begin{equation}
+  \mathrm{E}\left[ (\hat{p} - p)^2 \right]
+  = \frac{1}{N^2} \sum_{n=1}^{N} \mathrm{E}_{P} \left[ (x_n - p)^2 \right] 
+  = \frac{1}{N} p(1 - p)
+\end{equation}
+となり，データサイズが大きくなるほど推定値のばらつきがゼロに近づいていく，したがって大きなデータに対して分散は小さくなるような推定量である．
 
 \subsection{最尤推定}
-これまで，発見的な方法で推定量を探してきたが，これでは複雑な分布の場合はどうしようもない．ところがパラメトリックな場合には，実は広く使える強力な手法がある．これが最尤推定法である．\par
-データ生成分布のパラメトリックモデル$P_{\text{model}}(\mathrm{x}; \bm{\theta})$が与えられているとする．与えられたサンプル$\mathcal{D} = \{x_1, x_2, \dots, x_N\}$は，この分布から無作為に抽出されていると近似する．すると，これらは独立に同じモデルから生成された実現値なので，このデータ集合が得られる同時確率は
+点推定では発見的な方法で推定量を探してきたが，これでは複雑な分布の場合に推定量を見つけることができない．ところがパラメトリックな場合には，実は広く使える強力な手法がある．それが最尤推定法である．\par
+データ生成分布のパラメトリックモデル$P_{\text{model}}(\mathrm{x}; \bm{\theta})$が与えられているとする．与えられたサンプル$\mathcal{D} = \{x_1, x_2, \dots, x_N\}$は，この分布から無作為に抽出されていると近似する．すると，これらは独立に同じモデルから生成された実現値であるため，このデータ集合が得られる同時確率は
 \begin{equation*}
   P(x_1, x_2, \dots, x_N; \bm{\theta}) 
   = \prod_{n=1}^N P_{\text{model}}(x_n; \bm{\theta})
 \end{equation*}
-である．これを変数$\bm{\theta}$に対する量とみなして$L(\bm{\theta}) = P(x_1, x_2, \dots, x_N; \bm{\theta})$と書き，尤度関数と呼ぶ．データ値が$\{ x_1, x_2, \dots, x_N \}$という観測値を取ったのは，パラメータ$\bm{\theta}$の値が確率$P(x_1, x_2, \dots, x_N; \bm{\theta})$を大きくするようなものであったからであると考える．つまり，$L(\bm{\theta})$を最大にするようなパラメータ値であるためにデータ$\{ x_1, x_2, \dots, x_N \}$が実現されやすかったと解釈するのである．すると，与えられたデータに対して尤もらしいパラメータの値は尤度を最大化したものということになる．
+である．これを変数$\bm{\theta}$に対する量とみなして$L(\bm{\theta}) = P(x_1, x_2, \dots, x_N; \bm{\theta})$と書き，尤度または尤度関数と呼ぶ．データ値が$\{ x_1, x_2, \dots, x_N \}$という観測値を取ったのは，パラメータ$\bm{\theta}$の値が確率$P(x_1, x_2, \dots, x_N; \bm{\theta})$を大きくするようなものであったからであると考える．つまり，$L(\bm{\theta})$を最大にするようなパラメータ値であるためにデータ$\{ x_1, x_2, \dots, x_N \}$が実現されやすかったと解釈するのである．すると，与えられたデータに対して尤もらしいパラメータの値は尤度を最大化したものということになる．
 \begin{equation}
-  \bm{\theta}_{ML} = \underset{\bm{\theta}} {\operatorname{argman}} L(\bm{\theta})
+  \bm{\theta}_{ML} = \underset{\bm{\theta}} {\operatorname{argmax}} L(\bm{\theta})
 \end{equation}
-ただし，尤度は確率の積であるため，1以下の数値を何回も掛け合わせた値になる．値が小さすぎると計算機上でアンダーフローを起こしうるため，実用上，対数尤度関数を最大化する．\par
+ただし，尤度は確率の積であるため，1以下の数値を何回も掛け合わせた値になる．値が小さすぎると計算機上でアンダーフローを起こしうるため，実用上，対数尤度を最大化する．\par
 \begin{equation}
-  \bm{\theta}_{ML} = \underset{\bm{\theta}} {\operatorname{argman}} \ln{L(\bm{\theta})}
+  \bm{\theta}_{ML} = \underset{\bm{\theta}} {\operatorname{argmin}} (\ln{L(\bm{\theta})})
 \end{equation}
-このように何らかの目的関数を最大化，あるいは最小化することで推定に用いる最適なパラメータ値を決定するのが機械学習における常套手段である．実際，多くの機械学習アルゴリズムは最尤法を基礎に構築される．機械学習では，最大値よりも最小値をして問題を書くことが多いので，負の対数尤度を目的関数とした最小化問題として表現する．
+機械学習ではこのように何らかの目的関数を最大化，もしくは最小化することで推定に用いる最適なパラメータ値を決定するのがほとんどである．実際，多くの機械学習アルゴリズムは最尤法を基礎に構築される．ただし，実際の機械学習では，最大値よりも最小値をして問題を書く場合が多いため，負の対数尤度を目的関数とした最小化問題として表現する．
 \begin{equation}
   \bm{\theta}_{ML} = \underset{\bm{\theta}} {\operatorname{argmin}} (-\ln{L(\bm{\theta})})
 \end{equation}
 
 \subsubsection{ガウス分布の場合}
-ガウス分布の例を考える．$N$個のデータに対する尤度関数は
+ガウス分布で最尤推定法を考える．$N$個のデータに対する尤度は
 \begin{equation}
   L(\bm{\theta})
   = \prod_{n=1}^N \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-\frac{(x_n - \mu)^2}{2 \sigma^2}}
 \end{equation}
-である．ただし，$\bm{\theta} = (\mu, \sigma^2)$として2つのパラメータをまとめて表記した．対数尤度関数はもう少しシンプルで
+である．ただし，$\bm{\theta} = (\mu, \sigma^2)$とした．対数尤度は
 \begin{equation}
   \ln{L(\bm{\theta})}
   = -\frac{N}{2} \ln{\sigma^2} - \sum_{n} (x_n - \mu)^2 + \text{const.}
 \end{equation}
 となる．この関数の最大値を探すには，微分係数がゼロの場所を求めればよいので，
 \begin{align}
-& \left.\frac{\partial \ln L(\bm{\theta})}{\partial \mu}\right|_{M L}
-= \frac{1}{\sigma_{M L}^2} \sum_{n=1}^N\left(x_n-\mu_{m L}\right) = 0 \\
-& \left.\frac{\partial \ln L(\bm{\theta})}{\partial \sigma^2}\right|_{\mu L}
+& \left.\frac{\partial \ln L(\bm{\theta})}{\partial \mu}\right|_{\bm{\theta}_{ML}}
+= \frac{1}{\sigma_{M L}^2} \sum_{n=1}^N\left(x_n-\mu_{M L}\right) = 0 \\
+& \left.\frac{\partial \ln L(\bm{\theta})}{\partial \sigma^2}\right|_{\bm{\theta}_{ML}}
 = -\frac{N}{2 \sigma_{M L}^2}+\frac{1}{2\left(\sigma_{M L}^2\right)^2} \sum_{n=1}^N\left(x_n-\mu_{M L}\right)^2 = 0
 \end{align}
-を解けばよい．これはすぐに解け，得られる推定量$(\mu_{ML}, \sigma_{ML}^2)$は先ほど見つけた推定量$(\hat{\mu}, \hat{\sigma^2})$と一致する．
+を解けばよい．これはすぐに解け，得られる推定量は
+\begin{align}
+  \mu_{ML}
+  &= \frac{1}{N} \sum_{n=1}^{N} x_n \\
+  \sigma_{ML}^2
+  &= \frac{1}{N} \sum_{n=1}^{N} (x_n - \mu_{ML})^2
+\end{align}
+となる．これは推定量$(\hat{\mu}, \hat{\sigma}^2)$での推定値と等しくなっている．
 
 \subsubsection{ベルヌーイ分布の場合}
 ベルヌーイ分布に対しては，対数尤度は
@@ -967,18 +983,34 @@ $\mu$と$\sigma^2$の2つを決めればこの分布が定まるため，この2
 \begin{equation}
   \ln{L(p)} = \sum_{n=1}^{N} (x_n \ln{p} + (1 - x_n)\ln{(1 - p)})
 \end{equation}
-となる．これを解いて得られる最尤推定量$p_{ML}$もまた，先ほど求めた推定量と一致している．このように最尤法は推定量を求めるための汎用性のある方法である．
+となる．これの微分係数がゼロの場所は
+\begin{align}
+  \left.\frac{\partial \ln{L(p)}}{\partial p}\right|_{p_{ML}}
+  &= \left.\sum_{n=1}^{N} \left(\frac{x_n}{p} - \frac{1 - x_n}{1 - p}\right) \right|_{p_{ML}} \notag \\
+  % &= \left.\sum_{n=1}^{N} \left(\frac{x_n - p}{p(1-p)}\right) \right|_{p_{ML}} \notag \\
+  &= \left(\frac{\sum_n x_n - N p_{ML}}{p_{ML}(1-p_{ML})}\right)
+\end{align}
+を解けばよい．したがって
+\begin{equation}
+  p_{ML} = \frac{1}{N} \sum_{n=1}^{N} x_n
+\end{equation}
+となり，これもまた先ほど求めた推定量$\hat{p}$の推定値と一致している．このように最尤法は推定量を求めるための汎用性のある方法である．
 
 \section{機械学習の基礎}
 機械学習ではデータ集合を学習アルゴリズムで処理することでコンピュータプログラムを学習させる．それによって，プログラムが与えられたタスクをよりうまくこなせるようにすることを目標にする．データ(集合)は機械学習の文脈では訓練データと呼ばれる．\par
-学習を担うのは，人間がデザインする学習機械(アーキテクチャ)である．アーキテクチャの学習プロセスを決めているのが学習アルゴリズムで，これもまた人間が設計する．アルゴリズムの詳細は学習させたいタスクやデータの種類によって変わる．ただし，一般的な設計思想は，まず与えられたタスクに対するパフォーマンスの良さを測る尺度を導入し，その値を改善するようなアルゴリズムを実現するというものである．この評価尺度を損失関数や誤差関数と呼ぶ．
+学習を担うのは，人間がデザインするアーキテクチャである．そして，アーキテクチャの学習プロセスを決めているのが学習アルゴリズムで，これもまた人間が設計する．アルゴリズムの詳細は学習させたいタスクやデータの種類によって変わる．ただし，一般的な設計思想は，まず与えられたタスクに対するパフォーマンスの良さを測る尺度を導入し，その値を改善するようなアルゴリズムを実現するというものである．この評価尺度を機械学習では損失関数や誤差関数と呼ぶ．
 
 \subsection{教師あり学習}
-機械学習には教師あり学習や教師なし学習，強化学習など，いくつもの枠組が知られているが，深層学習の基礎になるものは教師あり学習である．教師あり学習の特徴は，用意すべき訓練データが必ず入力$\bm{x}$と出力$\bm{y}$のペアの形をとることである．つまり，訓練データは$\mathcal{D} = \{ (\bm{x_1}, \bm{y_1}), \dots, (\bm{x_N}, \bm{y_N}) \}$という形をしている．機械学習の目的はこの入出力間の関係を推定することで，新しい未知の$\bm{x}$が与えられたときに対応する出力$\bm{y}$を適切に予測できるようになることである．\par
+機械学習には教師あり学習や教師なし学習，強化学習など，いくつもの枠組が存在しているが，深層学習の基礎になるものは教師あり学習である．教師あり学習の特徴は，用意すべき訓練データが必ず入力$\bm{x}$と出力$\bm{y}$のペアの形をとることである．つまり，訓練データは
+\begin{equation}
+  \mathcal{D} 
+  = \{ (\bm{x}_1, \bm{y}_1), \dots, (\bm{x}_N, \bm{y}_N) \}  
+\end{equation}
+という形をしている．機械学習の目的はこの入出力間の関係を推定することで，新しい未知の$\bm{x}$が与えられたときに対応する出力$\bm{y}$を適切に予測できるようになることである．\par
 \begin{equation}
   \bm{x} \longrightarrow \bm{y}
 \end{equation}
-統計学的な用語でいえば，説明変数$\mathrm{x}$と目標変数$\mathrm{y}$の間の関係式を知り，常に目標変数を予測できるモデルを作ろうということである．そのために目標変数の適切な推定量$\hat{y}$を探すのが学習である．実際には推定量の関数モデルを仮定して，そのパラメータを訓練データから最適化する学習アルゴリズムを実装する．
+統計学的な用語でいえば，説明変数$\mathbf{x}$と目標変数$\mathbf{y}$の間の関係式を知り，常に目標変数を予測できるモデルを作ろうということである．そのために目標変数の適切な推定量$\hat{y}$を探すのが学習である．実際には推定量の関数モデルを仮定して，そのパラメータを訓練データから最適化する学習アルゴリズムを実装する．
 
 \subsection{最小二乗法による線形回帰}
 入力$\bm{x}$から出力$y$を予測するのが回帰であった．ここでは出力がベクトルではなくスカラーの場合を考える．そして，ここではパラメトリックなモデルを考える．つまり，常に$y$はある関数$\hat{y} = f(\bm{x}; \bm{w})$で表される規則で$\bm{x}$が決まっているとする．ただし，この関数のパラメータ$\bm{w}$はまだ未知であり，与えられたデータから最適なパラメータ値を決める作業が学習に相当する．また，データの観測には常にランダムなプロセスに起因する不確実な要素が介在するため，その効果をノイズ$\epsilon$として，
