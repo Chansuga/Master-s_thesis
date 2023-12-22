@@ -8,6 +8,7 @@
 \usepackage{wrapfig}
 \usepackage{graphicx} 
 \usepackage{tikz}
+\usepackage{enumerate}
 \usepackage{bm}
 \usepackage{url}
 \usepackage{underscore}
@@ -705,15 +706,122 @@ $2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\al
 \end{equation}
 と表すことができる．$H=0$のとき，つまり$V_3 = 1$のとき，2次元イジング模型を完全に定式化できる．
 
-\subsection{厳密解}
-磁場がない場合，式(\ref{n極限})と式(\ref{行列P最終形態})は次のようになる．
+\subsection{数学的余談}
+磁場がない場合の2次元イジング模型の解法に関連する，一般的なクラスの行列の研究を以下に示す．\par
+次の反交換関係を満たす$2n$個の行列$\Gamma_{\mu} (\mu = 1,\dots,2n)$を定義する．
 \begin{equation}
-  \lim_{N \rightarrow \infty} \frac{1}{N} \ln{Z(0, T)} 
-  = \frac{1}{2} \ln{[2 \sinh{2 \beta \epsilon}]}
-  + \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\Lambda}
+  \{\Gamma_{\mu}, \Gamma_{\nu}\}
+  =\Gamma_{\mu} \Gamma_{\nu} + \Gamma_{\nu} \Gamma_{\mu} 
+  = 2\delta_{\mu \nu}
+  \label{ガンマ反交換}
 \end{equation}
-ここで，$\Lambda$は$\mathrm{V} = \mathrm{V}_1 \mathrm{V}_2$の最大固有値である．また，$\mathrm{V}_1$は式(\ref{})で与えられ，$\mathrm{V}_1$は(\ref{})で与えられる．これらの式は，Vの固有値がすべて正で，$\lim_{n \rightarrow \infty} n^{-1}\ln{\Lambda}$が存在する場合に成り立つ．我々の主な仕事は行列$\mathrm{V}$を対角化することである．
 
+\begin{enumerate}[(a)]
+  \item $\Gamma_{\mu}$の次元は$2^n \times 2^n$より小さくならない
+  \item もし，$\Gamma_{\mu}$と$\Gamma'_{\mu}$が\ref{ガンマ反交換}を満たす組ならば，$\Gamma_{\mu} = \mathrm{S} \Gamma'_{\mu} \mathrm{S}^{-1}$となる正則行列$\mathrm{S}$が必ず存在する．
+  \item すべての$2^n \times 2^n$行列は，単位行列，ガンマ行列$\Gamma_{\mu}$，およびガンマ行列の積$\Gamma_{\mu} \Gamma_{\nu}, \Gamma_{\mu} \Gamma_{\nu} \Gamma_{\lambda}, \cdots$の線形結合で表せる．
+\end{enumerate}
+$n=1$のとき，\ref{ガンマ反交換}を満たすのは$2 \times 2$パウリスピン行列である．すべての$2 \times 2$行列が単位行列とパウリスピン行列の線形結合で表せることは明らかである．また，$n=2$のときはすべての$4 \times 4$のDirac行列$\gamma_{\mu}$となる．\par
+$2^n \times 2^n$行列の可能な$\{\Gamma_{\mu}\}$の表現は次のようなものである．
+\begin{align*}
+  \Gamma_1 &= \mathrm{Z}_1 & \Gamma_2 &= \mathrm{Y}_1 \\
+  \Gamma_3 &= \mathrm{X}_1 \mathrm{Z}_2 & \Gamma_4 &= \mathrm{X}_1 \mathrm{Y}_1 \\
+  \Gamma_5 &= \mathrm{X}_1 \mathrm{X}_2 \mathrm{Z}_2 & \Gamma_6 &= \mathrm{X}_1 \mathrm{X}_2 \mathrm{Y}_1 \\
+  &\vdots & &\vdots
+\end{align*}
+つまり，
+\begin{align}
+  \begin{split}
+    \Gamma_{2\alpha-1} &= \mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Z}_{\alpha} \quad (\alpha=1,\dots,n) \\
+    \Gamma_{2\alpha} &= \mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_{\alpha} \quad (\alpha=1,\dots,n)
+  \end{split}
+\end{align}
+
+\subsection{厳密解}
+磁場がない，つまり$H=0$の場合，行列$\mathrm{P}$は
+\begin{align}
+  \mathrm{P}
+  &= [2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{V}_2 \mathrm{V}_1 \notag \\
+  &\equiv [2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{V}
+  \label{行列P磁場ゼロ}
+\end{align}
+となる．ここで，$\mathrm{V} = \mathrm{V}_1 \mathrm{V}_2$とした．
+式(\ref{n極限})より，
+\begin{align}
+  \lim_{N \rightarrow \infty} \frac{1}{N} \ln{Z(0, T)} 
+  &= \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\left\{[2 \sinh{2 \beta \epsilon}]^{\frac{n}{2}}\Lambda\right\}} \notag \\
+  &= \frac{1}{2} \ln{[2 \sinh{2 \beta \epsilon}]}
+  + \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\Lambda}
+\end{align}
+となる．ここで，$\Lambda$は$\mathrm{V} = \mathrm{V}_1 \mathrm{V}_2$の最大固有値である，$\mathrm{V}_1$は式(\ref{})，$\mathrm{V}_1$は(\ref{})で与えられる．これらの式は，$\mathrm{V}$の固有値がすべて正で，$\lim_{n \rightarrow \infty} n^{-1}\ln{\Lambda}$が存在する場合に成り立つ．したがって行列$\mathrm{V}$を対角化を考えればよい．
+
+\subsection{スピン代数による$\mathrm{V}$の表現}
+式(\ref{})より，
+\begin{align}
+  \Gamma_{2\alpha}\Gamma_{2\alpha-1} 
+  &= (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_{\alpha}) (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Z}_{\alpha}) \notag \\
+  &= (\mathrm{X}_1)^2 (\mathrm{X}_2)^2 \cdots (\mathrm{X}_{\alpha-1})^2 \mathrm{Y}_{\alpha} \mathrm{Z}_{\alpha} \notag \\
+  &= \mathrm{Y}_{\alpha} \mathrm{Z}_{\alpha} \notag \\
+  &= i \mathrm{X}_{\alpha}
+\end{align}
+\begin{align}
+  \Gamma_{2\alpha+1}\Gamma_{2\alpha} 
+  &= (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha} \mathrm{Z}_{\alpha+1}) (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_{\alpha}) \notag \\
+  &= (\mathrm{X}_1)^2 (\mathrm{X}_2)^2 \cdots (\mathrm{X}_{\alpha-1})^2 \mathrm{X}_{\alpha} \mathrm{Z}_{\alpha+1} \mathrm{Y}_{\alpha} \notag \\
+  &= \mathrm{X}_{\alpha} \mathrm{Z}_{\alpha+1} \mathrm{Y}_{\alpha} \notag \\
+  &= \mathrm{X}_{\alpha} \mathrm{Y}_{\alpha} \mathrm{Z}_{\alpha+1} \notag \\
+  &= i \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}
+\end{align}
+\begin{align}
+  \Gamma_1\Gamma_{2n} 
+  &= \mathrm{Z}_1 (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_n) \notag \\
+  &= -i \mathrm{Z}_1 \mathrm{Z}_n (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_n) \notag \\
+  &\equiv -i \mathrm{Z}_1 \mathrm{Z}_n \mathrm{U}
+\end{align}
+これより
+\begin{equation}
+  \mathrm{V_1}
+  = \prod_{\alpha=1}^{n} e^{\theta \mathrm{X}_{\alpha}}
+  = \prod_{\alpha=1}^{n} e^{-i \theta \Gamma_{2\alpha} \Gamma_{2\alpha-1}}
+\end{equation}
+\begin{align}
+  \mathrm{V}_2
+  &= \prod_{\alpha=1}^{n} e^{\beta \epsilon \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}} \notag \\
+  &= \left[ \prod_{\alpha=1}^{n-1} e^{\beta \epsilon \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}} \right] e^{\beta \epsilon \mathrm{Z}_n \mathrm{Z}_1} \notag \\
+  &= e^{\beta \epsilon \mathrm{Z}_n \mathrm{Z}_1} \left[ \prod_{\alpha=1}^{n-1} e^{\beta \epsilon \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}} \right] \notag \\
+  &= e^{i \beta \epsilon \mathrm{U} \Gamma_1 \Gamma_{2n}} \prod_{\alpha=1}^{n-1} e^{-i \beta \epsilon \Gamma_{2\alpha+1} \Gamma_{2\alpha}} 
+\end{align}
+したがって，$\phi = \beta \epsilon$として
+\begin{equation}
+  \mathrm{V} \equiv \mathrm{V}_1 \mathrm{V}_2
+  = e^{i \beta \epsilon \mathrm{U} \Gamma_1 \Gamma_{2n}}\left[ \prod_{\alpha=1}^{n-1} e^{-i \beta \epsilon \Gamma_{2\alpha+1} \Gamma_{2\alpha}} \right] \left[ \prod_{\lambda=1}^{n} e^{-i \theta \Gamma_{2\lambda} \Gamma_{2\lambda-1}} \right]
+\end{equation}
+ここで，いくつか$\mathrm{U}$の性質を書く
+\begin{enumerate}[(a)]
+  \item $\mathrm{U}^2 = 1, \quad \mathrm{U}(1 + \mathrm{U}) = 1 + \mathrm{U}, \quad \mathrm{U}(1 - \mathrm{U}) = -(1 - \mathrm{U})$
+  \item $\mathrm{U} = i^n \Gamma_1 \Gamma_2 \cdots \Gamma_{2n}$
+  \item $\{\mathrm{U}, \Gamma_{\mu}\} = 0$
+\end{enumerate}
+これらの性質を用いることで
+\begin{align}
+  e^{i \phi \Gamma_1 \Gamma_{2n}}
+  &= \left[\frac{1}{2} (1 + \mathrm{U}) + \frac{1}{2} (1 + \mathrm{U})\right]\left[\cosh{\phi} + i \Gamma_1 \Gamma_{2n} \sinh{\phi}\right]
+  \notag \\
+  &= \frac{1}{2} (1 + \mathrm{U})\left[\cosh{\phi} + i \Gamma_1 \Gamma_{2n} \sinh{\phi}\right]
+  + \frac{1}{2} (1 - \mathrm{U})\left[\cosh{\phi} - i \Gamma_1 \Gamma_{2n} \sinh{\phi}\right] \notag \\
+  &= \frac{1}{2} (1 + \mathrm{U}) e^{i \phi \Gamma_1 \Gamma_{2n}}
+  + \frac{1}{2} (1 - \mathrm{U}) e^{-i \phi \Gamma_1 \Gamma_{2n}}
+\end{align}
+したがって
+\begin{equation}
+  \mathrm{V} 
+  = \frac{1}{2} (1 + \mathrm{U}) \mathrm{V}^+
+  + \frac{1}{2} (1 - \mathrm{U}) \mathrm{V}^-
+\end{equation}
+\begin{equation}
+  \mathrm{V}^{\pm}
+  \equiv e^{\pm i \phi \mathrm{U} \Gamma_1 \Gamma_{2n}}\left[ \prod_{\alpha=1}^{n-1} e^{-i \phi \Gamma_{2\alpha+1} \Gamma_{2\alpha}} \right] \left[ \prod_{\lambda=1}^{n} e^{-i \theta \Gamma_{2\lambda} \Gamma_{2\lambda-1}} \right]
+\end{equation}
 
 \chapter{機械学習と深層学習}
 ここでは，イジングモデルに対して機械学習，深層学習による手法を応用する上で必要となる機械学習と深層学習の基礎知識について説明する．
@@ -942,7 +1050,7 @@ ImageNetは，約1400万枚の自然画像からなる巨大なデータベー�
 \begin{equation}
   \bm{\theta}_{ML} = \underset{\bm{\theta}} {\operatorname{argmin}} (\ln{L(\bm{\theta})})
 \end{equation}
-機械学習ではこのように何らかの目的関数を最大化，もしくは最小化することで推定に用いる最適なパラメータ値を決定するのがほとんどである．実際，多くの機械学習アルゴリズムは最尤法を基礎に構築される．ただし，実際の機械学習では，最大値よりも最小値をして問題を書く場合が多いため，負の対数尤度を目的関数とした最小化問題として表現する．
+尤度と対数尤度のどちらで最大化を行っても結果は変わらないことか明らかである．機械学習ではこのように何らかの目的関数を最大化，もしくは最小化することで推定に用いる最適なパラメータ値を決定するのがほとんどである．実際，多くの機械学習アルゴリズムは最尤法を基礎に構築される．ただし，実際の機械学習では，最大値よりも最小値をして問題を書く場合が多いため，負の対数尤度を目的関数とした最小化問題として表現する．
 \begin{equation}
   \bm{\theta}_{ML} = \underset{\bm{\theta}} {\operatorname{argmin}} (-\ln{L(\bm{\theta})})
 \end{equation}
