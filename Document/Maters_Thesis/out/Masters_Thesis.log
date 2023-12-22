@@ -896,3 +896,151 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 LaTeX Warning: Reference `直積公式' on page 17 undefined on input line 590.
 
 [17] [18] [19]
+
+LaTeX Warning: Reference `' on page 20 undefined on input line 756.
+
+
+LaTeX Warning: Reference `' on page 20 undefined on input line 756.
+
+
+LaTeX Warning: Reference `' on page 20 undefined on input line 759.
+
+[20] [21]
+第3章
+File: image/モデル概要図.png Graphic file (type bmp)
+<image/モデル概要図.png>
+[22
+
+]
+File: image/機械学習概要図.png Graphic file (type bmp)
+<image/機械学習概要図.png>
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 854.
+[23]
+File: image/mnist.png Graphic file (type bmp)
+<image/mnist.png>
+File: image/CIFAR10.png Graphic file (type bmp)
+<image/CIFAR10.png>
+[24] [25] [26] [27] [28] [29] [30] [31] [32] [33]
+
+LaTeX Warning: Reference `' on page 34 undefined on input line 1156.
+
+[34]
+
+LaTeX Warning: Reference `' on page 35 undefined on input line 1166.
+
+File: image/多項式回帰(a).png Graphic file (type bmp)
+<image/多項式回帰(a).png>
+
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 1171--1172
+ [][] 
+ []
+
+File: image/多項式回帰(b).png Graphic file (type bmp)
+<image/多項式回帰(b).png>
+
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 1176--1177
+ [][] 
+ []
+
+File: image/多項式回帰(c).png Graphic file (type bmp)
+<image/多項式回帰(c).png>
+
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 1181--1182
+ [][] 
+ []
+
+[35] [36] [37] [38]
+
+LaTeX Warning: Reference `' on page 39 undefined on input line 1307.
+
+
+LaTeX Warning: Reference `' on page 39 undefined on input line 1320.
+
+
+LaTeX Warning: Reference `' on page 39 undefined on input line 1320.
+
+[39]
+
+LaTeX Warning: Reference `' on page 40 undefined on input line 1353.
+
+
+LaTeX Warning: Reference `' on page 40 undefined on input line 1359.
+
+[40]
+
+LaTeX Warning: Reference `' on page 41 undefined on input line 1361.
+
+
+LaTeX Warning: Reference `' on page 41 undefined on input line 1362.
+
+[41]
+
+LaTeX Warning: Reference `' on page 42 undefined on input line 1392.
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 1407--1441
+[][] [] 
+ []
+
+[42] [43] [44] [45] [46] [47]
+
+LaTeX Warning: Reference `' on page 48 undefined on input line 1732.
+
+[48] [49]
+
+LaTeX Warning: Reference `' on page 50 undefined on input line 1801.
+
+File: image/gradient_decent.png Graphic file (type bmp)
+<image/gradient_decent.png>
+[50] [51] [52] [53]
+File: image/勾配法課題(a).png Graphic file (type bmp)
+<image/勾配法課題(a).png>
+File: image/勾配法課題(b).png Graphic file (type bmp)
+<image/勾配法課題(b).png>
+
+Overfull \hbox (0.89943pt too wide) in paragraph at lines 1876--1877
+ [][] 
+ []
+
+File: image/勾配法課題(c).png Graphic file (type bmp)
+<image/勾配法課題(c).png>
+File: image/モーメンタム法.png Graphic file (type bmp)
+<image/モーメンタム法.png>
+
+LaTeX Warning: Reference `' on page 54 undefined on input line 1906.
+
+
+LaTeX Warning: Reference `' on page 54 undefined on input line 1910.
+
+[54] [55] [56] [57]
+第4章
+[58
+
+] [59
+
+] (out/Masters_Thesis.bbl [60
+
+]) [61
+
+]
+付録A
+[62
+
+] (out/Masters_Thesis.aux)
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `Masters_Thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 5DFEE4469CCE66F7C2CD1EEB23594580;2115.
+ ) 
+Here is how much of TeX's memory you used:
+ 27978 strings out of 476693
+ 528732 string characters out of 5808556
+ 1866203 words of memory out of 5000000
+ 47913 multiletter control sequences out of 15000+600000
+ 569634 words of font info for 152 fonts, out of 8000000 for 9000
+ 934 hyphenation exceptions out of 8191
+ 84i,17n,89p,874b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on out/Masters_Thesis.dvi (64 pages, 395812 bytes).
