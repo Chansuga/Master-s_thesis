@@ -48,7 +48,7 @@
 \contentsline {subsection}{\numberline {3.4.1}神経細胞のネットワーク}{41}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}形式ニューロン}{42}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}パーセプトロン}{44}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}ニューラルネットワーク}{45}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.4}順伝播ニューラルネットワーク}{45}{subsection.3.4.4}%
 \contentsline {section}{\numberline {3.5}ニューラルネットワークによる機械学習}{48}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}活性化関数}{51}{subsection.3.5.1}%
 \contentsline {section}{\numberline {3.6}畳み込みニューラルネットワーク}{51}{section.3.6}%

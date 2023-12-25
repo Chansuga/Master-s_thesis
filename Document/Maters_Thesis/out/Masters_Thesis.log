@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  25 DEC 2023 16:49
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  26 DEC 2023 00:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -963,11 +963,11 @@ LaTeX Warning: Reference `' on page 41 undefined on input line 1377.
 
 [41] [42] [43] [44] [45] [46] [47] [48]
 
-LaTeX Warning: Reference `' on page 49 undefined on input line 1748.
+LaTeX Warning: Reference `' on page 49 undefined on input line 1749.
 
 [49] [50]
 
-LaTeX Warning: Reference `' on page 51 undefined on input line 1817.
+LaTeX Warning: Reference `' on page 51 undefined on input line 1818.
 
 File: image/gradient_decent.png Graphic file (type bmp)
 <image/gradient_decent.png>
@@ -977,7 +977,7 @@ File: image/勾配法課題(a).png Graphic file (type bmp)
 File: image/勾配法課題(b).png Graphic file (type bmp)
 <image/勾配法課題(b).png>
 
-Overfull \hbox (0.89943pt too wide) in paragraph at lines 1892--1893
+Overfull \hbox (0.89943pt too wide) in paragraph at lines 1893--1894
  [][] 
  []
 
@@ -987,10 +987,10 @@ File: image/モーメンタム法.png Graphic file (type bmp)
 <image/モーメンタム法.png>
 [55]
 
-LaTeX Warning: Reference `' on page 56 undefined on input line 1922.
+LaTeX Warning: Reference `' on page 56 undefined on input line 1923.
 
 
-LaTeX Warning: Reference `' on page 56 undefined on input line 1926.
+LaTeX Warning: Reference `' on page 56 undefined on input line 1927.
 
 [56] [57] [58]
 第4章
@@ -1016,10 +1016,10 @@ Package rerunfilecheck Info: File `Masters_Thesis.out' has not changed.
 Here is how much of TeX's memory you used:
  27968 strings out of 475427
  528655 string characters out of 5791344
- 876648 words of memory out of 5000000
+ 877646 words of memory out of 5000000
  49174 multiletter control sequences out of 15000+600000
  526606 words of font info for 148 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  84i,17n,89p,934b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Masters_Thesis.dvi (65 pages, 398928 bytes).
+Output written on out/Masters_Thesis.dvi (65 pages, 399520 bytes).
