@@ -47,30 +47,30 @@
 \contentsline {section}{\numberline {3.4}ニューラルネットワーク}{41}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}神経細胞のネットワーク}{41}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}形式ニューロン}{42}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}パーセプトロン}{43}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}順伝播型ニューラルネットワーク}{44}{subsection.3.4.4}%
-\contentsline {section}{\numberline {3.5}ニューラルネットワークによる機械学習}{47}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}活性化関数}{50}{subsection.3.5.1}%
-\contentsline {section}{\numberline {3.6}畳み込みニューラルネットワーク}{50}{section.3.6}%
-\contentsline {section}{\numberline {3.7}勾配降下法}{50}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}勾配降下法}{50}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}局所的最小値の問題}{51}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}確率的勾配降下法}{52}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}ミニバッチの作り方}{53}{subsection.3.7.4}%
-\contentsline {section}{\numberline {3.8}改良された勾配降下法}{54}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}勾配降下法の課題}{54}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}モーメンタム法}{54}{subsection.3.8.2}%
-\contentsline {subsection}{\numberline {3.8.3}AdaGrad}{55}{subsection.3.8.3}%
-\contentsline {subsection}{\numberline {3.8.4}RMSprop}{56}{subsection.3.8.4}%
-\contentsline {subsection}{\numberline {3.8.5}AdaDelta}{57}{subsection.3.8.5}%
-\contentsline {subsection}{\numberline {3.8.6}Adam}{57}{subsection.3.8.6}%
-\contentsline {section}{\numberline {3.9}誤差逆伝播法}{57}{section.3.9}%
-\contentsline {chapter}{\numberline {第4章}機械学習によるイジング模型の相転移検出}{58}{chapter.4}%
-\contentsline {section}{\numberline {4.1}配位データの生成方法}{58}{section.4.1}%
-\contentsline {section}{\numberline {4.2}相の分類器による相転移検出}{58}{section.4.2}%
-\contentsline {section}{\numberline {4.3}温度測定器による相転移検出}{58}{section.4.3}%
-\contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{58}{section.4.4}%
-\contentsline {chapter}{謝辞}{60}{chapter*.40}%
-\contentsline {chapter}{参考文献}{61}{chapter*.41}%
-\contentsline {chapter}{\numberline {付録A}aaa}{62}{appendix.A}%
-\contentsline {section}{\numberline {A.1}bbb}{62}{section.A.1}%
+\contentsline {subsection}{\numberline {3.4.3}パーセプトロン}{44}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}ニューラルネットワーク}{45}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}ニューラルネットワークによる機械学習}{48}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}活性化関数}{51}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6}畳み込みニューラルネットワーク}{51}{section.3.6}%
+\contentsline {section}{\numberline {3.7}勾配降下法}{51}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}勾配降下法}{51}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}局所的最小値の問題}{52}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}確率的勾配降下法}{53}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}ミニバッチの作り方}{54}{subsection.3.7.4}%
+\contentsline {section}{\numberline {3.8}改良された勾配降下法}{55}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}勾配降下法の課題}{55}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}モーメンタム法}{55}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}AdaGrad}{56}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}RMSprop}{57}{subsection.3.8.4}%
+\contentsline {subsection}{\numberline {3.8.5}AdaDelta}{58}{subsection.3.8.5}%
+\contentsline {subsection}{\numberline {3.8.6}Adam}{58}{subsection.3.8.6}%
+\contentsline {section}{\numberline {3.9}誤差逆伝播法}{58}{section.3.9}%
+\contentsline {chapter}{\numberline {第4章}機械学習によるイジング模型の相転移検出}{59}{chapter.4}%
+\contentsline {section}{\numberline {4.1}配位データの生成方法}{59}{section.4.1}%
+\contentsline {section}{\numberline {4.2}相の分類器による相転移検出}{59}{section.4.2}%
+\contentsline {section}{\numberline {4.3}温度測定器による相転移検出}{59}{section.4.3}%
+\contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{59}{section.4.4}%
+\contentsline {chapter}{謝辞}{61}{chapter*.42}%
+\contentsline {chapter}{参考文献}{62}{chapter*.43}%
+\contentsline {chapter}{\numberline {付録A}aaa}{63}{appendix.A}%
+\contentsline {section}{\numberline {A.1}bbb}{63}{section.A.1}%
