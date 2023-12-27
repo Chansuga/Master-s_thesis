@@ -1274,3 +1274,28 @@ INPUT ./image/モデル概要図.png
 INPUT ./image/モデル概要図.png
 INPUT image/モデル概要図.png
 INPUT extractbb -B cropbox -O image/モデル概要図.png
+INPUT ./image/機械学習概要図.png
+INPUT ./image/機械学習概要図.png
+INPUT image/機械学習概要図.png
+INPUT extractbb -B cropbox -O image/機械学習概要図.png
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT ./image/mnist.png
+INPUT ./image/mnist.png
+INPUT image/mnist.png
+INPUT extractbb -B cropbox -O image/mnist.png
+INPUT ./image/CIFAR10.png
+INPUT ./image/CIFAR10.png
+INPUT image/CIFAR10.png
+INPUT extractbb -B cropbox -O image/CIFAR10.png
+INPUT ./image/多項式回帰(a).png
+INPUT ./image/多項式回帰(a).png
+INPUT image/多項式回帰(a).png
+INPUT extractbb -B cropbox -O image/多項式回帰(a).png
+INPUT ./image/多項式回帰(b).png
+INPUT ./image/多項式回帰(b).png
+INPUT image/多項式回帰(b).png
+INPUT extractbb -B cropbox -O image/多項式回帰(b).png
+INPUT ./image/多項式回帰(c).png
+INPUT ./image/多項式回帰(c).png
+INPUT image/多項式回帰(c).png
+INPUT extractbb -B cropbox -O image/多項式回帰(c).png
