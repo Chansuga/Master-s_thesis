@@ -1287,7 +1287,6 @@ INPUT ./image/CIFAR10.png
 INPUT ./image/CIFAR10.png
 INPUT image/CIFAR10.png
 INPUT extractbb -B cropbox -O image/CIFAR10.png
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT ./image/��������A(a).png
 INPUT ./image/��������A(a).png
 INPUT image/��������A(a).png

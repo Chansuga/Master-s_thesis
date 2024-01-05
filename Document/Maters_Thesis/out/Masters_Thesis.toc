@@ -22,19 +22,19 @@
 \contentsline {subsection}{\numberline {2.5.8}厳密解}{20}{subsection.2.5.8}%
 \contentsline {subsection}{\numberline {2.5.9}スピン代数による$\mathrm {V}$の表現}{20}{subsection.2.5.9}%
 \contentsline {chapter}{\numberline {第3章}機械学習と深層学習}{22}{chapter.3}%
-\contentsline {section}{\numberline {3.1}学習とは}{22}{section.3.1}%
+\contentsline {section}{\numberline {3.1}機械学習とは}{22}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}代表的なタスク}{23}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}データセットの例}{24}{subsection.3.1.2}%
-\contentsline {subsubsection}{CIFAR-10}{24}{section*.10}%
-\contentsline {subsubsection}{ImageNet}{25}{section*.12}%
+\contentsline {subsubsection}{CIFAR-10}{24}{section*.11}%
+\contentsline {subsubsection}{ImageNet}{25}{section*.13}%
 \contentsline {section}{\numberline {3.2}統計入門}{25}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}標本と推定}{25}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}点推定}{27}{subsection.3.2.2}%
-\contentsline {subsubsection}{ガウス分布の場合}{28}{section*.16}%
-\contentsline {subsubsection}{ベルヌーイ分布の場合}{29}{section*.17}%
+\contentsline {subsubsection}{ガウス分布の場合}{28}{section*.17}%
+\contentsline {subsubsection}{ベルヌーイ分布の場合}{29}{section*.18}%
 \contentsline {subsection}{\numberline {3.2.3}最尤推定}{30}{subsection.3.2.3}%
-\contentsline {subsubsection}{ガウス分布の場合}{31}{section*.18}%
-\contentsline {subsubsection}{ベルヌーイ分布の場合}{32}{section*.19}%
+\contentsline {subsubsection}{ガウス分布の場合}{31}{section*.19}%
+\contentsline {subsubsection}{ベルヌーイ分布の場合}{32}{section*.20}%
 \contentsline {section}{\numberline {3.3}機械学習の基礎}{32}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}教師あり学習}{32}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}最小二乗法による線形回帰}{33}{subsection.3.3.2}%

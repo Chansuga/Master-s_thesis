@@ -907,20 +907,21 @@ LaTeX Warning: Reference `' on page 20 undefined on input line 759.
 
 [20] [21]
 第3章
+File: image/モデル概要図.png Graphic file (type bmp)
+<image/モデル概要図.png>
 [22
 
 ]
 File: image/機械学習概要図.png Graphic file (type bmp)
 <image/機械学習概要図.png>
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 854.
 [23]
 File: image/mnist.png Graphic file (type bmp)
 <image/mnist.png>
 File: image/CIFAR10.png Graphic file (type bmp)
 <image/CIFAR10.png>
-[24]
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 894.
-[25] [26] [27] [28] [29] [30] [31] [32] [33] [34]
+[24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34]
 File: image/多項式回帰(a).png Graphic file (type bmp)
 <image/多項式回帰(a).png>
 
@@ -983,10 +984,6 @@ LaTeX Warning: Reference `' on page 50 undefined on input line 1758.
 
 LaTeX Warning: Reference `' on page 53 undefined on input line 1872.
 
-
-LaTeX Warning: Reference `' on page 53 undefined on input line 1884.
-
-[53]
 File: image/gradient_decent.png Graphic file (type bmp)
 <image/gradient_decent.png>
 [53] [54] [55]
