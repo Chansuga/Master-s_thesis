@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  9 JAN 2024 22:49
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  10 JAN 2024 23:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1067,19 +1067,29 @@ LaTeX Warning: Reference `' on page 63 undefined on input line 2085.
 
 LaTeX Warning: Reference `' on page 63 undefined on input line 2089.
 
-[63] [64] [65] [66] [67] [68]
+[63] [64]
+
+LaTeX Warning: Reference `' on page 65 undefined on input line 2125.
+
+
+LaTeX Warning: Reference `' on page 65 undefined on input line 2132.
+
+
+LaTeX Warning: Reference `' on page 65 undefined on input line 2136.
+
+[65] [66] [67] [68] [69]
 第4章
-[69
+[70
 
-] [70
+] [71
 
-] (out/Masters_Thesis.bbl [71
+] (out/Masters_Thesis.bbl [72
 
-]) [72
+]) [73
 
 ]
 付録A
-[73
+[74
 
 ] (out/Masters_Thesis.aux)
 
@@ -1097,4 +1107,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  84i,17n,89p,1403b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Masters_Thesis.dvi (75 pages, 479828 bytes).
+Output written on out/Masters_Thesis.dvi (76 pages, 485084 bytes).
