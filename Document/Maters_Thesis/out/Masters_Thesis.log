@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.10.16)  15 JAN 2024 18:03
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.10.16)  16 JAN 2024 15:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -866,195 +866,195 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 97.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 101.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 101.
+(Font)              scaled to size 9.60999pt on input line 105.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 101.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 101.
+(Font)              scaled to size 9.60999pt on input line 105.
 [3
 
-]
+] [4]
 第2章
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 103.
+(Font)              scaled to size 11.53198pt on input line 114.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 103.
+(Font)              scaled to size 11.53198pt on input line 114.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 103.
+(Font)              scaled to size 11.53198pt on input line 114.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 103.
+(Font)              scaled to size 11.53198pt on input line 114.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 104.
+(Font)              scaled to size 6.72699pt on input line 115.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 104.
-[4
+(Font)              scaled to size 4.805pt on input line 115.
+[5
 
-] [5] [6]
+] [6] [7]
 File: image/絶対零度スピン配位.png Graphic file (type bmp)
 <image/絶対零度スピン配位.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 170.
+(Font)              scaled to size 8.64899pt on input line 181.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 170.
+(Font)              scaled to size 8.64899pt on input line 181.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 170.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 181.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 170.
+(Font)              scaled to size 8.64899pt on input line 181.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 170.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 181.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 170.
+(Font)              scaled to size 8.64899pt on input line 181.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 170.
+(Font)              scaled to size 5.76599pt on input line 181.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 170.
+(Font)              scaled to size 5.76599pt on input line 181.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7] [8] [9] [10] [11]
+[8] [9] [10] [11] [12]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <8> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 347.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 358.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 347.
+(Font)              scaled to size 7.68799pt on input line 358.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 347.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 358.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 347.
-[12] [13] [14] [15] [16]
+(Font)              scaled to size 7.68799pt on input line 358.
+[13] [14] [15] [16] [17]
 
-LaTeX Warning: Reference `直積公式' on page 17 undefined on input line 591.
+LaTeX Warning: Reference `直積公式' on page 18 undefined on input line 602.
 
-[17] [18] [19]
+[18] [19] [20]
 
-LaTeX Warning: Reference `' on page 20 undefined on input line 757.
-
-
-LaTeX Warning: Reference `' on page 20 undefined on input line 757.
+LaTeX Warning: Reference `' on page 21 undefined on input line 768.
 
 
-LaTeX Warning: Reference `' on page 20 undefined on input line 760.
+LaTeX Warning: Reference `' on page 21 undefined on input line 768.
 
-[20] [21]
+
+LaTeX Warning: Reference `' on page 21 undefined on input line 771.
+
+[21] [22]
 第3章
-[22
+[23
 
 ]
 File: image/機械学習概要図.png Graphic file (type bmp)
 <image/機械学習概要図.png>
-[23]
+[24]
 File: image/mnist.png Graphic file (type bmp)
 <image/mnist.png>
 File: image/CIFAR10.png Graphic file (type bmp)
 <image/CIFAR10.png>
-[24]
+[25]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 895.
-[25] [26] [27] [28] [29] [30] [31] [32] [33] [34]
+(Font)              scaled to size 5.76599pt on input line 906.
+[26] [27] [28] [29] [30] [31] [32] [33] [34] [35]
 File: image/多項式回帰(a).png Graphic file (type bmp)
 <image/多項式回帰(a).png>
 
-Overfull \hbox (16.76009pt too wide) in paragraph at lines 1181--1182
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 1192--1193
  [][] 
  []
 
 File: image/多項式回帰(b).png Graphic file (type bmp)
 <image/多項式回帰(b).png>
 
-Overfull \hbox (16.76009pt too wide) in paragraph at lines 1186--1187
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 1197--1198
  [][] 
  []
 
 File: image/多項式回帰(c).png Graphic file (type bmp)
 <image/多項式回帰(c).png>
 
-Overfull \hbox (16.76009pt too wide) in paragraph at lines 1191--1192
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 1202--1203
  [][] 
  []
 
-[35] [36] [37] [38]
+[36] [37] [38] [39]
 
-LaTeX Warning: Reference `' on page 39 undefined on input line 1317.
-
-[39]
-
-LaTeX Warning: Reference `' on page 40 undefined on input line 1330.
-
-
-LaTeX Warning: Reference `' on page 40 undefined on input line 1330.
+LaTeX Warning: Reference `' on page 40 undefined on input line 1328.
 
 [40]
 
-LaTeX Warning: Reference `' on page 41 undefined on input line 1363.
+LaTeX Warning: Reference `' on page 41 undefined on input line 1341.
+
+
+LaTeX Warning: Reference `' on page 41 undefined on input line 1341.
+
+[41]
+
+LaTeX Warning: Reference `' on page 42 undefined on input line 1374.
 
 File: image/ニューロン.png Graphic file (type bmp)
 <image/ニューロン.png>
 
-Overfull \hbox (3.3766pt too wide) in paragraph at lines 1371--1372
+Overfull \hbox (3.3766pt too wide) in paragraph at lines 1382--1383
  [][] 
  []
 
 File: image/シナプス.png Graphic file (type bmp)
 <image/シナプス.png>
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 1369--1379
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 1380--1390
 [][] [] 
  []
 
-[41]
+[42]
 
-LaTeX Warning: Reference `' on page 42 undefined on input line 1385.
+LaTeX Warning: Reference `' on page 43 undefined on input line 1396.
 
-[42] [43] [44] [45] [46] [47] [48] [49]
+[43] [44] [45] [46] [47] [48] [49] [50]
 
-LaTeX Warning: Reference `' on page 50 undefined on input line 1758.
+LaTeX Warning: Reference `' on page 51 undefined on input line 1769.
 
-[50] [51] [52]
+[51] [52] [53]
 File: image/単純型細胞.png Graphic file (type bmp)
 <image/単純型細胞.png>
 File: image/複雑型細胞.png Graphic file (type bmp)
 <image/複雑型細胞.png>
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 1865--1875
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 1876--1886
 [][] [] 
  []
 
-[53]
+[54]
 
-LaTeX Warning: Reference `' on page 54 undefined on input line 1885.
-
-
-LaTeX Warning: Reference `' on page 54 undefined on input line 1886.
+LaTeX Warning: Reference `' on page 55 undefined on input line 1896.
 
 
-LaTeX Warning: Reference `' on page 54 undefined on input line 1887.
+LaTeX Warning: Reference `' on page 55 undefined on input line 1897.
+
+
+LaTeX Warning: Reference `' on page 55 undefined on input line 1898.
 
 File: image/Kチャンネル画像.png Graphic file (type bmp)
 <image/Kチャンネル画像.png>
-[54] [55]
+[55] [56]
 
-LaTeX Warning: Reference `' on page 56 undefined on input line 1915.
-
-
-LaTeX Warning: Reference `' on page 56 undefined on input line 1934.
+LaTeX Warning: Reference `' on page 57 undefined on input line 1926.
 
 
-LaTeX Warning: Reference `' on page 56 undefined on input line 1934.
+LaTeX Warning: Reference `' on page 57 undefined on input line 1945.
 
-[56] [57]
 
-LaTeX Warning: Reference `' on page 58 undefined on input line 1980.
+LaTeX Warning: Reference `' on page 57 undefined on input line 1945.
+
+[57] [58]
+
+LaTeX Warning: Reference `' on page 59 undefined on input line 1991.
 
 File: image/gradient_decent.png Graphic file (type bmp)
 <image/gradient_decent.png>
-[58] [59] [60] [61]
+[59] [60] [61] [62]
 File: image/勾配法課題(a).png Graphic file (type bmp)
 <image/勾配法課題(a).png>
 File: image/勾配法課題(b).png Graphic file (type bmp)
 <image/勾配法課題(b).png>
 
-Overfull \hbox (0.89943pt too wide) in paragraph at lines 2055--2056
+Overfull \hbox (0.89943pt too wide) in paragraph at lines 2066--2067
  [][] 
  []
 
@@ -1062,65 +1062,65 @@ File: image/勾配法課題(c).png Graphic file (type bmp)
 <image/勾配法課題(c).png>
 File: image/モーメンタム法.png Graphic file (type bmp)
 <image/モーメンタム法.png>
-[62]
+[63]
 
-LaTeX Warning: Reference `' on page 63 undefined on input line 2085.
-
-
-LaTeX Warning: Reference `' on page 63 undefined on input line 2089.
-
-[63] [64]
-
-LaTeX Warning: Reference `' on page 65 undefined on input line 2125.
+LaTeX Warning: Reference `' on page 64 undefined on input line 2096.
 
 
-LaTeX Warning: Reference `' on page 65 undefined on input line 2132.
+LaTeX Warning: Reference `' on page 64 undefined on input line 2100.
+
+[64] [65]
+
+LaTeX Warning: Reference `' on page 66 undefined on input line 2136.
 
 
-LaTeX Warning: Reference `' on page 65 undefined on input line 2136.
-
-[65] [66] [67] [68] [69]
-
-LaTeX Warning: Reference `' on page 70 undefined on input line 2294.
+LaTeX Warning: Reference `' on page 66 undefined on input line 2143.
 
 
-LaTeX Warning: Reference `' on page 70 undefined on input line 2306.
+LaTeX Warning: Reference `' on page 66 undefined on input line 2147.
 
-[70] [71]
+[66] [67] [68] [69] [70]
 
-LaTeX Warning: Reference `' on page 72 undefined on input line 2349.
+LaTeX Warning: Reference `' on page 71 undefined on input line 2305.
 
 
-LaTeX Warning: Reference `' on page 72 undefined on input line 2350.
+LaTeX Warning: Reference `' on page 71 undefined on input line 2317.
 
-[72] [73]
+[71] [72]
+
+LaTeX Warning: Reference `' on page 73 undefined on input line 2360.
+
+
+LaTeX Warning: Reference `' on page 73 undefined on input line 2361.
+
+[73] [74]
 第4章
-[74
+[75
 
-] [75
+] [76] [77] [78] [79] [80
 
-] (out/Masters_Thesis.bbl [76
+] (out/Masters_Thesis.bbl [81
 
-]) [77
+]) [82
 
 ]
 付録A
-[78
+[83
 
 ] (out/Masters_Thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Masters_Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5027A50D8E9C8C29295BA8070C136265;2115.
+(rerunfilecheck)             Checksum: 4966F0407DF961D88A5915B24BEFBC41;2127.
  ) 
 Here is how much of TeX's memory you used:
- 28773 strings out of 476693
- 544180 string characters out of 5808556
+ 28774 strings out of 476693
+ 544202 string characters out of 5808556
  1866203 words of memory out of 5000000
- 48688 multiletter control sequences out of 15000+600000
+ 48689 multiletter control sequences out of 15000+600000
  569634 words of font info for 152 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  84i,17n,89p,1403b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Masters_Thesis.dvi (80 pages, 518016 bytes).
+Output written on out/Masters_Thesis.dvi (85 pages, 542560 bytes).
