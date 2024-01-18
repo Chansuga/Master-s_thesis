@@ -2519,16 +2519,86 @@ $C_j$の状態(サイト$j$のスピン状態)を足し上げて周辺化した�
 
 
 \section{相の分類器による相転移検出}
-カラスクイラ(Juan Carrasquilla)とメルコ―(Roger G.Melko)は，2016年の5月に"Machine learning phases of matter"を投稿し，後にNature Physics誌に掲載された．彼らの研究によってはじめてニューラルネットワークを用いて相転移が検出可能であることが示された．ここでは，この論文の内容を引用して，2次元正方イジング模型と2次元三角イジング模型の相転移の検出を行う．\par
-\subsection{学習データの作成}
-ニューラルネットワークを用いて学習を行うにはまず，モデルの学習のためのデータセットを作成する必要がある．相の分類器の作成には，スピン配位とその配位が秩序相か無秩序相かを示す教師ラベルをセットにした教師ありデータを大量に用意する．\par
-この教師データの作成はpythonを用いて次の手順で生成した．
+カラスクイラ(Juan Carrasquilla)とメルコ―(Roger G.Melko)は，2016年の5月に"Machine learning phases of matter"を投稿し，後にNature Physics誌に掲載された．彼らの研究によってはじめてニューラルネットワークを用いて相転移が検出可能であることが示された．ここでは層の分類を行うこの学習済みモデルを層の分類器とよぶことにする．以下では2次元正方イジング模型と2次元三角イジング模型において層の分類器を作成する．\par
+\subsection{データセットの作成}
+ニューラルネットワークを用いて学習を行うにはまず，モデルの学習のためのデータセットを作成する必要がある．相の分類器の作成には，スピン配位とその配位が強磁性相か常磁性相かを示す教師ラベルをセットにした教師ありデータを大量に用意する．\par
+この教師データの作成は次の手順で作成した．
 \begin{enumerate}
-  \item 温度$T$を選ぶ
-  \item メトロポリス法を用いて温度$T$のスピン配位$\bm{\sigma}$をサンプルする
-  \item $T<2.27$の場合$d=0$，$T<2.27$の場合$d=0$とする
-  \item $(\bm{\sigma},d)$
+  \item 逆温度ラベル$\beta_i, \ i=1,2,\dots$を設定
+  \item 全ラベル$i=1,2,\dots$に対して以下を行う
+  \begin{enumerate}
+    \item メトロポリス法を用いて逆温度$\beta_i$のスピン配位$\bm{\sigma}$を$N$個サンプルする
+    \item $\beta_i<0.44$の場合$d=0$，$\beta<0.44$の場合$d=0$とする
+    \item $(\bm{\sigma},d)$とする．
+  \end{enumerate}
 \end{enumerate}
+このような手順で作成したスピン配位の例が図\ref{}である．見てわかる通り，相転移温度を境にスピンの揃い方が異なっているのがわかる．相転移温度より温度が低いとき，スピンは揃っており，温度が高いとき，スピンはバラバラになる．
+
+\subsection{モデルの作成}
+ここでは，作成したデータセットを学習させるモデルを説明する．ここでは，2種類のニューラルネットワークを用いて学習を行った．1つ目は全結合層のみからなるニューラルネットワーク(以後，FCNモデルとよぶ)．2つ目は畳み込み層を加えたニューラルネットワーク(以後，CNNモデルとよぶ)である．\par
+まず，FCNモデルについて説明する．
+\begin{figure}
+  \begin{center}
+    \centering
+    \begin{tikzpicture}[scale=1/2]
+      \draw (0,4)--(5,-6);
+      \draw (0,4)--(5,-2);
+      \draw (0,4)--(5,2);
+      \draw (0,4)--(5,6);
+      \draw (0,0)--(5,-6);
+      \draw (0,0)--(5,-2);
+      \draw (0,0)--(5,2);
+      \draw (0,0)--(5,6);
+      \draw (0,-4)--(5,-6);
+      \draw (0,-4)--(5,-2);
+      \draw (0,-4)--(5,2);
+      \draw (0,-4)--(5,6);
+      \draw (5,-6)--(10,-2);
+      \draw (5,-6)--(10,2);
+      \draw (5,-2)--(10,-2);
+      \draw (5,-2)--(10,2);
+      \draw (5,2)--(10,-2);
+      \draw (5,2)--(10,2);
+      \draw (5,6)--(10,-2);
+      \draw (5,6)--(10,2);
+      \filldraw[fill=white] (0,-4) circle[radius=1];
+      \filldraw[fill=white] (0,0) circle[radius=1];
+      \filldraw[fill=white] (0,4) circle[radius=1];
+      \filldraw[fill=white] (5,-6) circle[radius=1];
+      \filldraw[fill=white] (5,-2) circle[radius=1];
+      \filldraw[fill=white] (5,2) circle[radius=1];
+      \filldraw[fill=white] (5,6) circle[radius=1];
+      \filldraw[fill=white] (10,-2) circle[radius=1];
+      \filldraw[fill=white] (10,2) circle[radius=1];
+      \draw (0,-1.8) node{$\vdots$};
+      \draw (5,-3.8) node{$\vdots$};
+      \draw (0,-4) node{$\sigma_N$}; 
+      \draw (0,0) node{$\sigma_2$}; 
+      \draw (0,4) node{$\sigma_1$}; 
+      \draw (5,-6) node{$f_{100}$}; 
+      \draw (5,-2) node{$f_{3}$}; 
+      \draw (5,2) node{$f_{2}$}; 
+      \draw (5,6) node{$f_{1}$}; 
+      \draw (10,-2) node{$\hat{y}_2$}; 
+      \draw (10,2) node{$\hat{y}_1$}; 
+    \end{tikzpicture}
+    \caption{全結合ニューラルネットワークモデル}
+    \label{FCNモデル}
+  \end{center}
+\end{figure}
+
+
+
+
+
+
+次に，CNNモデルについて説明する．
+
+
+\subsection{学習の設定}
+
+\subsection{学習結果}
+
 
 
 \begin{figure}[H]

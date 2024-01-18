@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  16 JAN 2024 22:25
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  18 JAN 2024 23:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1096,58 +1096,62 @@ LaTeX Warning: Reference `' on page 73 undefined on input line 2361.
 [75
 
 ] [76] [77] [78]
+
+LaTeX Warning: Reference `' on page 79 undefined on input line 2535.
+
 File: image/分類機_正方イジング_FCNN.png Graphic file (type bmp)
 <image/分類機_正方イジング_FCNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2537--2538
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2607--2608
  [] 
  []
 
 File: image/分類機_三角イジング_FCNN.png Graphic file (type bmp)
 <image/分類機_三角イジング_FCNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2543--2544
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2613--2614
  [] 
  []
 
+[79]
 File: image/分類機_正方イジング_CNN.png Graphic file (type bmp)
 <image/分類機_正方イジング_CNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2552--2553
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2622--2623
  [] 
  []
 
 File: image/分類機_三角イジング_CNN.png Graphic file (type bmp)
 <image/分類機_三角イジング_CNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2558--2559
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2628--2629
  [] 
  []
 
-[79] [80] [81
+[80] [81] [82
 
-] (out/Masters_Thesis.bbl [82
+] (out/Masters_Thesis.bbl [83
 
-]) [83
+]) [84
 
 ]
 付録A
-[84
+[85
 
 ] (out/Masters_Thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Masters_Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 837E8B9F2411C62A626AC0F248593252;2127.
+(rerunfilecheck)             Checksum: 7F4CFD11E573620966F100B6F35F9058;2127.
  ) 
 Here is how much of TeX's memory you used:
- 28774 strings out of 475427
- 544657 string characters out of 5791344
- 883421 words of memory out of 5000000
- 49957 multiletter control sequences out of 15000+600000
+ 28778 strings out of 475427
+ 544717 string characters out of 5791344
+ 883473 words of memory out of 5000000
+ 49961 multiletter control sequences out of 15000+600000
  526606 words of font info for 148 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  84i,17n,89p,1403b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Masters_Thesis.dvi (86 pages, 546524 bytes).
+Output written on out/Masters_Thesis.dvi (87 pages, 559212 bytes).
