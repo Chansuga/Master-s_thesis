@@ -79,19 +79,17 @@
 \contentsline {subsection}{\numberline {3.9.5}勾配計算}{73}{subsection.3.9.5}%
 \contentsline {subsection}{\numberline {3.9.6}デルタの意味}{74}{subsection.3.9.6}%
 \contentsline {chapter}{\numberline {第4章}機械学習によるイジング模型の相転移検出}{75}{chapter.4}%
-\contentsline {section}{\numberline {4.1}イジング模型のモンテカルロ法}{75}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}マルコフ連鎖モンテカルロ法}{75}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}イジングモデルに対するメトロポリス法}{76}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}イジングモデルの熱浴法}{77}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}温度ラベルを持つ配位データの生成}{78}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}相の分類器による相転移検出}{78}{section.4.2}%
+\contentsline {section}{\numberline {4.1}イジング模型のモンテカルロ法}{76}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}マルコフ連鎖モンテカルロ法}{76}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}イジングモデルに対するメトロポリス法}{77}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}イジングモデルの熱浴法}{78}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}相の分類器による相転移検出}{79}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}データセットの作成}{79}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}モデルの作成}{79}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}学習の設定}{80}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}学習結果}{80}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}温度測定器による相転移検出}{81}{section.4.3}%
-\contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{81}{section.4.4}%
-\contentsline {chapter}{謝辞}{83}{chapter*.53}%
-\contentsline {chapter}{参考文献}{84}{chapter*.54}%
-\contentsline {chapter}{\numberline {付録A}aaa}{85}{appendix.A}%
-\contentsline {section}{\numberline {A.1}bbb}{85}{section.A.1}%
+\contentsline {subsection}{\numberline {4.2.2}モデルの構築と学習}{81}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}三角イジング模型の相の分類}{82}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}温度測定器による相転移自動検出}{83}{section.4.3}%
+\contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{83}{section.4.4}%
+\contentsline {chapter}{謝辞}{85}{chapter*.56}%
+\contentsline {chapter}{参考文献}{86}{chapter*.57}%
+\contentsline {chapter}{\numberline {付録A}aaa}{87}{appendix.A}%
+\contentsline {section}{\numberline {A.1}bbb}{87}{section.A.1}%
