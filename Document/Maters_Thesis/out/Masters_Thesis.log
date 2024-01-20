@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  19 JAN 2024 23:58
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  20 JAN 2024 12:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -911,34 +911,37 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 8.64899pt on input line 120.
 [5
 
-] [6] [7]
+] [6]
+File: image/2次元格子.png Graphic file (type bmp)
+<image/2次元格子.png>
+[7] [8]
 File: image/絶対零度スピン配位.png Graphic file (type bmp)
 <image/絶対零度スピン配位.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8] [9] [10] [11] [12]
+[9] [10] [11] [12] [13]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <8> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 366.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 382.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 366.
+(Font)              scaled to size 7.68799pt on input line 382.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 366.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 382.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 366.
-[13] [14] [15] [16] [17]
+(Font)              scaled to size 7.68799pt on input line 382.
+[14] [15] [16] [17] [18]
 
-LaTeX Warning: Reference `直積公式' on page 18 undefined on input line 610.
+LaTeX Warning: Reference `直積公式' on page 19 undefined on input line 625.
 
-[18] [19] [20]
+[19] [20]
 
-LaTeX Warning: Reference `' on page 21 undefined on input line 776.
-
-
-LaTeX Warning: Reference `' on page 21 undefined on input line 776.
+LaTeX Warning: Reference `' on page 21 undefined on input line 791.
 
 
-LaTeX Warning: Reference `' on page 21 undefined on input line 779.
+LaTeX Warning: Reference `' on page 21 undefined on input line 791.
+
+
+LaTeX Warning: Reference `' on page 21 undefined on input line 794.
 
 [21] [22] [23]
 第3章
@@ -956,60 +959,60 @@ File: image/CIFAR10.png Graphic file (type bmp)
 File: image/多項式回帰(a).png Graphic file (type bmp)
 <image/多項式回帰(a).png>
 
-Overfull \hbox (16.76009pt too wide) in paragraph at lines 1200--1201
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 1215--1216
  [][] 
  []
 
 File: image/多項式回帰(b).png Graphic file (type bmp)
 <image/多項式回帰(b).png>
 
-Overfull \hbox (16.76009pt too wide) in paragraph at lines 1205--1206
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 1220--1221
  [][] 
  []
 
 File: image/多項式回帰(c).png Graphic file (type bmp)
 <image/多項式回帰(c).png>
 
-Overfull \hbox (16.76009pt too wide) in paragraph at lines 1210--1211
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 1225--1226
  [][] 
  []
 
 [37] [38] [39] [40]
 
-LaTeX Warning: Reference `' on page 41 undefined on input line 1336.
+LaTeX Warning: Reference `' on page 41 undefined on input line 1351.
 
 [41]
 
-LaTeX Warning: Reference `' on page 42 undefined on input line 1349.
+LaTeX Warning: Reference `' on page 42 undefined on input line 1364.
 
 
-LaTeX Warning: Reference `' on page 42 undefined on input line 1349.
+LaTeX Warning: Reference `' on page 42 undefined on input line 1364.
 
 [42]
 
-LaTeX Warning: Reference `' on page 43 undefined on input line 1382.
+LaTeX Warning: Reference `' on page 43 undefined on input line 1397.
 
 File: image/ニューロン.png Graphic file (type bmp)
 <image/ニューロン.png>
 
-Overfull \hbox (3.3766pt too wide) in paragraph at lines 1390--1391
+Overfull \hbox (3.3766pt too wide) in paragraph at lines 1405--1406
  [][] 
  []
 
 File: image/シナプス.png Graphic file (type bmp)
 <image/シナプス.png>
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 1388--1398
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 1403--1413
 [][] [] 
  []
 
 [43]
 
-LaTeX Warning: Reference `' on page 44 undefined on input line 1404.
+LaTeX Warning: Reference `' on page 44 undefined on input line 1419.
 
 [44] [45] [46] [47] [48] [49] [50] [51]
 
-LaTeX Warning: Reference `' on page 52 undefined on input line 1777.
+LaTeX Warning: Reference `' on page 52 undefined on input line 1792.
 
 [52] [53] [54]
 File: image/単純型細胞.png Graphic file (type bmp)
@@ -1017,35 +1020,35 @@ File: image/単純型細胞.png Graphic file (type bmp)
 File: image/複雑型細胞.png Graphic file (type bmp)
 <image/複雑型細胞.png>
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 1884--1894
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 1899--1909
 [][] [] 
  []
 
 [55]
 
-LaTeX Warning: Reference `' on page 56 undefined on input line 1904.
+LaTeX Warning: Reference `' on page 56 undefined on input line 1919.
 
 
-LaTeX Warning: Reference `' on page 56 undefined on input line 1905.
+LaTeX Warning: Reference `' on page 56 undefined on input line 1920.
 
 
-LaTeX Warning: Reference `' on page 56 undefined on input line 1906.
+LaTeX Warning: Reference `' on page 56 undefined on input line 1921.
 
 File: image/Kチャンネル画像.png Graphic file (type bmp)
 <image/Kチャンネル画像.png>
 [56] [57]
 
-LaTeX Warning: Reference `' on page 58 undefined on input line 1934.
+LaTeX Warning: Reference `' on page 58 undefined on input line 1949.
 
 
-LaTeX Warning: Reference `' on page 58 undefined on input line 1953.
+LaTeX Warning: Reference `' on page 58 undefined on input line 1968.
 
 
-LaTeX Warning: Reference `' on page 58 undefined on input line 1953.
+LaTeX Warning: Reference `' on page 58 undefined on input line 1968.
 
 [58] [59]
 
-LaTeX Warning: Reference `' on page 60 undefined on input line 1999.
+LaTeX Warning: Reference `' on page 60 undefined on input line 2014.
 
 File: image/gradient_decent.png Graphic file (type bmp)
 <image/gradient_decent.png>
@@ -1055,7 +1058,7 @@ File: image/勾配法課題(a).png Graphic file (type bmp)
 File: image/勾配法課題(b).png Graphic file (type bmp)
 <image/勾配法課題(b).png>
 
-Overfull \hbox (0.89943pt too wide) in paragraph at lines 2074--2075
+Overfull \hbox (0.89943pt too wide) in paragraph at lines 2089--2090
  [][] 
  []
 
@@ -1065,34 +1068,34 @@ File: image/モーメンタム法.png Graphic file (type bmp)
 <image/モーメンタム法.png>
 [64]
 
-LaTeX Warning: Reference `' on page 65 undefined on input line 2104.
+LaTeX Warning: Reference `' on page 65 undefined on input line 2119.
 
 
-LaTeX Warning: Reference `' on page 65 undefined on input line 2108.
+LaTeX Warning: Reference `' on page 65 undefined on input line 2123.
 
 [65] [66]
 
-LaTeX Warning: Reference `' on page 67 undefined on input line 2144.
+LaTeX Warning: Reference `' on page 67 undefined on input line 2159.
 
 
-LaTeX Warning: Reference `' on page 67 undefined on input line 2151.
+LaTeX Warning: Reference `' on page 67 undefined on input line 2166.
 
 
-LaTeX Warning: Reference `' on page 67 undefined on input line 2155.
+LaTeX Warning: Reference `' on page 67 undefined on input line 2170.
 
 [67] [68] [69] [70] [71]
 
-LaTeX Warning: Reference `' on page 72 undefined on input line 2313.
+LaTeX Warning: Reference `' on page 72 undefined on input line 2328.
 
 
-LaTeX Warning: Reference `' on page 72 undefined on input line 2325.
+LaTeX Warning: Reference `' on page 72 undefined on input line 2340.
 
 [72] [73]
 
-LaTeX Warning: Reference `' on page 74 undefined on input line 2368.
+LaTeX Warning: Reference `' on page 74 undefined on input line 2383.
 
 
-LaTeX Warning: Reference `' on page 74 undefined on input line 2369.
+LaTeX Warning: Reference `' on page 74 undefined on input line 2384.
 
 [74] [75]
 第4章
@@ -1104,38 +1107,39 @@ File: image/配位ラベルと相転移ラベル.png Graphic file (type bmp)
 [81]
 File: image/相分類FCNモデル.png Graphic file (type bmp)
 <image/相分類FCNモデル.png>
+[82]
 File: image/相分類CNNモデル.png Graphic file (type bmp)
 <image/相分類CNNモデル.png>
-[82]
 File: image/分類機_正方イジング_FCNN.png Graphic file (type bmp)
 <image/分類機_正方イジング_FCNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2608--2609
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2644--2645
  [] 
  []
 
 File: image/分類機_三角イジング_FCNN.png Graphic file (type bmp)
 <image/分類機_三角イジング_FCNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2614--2615
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2650--2651
  [] 
  []
 
+[83]
 File: image/分類機_正方イジング_CNN.png Graphic file (type bmp)
 <image/分類機_正方イジング_CNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2623--2624
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2659--2660
  [] 
  []
 
 File: image/分類機_三角イジング_CNN.png Graphic file (type bmp)
 <image/分類機_三角イジング_CNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2629--2630
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2665--2666
  [] 
  []
 
-[83] [84] [85
+[84] [85
 
 ] (out/Masters_Thesis.bbl [86
 
@@ -1150,15 +1154,15 @@ Overfull \hbox (2.00185pt too wide) in paragraph at lines 2629--2630
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Masters_Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8B38B81BD0D388FAFE7545C668F94B72;2133.
+(rerunfilecheck)             Checksum: 1AFCAA40BEE8434838FF7EC09322EA08;2133.
  ) 
 Here is how much of TeX's memory you used:
- 28798 strings out of 475427
- 545323 string characters out of 5791344
- 890745 words of memory out of 5000000
- 49977 multiletter control sequences out of 15000+600000
+ 28803 strings out of 475427
+ 545437 string characters out of 5791344
+ 884745 words of memory out of 5000000
+ 49981 multiletter control sequences out of 15000+600000
  526606 words of font info for 148 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  84i,17n,89p,1403b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Masters_Thesis.dvi (90 pages, 557328 bytes).
+Output written on out/Masters_Thesis.dvi (90 pages, 563004 bytes).

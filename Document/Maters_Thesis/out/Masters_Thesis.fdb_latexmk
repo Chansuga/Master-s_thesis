@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex out/Masters_Thesis"] 1705667834 "out/Masters_Thesis.aux" "out/Masters_Thesis.bbl" "out/Masters_Thesis" 1705676353 0
+["bibtex out/Masters_Thesis"] 1705720881 "out/Masters_Thesis.aux" "out/Masters_Thesis.bbl" "out/Masters_Thesis" 1705720940 0
   "./reference.bib" 1699966669 2744 61088772c29167726a8b0ddca4c9b248 ""
   "junsrt.bst" 0 -1 0 ""
-  "out/Masters_Thesis.aux" 1705676340 24549 aa0ef8814a7f480784adc55a646791ce "latex"
+  "out/Masters_Thesis.aux" 1705720920 25165 3cbdf31a7d30c3a534901188d95dd579 "latex"
   (generated)
   "out/Masters_Thesis.bbl"
   "out/Masters_Thesis.blg"
   (rewritten before read)
-["dvipdf"] 1705676342 "out/Masters_Thesis.dvi" "out/Masters_Thesis.pdf" "out/Masters_Thesis" 1705676353 0
-  "out/Masters_Thesis.dvi" 1705676341 557328 36d49e0378a3f2a5bce51fda82587777 "latex"
+["dvipdf"] 1705720923 "out/Masters_Thesis.dvi" "out/Masters_Thesis.pdf" "out/Masters_Thesis" 1705720940 0
+  "out/Masters_Thesis.dvi" 1705720920 563004 587a4727e7cc8fb363b2cb429ed36bfb "latex"
   (generated)
   "out/Masters_Thesis.pdf"
   (rewritten before read)
-["latex"] 1705676320 "c:/Users/sugay/Desktop/Master-s_thesis/Document/Maters_Thesis/Masters_Thesis.tex" "out/Masters_Thesis.dvi" "Masters_Thesis" 1705676353 0
-  "Masters_Thesis.tex" 1705676319 237724 07756b0235a51134375efbd28680823b ""
-  "c:/Users/sugay/Desktop/Master-s_thesis/Document/Maters_Thesis/Masters_Thesis.tex" 1705676319 237724 07756b0235a51134375efbd28680823b ""
+["latex"] 1705720882 "c:/Users/sugay/Desktop/Master-s_thesis/Document/Maters_Thesis/Masters_Thesis.tex" "out/Masters_Thesis.dvi" "Masters_Thesis" 1705720940 0
+  "Masters_Thesis.tex" 1705720838 241354 41e5f4b066e129bf313f32780533a02b ""
+  "c:/Users/sugay/Desktop/Master-s_thesis/Document/Maters_Thesis/Masters_Thesis.tex" 1705720838 241354 41e5f4b066e129bf313f32780533a02b ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1669975561 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1669977894 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1669977894 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -234,6 +234,7 @@
   "c:/texlive/2022/texmf-dist/web2c/texmf.cnf" 1669973289 40171 cdab547de63d26590bebb3baff566530 ""
   "c:/texlive/2022/texmf-var/web2c/eptex/platex.fmt" 1669979661 3072963 b88c1ce93abd41d2fe340868b85cfaa5 ""
   "c:/texlive/2022/texmf.cnf" 1669979482 713 e69b156964470283e0530f5060668171 ""
+  "image/2次元格子.png" 1705712924 17650 65a2790dd53e9f390a0dcbb4d82da2d5 ""
   "image/CIFAR10.png" 1702898996 53096 61acde3d0705a3f9e472c5786d870aae ""
   "image/Kチャンネル画像.png" 1704774904 64115 ec7a72f6e30605bc6bb6214efc5b2b4d ""
   "image/gradient_decent.png" 1701774480 75159 8d0de4671cdbb0cb26a434b4d7709bcf ""
@@ -259,10 +260,10 @@
   "image/分類機_三角イジング_FCNN.png" 1698465064 25073 c78a9f39e83873aac49b351578c4edf7 ""
   "image/分類機_正方イジング_CNN.png" 1698459585 22433 48d25dcded083c6850788cf65a5c2436 ""
   "image/分類機_正方イジング_FCNN.png" 1698459510 24637 e5411053bad6c61b75f7dd27a75ad1d4 ""
-  "out/Masters_Thesis.aux" 1705676340 24549 aa0ef8814a7f480784adc55a646791ce "latex"
-  "out/Masters_Thesis.bbl" 1705667835 162 2a882064d97fee9f2bbe76e95c7f79bb "bibtex out/Masters_Thesis"
-  "out/Masters_Thesis.out" 1705676341 2133 8b38b81bd0d388fafe7545c668f94b72 "latex"
-  "out/Masters_Thesis.toc" 1705676341 8583 543d96abfa9d70e064e34af854c18a09 "latex"
+  "out/Masters_Thesis.aux" 1705720920 25165 3cbdf31a7d30c3a534901188d95dd579 "latex"
+  "out/Masters_Thesis.bbl" 1705720882 162 2a882064d97fee9f2bbe76e95c7f79bb "bibtex out/Masters_Thesis"
+  "out/Masters_Thesis.out" 1705720920 2133 1afcaa40bee8434838ff7ec09322ea08 "latex"
+  "out/Masters_Thesis.toc" 1705720920 8700 a063bf2a8ecded0d716ec0623d3d4486 "latex"
   (generated)
   "out/Masters_Thesis.aux"
   "out/Masters_Thesis.dvi"
