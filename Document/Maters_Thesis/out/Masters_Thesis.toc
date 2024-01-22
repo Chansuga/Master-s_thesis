@@ -88,14 +88,14 @@
 \contentsline {subsection}{\numberline {4.2.2}モデルの構築と学習}{83}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}温度測定器による相転移自動検出}{86}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}学習データ}{87}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}モデルの構築と学習}{87}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{87}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}臨界温度予測}{87}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}2次元イジング模型}{89}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}ニューラルネットワークでエンコードされた磁化}{89}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}エネルギーと温度の予測}{91}{subsection.4.4.4}%
-\contentsline {section}{\numberline {4.5}結論}{94}{section.4.5}%
-\contentsline {chapter}{謝辞}{97}{chapter*.60}%
-\contentsline {chapter}{参考文献}{98}{chapter*.61}%
-\contentsline {chapter}{\numberline {付録A}aaa}{99}{appendix.A}%
-\contentsline {section}{\numberline {A.1}bbb}{99}{section.A.1}%
+\contentsline {subsection}{\numberline {4.3.2}モデルの構築と学習}{88}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{94}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}臨界温度予測}{94}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}2次元イジング模型}{95}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}ニューラルネットワークでエンコードされた磁化}{96}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}エネルギーと温度の予測}{98}{subsection.4.4.4}%
+\contentsline {section}{\numberline {4.5}結論}{101}{section.4.5}%
+\contentsline {chapter}{謝辞}{103}{chapter*.66}%
+\contentsline {chapter}{参考文献}{104}{chapter*.67}%
+\contentsline {chapter}{\numberline {付録A}aaa}{105}{appendix.A}%
+\contentsline {section}{\numberline {A.1}bbb}{105}{section.A.1}%
