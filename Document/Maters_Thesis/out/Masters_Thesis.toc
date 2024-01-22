@@ -4,93 +4,93 @@
 \contentsline {chapter}{\numberline {第2章}イジング模型の相転移}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}相転移，臨界現象とは}{5}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}物質の三態と相転移}{5}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}臨界現象とは}{6}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}強磁性体での相転移と臨界現象}{6}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}強磁性イジング模型}{6}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}モデルの定義}{7}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}平衡状態での物理量}{8}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}絶対零度}{9}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}無限体積の極限}{10}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}一次元イジング模型}{11}{section.2.3}%
-\contentsline {section}{\numberline {2.4}二次元イジング模型}{14}{section.2.4}%
-\contentsline {section}{\numberline {2.5}二次元イジング模型の厳密解の計算}{14}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}行列を用いた定式化}{15}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}行列$\mathrm {P}$}{17}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}行列の直積}{18}{subsection.2.5.3}%
-\contentsline {subsection}{\numberline {2.5.4}スピン行列}{19}{subsection.2.5.4}%
-\contentsline {subsection}{\numberline {2.5.5}行列$\mathrm {V}'_1, \mathrm {V}_2, \mathrm {V}_3$}{19}{subsection.2.5.5}%
-\contentsline {subsection}{\numberline {2.5.6}数学的余談}{21}{subsection.2.5.6}%
-\contentsline {subsection}{\numberline {2.5.7}厳密解}{21}{subsection.2.5.7}%
-\contentsline {subsection}{\numberline {2.5.8}スピン代数による$\mathrm {V}$の表現}{22}{subsection.2.5.8}%
-\contentsline {chapter}{\numberline {第3章}機械学習と深層学習}{24}{chapter.3}%
-\contentsline {section}{\numberline {3.1}学習とは}{24}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}代表的なタスク}{25}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}データセットの例}{26}{subsection.3.1.2}%
-\contentsline {subsubsection}{CIFAR-10}{26}{section*.12}%
-\contentsline {subsubsection}{ImageNet}{27}{section*.14}%
-\contentsline {section}{\numberline {3.2}統計入門}{27}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}標本と推定}{27}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}点推定}{29}{subsection.3.2.2}%
-\contentsline {subsubsection}{ガウス分布の場合}{30}{section*.18}%
-\contentsline {subsubsection}{ベルヌーイ分布の場合}{31}{section*.19}%
-\contentsline {subsection}{\numberline {3.2.3}最尤推定}{32}{subsection.3.2.3}%
-\contentsline {subsubsection}{ガウス分布の場合}{33}{section*.20}%
-\contentsline {subsubsection}{ベルヌーイ分布の場合}{34}{section*.21}%
-\contentsline {section}{\numberline {3.3}機械学習の基礎}{34}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}教師あり学習}{34}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}最小二乗法による線形回帰}{35}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}学習不足と過学習}{36}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}正則化}{38}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}クラス分類}{39}{subsection.3.3.5}%
-\contentsline {subsection}{\numberline {3.3.6}クラス分類へのアプローチ}{40}{subsection.3.3.6}%
-\contentsline {subsection}{\numberline {3.3.7}ロジスティック回帰}{40}{subsection.3.3.7}%
-\contentsline {subsection}{\numberline {3.3.8}ソフトマックス回帰}{42}{subsection.3.3.8}%
-\contentsline {section}{\numberline {3.4}ニューラルネットワーク}{43}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}神経細胞のネットワーク}{43}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}形式ニューロン}{44}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}パーセプトロン}{46}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}順伝播ニューラルネットワーク}{47}{subsection.3.4.4}%
-\contentsline {section}{\numberline {3.5}ニューラルネットワークによる機械あり学習}{50}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}中間層で使われる活性化関数}{53}{subsection.3.5.1}%
-\contentsline {section}{\numberline {3.6}畳み込みニューラルネットワーク}{55}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}一次視覚野と畳み込み}{55}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}ニューラルネットワークと畳み込み}{56}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}画像データの扱い}{57}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}畳み込み層}{57}{subsection.3.6.4}%
-\contentsline {subsubsection}{ストライド}{59}{section*.44}%
-\contentsline {subsubsection}{パディング}{59}{section*.45}%
-\contentsline {subsection}{\numberline {3.6.5}プーリング層}{60}{subsection.3.6.5}%
-\contentsline {section}{\numberline {3.7}勾配降下法}{60}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}勾配降下法}{60}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}局所的最小値の問題}{61}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}確率的勾配降下法}{62}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}ミニバッチの作り方}{63}{subsection.3.7.4}%
-\contentsline {section}{\numberline {3.8}改良された勾配降下法}{64}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}勾配降下法の課題}{64}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}モーメンタム法}{64}{subsection.3.8.2}%
-\contentsline {subsection}{\numberline {3.8.3}AdaGrad}{65}{subsection.3.8.3}%
-\contentsline {subsection}{\numberline {3.8.4}RMSprop}{66}{subsection.3.8.4}%
-\contentsline {subsection}{\numberline {3.8.5}AdaDelta}{67}{subsection.3.8.5}%
-\contentsline {subsection}{\numberline {3.8.6}Adam}{67}{subsection.3.8.6}%
-\contentsline {section}{\numberline {3.9}誤差逆伝播法}{68}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}パーセプトロンの学習測とデルタ則}{68}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}誤差逆伝播法の考え方}{70}{subsection.3.9.2}%
-\contentsline {subsection}{\numberline {3.9.3}誤差関数の勾配計算}{72}{subsection.3.9.3}%
-\contentsline {subsection}{\numberline {3.9.4}逆伝播計算の初期値}{74}{subsection.3.9.4}%
-\contentsline {subsection}{\numberline {3.9.5}勾配計算}{74}{subsection.3.9.5}%
-\contentsline {subsection}{\numberline {3.9.6}デルタの意味}{75}{subsection.3.9.6}%
-\contentsline {chapter}{\numberline {第4章}機械学習によるイジング模型の相転移検出}{76}{chapter.4}%
-\contentsline {section}{\numberline {4.1}イジング模型のモンテカルロ法}{77}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}マルコフ連鎖モンテカルロ法}{77}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}イジング模型に対するメトロポリス法}{78}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}イジング模型の熱浴法}{79}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}相の分類器による相転移検出}{80}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}データセットの作成}{80}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}モデルの構築と学習}{82}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}三角イジング模型の相の分類}{84}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}温度測定器による相転移自動検出}{84}{section.4.3}%
-\contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{84}{section.4.4}%
-\contentsline {chapter}{謝辞}{86}{chapter*.58}%
-\contentsline {chapter}{参考文献}{87}{chapter*.59}%
-\contentsline {chapter}{\numberline {付録A}aaa}{88}{appendix.A}%
-\contentsline {section}{\numberline {A.1}bbb}{88}{section.A.1}%
+\contentsline {subsection}{\numberline {2.1.2}臨界現象とは}{7}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}強磁性イジング模型}{7}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}モデルの定義}{8}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}平衡状態での物理量}{9}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}絶対零度}{10}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}無限体積の極限}{11}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}一次元イジング模型}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.4}二次元イジング模型}{15}{section.2.4}%
+\contentsline {section}{\numberline {2.5}二次元イジング模型の厳密解の計算}{15}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}行列を用いた定式化}{16}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}行列$\mathrm {P}$}{18}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}行列の直積}{19}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}スピン行列}{20}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}行列$\mathrm {V}'_1, \mathrm {V}_2, \mathrm {V}_3$}{20}{subsection.2.5.5}%
+\contentsline {subsection}{\numberline {2.5.6}数学的余談}{22}{subsection.2.5.6}%
+\contentsline {subsection}{\numberline {2.5.7}厳密解}{22}{subsection.2.5.7}%
+\contentsline {subsection}{\numberline {2.5.8}スピン代数による$\mathrm {V}$の表現}{23}{subsection.2.5.8}%
+\contentsline {chapter}{\numberline {第3章}機械学習と深層学習}{25}{chapter.3}%
+\contentsline {section}{\numberline {3.1}学習とは}{25}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}代表的なタスク}{26}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}データセットの例}{27}{subsection.3.1.2}%
+\contentsline {subsubsection}{CIFAR-10}{27}{section*.12}%
+\contentsline {subsubsection}{ImageNet}{28}{section*.14}%
+\contentsline {section}{\numberline {3.2}統計入門}{28}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}標本と推定}{28}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}点推定}{30}{subsection.3.2.2}%
+\contentsline {subsubsection}{ガウス分布の場合}{31}{section*.18}%
+\contentsline {subsubsection}{ベルヌーイ分布の場合}{32}{section*.19}%
+\contentsline {subsection}{\numberline {3.2.3}最尤推定}{33}{subsection.3.2.3}%
+\contentsline {subsubsection}{ガウス分布の場合}{34}{section*.20}%
+\contentsline {subsubsection}{ベルヌーイ分布の場合}{35}{section*.21}%
+\contentsline {section}{\numberline {3.3}機械学習の基礎}{35}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}教師あり学習}{35}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}最小二乗法による線形回帰}{36}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}学習不足と過学習}{37}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}正則化}{39}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}クラス分類}{40}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}クラス分類へのアプローチ}{41}{subsection.3.3.6}%
+\contentsline {subsection}{\numberline {3.3.7}ロジスティック回帰}{41}{subsection.3.3.7}%
+\contentsline {subsection}{\numberline {3.3.8}ソフトマックス回帰}{43}{subsection.3.3.8}%
+\contentsline {section}{\numberline {3.4}ニューラルネットワーク}{44}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}神経細胞のネットワーク}{44}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}形式ニューロン}{45}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}パーセプトロン}{47}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}順伝播ニューラルネットワーク}{48}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}ニューラルネットワークによる機械あり学習}{51}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}中間層で使われる活性化関数}{54}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6}畳み込みニューラルネットワーク}{56}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}一次視覚野と畳み込み}{56}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}ニューラルネットワークと畳み込み}{57}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}画像データの扱い}{58}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}畳み込み層}{58}{subsection.3.6.4}%
+\contentsline {subsubsection}{ストライド}{60}{section*.44}%
+\contentsline {subsubsection}{パディング}{60}{section*.45}%
+\contentsline {subsection}{\numberline {3.6.5}プーリング層}{61}{subsection.3.6.5}%
+\contentsline {section}{\numberline {3.7}勾配降下法}{61}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}勾配降下法}{61}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}局所的最小値の問題}{62}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}確率的勾配降下法}{63}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}ミニバッチの作り方}{64}{subsection.3.7.4}%
+\contentsline {section}{\numberline {3.8}改良された勾配降下法}{65}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}勾配降下法の課題}{65}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}モーメンタム法}{65}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}AdaGrad}{66}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}RMSprop}{67}{subsection.3.8.4}%
+\contentsline {subsection}{\numberline {3.8.5}AdaDelta}{68}{subsection.3.8.5}%
+\contentsline {subsection}{\numberline {3.8.6}Adam}{68}{subsection.3.8.6}%
+\contentsline {section}{\numberline {3.9}誤差逆伝播法}{69}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}パーセプトロンの学習測とデルタ則}{69}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}誤差逆伝播法の考え方}{71}{subsection.3.9.2}%
+\contentsline {subsection}{\numberline {3.9.3}誤差関数の勾配計算}{73}{subsection.3.9.3}%
+\contentsline {subsection}{\numberline {3.9.4}逆伝播計算の初期値}{75}{subsection.3.9.4}%
+\contentsline {subsection}{\numberline {3.9.5}勾配計算}{75}{subsection.3.9.5}%
+\contentsline {subsection}{\numberline {3.9.6}デルタの意味}{76}{subsection.3.9.6}%
+\contentsline {chapter}{\numberline {第4章}機械学習によるイジング模型の相転移検出}{77}{chapter.4}%
+\contentsline {section}{\numberline {4.1}イジング模型のモンテカルロ法}{78}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}マルコフ連鎖モンテカルロ法}{78}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}イジング模型に対するメトロポリス法}{79}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}イジング模型の熱浴法}{80}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}相の分類器による相転移検出}{81}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}データセットの作成}{81}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}モデルの構築と学習}{83}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}温度測定器による相転移自動検出}{86}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}学習データ}{87}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}モデルの構築と学習}{87}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{87}{section.4.4}%
+\contentsline {chapter}{謝辞}{89}{chapter*.60}%
+\contentsline {chapter}{参考文献}{90}{chapter*.61}%
+\contentsline {chapter}{\numberline {付録A}aaa}{91}{appendix.A}%
+\contentsline {section}{\numberline {A.1}bbb}{91}{section.A.1}%
