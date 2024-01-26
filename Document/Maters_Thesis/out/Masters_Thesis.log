@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  22 JAN 2024 09:28
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  26 JAN 2024 14:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -953,9 +953,10 @@ File: image/機械学習概要図.png Graphic file (type bmp)
 [26]
 File: image/mnist.png Graphic file (type bmp)
 <image/mnist.png>
+[27]
 File: image/CIFAR10.png Graphic file (type bmp)
 <image/CIFAR10.png>
-[27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37]
+[28] [29] [30] [31] [32] [33] [34] [35] [36] [37]
 File: image/多項式回帰(a).png Graphic file (type bmp)
 <image/多項式回帰(a).png>
 
@@ -979,86 +980,89 @@ Overfull \hbox (16.76009pt too wide) in paragraph at lines 1235--1236
 
 [38] [39] [40] [41]
 
-LaTeX Warning: Reference `' on page 42 undefined on input line 1361.
+LaTeX Warning: Reference `' on page 42 undefined on input line 1367.
 
-[42]
+[42] [43]
 
-LaTeX Warning: Reference `' on page 43 undefined on input line 1374.
-
-
-LaTeX Warning: Reference `' on page 43 undefined on input line 1374.
-
-[43]
-
-LaTeX Warning: Reference `' on page 44 undefined on input line 1407.
+LaTeX Warning: Reference `' on page 44 undefined on input line 1414.
 
 File: image/ニューロン.png Graphic file (type bmp)
 <image/ニューロン.png>
 
-Overfull \hbox (3.3766pt too wide) in paragraph at lines 1415--1416
- [][] 
- []
+Package caption Warning: \captionsetup{subtype*=...} or \subcaptionof
+(caption)                outside box or environment on input line 1422.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: \subcaption
+(caption)                outside box or environment on input line 1422.
+See the caption package documentation for explanation.
 
 File: image/シナプス.png Graphic file (type bmp)
 <image/シナプス.png>
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 1413--1423
-[][] [] 
- []
+Package caption Warning: \subcaption
+(caption)                outside box or environment on input line 1424.
+See the caption package documentation for explanation.
 
-[44]
 
-LaTeX Warning: Reference `' on page 45 undefined on input line 1429.
+Package caption Warning: \subcaption
+(caption)                outside box or environment on input line 1425.
+See the caption package documentation for explanation.
 
-[45] [46] [47] [48] [49] [50] [51] [52]
+[44] [45]
 
-LaTeX Warning: Reference `' on page 53 undefined on input line 1802.
+LaTeX Warning: Reference `' on page 46 undefined on input line 1431.
 
-[53] [54] [55]
+[46] [47] [48] [49] [50] [51] [52] [53]
+
+LaTeX Warning: Reference `' on page 54 undefined on input line 1804.
+
+[54] [55] [56]
 File: image/単純型細胞.png Graphic file (type bmp)
 <image/単純型細胞.png>
 File: image/複雑型細胞.png Graphic file (type bmp)
 <image/複雑型細胞.png>
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 1909--1919
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 1911--1921
 [][] [] 
  []
 
-[56]
+[57] [58]
 
-LaTeX Warning: Reference `' on page 57 undefined on input line 1929.
-
-
-LaTeX Warning: Reference `' on page 57 undefined on input line 1930.
+LaTeX Warning: Reference `' on page 59 undefined on input line 1931.
 
 
-LaTeX Warning: Reference `' on page 57 undefined on input line 1931.
+LaTeX Warning: Reference `' on page 59 undefined on input line 1932.
+
+
+LaTeX Warning: Reference `' on page 59 undefined on input line 1933.
 
 File: image/Kチャンネル画像.png Graphic file (type bmp)
 <image/Kチャンネル画像.png>
-[57] [58]
-
-LaTeX Warning: Reference `' on page 59 undefined on input line 1959.
-
-
-LaTeX Warning: Reference `' on page 59 undefined on input line 1978.
-
-
-LaTeX Warning: Reference `' on page 59 undefined on input line 1978.
-
 [59] [60]
 
-LaTeX Warning: Reference `' on page 61 undefined on input line 2024.
+LaTeX Warning: Reference `' on page 61 undefined on input line 1961.
+
+
+LaTeX Warning: Reference `' on page 61 undefined on input line 1980.
+
+
+LaTeX Warning: Reference `' on page 61 undefined on input line 1980.
+
+[61] [62]
+
+LaTeX Warning: Reference `' on page 63 undefined on input line 2026.
 
 File: image/gradient_decent.png Graphic file (type bmp)
 <image/gradient_decent.png>
-[61] [62] [63] [64]
+[63] [64] [65] [66]
 File: image/勾配法課題(a).png Graphic file (type bmp)
 <image/勾配法課題(a).png>
 File: image/勾配法課題(b).png Graphic file (type bmp)
 <image/勾配法課題(b).png>
 
-Overfull \hbox (0.89943pt too wide) in paragraph at lines 2099--2100
+Overfull \hbox (0.89943pt too wide) in paragraph at lines 2101--2102
  [][] 
  []
 
@@ -1066,100 +1070,100 @@ File: image/勾配法課題(c).png Graphic file (type bmp)
 <image/勾配法課題(c).png>
 File: image/モーメンタム法.png Graphic file (type bmp)
 <image/モーメンタム法.png>
-[65]
+[67]
 
-LaTeX Warning: Reference `' on page 66 undefined on input line 2129.
-
-
-LaTeX Warning: Reference `' on page 66 undefined on input line 2133.
-
-[66] [67]
-
-LaTeX Warning: Reference `' on page 68 undefined on input line 2169.
+LaTeX Warning: Reference `' on page 68 undefined on input line 2131.
 
 
-LaTeX Warning: Reference `' on page 68 undefined on input line 2176.
+LaTeX Warning: Reference `' on page 68 undefined on input line 2135.
+
+[68] [69]
+
+LaTeX Warning: Reference `' on page 70 undefined on input line 2171.
 
 
-LaTeX Warning: Reference `' on page 68 undefined on input line 2180.
-
-[68] [69] [70] [71] [72]
-
-LaTeX Warning: Reference `' on page 73 undefined on input line 2338.
+LaTeX Warning: Reference `' on page 70 undefined on input line 2178.
 
 
-LaTeX Warning: Reference `' on page 73 undefined on input line 2350.
+LaTeX Warning: Reference `' on page 70 undefined on input line 2182.
 
-[73] [74]
+[70] [71] [72] [73] [74]
 
-LaTeX Warning: Reference `' on page 75 undefined on input line 2393.
+LaTeX Warning: Reference `' on page 75 undefined on input line 2340.
 
 
-LaTeX Warning: Reference `' on page 75 undefined on input line 2394.
+LaTeX Warning: Reference `' on page 75 undefined on input line 2352.
 
 [75] [76]
-第4章
-[77
 
-] [78] [79] [80] [81]
+LaTeX Warning: Reference `' on page 77 undefined on input line 2395.
+
+
+LaTeX Warning: Reference `' on page 77 undefined on input line 2396.
+
+[77] [78]
+第4章
+[79
+
+] [80] [81] [82] [83]
 File: image/配位ラベルと相転移ラベル.png Graphic file (type bmp)
 <image/配位ラベルと相転移ラベル.png>
-[82]
+[84]
 File: image/相分類FCNモデル.png Graphic file (type bmp)
 <image/相分類FCNモデル.png>
-[83]
+[85]
 File: image/相分類CNNモデル.png Graphic file (type bmp)
 <image/相分類CNNモデル.png>
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 2643.
+               Default added (so using `tbp') on input line 2645.
 
-[84]
+[86]
 File: image/plot_square_FCNN_2.png Graphic file (type bmp)
 <image/plot_square_FCNN_2.png>
 File: image/plot_square_CNN_2.png Graphic file (type bmp)
 <image/plot_square_CNN_2.png>
-[85]
+[87]
 File: image/plot_square_FCNN.png Graphic file (type bmp)
 <image/plot_square_FCNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2678--2679
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2680--2681
  [] 
  []
 
 File: image/plot_square_CNN.png Graphic file (type bmp)
 <image/plot_square_CNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2685--2686
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2687--2688
  [] 
  []
 
-[86] [87] [88] [89]
+[88] [89] [90] [91]
 
-LaTeX Warning: Reference `' on page 90 undefined on input line 2882.
+LaTeX Warning: Reference `' on page 92 undefined on input line 2884.
 
-[90] [91]
+[92] [93]
 
-LaTeX Warning: Reference `correlation' on page 92 undefined on input line 2930.
-
-
-LaTeX Warning: Reference `correlation' on page 92 undefined on input line 2930.
+LaTeX Warning: Reference `correlation' on page 94 undefined on input line 2932.
 
 
-LaTeX Warning: Reference `correlation' on page 92 undefined on input line 2930.
+LaTeX Warning: Reference `correlation' on page 94 undefined on input line 2932.
 
 
-LaTeX Warning: Reference `correlation' on page 92 undefined on input line 2931.
+LaTeX Warning: Reference `correlation' on page 94 undefined on input line 2932.
 
-[92] [93] [94] [95] [96
 
-] (out/Masters_Thesis.bbl [97
+LaTeX Warning: Reference `correlation' on page 94 undefined on input line 2933.
 
-]) [98
+[94] [95] [96] [97] [98
+
+] (out/Masters_Thesis.bbl [99
+
+]) [100
 
 ]
 付録A
-[99
+[101
 
 ] (out/Masters_Thesis.aux)
 
@@ -1169,12 +1173,12 @@ Package rerunfilecheck Info: File `Masters_Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 8940865F5F290D6E0EB3FA30203C63E3;2189.
  ) 
 Here is how much of TeX's memory you used:
- 28814 strings out of 475427
- 545481 string characters out of 5791344
- 885083 words of memory out of 5000000
- 49992 multiletter control sequences out of 15000+600000
+ 28817 strings out of 475427
+ 545536 string characters out of 5791344
+ 885220 words of memory out of 5000000
+ 49995 multiletter control sequences out of 15000+600000
  526606 words of font info for 148 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  84i,24n,89p,1403b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Masters_Thesis.dvi (101 pages, 619052 bytes).
+Output written on out/Masters_Thesis.dvi (103 pages, 622404 bytes).
