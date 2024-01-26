@@ -2714,9 +2714,145 @@ FCNモデルとの違いは，一次元化を行う前にフィルタによる�
     \item $(\bm{\sigma},\beta_i)$とする．
   \end{enumerate}
 \end{enumerate}
-今回，0.2から1までを100等分した値を逆温度ラベルとして使用し，各逆温度ラベルに対して，100個のスピン配位を生成した．つまり全データ数は10000になる．
+今回，$8 \times 8, 16 \times 16$でそれぞれデータセットを作成した．すべて温度ラベル$\beta_i$は0.2から1までを100等分した値を使用し，各逆温度ラベルに対して，100個のスピン配位を生成した．つまり，それぞれ全データ数は10000になる．
 
 \subsection{モデルの構築と学習}
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[height=5cm]{image/温度測定器FCN.png}
+    \subcaption{全結合ニューラルネットワーク(FCN)モデル}
+    \label{温度測定器FCNモデル}
+    \includegraphics[height=5cm]{image/温度測定器CNN.png}
+    \subcaption{畳み込みニューラルネットワーク(CNN)モデル}
+    \label{温度測定器CNNモデル}
+  \end{center}
+  \caption{温度測定器の作成に用いたニューラルネットワークモデル，}
+\end{figure}
+
+データセットの生成について説明したので，次にモデルの構築とその学習手順について説明する．まず，今回も相の分類器のときと同様に全結合層のみからなるモデル(FCNモデル)と畳み込み層を加えたモデル(CNNモデル)の2種類のモデルで学習を行った．\par
+各モデルについて詳細を説明する．まずFCNモデルは次のような順伝播を行うモデルを使用した．
+\begin{equation}
+  \left[
+    \begin{aligned}
+      & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{Ising configs on} \ L \times L \ \text{lattice.} \right\} \\
+       & \downarrow
+      \begin{cases}
+        \text{Flatten} \\
+        \text{Fully-connected layer} \\
+        \text{ReLU activation}
+      \end{cases} \\
+       & x_a \in \mathbb{R}^{N_h} \ \text{: hidden units} \\
+       & \downarrow
+      \begin{cases}
+        \text{Fully-connected layer} \\
+        \text{Softmax activation}
+      \end{cases} \\
+       & y_K \in [0,1]^{N_o=100} \ \text{: output units}
+    \end{aligned}
+    \right]
+\end{equation}
+図\ref{温度測定器FCNモデル}はこの順伝播について図で表したものである．これは中間層が1層のシンプルな全結合ニューラルネットワークである．活性化関数は中間層でReLU関数，出力層では確率で出力するためにSoftmax関数を使用した．今回中間層のユニットの個数は$L=8$のとき$N_h=80$，$L=16$のとき$N_h=320$で学習を行った．\par
+次にCNNモデルについて説明する．CNNモデルでは次のような順伝播を行うモデルを使用した．
+\begin{equation}
+  \begin{bmatrix}
+    \begin{aligned}
+       & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{Ising configs on} \ L \times L \ \text{lattice.} \right\} \\
+       & \downarrow
+      \begin{cases}
+        \text{Convolutional Layer}_{[N_f^2\text{-filter}, \ (s,s)\text{-stride}, \ C_1\text{-channels}]} \\
+        \text{ReLU activation} \\
+        \hspace{2cm} \vdots \\
+        \text{Convolutional Layer}_{[N_f^2\text{-filter}, \ (s,s)\text{-stride}, \ C_i\text{-channels}]} \\
+        \text{ReLU activation} \\
+        \text{Flatten}
+      \end{cases} \\
+       & x_a \in \mathbb{R}^{N_h = L^2/s^2 \times C_i} \ \text{: hidden units} \\
+       & \downarrow
+      \begin{cases}
+        \text{Fully-connected layer} \\
+        \text{Softmax activation}
+      \end{cases} \\
+       & y_K \in [0,1]^{N_o} \ \text{: output units}
+    \end{aligned}
+  \end{bmatrix}
+\end{equation}
+図\ref{温度測定器CNNモデル}はこの順伝播について図で表したものである．見てわかる通り，畳み込み層と全結合層からなる．こちらもシンプルなモデルを使用している．畳み込み層ではハイパーパラメータとして，カーネルサイズ，ストライド，パッディングサイズ，フィルタのチャンネル数を設定する必要がある．今回，$L=8$と$L=16$のときで以下のように値を設定した．
+\begin{center}
+  \begin{tabular}{|l|c|c|} \hline
+    ハイパーパラメータ& $8 \times 8$ & $16 \times 16$ \\ \hline
+    カーネルサイズ & 3 & 5 \\
+    ストライド & 2 & 2 \\ 
+    パディングサイズ & 1 & 2 \\ 
+    チャンネル数 & 5 & 5 \\ \hline 
+  \end{tabular}
+\end{center}
+このような値に設定することで，中間層のユニットの個数を$L=8$のときは80，$L=16$のときは320となり，FCNと同じ個数にすることができる．これにより，モデルの比較がしやすくなる．\par
+これら2つのモデルを学習を行った．今回も相分類器の実験のときと同様な方法で10000あるデータを5000個の学習データと5000個のテストデータに分けて学習を行った．以下，学習で用いたパラメータや手法を表でまとめた．
+\begin{table}[H]
+  \centering
+  \begin{tabular}{cc} \hline
+    バッチサイズ & 1 \rule[0pt]{0pt}{1pt} \\ \hline
+    エポック数 & 1 \rule[0pt]{0pt}{1pt} \\ \hline
+    誤差関数 & 交差エントロピー誤差 \rule[0pt]{0pt}{1pt} \\\hline
+    最適化アルゴリズム & Adam \rule[0pt]{0pt}{1pt} \\\hline
+    学習率 & 0.0001 \rule[0pt]{0pt}{1pt} \\\hline
+  \end{tabular}
+  \caption{hoge}
+  \label{学習で用いたもの2}
+\end{table}
+
+
+\begin{figure}[H]
+  \begin{minipage}[b]{0.45\linewidth}
+    \begin{center}
+      \includegraphics[keepaspectratio, scale=0.5]{image/L8_FCNN_weight.png}
+      \subcaption{L8_FCN}
+    \end{center}
+  \end{minipage}
+  \begin{minipage}[b]{0.45\linewidth}
+    \begin{center}
+      \includegraphics[keepaspectratio, scale=0.5]{image/L8_CNN_weight.png}
+      \subcaption{L8_CNN}
+    \end{center}
+  \end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=\linewidth]{image/L8_FCNN_weight_sum.png}
+    \subcaption{aaa}
+    \includegraphics[width=\linewidth]{image/L8_CNN_weight_sum.png}
+    \subcaption{bbb}
+  \end{center}
+  \caption{ccc}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{minipage}[b]{0.45\linewidth}
+    \begin{center}
+      \includegraphics[keepaspectratio, scale=0.5]{image/L16_FCNN_weight.png}
+      \subcaption{L16 FCN}
+    \end{center}
+  \end{minipage}
+  \begin{minipage}[b]{0.45\linewidth}
+    \begin{center}
+      \includegraphics[keepaspectratio, scale=0.5]{image/L16_CNN_weight_2.png}
+      \subcaption{L16 CNN}
+    \end{center}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=\linewidth]{image/L16_FCNN_weight_sum.png}
+    \subcaption{aaa}
+    \includegraphics[width=\linewidth]{image/L16_CNN_weight_sum_2.png}
+    \subcaption{bbb}
+  \end{center}
+  \caption{ccc}
+\end{figure}
+
 
 
 \section{相転移検出がなぜ可能なのか？}
@@ -2892,23 +3028,23 @@ No-dimensional output spaceにおいて．この手法により，出力次元$N
 \begin{equation}
   \begin{bmatrix}
     \begin{aligned}
-       & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{Ising configs on} \ L \times L \ \text{lattice.} \right\}        \\
+       & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{Ising configs on} \ L \times L \ \text{lattice.} \right\} \\
        & \downarrow
       \begin{cases}
         \text{Convolution}_{[(s_1,s_1)\text{-filter}, \ (s_1,s_1)\text{-stride}, \ C_1\text{-channels}]} \\
-        \text{ReLU activation}                                                                           \\
+        \text{ReLU activation} \\
         \text{Convolution}_{[(s_2,s_2)\text{-filter}, \ (s_2,s_2)\text{-stride}, \ C_2\text{-channels}]} \\
-        \text{ReLU activation}                                                                           \\
+        \text{ReLU activation} \\
         \text{Convolution}_{[(s_3,s_3)\text{-filter}, \ (s_3,s_3)\text{-stride}, \ C_3\text{-channels}]} \\
-        \text{ReLU activation}                                                                           \\
+        \text{ReLU activation} \\
         \text{Flatten}
       \end{cases} \\
-       & x_a \in [0,1]^{N_h = L^2/(s_1s_2s_3)^2 \times C_3} \ \text{: hidden units}                                          \\
+       & x_a \in [0,1]^{N_h = L^2/(s_1s_2s_3)^2 \times C_3} \ \text{: hidden units} \\
        & \downarrow
       \begin{cases}
         \text{Fully-connected (Dense) layer} \\
         \text{Softmax activation}
-      \end{cases}                                                                                   \\
+      \end{cases} \\
        & y_{\alpha} \in [0,1]^{N_t} \ \text{: output}
     \end{aligned}
   \end{bmatrix}

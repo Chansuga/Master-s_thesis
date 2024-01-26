@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  26 JAN 2024 14:27
+This is e-pTeX, Version 3.141592653-p4.0.0-220214-2.6 (utf8.sjis) (TeX Live 2022) (preloaded format=platex 2022.12.2)  26 JAN 2024 14:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1138,47 +1138,91 @@ Overfull \hbox (2.00185pt too wide) in paragraph at lines 2687--2688
  [] 
  []
 
-[88] [89] [90] [91]
+[88]
+File: image/温度測定器FCN.png Graphic file (type bmp)
+<image/温度測定器FCN.png>
+File: image/温度測定器CNN.png Graphic file (type bmp)
+<image/温度測定器CNN.png>
+[89] [90] [91]
+File: image/L8_FCNN_weight.png Graphic file (type bmp)
+<image/L8_FCNN_weight.png>
 
-LaTeX Warning: Reference `' on page 92 undefined on input line 2884.
+Overfull \hbox (33.72318pt too wide) in paragraph at lines 2808--2809
+ [] 
+ []
 
-[92] [93]
+File: image/L8_CNN_weight.png Graphic file (type bmp)
+<image/L8_CNN_weight.png>
 
-LaTeX Warning: Reference `correlation' on page 94 undefined on input line 2932.
+Overfull \hbox (33.72318pt too wide) in paragraph at lines 2814--2815
+ [] 
+ []
+
+File: image/L8_FCNN_weight_sum.png Graphic file (type bmp)
+<image/L8_FCNN_weight_sum.png>
+File: image/L8_CNN_weight_sum.png Graphic file (type bmp)
+<image/L8_CNN_weight_sum.png>
+[92]
+File: image/L16_FCNN_weight.png Graphic file (type bmp)
+<image/L16_FCNN_weight.png>
+
+Overfull \hbox (33.72318pt too wide) in paragraph at lines 2834--2835
+ [] 
+ []
+
+File: image/L16_CNN_weight_2.png Graphic file (type bmp)
+<image/L16_CNN_weight_2.png>
+
+Overfull \hbox (33.72318pt too wide) in paragraph at lines 2840--2841
+ [] 
+ []
+
+[93]
+File: image/L16_FCNN_weight_sum.png Graphic file (type bmp)
+<image/L16_FCNN_weight_sum.png>
+File: image/L16_CNN_weight_sum_2.png Graphic file (type bmp)
+<image/L16_CNN_weight_sum_2.png>
+[94] [95] [96] [97] [98]
+
+LaTeX Warning: Reference `' on page 99 undefined on input line 3020.
+
+[99] [100]
+
+LaTeX Warning: Reference `correlation' on page 101 undefined on input line 3068.
 
 
-LaTeX Warning: Reference `correlation' on page 94 undefined on input line 2932.
+LaTeX Warning: Reference `correlation' on page 101 undefined on input line 3068.
 
 
-LaTeX Warning: Reference `correlation' on page 94 undefined on input line 2932.
+LaTeX Warning: Reference `correlation' on page 101 undefined on input line 3068.
 
 
-LaTeX Warning: Reference `correlation' on page 94 undefined on input line 2933.
+LaTeX Warning: Reference `correlation' on page 101 undefined on input line 3069.
 
-[94] [95] [96] [97] [98
+[101] [102] [103] [104
 
-] (out/Masters_Thesis.bbl [99
+] (out/Masters_Thesis.bbl [105
 
-]) [100
+]) [106
 
 ]
 付録A
-[101
+[107
 
 ] (out/Masters_Thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Masters_Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8940865F5F290D6E0EB3FA30203C63E3;2189.
+(rerunfilecheck)             Checksum: 3625C7E302DED87B301BE2A4CE657EC2;2189.
  ) 
 Here is how much of TeX's memory you used:
- 28817 strings out of 475427
- 545536 string characters out of 5791344
- 885220 words of memory out of 5000000
- 49995 multiletter control sequences out of 15000+600000
+ 28874 strings out of 475427
+ 547154 string characters out of 5791344
+ 885487 words of memory out of 5000000
+ 50042 multiletter control sequences out of 15000+600000
  526606 words of font info for 148 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  84i,24n,89p,1403b,854s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Masters_Thesis.dvi (103 pages, 622404 bytes).
+Output written on out/Masters_Thesis.dvi (109 pages, 635908 bytes).

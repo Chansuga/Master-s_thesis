@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex out/Masters_Thesis"] 1706246835 "out/Masters_Thesis.aux" "out/Masters_Thesis.bbl" "out/Masters_Thesis" 1706246915 0
+["bibtex out/Masters_Thesis"] 1706247092 "out/Masters_Thesis.aux" "out/Masters_Thesis.bbl" "out/Masters_Thesis" 1706247161 0
   "./reference.bib" 1699966669 2744 61088772c29167726a8b0ddca4c9b248 ""
   "junsrt.bst" 0 -1 0 ""
-  "out/Masters_Thesis.aux" 1706246877 27349 df05f7787d989b7f02b133337c1673b0 "latex"
+  "out/Masters_Thesis.aux" 1706247138 28600 7fa80d4e372c79538b8186dc16f6b277 "latex"
   (generated)
   "out/Masters_Thesis.bbl"
   "out/Masters_Thesis.blg"
   (rewritten before read)
-["dvipdf"] 1706246880 "out/Masters_Thesis.dvi" "out/Masters_Thesis.pdf" "out/Masters_Thesis" 1706246915 0
-  "out/Masters_Thesis.dvi" 1706246877 622404 4fba6464be17c99fd473d79932b27c26 "latex"
+["dvipdf"] 1706247140 "out/Masters_Thesis.dvi" "out/Masters_Thesis.pdf" "out/Masters_Thesis" 1706247161 0
+  "out/Masters_Thesis.dvi" 1706247138 635908 fe81e862b7d243d075149ceac8a36a2b "latex"
   (generated)
   "out/Masters_Thesis.pdf"
   (rewritten before read)
-["latex"] 1706246836 "c:/Users/sugay/Desktop/Master-s_thesis/Document/Maters_Thesis/Masters_Thesis.tex" "out/Masters_Thesis.dvi" "Masters_Thesis" 1706246915 0
-  "Masters_Thesis.tex" 1706246793 279480 85d4433f693129fe92727886e7e53404 ""
-  "c:/Users/sugay/Desktop/Master-s_thesis/Document/Maters_Thesis/Masters_Thesis.tex" 1706246793 279480 85d4433f693129fe92727886e7e53404 ""
+["latex"] 1706247093 "c:/Users/sugay/Desktop/Master-s_thesis/Document/Maters_Thesis/Masters_Thesis.tex" "out/Masters_Thesis.dvi" "Masters_Thesis" 1706247161 0
+  "Masters_Thesis.tex" 1706246980 285602 1d23f696e89e5bbca0d40bc6387ff128 ""
+  "c:/Users/sugay/Desktop/Master-s_thesis/Document/Maters_Thesis/Masters_Thesis.tex" 1706246980 285602 1d23f696e89e5bbca0d40bc6387ff128 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1669975561 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1669977894 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1669977894 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -237,6 +237,14 @@
   "image/2次元格子.png" 1705712924 17650 65a2790dd53e9f390a0dcbb4d82da2d5 ""
   "image/CIFAR10.png" 1702898996 53096 61acde3d0705a3f9e472c5786d870aae ""
   "image/Kチャンネル画像.png" 1704774904 64115 ec7a72f6e30605bc6bb6214efc5b2b4d ""
+  "image/L16_CNN_weight_2.png" 1706246980 99757 b41d10ba1527e9f2f3a0e21ca347402b ""
+  "image/L16_CNN_weight_sum_2.png" 1706246980 23081 2397c5135b61c802d05396492711a3e6 ""
+  "image/L16_FCNN_weight.png" 1706246980 100702 f87a44c8cf1ac81f1e2a01da7633b022 ""
+  "image/L16_FCNN_weight_sum.png" 1706246980 22892 f51fcde0a769a62c6ecef6f3d0556217 ""
+  "image/L8_CNN_weight.png" 1706246980 49838 3dd680530287350876e713172ded1f7e ""
+  "image/L8_CNN_weight_sum.png" 1706246980 23432 5a48c444604cdeef27ac886718a6f889 ""
+  "image/L8_FCNN_weight.png" 1706246980 49992 96ecbf47ac294448046f41890ed4188c ""
+  "image/L8_FCNN_weight_sum.png" 1706246980 25962 1aeba1f89fe08efd5fff81819e95e232 ""
   "image/gradient_decent.png" 1701774480 75159 8d0de4671cdbb0cb26a434b4d7709bcf ""
   "image/mnist.png" 1702898996 12531 925c1eb4b954f5be151b13daaf7c63e7 ""
   "image/plot_square_CNN.png" 1705742683 22539 7b690881cd7323015871e78f14021fcc ""
@@ -246,6 +254,8 @@
   "image/シナプス.png" 1703918751 367868 4f71b68c34dba5e83ace68789876a282 ""
   "image/ニューロン.png" 1703918751 358318 0b6957d9c635ec4c2b7f82704ff248fd ""
   "image/モーメンタム法.png" 1701774480 96677 6ebf4040d0fec7dd304319cc7a9c5959 ""
+  "image/温度測定器CNN.png" 1706246980 192710 ecfc3765c6f0fcee28e28baf7fdbe87b ""
+  "image/温度測定器FCN.png" 1706246980 333547 007872489e0934a636f10cd2c5387f76 ""
   "image/機械学習概要図.png" 1703935792 103131 7608ad1ed1736b4feabe3a49780b2129 ""
   "image/勾配法課題(a).png" 1701774480 36136 a35ff45b5bca2aa1833294accf0ed320 ""
   "image/勾配法課題(b).png" 1701774480 28404 094e6d29031876c85433d95a1cd93a3d ""
@@ -260,10 +270,10 @@
   "image/単純型細胞.png" 1704416577 81102 4052fc0fe3f9080d7474d8754398e457 ""
   "image/配位ラベルと相転移ラベル.png" 1705661614 264517 8a6cc53bdc086a7ff1f466372a8a3bfa ""
   "image/複雑型細胞.png" 1704416605 79919 60247ad719917aa94311ee5e06609d02 ""
-  "out/Masters_Thesis.aux" 1706246877 27349 df05f7787d989b7f02b133337c1673b0 "latex"
-  "out/Masters_Thesis.bbl" 1706246836 162 2a882064d97fee9f2bbe76e95c7f79bb "bibtex out/Masters_Thesis"
-  "out/Masters_Thesis.out" 1706246877 2189 8940865f5f290d6e0eb3fa30203c63e3 "latex"
-  "out/Masters_Thesis.toc" 1706246877 9257 6986c4627bd3ee7ca16174482936e787 "latex"
+  "out/Masters_Thesis.aux" 1706247138 28600 7fa80d4e372c79538b8186dc16f6b277 "latex"
+  "out/Masters_Thesis.bbl" 1706247093 162 2a882064d97fee9f2bbe76e95c7f79bb "bibtex out/Masters_Thesis"
+  "out/Masters_Thesis.out" 1706247138 2189 3625c7e302ded87b301be2a4ce657ec2 "latex"
+  "out/Masters_Thesis.toc" 1706247138 9260 6a85169884e44c870eeb4c59c6cb68f7 "latex"
   (generated)
   "out/Masters_Thesis.aux"
   "out/Masters_Thesis.dvi"
