@@ -1316,14 +1316,6 @@ INPUT ./image/絶対零度スピン配位.png
 INPUT image/絶対零度スピン配位.png
 INPUT extractbb -B cropbox -O image/絶対零度スピン配位.png
 INPUT c:/texlive/2022/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT ./image/機械学習概要図.png
 INPUT ./image/機械学習概要図.png
 INPUT image/機械学習概要図.png
@@ -1368,6 +1360,10 @@ INPUT ./image/Kチャンネル画像.png
 INPUT ./image/Kチャンネル画像.png
 INPUT image/Kチャンネル画像.png
 INPUT extractbb -B cropbox -O image/Kチャンネル画像.png
+INPUT ./image/畳み込み演算の例.png
+INPUT ./image/畳み込み演算の例.png
+INPUT image/畳み込み演算の例.png
+INPUT extractbb -B cropbox -O image/畳み込み演算の例.png
 INPUT ./image/gradient_decent.png
 INPUT ./image/gradient_decent.png
 INPUT image/gradient_decent.png
