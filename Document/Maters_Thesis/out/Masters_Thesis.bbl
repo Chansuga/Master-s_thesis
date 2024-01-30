@@ -1,8 +1,48 @@
 \begin{thebibliography}{1}
 
+\bibitem{高橋2017相転移}
+高橋和孝, 西森秀稔.
+\newblock 相転移・臨海現象とくりこみ群.
+\newblock 丸善出版, 2017.
+
+\bibitem{田崎統計力学2}
+田崎晴明.
+\newblock 統計力学I\hspace{-1.2pt}I.
+\newblock 培風館, 2008.
+
+\bibitem{瀧2017これなら}
+瀧雅人.
+\newblock これならわかる深層学習入門.
+\newblock 講談社, 2017.
+
+\bibitem{富谷2021これなら}
+富谷昭夫.
+\newblock これならわかる機械学習入門.
+\newblock 講談社, 2021.
+
+\bibitem{田中2019ディープ}
+田中章詞, 富谷昭夫, 橋本幸士.
+\newblock ディープラーニングと物理学 原理がわかる 応用できる.
+\newblock 講談社, 2019.
+
+\bibitem{福嶋2022基礎からの}
+福嶋健二, 桂法称.
+\newblock 基礎からの物理学とディープラーニング入門.
+\newblock 科学情報出版, 2022.
+
 \bibitem{Tom1997Machine}
 Tom~Michael Mitchell.
 \newblock {\em Machine Learning}.
 \newblock Mc Graw-Hill, 1997.
+
+\bibitem{carrasquilla2017machine}
+Juan Carrasquilla and Roger~G Melko.
+\newblock Machine learning phases of matter.
+\newblock {\em Nature Physics}, Vol.~13, No.~5, pp. 431--434, 2017.
+
+\bibitem{tanaka2017detection}
+Akinori Tanaka and Akio Tomiya.
+\newblock Detection of phase transition via convolutional neural networks.
+\newblock {\em Journal of the Physical Society of Japan}, Vol.~86, No.~6, p. 063001, 2017.
 
 \end{thebibliography}

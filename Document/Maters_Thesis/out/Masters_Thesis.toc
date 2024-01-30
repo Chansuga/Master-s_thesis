@@ -82,7 +82,7 @@
 \contentsline {subsection}{\numberline {4.3.2}モデルの構築と学習}{82}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{89}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}臨界温度予測}{89}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}2次元イジング模型}{90}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.2}2次元イジング模型}{91}{subsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.4.3}ニューラルネットワークでエンコードされた磁化}{91}{subsection.4.4.3}%
 \contentsline {subsection}{\numberline {4.4.4}エネルギーと温度の予測}{93}{subsection.4.4.4}%
 \contentsline {section}{\numberline {4.5}結論}{96}{section.4.5}%
