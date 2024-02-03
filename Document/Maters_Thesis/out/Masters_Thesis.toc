@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {2.1.1}物質の三態と相転移}{5}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}臨界現象とは}{7}{subsection.2.1.2}%
 \contentsline {section}{\numberline {2.2}強磁性イジング模型}{7}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}モデルの定義}{8}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}強磁性イジング模型の定義}{8}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}平衡状態での物理量}{9}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}絶対零度}{10}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}無限体積の極限}{11}{subsection.2.2.4}%
@@ -88,3 +88,14 @@
 \contentsline {section}{\numberline {4.5}結論}{96}{section.4.5}%
 \contentsline {chapter}{謝辞}{98}{chapter*.68}%
 \contentsline {chapter}{参考文献}{99}{chapter*.69}%
+\contentsline {chapter}{\numberline {付録A}2次元イジング模型の厳密解の計算}{100}{appendix.A}%
+\contentsline {section}{\numberline {A.1}二次元イジング模型の厳密解の計算}{100}{section.A.1}%
+\contentsline {section}{\numberline {A.2}転送行列を用いた定式化}{100}{section.A.2}%
+\contentsline {section}{\numberline {A.3}転送行列$\mathrm {P}$}{102}{section.A.3}%
+\contentsline {section}{\numberline {A.4}行列の直積}{103}{section.A.4}%
+\contentsline {section}{\numberline {A.5}スピン行列}{104}{section.A.5}%
+\contentsline {section}{\numberline {A.6}行列$\mathrm {V}'_1, \mathrm {V}_2, \mathrm {V}_3$}{104}{section.A.6}%
+\contentsline {section}{\numberline {A.7}数学的余談}{105}{section.A.7}%
+\contentsline {section}{\numberline {A.8}厳密解}{106}{section.A.8}%
+\contentsline {section}{\numberline {A.9}スピン代数による$\mathrm {V}$の表現}{107}{section.A.9}%
+\contentsline {section}{\numberline {A.10}bbb}{108}{section.A.10}%

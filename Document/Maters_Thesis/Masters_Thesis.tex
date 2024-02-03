@@ -128,7 +128,7 @@ setpagesize=false,
 \end{figure}
 なぜ同じ\ce{H2O}という物質が，温度を変えただけで，固相，液相，気相という全く性質の異なる状態をとるのか．素朴に考えれば，このような変化は水の素である\ce{H2O}分子の性質の変化からくると考えたくなる．つまり，何らかの意味での「ミクロなルール」が変化しているのではないかと想定するということである．\par
 しかし，相転移が起こるのは「ミクロなルール」が変化するからではない．なぜなら，ミクロな自由である分子にとって，温度とは，周囲からくる熱的なノイズの平均値を決定するためのパラメータにすぎず，それによってミクロな分子の形状や相互作用が不連続に変化するなど決してありえないからである．\par
-「ミクロなルール」が不変であっても，系を構成する要素(今の場合，水分子)の数がきわめて大きければ，それら相互の関連が変化することで，マクロな性質の不連続な変化が生じうる．つまり，相転移は，無数の要素が複雑に絡み合ったときに全体として生じる協力現象の一種なのである．\par
+「ミクロなルール」が不変であっても，系を構成する要素(今の場合，水分子)の数がきわめて大きければ，それら相互の関連が変化することで，マクロな性質の不連続な変化が生じうる．つまり，相転移は，無数の要素が複雑に絡み合ったときに全体として生じる協同現象の一種なのである．\par
 図\ref{三態相図}は典型的な純物質の相図の模式図である．絶対温度$T$と圧力$p$を変化させると，相図の境界を横切るときに相転移が生じ，例えば物質の密度や比熱が不連続に変化する．境界線で仕切られる三つの領域が固相，液相，気相である．\par
 しかし，図\ref{三態相図}を見ると，液相と気相を仕切る境界線が途中で途切れている．つまり，この途切れている部分より右上の領域では液相と気相の区別がないのである．\par
 これは，相というのが一部分に着目したときに意味を持つ「局所的」な概念であることを示唆している．どの状態をどの相と同定するかは，相図のどの部分に着目するかに応じて変わるのである．それに対して，どの部分で物理量の特異な変化が生じるかを示す相図(より正確には，パラメータ空間の中での境界の位置)は，解釈の余地なく定まっている．\par
@@ -150,7 +150,7 @@ setpagesize=false,
 これまで，最も身近な相転移という理由で物質の三態を扱ってきたが，実は固相，液相，気相のあいだの相転移についての理論な現状，理論的な理解は進んでいない．しかし，もう一つ我々の身近にある物質である磁石，物理学の用語で言い換えると強磁性体に関係する相転移はよく知られている．そのため，本論文では強磁性体の相転移を扱う．\par
 この節では，強磁性体の相転移を調べるために，強磁性イジング模型(本論文では以降，単にイジング模型とよぶ)を定義する．イジング模型は，実在の強磁性体のモデルとしては全く忠実ではないが，強磁性体での相転移の本質をつかむためには，きわめてすぐれたモデルである．つまり，相転移や臨界現象を引き起こすために必要最低限の要素だけを持ったモデルと言える．\par
 「イジング模型」という呼び名は，このモデルの一次元でのふるまいを1924年の学位論文で調べたイジングにちなんだものである．ただし，モデルの発案者は当時イジングの指導教員であったレンツである．\par
-\subsection{モデルの定義}
+\subsection{強磁性イジング模型の定義}
 \begin{figure}[H]
   \begin{center}
       \includegraphics[height=4cm]{image/2次元格子.png}
@@ -204,7 +204,7 @@ setpagesize=false,
    & = \frac{1}{\beta N}\frac{\partial}{\partial H} \ln{Z_L (\beta, H)} \notag                                                                                     \\
    & = -\frac{\partial}{\partial H} f_L(\beta, H) \label{磁化と自由エネルギーの関係式}
 \end{align}
-と書ける．これ以降，期待値$\langle \hat{m} \rangle_{\beta, H}^{\text{can}}$のことも，単に磁化と呼ぶ．磁化とは「系がどの程度磁石になっているか」の目安である．それに対して，「系がどの程度磁石になりやすいか」の目安になるのがゼロ磁場での磁化率は
+と書ける．これ以降，期待値$\langle \hat{m} \rangle_{\beta, H}^{\text{can}}$のことも，単に磁化と呼ぶ．磁化とは「系がどの程度磁石になっているか」の目安である．それに対して，「系がどの程度磁石になりやすいか」の目安になるゼロ磁場での磁化率は
 \begin{equation}
   \chi_L(\beta) := \left.\frac{\partial m_L(\beta, H)}{\partial H}\right|_{H=0}
 \end{equation}
@@ -351,7 +351,7 @@ $f_L(\beta, H)$が微分可能なので，$m_L(\beta, H)$はすべての$\beta, 
    & = -\frac{1}{\beta L} \ln{(\lambda_{+})^N + (\lambda_{-})^N} \notag                                                              \\
    & = -\frac{1}{\beta} \ln{\lambda_{+}} - \frac{1}{\beta L} \left\{ 1 + \left( \frac{\lambda_{-}}{\lambda_{+}} \right)^{L} \right\}
 \end{align}
-と表すことができる．ここで，$\lambda{-}/\lambda_{+}<1$に注意して，$L \nearrow \infty$とすると，
+と表すことができる．ここで，$\lambda_{-}/\lambda_{+}<1$に注意して，$L \nearrow \infty$とすると，
 \begin{align}
   f
    & = \lim_{L \nearrow \infty} f = -\frac{1}{\beta} \ln{\lambda_{+}} \notag                                                   \\
@@ -410,468 +410,7 @@ $f_L(\beta, H)$が微分可能なので，$m_L(\beta, H)$はすべての$\beta, 
 \end{figure}
 
 \section{二次元イジング模型}
-% \section{二次元イジング模型の厳密解の計算}
-% 二次元イジング模型の厳密解はOnsagerによって求められた．Onsagerは，転送行列を対角化することで磁場のないときの自由エネルギーを求め，比熱をある温度で発散することを示した．いくつかの解法があるが，ここでは，高温展開を用いた解法を説明する．高温展開は，温度が高いとして自由エネルギーを$\beta J$のべきで展開する方法である．十分高温であれば，その展開を数項で打ち切って自由エネルギーの近似値とする．計算が比較的簡単なため，汎用的な手法として用いられているが，近似の正当性に十分に注意する必要がある．この近似のみを用いて相転移を調べることはできない．有限項の和から特異性が生じることはないからである．本節では，無限和を計算することにより厳密解を求め，特異性が生じることを示す．\par
-% $h=0$の場合に高温展開を行う．二次元イジング模型の分配関数は
-% \begin{equation}
-%   Z = \mathrm{Tr}\prod_{\langle i, j \rangle} \exp{(\beta J \sigma_i \sigma_j)}
-% \end{equation}
-% と書ける．積はスピンの最近近接についてとる．スピン変数に関する恒等式
-% \begin{align}
-%   e^{x\sigma_i \sigma_j}
-%    & = \frac{e^x + e^{-x}}{2} + \sigma_i \sigma_j \frac{e^x + e^{-x}}{2} \notag \\
-%    & = \cosh{x} + \sigma_i \sigma_j \sinh{x}
-% \end{align}
-% を用いれば，
-% \begin{align}
-%   Z
-%    & = \mathrm{Tr}\prod_{\langle i, j \rangle}(\cosh{\beta J} + \sigma_i \sigma_j \sinh{\beta J}) \notag                \\
-%    & = (\cosh{\beta J})^{N_B}\mathrm{Tr}\prod_{\langle i, j \rangle}(1 + \sigma_i \sigma_j \tanh{\beta J}) \label{分配関数}
-% \end{align}
-% と書ける．$N_B$は最近接の数を表す．$v = \tanh{\beta J}$は有限温度で$1$より有限温度で$1$より小さい非負の量なので，(\ref{分配関数})を$v$について次のように展開する．
-% \begin{equation}
-%   \prod_{\langle i, j \rangle}(1 + v \sigma_i \sigma_j)
-%   = 1 + v \sum_{\langle i, j \rangle} \sigma_i \sigma_j
-%   + v^2 \sum_{\langle i, j \rangle, \langle k, l \rangle} \sigma_i \sigma_j \sigma_k \sigma_l + \cdots
-% \end{equation}
-% ここで，$\langle i, j \rangle \neq \langle k, l \rangle$である．
 
-% \begin{equation}
-%   v\sigma_i \sigma_j \longleftrightarrow
-%   \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
-%     \draw[very thick](0,0)--(0,-1);
-%     \fill(0,0)circle(0.1)node[left]{$i$};
-%     \fill(0,-1)circle(0.1)node[left]{$j$};
-%   \end{tikzpicture}
-% \end{equation}
-
-% \begin{equation}
-%   v^2\sigma_i \sigma_j \sigma_k \sigma_l \longleftrightarrow
-%   \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
-%     \draw[very thick](0,0)--(0,-1);
-%     \draw[very thick](1,0)--(1,-1);
-%     \fill(0,0)circle(0.1)node[left]{$i$};
-%     \fill(0,-1)circle(0.1)node[left]{$j$};
-%     \fill(1,0)circle(0.1)node[right]{$k$};
-%     \fill(1,-1)circle(0.1)node[right]{$l$};
-%   \end{tikzpicture}, \ \ \
-%   v^2\sigma_i \sigma_j^2 \sigma_k \longleftrightarrow
-%   \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
-%     \draw[very thick](0,0)--(0,-1);
-%     \draw[very thick](0,0)--(1,0);
-%     \fill(0,0)circle(0.1)node[left]{$i$};
-%     \fill(0,-1)circle(0.1)node[left]{$j$};
-%     \fill(1,0)circle(0.1)node[right]{$k$};
-%   \end{tikzpicture}
-% \end{equation}
-
-% \begin{equation}
-%   Z = (\cosh{\beta J})^{N_B}\mathrm{Tr}
-%   \left[
-%     1 + \sum
-%     \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
-%       \draw[very thick](0,0)--(0,-1);
-%       \fill(0,0)circle(0.1);
-%       \fill(0,-1)circle(0.1);
-%     \end{tikzpicture}
-%     + \sum
-%     \left(
-%     \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
-%       \draw[very thick](0,0)--(0,-1);
-%       \draw[very thick](1,0)--(1,-1);
-%       \fill(0,0)circle(0.1);
-%       \fill(0,-1)circle(0.1);
-%       \fill(1,0)circle(0.1);
-%       \fill(1,-1)circle(0.1);
-%     \end{tikzpicture} +
-%     \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
-%       \draw[very thick](0,0)--(0,-1);
-%       \draw[very thick](0,0)--(1,0);
-%       \fill(0,0)circle(0.1);
-%       \fill(0,-1)circle(0.1);
-%       \fill(1,0)circle(0.1);
-%     \end{tikzpicture}
-%     \right) + \cdots
-%     \right]
-% \end{equation}
-
-% \subsection{行列を用いた定式化}
-% 2次元イジング模型の厳密解に向けた前段階として，行列の観点で2次元イジング模型の定式化を行う．$n$行$n$列の正方格子上にある$N=n^2$個のスピンを考える．そして，周期的境界条件を課す．\par
-% スピン座標の$\alpha$列にあるスピンをまとめて次のように表す．
-% \begin{equation}
-%   \mu_{\alpha}
-%   \equiv \{\sigma_1, \sigma_2, \dots, \sigma_n\}
-% \end{equation}
-% ここで，$\mu$について次の境界条件が成り立つ
-% \begin{equation}
-%   \mu_{n+1} = \mu_1 
-% \end{equation}
-% また，スピン配位全体を$\{\mu_1, \dots, \mu_n\}$で表す．イジング模型では，$\alpha$列にあるスピンと相互作用する列は$(\alpha-1)$列と$(\alpha+1)$列のみある．そこで，$\alpha$列と$\alpha+1$列との相互作用エネルギーを$E(\mu_{\alpha}, \mu_{\alpha+1})$，$\alpha$列のスピン内でのスピン同士の相互作用エネルギーと磁場との相互作用エネルギーの総和を$E(\mu_{\alpha})$とすると，それぞれ次のようになる．
-% \begin{align}
-%   E(\mu, \mu')
-%    & = -\epsilon \sum_{k=1}^n s_k s'_k                         \\
-%   E(\mu)
-%    & = -\epsilon \sum_{k=1}^n s_k s_{k+1} - H \sum_{k=1}^n s_k
-% \end{align}
-% ここで，$\mu$と$\mu'$はそれぞれ，隣り合った列のスピン座標の集まりである．
-% \begin{align}
-%   \mu  & \equiv \{s_1, \dots, s_n \} \notag \\
-%   \mu' & \equiv \{s'_1, \dots, s'_n \}
-%   \label{イジングエネルギー２}
-% \end{align}
-% 配位$\{\mu_1, \dots, \mu_n\}$における全エネルギーは
-% \begin{equation}
-%   E_t\{\mu_1, \dots, \mu_n \}
-%   = \sum_{\alpha=1}^n [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})]
-% \end{equation}
-% となり，分配関数は
-% \begin{equation}
-%   Z(H,T)
-%   = \sum_{\mu_1} \cdots \sum_{\mu_n} \exp{\left\{ -\beta \sum_{\alpha=1}^n [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})] \right\}}
-% \end{equation}
-% となる．\par
-% ここで，次のように行列要素が定義された，$2^n \times 2^n$行列$\mathrm{P}$を考える．
-% \begin{equation}
-%   \bra{\mu} \mathrm{P} \ket{\mu'} \equiv e^{-\beta [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})]}
-%   \label{行列要素}
-% \end{equation}
-% これを用いると分配関数は
-% \begin{align}
-%   Z(H,T)
-%    & = \sum_{\mu_1} \cdots \sum_{\mu_n} \bra{\mu_1} \mathrm{P} \ket{\mu_2}\bra{\mu_2} \mathrm{P} \ket{\mu_3}\cdots\bra{\mu_n} \mathrm{P} \ket{\mu_1} \\
-%    & = \sum_{\mu_1}\bra{\mu_1} \mathrm{P}^n \ket{\mu_1} = \mathrm{Tr} \ \mathrm{P}^n
-% \end{align}
-% と$\mathrm{P}^n$のトレースで表せることがわかる．行列のトレースは行列の表現から独立しているため，上式のトレースは，以下のような対角化された$\mathrm{P}$で評価しても結果に影響を与えない．
-% \begin{equation}
-%   \mathrm{P} = \begin{bmatrix}
-%     \lambda_1 &           &        &               \\
-%               & \lambda_2 &        &               \\
-%               &           & \ddots &               \\
-%               &           &        & \lambda_{2^n} \\
-%   \end{bmatrix}
-% \end{equation}
-% ここで，$\lambda_1, \lambda_2, \dots, \lambda_{2^n}$は$\mathrm{P}$の固有値である．$\mathrm{P}^n$もまた対角行列であり，対角成分は$(\lambda_1)^n, (\lambda_2)^n, \dots, (\lambda_{2^n})^n$である．したがって，分配関数は
-% \begin{equation}
-%   Z(H,T)
-%   = \sum_{\alpha=1}^{2^n} (\lambda_\alpha)^n
-% \end{equation}
-% で表される．$E(\mu, \mu')$と$E(\mu)$は$n$のオーダーであるため，式(\ref{行列要素})の形式から，$n$が大きい場合，$\mathrm{P}$の固有値は一般に$e^n$のオーダーであることが予想される．$\lambda_{\text{max}}$を$\mathrm{P}$の最大固有値とすると，
-% \begin{equation}
-%   \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\lambda}_{\text{max}}
-%   = \text{finite number}
-%   \label{最大固有値有限}
-% \end{equation}
-% と予想される．そして，もしこれが正しく，すべての固有値$\lambda_{\alpha}$が正ならば，
-% \begin{equation}
-%   (\lambda_{\text{max}})^n \leq Z \leq 2^n (\lambda_{\max})^n
-% \end{equation}
-% もしくは
-% \begin{equation}
-%   \frac{1}{n}\ln{\lambda_{\text{max}}}
-%   \leq \frac{1}{n^2}\ln{Z}
-%   \leq \frac{1}{n}\ln{\lambda_{\text{max}}} + \frac{1}{n} \ln{2}
-% \end{equation}
-% となる．したがって，はさみうちの原理より，
-% \begin{equation}
-%   \lim_{N \rightarrow \infty} \frac{1}{N} \ln{Z}
-%   = \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\lambda_{\text{max}}}
-%   \label{n極限}
-% \end{equation}
-% か成り立つことがわかる．$N=n^2$．式(\ref{最大固有値有限}) が真であり，すべての固有値$\lambda_{\alpha}$が正であるという仮定が正しいことは後でわかる．したがって，$P$の最大の固有値が分かれば$n \rightarrow \infty$での分配関数が分かる．このセクションの残りの部分は，$P$の明示的な表現の説明に当てられる．
-
-
-% \subsection{行列$\mathrm{P}$}
-% 式(\ref{行列要素})と式(\ref{イジングエネルギー２})から我々は$\mathrm{P}$の行列要素を
-% \begin{align}
-%   \bra{s_1,\dots,s_n}\mathrm{P}\ket{s'_1,\dots,s'_n}
-%    & = e^{-\beta[E(\mu, \mu') + E(\mu)]} \notag                                                        \\
-%    & = e^{\beta \sum_{k=1}^{n}} \left( \epsilon s_k s'_k + \epsilon s_k s_{k+1} + H s_k \right) \notag \\
-%    & = \prod_{k=1}^n e^{\beta H s_k} e^{\beta \epsilon s_k s_{k+1}} e^{\beta \epsilon s_k s'_k}
-% \end{align}
-% のように得た．ここで，$2^n \times 2^n$の3つの行列$V'_1, V_2, V_3$を定義する．それぞれ行列要素は次のように与える．
-% \begin{align}
-%   \bra{s_1,\dots,s_n}V'_1\ket{s'_1,\dots,s'_n}
-%    & \equiv \prod_{k=1}^n e^{\beta \epsilon s_k s'_k} \label{V1}                                 \\
-%   \bra{s_1,\dots,s_n}V_2\ket{s'_1,\dots,s'_n}
-%    & \equiv \delta_{s_1 s'_1}\dots\delta_{s_n s'_n} \prod_{k=1}^n e^{\beta \epsilon s_k s_{k+1}} \\
-%   \bra{s_1,\dots,s_n}V_3\ket{s'_1,\dots,s'_n}
-%    & \equiv \delta_{s_1 s'_1}\dots\delta_{s_n s'_n} \prod_{k=1}^n e^{\beta \epsilon H s_k}       \\
-% \end{align}
-% ここで，$\delta_{ss'}$はクロネッカーのデルタ記号である．したがって，この表現では$V_2$と$V_3$は対角行列になる．それは簡単に示せる．
-% \begin{equation}
-%   \mathrm{P} = V_3 V_2 V'_1
-% \end{equation}
-% 行列乗算の通常の意味で，つまり
-% \begin{align*}
-%   & \bra{s_1,\dots,s_n}\mathrm{V}_3\mathrm{V}_2\mathrm{V}'_1\ket{s'_1,\dots,s'_n}                                                            \\
-%   & = \sum_{s''_1, \dots, s''_n} \sum_{s'''_1, \dots, s'''_n} \bra{s_1,\dots,s_n}\mathrm{V}_3\ket{s''_1,\dots,s''_n} \bra{s''_1,\dots,s''_n}\mathrm{V}_2\ket{s'''_1,\dots,s'''_n}       \\
-%   & \times \bra{s'''_1,\dots,s'''_n}\mathrm{V}'_1\ket{s'_1,\dots,s'_n} \\
-%   & = \sum_{s''_1, \dots, s''_n} \sum_{s'''_1, \dots, s'''_n}
-%   \delta_{s_1s''_1} \cdots \delta_{s_ns''_n} \delta_{s''_1s'''_1} \cdots \delta_{s''_ns'''_n} \prod_{k =1}^{n} e^{\beta H s_k} e^{\beta \epsilon s''_k s'''_{k+1}} e^{\beta \epsilon s'''_k s'_k} \\
-%   & = \sum_{s''_1, \dots, s''_n} 
-%   \delta_{s_1s''_1} \cdots \delta_{s_ns''_n} \prod_{k =1}^{n} e^{\beta H s_k} e^{\beta \epsilon s''_k s''_{k+1}} e^{\beta \epsilon s''_k s'_k} \\
-%   & = \prod_{k =1}^{n} e^{\beta H s_k} e^{\beta \epsilon s_k s_{k+1}} e^{\beta \epsilon s_k s'_k}
-% \end{align*}
-
-% \subsection{行列の直積}
-% ここで，$\mathrm{V}_3, \mathrm{V}_2, \mathrm{V}'_1$による便利な方法を述べる前に，行列の積の概念を導入する．\par
-% $m \times m$の２つの行列$A, B$を考える．行列要素はそれぞれ，$\bra{i}A\ket{j}, \bra{i}B\ket{j}$である．$i, j$はそれぞれ$1, 2, \dots, m$の値をとる．このとき，直積$A \times B$は$m^2 \times m^2$の行列となり，行列要素は
-% \begin{equation}
-%   \bra{ii'}A \times B\ket{jj'}
-%   \equiv \bra{i} A \ket{j} \bra{i'} B \ket{j'}
-% \end{equation}
-% と定義する．3つ以上の行列の直積$A \times B \times \cdots \times C$にも拡張でき，行列要素は
-% \begin{equation}
-%   \bra{ii' \cdots i''} A \times B \times \cdots \times C \ket{jj' \cdots j''}
-%   \equiv \bra{i}A\ket{j} \bra{i'}B\ket{j'} \cdots \bra{i''}A\ket{j''}
-% \end{equation}
-% で表される．もし$AB$が通常の行列乗算のもとでの行列AとBの積を表すなら，次のようになる．
-% \begin{equation}
-%   (A \times B)(C \times D) = (AC) \times (BD)
-% \end{equation}
-% これは以下のように示せる．
-% \begin{align*}
-%   \bra{ii'} (A \times B)(C \times D) \ket{jj'}
-%    & = \sum_{kk'} \bra{ii'} A \times B \ket{kk'} \bra{kk'} C \times D \ket{jj'} \\
-%    & = \bra{i} AC \ket{j} \bra{i'} BD \ket{j'}                                  \\
-%    & = \bra{ii'} (AC) \times (BD) \ket{jj'}
-%   \label{直積公式}
-% \end{align*}
-% 式(\ref{直積公式})を一般化した，以下の等式も成り立つ．
-% \begin{equation}
-%   (A \times B \times \cdots \times C) (D \times E \times \cdots \times F)
-%   = (AD) \times (BE) \times \cdots \times (CF)
-% \end{equation}
-
-% \subsection{スピン行列}
-% ここで，$\mathrm{V}'_1, \mathrm{V}_2, \mathrm{V}_3$を便利に表現できる特別な行列をいくつか紹介する．よく知られた3つの$2 \times 2$パウリスピン行列を$X, Y, Z$とする．
-% \begin{equation}
-%   X \equiv \begin{pmatrix}
-%     0 & 1 \\ 1 & 0
-%   \end{pmatrix}, \ \ \
-%   Y \equiv \begin{pmatrix}
-%     0 & -i \\ i & 0
-%   \end{pmatrix}, \ \ \
-%   Z \equiv \begin{pmatrix}
-%     1 & 0 \\ 0 & -1
-%   \end{pmatrix}
-% \end{equation}
-% これらパウリ行列は次の関係式を満たす．\par
-% \begin{equation*}
-%   X^2 = Y^2 = Z^2 = 1
-% \end{equation*}
-% \begin{equation}
-%   XY + YX = 0, \ \ YZ + ZY = 0, \ \ ZX + XZ = 0
-%   \label{スピン行列性質}
-% \end{equation}
-% \begin{equation*}
-%   XY = iZ, \ \ YZ = iX, \ \ ZX = iY
-% \end{equation*}
-% ここで，$2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\alpha}$を定義する．
-% \begin{align}
-%   \mathrm{X}_{\alpha} \equiv 1 \otimes 1 \otimes \cdots \otimes \mathrm{X} \otimes \cdots \otimes 1 \notag \\
-%   \mathrm{Y}_{\alpha} \equiv 1 \otimes 1 \otimes \cdots \otimes \mathrm{Y} \otimes \cdots \otimes 1        \\
-%   \mathrm{Z}_{\alpha} \equiv 1 \otimes 1 \otimes \cdots \otimes \mathrm{Z} \otimes \cdots \otimes 1 \notag
-% \end{align}
-% $\alpha \neq \beta$のとき以下の関係式が成り立つ．
-% \begin{align}
-%    & [\mathrm{X}_{\alpha}, \mathrm{X}_{\beta}]
-%   = [\mathrm{Y}_{\alpha}, \mathrm{Y}_{\beta}]
-%   = [\mathrm{Z}_{\alpha}, \mathrm{Z}_{\beta}]
-%   = 0 \notag                                   \\
-%    & [\mathrm{X}_{\alpha}, \mathrm{Y}_{\beta}]
-%   = [\mathrm{X}_{\alpha}, \mathrm{Z}_{\beta}]
-%   = [\mathrm{Y}_{\alpha}, \mathrm{Z}_{\beta}]
-%   = 0
-% \end{align}
-% $2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\alpha}$は(\ref{スピン行列性質})のすべての関係式を満たす．
-
-% \subsection{行列$\mathrm{V}'_1, \mathrm{V}_2, \mathrm{V}_3$}
-% 式(\ref{V1})から，$\mathrm{V}'_1$が$n$個の同じ$2 \times 2$行列の直積で表せることがわかる．
-% \begin{equation}
-%   \mathrm{V}_1'=\bm{a} \times \bm{a} \times \cdots \times \bm{a}
-% \end{equation}
-% ここで，
-% \begin{equation}
-%   \bra{s}\bm{a} \ket{s'}
-%   =e^{\beta \epsilon s s'}
-% \end{equation}
-% である．したがって，
-% \begin{equation}
-%   \bm{a}=\left[\begin{array}{cc}
-%       e^{\beta \epsilon}  & e^{-\beta \epsilon} \\
-%       e^{-\beta \epsilon} & e^{\beta \epsilon}
-%     \end{array}\right]=e^{\beta \epsilon}+e^{-\beta \epsilon} X
-%     \label{a行列}
-% \end{equation}
-% である．ここで，$\alpha$と$\theta$を定数として
-% \begin{equation}
-%   \bm{a} 
-%   = \alpha e^{\theta X}
-%   = \alpha (\cosh{\theta} + X \sinh{\theta})
-% \end{equation}
-% として，式(\ref{a行列})と係数比較すれば，
-% \begin{equation}
-%   \begin{cases}
-%     e^{\beta \epsilon} = \alpha \cosh{\theta} \\
-%     e^{- \beta \epsilon} = \alpha \sinh{\theta}
-%   \end{cases}
-% \end{equation}
-% となり，これを解くことで
-% \begin{equation}
-%   \bm{a}
-%   =\sqrt{2 \sinh (2 \beta \epsilon)} e^{\theta X}, \quad
-%   \tanh \theta \equiv e^{-2 \beta \epsilon}
-% \end{equation}
-% である．したがって
-% \begin{equation}
-%   \mathrm{V}_1'=[2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} e^{\theta X} \otimes e^{\theta X} \otimes \cdots \otimes e^{\theta X}
-% \end{equation}
-% と表せる．ここで，
-% \begin{align}
-%   &e^{\theta X} \otimes e^{\theta X} \otimes \cdots \otimes e^{\theta X} \\
-%   &= (e^{\theta X} \otimes 1 \otimes \cdots \otimes 1) (1 \otimes e^{\theta X} \otimes \cdots \otimes 1) \cdots (1 \otimes 1 \otimes \cdots \otimes e^{\theta X}) \\
-%   &= e^{\theta \mathrm{X}_1} e^{\theta \mathrm{X}_2} \cdots e^{\theta \mathrm{X}_n} \\
-%   &= e^{\theta\left(\mathrm{X}_1+\mathrm{X}_2+\cdots+\mathrm{X}_n\right)}
-% \end{align}
-% と表せることを使う．2つ目の等式では$1 \otimes \cdots \otimes e^{\theta X} \otimes \cdots \otimes 1 = e^{\theta (1 \otimes \cdots \otimes X \otimes \cdots 1)}$を使った．これより，$\mathrm{V}'_1$は次のように書ける．
-% \begin{align}
-%   \mathrm{V}_1'
-%    & =[2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{~V}_1                               \\
-%   \mathrm{V}_1
-%    & =\prod_{\alpha=1}^n e^{\theta \mathrm{x}_{\alpha}}, \quad \tanh \theta \equiv e^{-2 \beta \epsilon}
-% \end{align}
-% 同様な考えより，$\mathrm{V}_2, \mathrm{V}_3$に関しても，
-% \begin{align}
-%   \mathrm{V}_2
-%    & =\prod_{\alpha=1}^n e^{\beta \epsilon \mathbf{Z}_\alpha \mathbf{Z}_{\alpha+1}}                      \\
-%   \mathrm{~V}_3
-%    & =\prod_{\alpha=1}^n e^{\beta H \mathbf{Z}_\alpha} \quad, \quad \mathbf{Z}_{n+1} \equiv \mathbf{Z}_1
-% \end{align}
-% が示せる．したがって
-% \begin{equation}
-%   \mathrm{P}
-%   = [2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{V}_3 \mathrm{V}_2 \mathrm{V}_1
-%   \label{行列P最終形態}
-% \end{equation}
-% と表すことができる．$H=0$のとき，つまり$V_3 = 1$のとき，2次元イジング模型を完全に定式化できる．
-
-% \subsection{数学的余談}
-% 磁場がない場合の2次元イジング模型の解法に関連する，一般的なクラスの行列の研究を以下に示す．\par
-% 次の反交換関係を満たす$2n$個の行列$\Gamma_{\mu} (\mu = 1,\dots,2n)$を定義する．
-% \begin{equation}
-%   \{\Gamma_{\mu}, \Gamma_{\nu}\}
-%   =\Gamma_{\mu} \Gamma_{\nu} + \Gamma_{\nu} \Gamma_{\mu} 
-%   = 2\delta_{\mu \nu}
-%   \label{ガンマ反交換}
-% \end{equation}
-
-% \begin{enumerate}[(a)]
-%   \item $\Gamma_{\mu}$の次元は$2^n \times 2^n$より小さくならない
-%   \item もし，$\Gamma_{\mu}$と$\Gamma'_{\mu}$が\ref{ガンマ反交換}を満たす組ならば，$\Gamma_{\mu} = \mathrm{S} \Gamma'_{\mu} \mathrm{S}^{-1}$となる正則行列$\mathrm{S}$が必ず存在する．
-%   \item すべての$2^n \times 2^n$行列は，単位行列，ガンマ行列$\Gamma_{\mu}$，およびガンマ行列の積$\Gamma_{\mu} \Gamma_{\nu}, \Gamma_{\mu} \Gamma_{\nu} \Gamma_{\lambda}, \cdots$の線形結合で表せる．
-% \end{enumerate}
-% $n=1$のとき，\ref{ガンマ反交換}を満たすのは$2 \times 2$パウリスピン行列である．すべての$2 \times 2$行列が単位行列とパウリスピン行列の線形結合で表せることは明らかである．また，$n=2$のときはすべての$4 \times 4$のDirac行列$\gamma_{\mu}$となる．\par
-% $2^n \times 2^n$行列の可能な$\{\Gamma_{\mu}\}$の表現は次のようなものである．
-% \begin{align*}
-%   \Gamma_1 &= \mathrm{Z}_1 & \Gamma_2 &= \mathrm{Y}_1 \\
-%   \Gamma_3 &= \mathrm{X}_1 \mathrm{Z}_2 & \Gamma_4 &= \mathrm{X}_1 \mathrm{Y}_1 \\
-%   \Gamma_5 &= \mathrm{X}_1 \mathrm{X}_2 \mathrm{Z}_2 & \Gamma_6 &= \mathrm{X}_1 \mathrm{X}_2 \mathrm{Y}_1 \\
-%   &\vdots & &\vdots
-% \end{align*}
-% つまり，
-% \begin{align}
-%   \begin{split}
-%     \Gamma_{2\alpha-1} &= \mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Z}_{\alpha} \quad (\alpha=1,\dots,n) \\
-%     \Gamma_{2\alpha} &= \mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_{\alpha} \quad (\alpha=1,\dots,n)
-%   \end{split}
-% \end{align}
-
-% \subsection{厳密解}
-% 磁場がない，つまり$H=0$の場合，行列$\mathrm{P}$は
-% \begin{align}
-%   \mathrm{P}
-%   &= [2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{V}_2 \mathrm{V}_1 \notag \\
-%   &\equiv [2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{V}
-%   \label{行列P磁場ゼロ}
-% \end{align}
-% となる．ここで，$\mathrm{V} = \mathrm{V}_1 \mathrm{V}_2$とした．
-% 式(\ref{n極限})より，
-% \begin{align}
-%   \lim_{N \rightarrow \infty} \frac{1}{N} \ln{Z(0, T)} 
-%   &= \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\left\{[2 \sinh{2 \beta \epsilon}]^{\frac{n}{2}}\Lambda\right\}} \notag \\
-%   &= \frac{1}{2} \ln{[2 \sinh{2 \beta \epsilon}]}
-%   + \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\Lambda}
-% \end{align}
-% となる．ここで，$\Lambda$は$\mathrm{V} = \mathrm{V}_1 \mathrm{V}_2$の最大固有値である，$\mathrm{V}_1$は式(\ref{?})，$\mathrm{V}_1$は(\ref{?})で与えられる．これらの式は，$\mathrm{V}$の固有値がすべて正で，$\lim_{n \rightarrow \infty} n^{-1}\ln{\Lambda}$が存在する場合に成り立つ．したがって行列$\mathrm{V}$を対角化を考えればよい．
-
-% \subsection{スピン代数による$\mathrm{V}$の表現}
-% 式(\ref{?})より，
-% \begin{align}
-%   \Gamma_{2\alpha}\Gamma_{2\alpha-1} 
-%   &= (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_{\alpha}) (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Z}_{\alpha}) \notag \\
-%   &= (\mathrm{X}_1)^2 (\mathrm{X}_2)^2 \cdots (\mathrm{X}_{\alpha-1})^2 \mathrm{Y}_{\alpha} \mathrm{Z}_{\alpha} \notag \\
-%   &= \mathrm{Y}_{\alpha} \mathrm{Z}_{\alpha} \notag \\
-%   &= i \mathrm{X}_{\alpha}
-% \end{align}
-% \begin{align}
-%   \Gamma_{2\alpha+1}\Gamma_{2\alpha} 
-%   &= (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha} \mathrm{Z}_{\alpha+1}) (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_{\alpha}) \notag \\
-%   &= (\mathrm{X}_1)^2 (\mathrm{X}_2)^2 \cdots (\mathrm{X}_{\alpha-1})^2 \mathrm{X}_{\alpha} \mathrm{Z}_{\alpha+1} \mathrm{Y}_{\alpha} \notag \\
-%   &= \mathrm{X}_{\alpha} \mathrm{Z}_{\alpha+1} \mathrm{Y}_{\alpha} \notag \\
-%   &= \mathrm{X}_{\alpha} \mathrm{Y}_{\alpha} \mathrm{Z}_{\alpha+1} \notag \\
-%   &= i \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}
-% \end{align}
-% \begin{align}
-%   \Gamma_1\Gamma_{2n} 
-%   &= \mathrm{Z}_1 (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_n) \notag \\
-%   &= -i \mathrm{Z}_1 \mathrm{Z}_n (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_n) \notag \\
-%   &\equiv -i \mathrm{Z}_1 \mathrm{Z}_n \mathrm{U}
-% \end{align}
-% これより
-% \begin{equation}
-%   \mathrm{V_1}
-%   = \prod_{\alpha=1}^{n} e^{\theta \mathrm{X}_{\alpha}}
-%   = \prod_{\alpha=1}^{n} e^{-i \theta \Gamma_{2\alpha} \Gamma_{2\alpha-1}}
-% \end{equation}
-% \begin{align}
-%   \mathrm{V}_2
-%   &= \prod_{\alpha=1}^{n} e^{\beta \epsilon \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}} \notag \\
-%   &= \left[ \prod_{\alpha=1}^{n-1} e^{\beta \epsilon \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}} \right] e^{\beta \epsilon \mathrm{Z}_n \mathrm{Z}_1} \notag \\
-%   &= e^{\beta \epsilon \mathrm{Z}_n \mathrm{Z}_1} \left[ \prod_{\alpha=1}^{n-1} e^{\beta \epsilon \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}} \right] \notag \\
-%   &= e^{i \beta \epsilon \mathrm{U} \Gamma_1 \Gamma_{2n}} \prod_{\alpha=1}^{n-1} e^{-i \beta \epsilon \Gamma_{2\alpha+1} \Gamma_{2\alpha}} 
-% \end{align}
-% したがって，$\phi = \beta \epsilon$として
-% \begin{equation}
-%   \mathrm{V} \equiv \mathrm{V}_1 \mathrm{V}_2
-%   = e^{i \beta \epsilon \mathrm{U} \Gamma_1 \Gamma_{2n}}\left[ \prod_{\alpha=1}^{n-1} e^{-i \beta \epsilon \Gamma_{2\alpha+1} \Gamma_{2\alpha}} \right] \left[ \prod_{\lambda=1}^{n} e^{-i \theta \Gamma_{2\lambda} \Gamma_{2\lambda-1}} \right]
-% \end{equation}
-% ここで，いくつか$\mathrm{U}$の性質を書く
-% \begin{enumerate}[(a)]
-%   \item $\mathrm{U}^2 = 1, \quad \mathrm{U}(1 + \mathrm{U}) = 1 + \mathrm{U}, \quad \mathrm{U}(1 - \mathrm{U}) = -(1 - \mathrm{U})$
-%   \item $\mathrm{U} = i^n \Gamma_1 \Gamma_2 \cdots \Gamma_{2n}$
-%   \item $\{\mathrm{U}, \Gamma_{\mu}\} = 0$
-% \end{enumerate}
-% これらの性質を用いることで
-% \begin{align}
-%   e^{i \phi \Gamma_1 \Gamma_{2n}}
-%   &= \left[\frac{1}{2} (1 + \mathrm{U}) + \frac{1}{2} (1 + \mathrm{U})\right]\left[\cosh{\phi} + i \Gamma_1 \Gamma_{2n} \sinh{\phi}\right]
-%   \notag \\
-%   &= \frac{1}{2} (1 + \mathrm{U})\left[\cosh{\phi} + i \Gamma_1 \Gamma_{2n} \sinh{\phi}\right]
-%   + \frac{1}{2} (1 - \mathrm{U})\left[\cosh{\phi} - i \Gamma_1 \Gamma_{2n} \sinh{\phi}\right] \notag \\
-%   &= \frac{1}{2} (1 + \mathrm{U}) e^{i \phi \Gamma_1 \Gamma_{2n}}
-%   + \frac{1}{2} (1 - \mathrm{U}) e^{-i \phi \Gamma_1 \Gamma_{2n}}
-% \end{align}
-% したがって
-% \begin{equation}
-%   \mathrm{V} 
-%   = \frac{1}{2} (1 + \mathrm{U}) \mathrm{V}^+
-%   + \frac{1}{2} (1 - \mathrm{U}) \mathrm{V}^-
-% \end{equation}
-% \begin{equation}
-%   \mathrm{V}^{\pm}
-%   \equiv e^{\pm i \phi \mathrm{U} \Gamma_1 \Gamma_{2n}}\left[ \prod_{\alpha=1}^{n-1} e^{-i \phi \Gamma_{2\alpha+1} \Gamma_{2\alpha}} \right] \left[ \prod_{\lambda=1}^{n} e^{-i \theta \Gamma_{2\lambda} \Gamma_{2\lambda-1}} \right]
-% \end{equation}
 
 \chapter{機械学習と深層学習}
 ここでは，イジング模型に対して機械学習，深層学習による手法を応用する上で必要となる機械学習と深層学習の基礎知識について説明する．\cite{瀧2017これなら}\cite{富谷2021これなら}\cite{田中2019ディープ}\cite{福嶋2022基礎からの}
@@ -3247,17 +2786,483 @@ $F(K)$は2次元Ising模型で解析的に計算された自由エネルギー�
 \bibliographystyle{junsrt} %本文に\cite{}を入れることで，参考文献表示
 
 % 付録
-% \appendix
-% \renewcommand{\thechapter}{\Alph{chapter}}
-% \renewcommand{\thesection}{\Alph{chapter}.\arabic{section}}
-% \setcounter{section}{0}
-% \renewcommand{\theequation}{\Alph{chapter}.\arabic{equation}}
-% \setcounter{equation}{0}
+\appendix
+\renewcommand{\thechapter}{\Alph{chapter}}
+\renewcommand{\thesection}{\Alph{chapter}.\arabic{section}}
+\setcounter{section}{0}
+\renewcommand{\theequation}{\Alph{chapter}.\arabic{equation}}
+\setcounter{equation}{0}
 
-% \chapter{aaa}
-% aaa
-% \section{bbb}
-% bbb
+\chapter{2次元イジング模型の厳密解の計算}
+\section{二次元イジング模型の厳密解の計算}
+% 二次元イジング模型の厳密解はOnsagerによって求められた．Onsagerは，転送行列を対角化することで磁場のないときの自由エネルギーを求め，比熱をある温度で発散することを示した．いくつかの解法があるが，ここでは，高温展開を用いた解法を説明する．高温展開は，温度が高いとして自由エネルギーを$\beta J$のべきで展開する方法である．十分高温であれば，その展開を数項で打ち切って自由エネルギーの近似値とする．計算が比較的簡単なため，汎用的な手法として用いられているが，近似の正当性に十分に注意する必要がある．この近似のみを用いて相転移を調べることはできない．有限項の和から特異性が生じることはないからである．本節では，無限和を計算することにより厳密解を求め，特異性が生じることを示す．\par
+% $h=0$の場合に高温展開を行う．二次元イジング模型の分配関数は
+% \begin{equation}
+%   Z = \mathrm{Tr}\prod_{\langle i, j \rangle} \exp{(\beta J \sigma_i \sigma_j)}
+% \end{equation}
+% と書ける．積はスピンの最近近接についてとる．スピン変数に関する恒等式
+% \begin{align}
+%   e^{x\sigma_i \sigma_j}
+%    & = \frac{e^x + e^{-x}}{2} + \sigma_i \sigma_j \frac{e^x + e^{-x}}{2} \notag \\
+%    & = \cosh{x} + \sigma_i \sigma_j \sinh{x}
+% \end{align}
+% を用いれば，
+% \begin{align}
+%   Z
+%    & = \mathrm{Tr}\prod_{\langle i, j \rangle}(\cosh{\beta J} + \sigma_i \sigma_j \sinh{\beta J}) \notag                \\
+%    & = (\cosh{\beta J})^{N_B}\mathrm{Tr}\prod_{\langle i, j \rangle}(1 + \sigma_i \sigma_j \tanh{\beta J}) \label{分配関数}
+% \end{align}
+% と書ける．$N_B$は最近接の数を表す．$v = \tanh{\beta J}$は有限温度で$1$より有限温度で$1$より小さい非負の量なので，(\ref{分配関数})を$v$について次のように展開する．
+% \begin{equation}
+%   \prod_{\langle i, j \rangle}(1 + v \sigma_i \sigma_j)
+%   = 1 + v \sum_{\langle i, j \rangle} \sigma_i \sigma_j
+%   + v^2 \sum_{\langle i, j \rangle, \langle k, l \rangle} \sigma_i \sigma_j \sigma_k \sigma_l + \cdots
+% \end{equation}
+% ここで，$\langle i, j \rangle \neq \langle k, l \rangle$である．
+
+% \begin{equation}
+%   v\sigma_i \sigma_j \longleftrightarrow
+%   \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
+%     \draw[very thick](0,0)--(0,-1);
+%     \fill(0,0)circle(0.1)node[left]{$i$};
+%     \fill(0,-1)circle(0.1)node[left]{$j$};
+%   \end{tikzpicture}
+% \end{equation}
+
+% \begin{equation}
+%   v^2\sigma_i \sigma_j \sigma_k \sigma_l \longleftrightarrow
+%   \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
+%     \draw[very thick](0,0)--(0,-1);
+%     \draw[very thick](1,0)--(1,-1);
+%     \fill(0,0)circle(0.1)node[left]{$i$};
+%     \fill(0,-1)circle(0.1)node[left]{$j$};
+%     \fill(1,0)circle(0.1)node[right]{$k$};
+%     \fill(1,-1)circle(0.1)node[right]{$l$};
+%   \end{tikzpicture}, \ \ \
+%   v^2\sigma_i \sigma_j^2 \sigma_k \longleftrightarrow
+%   \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
+%     \draw[very thick](0,0)--(0,-1);
+%     \draw[very thick](0,0)--(1,0);
+%     \fill(0,0)circle(0.1)node[left]{$i$};
+%     \fill(0,-1)circle(0.1)node[left]{$j$};
+%     \fill(1,0)circle(0.1)node[right]{$k$};
+%   \end{tikzpicture}
+% \end{equation}
+
+% \begin{equation}
+%   Z = (\cosh{\beta J})^{N_B}\mathrm{Tr}
+%   \left[
+%     1 + \sum
+%     \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
+%       \draw[very thick](0,0)--(0,-1);
+%       \fill(0,0)circle(0.1);
+%       \fill(0,-1)circle(0.1);
+%     \end{tikzpicture}
+%     + \sum
+%     \left(
+%     \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
+%       \draw[very thick](0,0)--(0,-1);
+%       \draw[very thick](1,0)--(1,-1);
+%       \fill(0,0)circle(0.1);
+%       \fill(0,-1)circle(0.1);
+%       \fill(1,0)circle(0.1);
+%       \fill(1,-1)circle(0.1);
+%     \end{tikzpicture} +
+%     \begin{tikzpicture}[baseline={([yshift=-.5ex]current bounding box.center)}]
+%       \draw[very thick](0,0)--(0,-1);
+%       \draw[very thick](0,0)--(1,0);
+%       \fill(0,0)circle(0.1);
+%       \fill(0,-1)circle(0.1);
+%       \fill(1,0)circle(0.1);
+%     \end{tikzpicture}
+%     \right) + \cdots
+%     \right]
+% \end{equation}
+
+\section{転送行列を用いた定式化}
+2次元イジング模型の厳密解に向けた前段階として，転送行列の観点で2次元イジング模型の定式化を行う．$n$行$n$列の正方格子上にある$N=n^2$個のスピンを考える．そして，周期的境界条件を課す．\par
+スピン座標の$\alpha$列にあるスピンをまとめて次のように表す．
+\begin{equation}
+  \mu_{\alpha}
+  \equiv \{\sigma_1, \sigma_2, \dots, \sigma_n\}
+\end{equation}
+ここで，$\mu$について次の境界条件が成り立つ．
+\begin{equation}
+  \mu_{n+1} = \mu_1 
+\end{equation}
+また，スピン配位全体を$\{\mu_1, \dots, \mu_n\}$で表す．イジング模型では，$\alpha$列にあるスピンと相互作用する列は$(\alpha-1)$列と$(\alpha+1)$列のみある．そこで，$\alpha$列と$\alpha+1$列との相互作用エネルギーを$E(\mu_{\alpha}, \mu_{\alpha+1})$，$\alpha$列のスピン内でのスピン同士の相互作用エネルギーと磁場との相互作用エネルギーの総和を$E(\mu_{\alpha})$とすると，それぞれ次のようになる．
+\begin{align}
+  E(\mu, \mu')
+   & = -\epsilon \sum_{k=1}^n s_k s'_k                         \\
+  E(\mu)
+   & = -\epsilon \sum_{k=1}^n s_k s_{k+1} - H \sum_{k=1}^n s_k
+\end{align}
+ここで，$\mu$と$\mu'$はそれぞれ，隣り合った列のスピン座標の集まりである．
+\begin{align}
+  \mu  & \equiv \{s_1, \dots, s_n \} \notag \\
+  \mu' & \equiv \{s'_1, \dots, s'_n \}
+  \label{イジングエネルギー２}
+\end{align}
+配位$\{\mu_1, \dots, \mu_n\}$における全エネルギーは
+\begin{equation}
+  E_t\{\mu_1, \dots, \mu_n \}
+  = \sum_{\alpha=1}^n [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})]
+\end{equation}
+となり，分配関数は
+\begin{equation}
+  Z(H,T)
+  = \sum_{\mu_1} \cdots \sum_{\mu_n} \exp{\left\{ -\beta \sum_{\alpha=1}^n [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})] \right\}}
+\end{equation}
+で与えられる．\par
+ここで，次のように行列要素が定義された，$2^n \times 2^n$行列$\mathrm{P}$を考える．
+\begin{equation}
+  \bra{\mu} \mathrm{P} \ket{\mu'} \equiv e^{-\beta [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})]}
+  \label{行列要素}
+\end{equation}
+これを用いると分配関数は
+\begin{align}
+  Z(H,T)
+   & = \sum_{\mu_1} \cdots \sum_{\mu_n} \bra{\mu_1} \mathrm{P} \ket{\mu_2}\bra{\mu_2} \mathrm{P} \ket{\mu_3}\cdots\bra{\mu_n} \mathrm{P} \ket{\mu_1} \\
+   & = \sum_{\mu_1}\bra{\mu_1} \mathrm{P}^n \ket{\mu_1} = \mathrm{Tr} \ \mathrm{P}^n
+\end{align}
+と$\mathrm{P}^n$のトレースで表せることがわかる．ここで，$\mathrm{P}^n$は転送行列とよばれる．行列のトレースは行列の表現から独立しているため，上式のトレースは，以下のような対角化された$\mathrm{P}$で評価しても結果に影響を与えない．
+\begin{equation}
+  \mathrm{P} = \begin{bmatrix}
+    \lambda_1 &           &        &               \\
+              & \lambda_2 &        &               \\
+              &           & \ddots &               \\
+              &           &        & \lambda_{2^n} \\
+  \end{bmatrix}
+\end{equation}
+ここで，$\lambda_1, \lambda_2, \dots, \lambda_{2^n}$は$\mathrm{P}$の固有値である．$\mathrm{P}^n$もまた対角行列であり，対角成分は$(\lambda_1)^n, (\lambda_2)^n, \dots, (\lambda_{2^n})^n$である．したがって，分配関数は
+\begin{equation}
+  Z(H,T)
+  = \sum_{\alpha=1}^{2^n} (\lambda_\alpha)^n
+\end{equation}
+で表される．$E(\mu, \mu')$と$E(\mu)$は$n$のオーダーであるため，式(\ref{行列要素})の形式から，$n$が大きい場合，$\mathrm{P}$の固有値は一般に$e^n$のオーダーであることが予想される．$\lambda_{\text{max}}$を$\mathrm{P}$の最大固有値とすると，
+\begin{equation}
+  \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\lambda}_{\text{max}}
+  = \text{finite number}
+  \label{最大固有値有限}
+\end{equation}
+と予想される．そして，もしこれが正しく，すべての固有値$\lambda_{\alpha}$が正ならば，
+\begin{equation}
+  (\lambda_{\text{max}})^n \leq Z \leq 2^n (\lambda_{\max})^n
+\end{equation}
+もしくは
+\begin{equation}
+  \frac{1}{n}\ln{\lambda_{\text{max}}}
+  \leq \frac{1}{n^2}\ln{Z}
+  \leq \frac{1}{n}\ln{\lambda_{\text{max}}} + \frac{1}{n} \ln{2}
+\end{equation}
+となる．したがって，はさみうちの原理より，
+\begin{equation}
+  \lim_{N \rightarrow \infty} \frac{1}{N} \ln{Z}
+  = \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\lambda_{\text{max}}}
+  \label{n極限}
+\end{equation}
+か成り立つことがわかる．$N=n^2$．式(\ref{最大固有値有限}) が真であり，すべての固有値$\lambda_{\alpha}$が正であるという仮定が正しいことは後でわかる．したがって，$P$の最大の固有値が分かれば$n \rightarrow \infty$での分配関数が分かる．このセクションの残りの部分は，$P$の明示的な表現の説明に当てられる．
+
+
+\section{転送行列$\mathrm{P}$}
+式(\ref{行列要素})と式(\ref{イジングエネルギー２})から我々は$\mathrm{P}$の行列要素を
+\begin{align}
+  \bra{s_1,\dots,s_n}\mathrm{P}\ket{s'_1,\dots,s'_n}
+   & = e^{-\beta[E(\mu, \mu') + E(\mu)]} \notag                                                        \\
+   & = e^{\beta \sum_{k=1}^{n}} \left( \epsilon s_k s'_k + \epsilon s_k s_{k+1} + H s_k \right) \notag \\
+   & = \prod_{k=1}^n e^{\beta H s_k} e^{\beta \epsilon s_k s_{k+1}} e^{\beta \epsilon s_k s'_k}
+\end{align}
+のように得た．ここで，$2^n \times 2^n$の3つの行列$V'_1, V_2, V_3$を定義する．それぞれ行列要素は次のように与える．
+\begin{align}
+  \bra{s_1,\dots,s_n}V'_1\ket{s'_1,\dots,s'_n}
+   & \equiv \prod_{k=1}^n e^{\beta \epsilon s_k s'_k} \label{V1'}                                 \\
+  \bra{s_1,\dots,s_n}V_2\ket{s'_1,\dots,s'_n}
+   & \equiv \delta_{s_1 s'_1}\dots\delta_{s_n s'_n} \prod_{k=1}^n e^{\beta \epsilon s_k s_{k+1}} \\
+  \bra{s_1,\dots,s_n}V_3\ket{s'_1,\dots,s'_n}
+   & \equiv \delta_{s_1 s'_1}\dots\delta_{s_n s'_n} \prod_{k=1}^n e^{\beta \epsilon H s_k}       \\
+\end{align}
+ここで，$\delta_{ss'}$はクロネッカーのデルタ記号である．したがって，この表現では$V_2$と$V_3$は対角行列になる．それは簡単に示せる．
+\begin{equation}
+  \mathrm{P} = V_3 V_2 V'_1
+  \label{転送行列}
+\end{equation}
+行列乗算の通常の意味で，つまり
+\begin{align*}
+  & \bra{s_1,\dots,s_n}\mathrm{V}_3\mathrm{V}_2\mathrm{V}'_1\ket{s'_1,\dots,s'_n}                                                            \\
+  & = \sum_{s''_1, \dots, s''_n} \sum_{s'''_1, \dots, s'''_n} \bra{s_1,\dots,s_n}\mathrm{V}_3\ket{s''_1,\dots,s''_n} \bra{s''_1,\dots,s''_n}\mathrm{V}_2\ket{s'''_1,\dots,s'''_n}       \\
+  & \times \bra{s'''_1,\dots,s'''_n}\mathrm{V}'_1\ket{s'_1,\dots,s'_n} \\
+  & = \sum_{s''_1, \dots, s''_n} \sum_{s'''_1, \dots, s'''_n}
+  \delta_{s_1s''_1} \cdots \delta_{s_ns''_n} \delta_{s''_1s'''_1} \cdots \delta_{s''_ns'''_n} \prod_{k =1}^{n} e^{\beta H s_k} e^{\beta \epsilon s''_k s'''_{k+1}} e^{\beta \epsilon s'''_k s'_k} \\
+  & = \sum_{s''_1, \dots, s''_n} 
+  \delta_{s_1s''_1} \cdots \delta_{s_ns''_n} \prod_{k =1}^{n} e^{\beta H s_k} e^{\beta \epsilon s''_k s''_{k+1}} e^{\beta \epsilon s''_k s'_k} \\
+  & = \prod_{k =1}^{n} e^{\beta H s_k} e^{\beta \epsilon s_k s_{k+1}} e^{\beta \epsilon s_k s'_k}
+\end{align*}
+
+\section{行列の直積}
+ここで，$\mathrm{V}_3, \mathrm{V}_2, \mathrm{V}'_1$による便利な方法を述べる前に，行列の積の概念を導入する．\par
+$m \times m$の２つの行列$A, B$を考える．行列要素はそれぞれ，$\bra{i}A\ket{j}, \bra{i}B\ket{j}$である．$i, j$はそれぞれ$1, 2, \dots, m$の値をとる．このとき，直積$A \times B$は$m^2 \times m^2$の行列となり，行列要素は
+\begin{equation}
+  \bra{ii'}A \times B\ket{jj'}
+  \equiv \bra{i} A \ket{j} \bra{i'} B \ket{j'}
+\end{equation}
+と定義する．3つ以上の行列の直積$A \times B \times \cdots \times C$にも拡張でき，行列要素は
+\begin{equation}
+  \bra{ii' \cdots i''} A \times B \times \cdots \times C \ket{jj' \cdots j''}
+  \equiv \bra{i}A\ket{j} \bra{i'}B\ket{j'} \cdots \bra{i''}A\ket{j''}
+\end{equation}
+で表される．もし$AB$が通常の行列乗算のもとでの行列$A$と$B$の積を表すなら，次のようになる．
+\begin{equation}
+  (A \times B)(C \times D) = (AC) \times (BD)
+  \label{直積公式}
+\end{equation}
+これは以下のように示せる．
+\begin{align*}
+  \bra{ii'} (A \times B)(C \times D) \ket{jj'}
+   & = \sum_{kk'} \bra{ii'} A \times B \ket{kk'} \bra{kk'} C \times D \ket{jj'} \\
+   & = \bra{i} AC \ket{j} \bra{i'} BD \ket{j'}                                  \\
+   & = \bra{ii'} (AC) \times (BD) \ket{jj'}
+\end{align*}
+式(\ref{直積公式})を一般化した，以下の等式も成り立つ．
+\begin{equation}
+  (A \times B \times \cdots \times C) (D \times E \times \cdots \times F)
+  = (AD) \times (BE) \times \cdots \times (CF)
+\end{equation}
+
+\section{スピン行列}
+ここで，$\mathrm{V}'_1, \mathrm{V}_2, \mathrm{V}_3$を便利に表現できる特別な行列をいくつか紹介する．よく知られた3つの$2 \times 2$パウリスピン行列を$X, Y, Z$とする．
+\begin{equation}
+  X \equiv \begin{pmatrix}
+    0 & 1 \\ 1 & 0
+  \end{pmatrix}, \ \ \
+  Y \equiv \begin{pmatrix}
+    0 & -i \\ i & 0
+  \end{pmatrix}, \ \ \
+  Z \equiv \begin{pmatrix}
+    1 & 0 \\ 0 & -1
+  \end{pmatrix}
+\end{equation}
+これらパウリ行列は次の関係式を満たす．\par
+\begin{equation*}
+  X^2 = Y^2 = Z^2 = 1
+\end{equation*}
+\begin{equation}
+  XY + YX = 0, \ \ YZ + ZY = 0, \ \ ZX + XZ = 0
+  \label{スピン行列性質}
+\end{equation}
+\begin{equation*}
+  XY = iZ, \ \ YZ = iX, \ \ ZX = iY
+\end{equation*}
+ここで，$2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\alpha}$を定義する．
+\begin{align}
+  \mathrm{X}_{\alpha} \equiv 1 \otimes 1 \otimes \cdots \otimes \mathrm{X} \otimes \cdots \otimes 1 \notag \\
+  \mathrm{Y}_{\alpha} \equiv 1 \otimes 1 \otimes \cdots \otimes \mathrm{Y} \otimes \cdots \otimes 1        \\
+  \mathrm{Z}_{\alpha} \equiv 1 \otimes 1 \otimes \cdots \otimes \mathrm{Z} \otimes \cdots \otimes 1 \notag
+  \label{2n2n行列}
+\end{align}
+$\alpha \neq \beta$のとき以下の関係式が成り立つ．
+\begin{align}
+   & [\mathrm{X}_{\alpha}, \mathrm{X}_{\beta}]
+  = [\mathrm{Y}_{\alpha}, \mathrm{Y}_{\beta}]
+  = [\mathrm{Z}_{\alpha}, \mathrm{Z}_{\beta}]
+  = 0 \notag                                   \\
+   & [\mathrm{X}_{\alpha}, \mathrm{Y}_{\beta}]
+  = [\mathrm{X}_{\alpha}, \mathrm{Z}_{\beta}]
+  = [\mathrm{Y}_{\alpha}, \mathrm{Z}_{\beta}]
+  = 0
+\end{align}
+$2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\alpha}$は(\ref{スピン行列性質})のすべての関係式を満たす．
+
+\section{行列$\mathrm{V}'_1, \mathrm{V}_2, \mathrm{V}_3$}
+式(\ref{V1'})から，$\mathrm{V}'_1$が$n$個の同じ$2 \times 2$行列の直積で表せることがわかる．
+\begin{equation}
+  \mathrm{V}_1'=\bm{a} \times \bm{a} \times \cdots \times \bm{a}
+\end{equation}
+ここで，
+\begin{equation}
+  \bra{s}\bm{a} \ket{s'}
+  =e^{\beta \epsilon s s'}
+\end{equation}
+である．したがって，
+\begin{equation}
+  \bm{a}=\left[\begin{array}{cc}
+      e^{\beta \epsilon}  & e^{-\beta \epsilon} \\
+      e^{-\beta \epsilon} & e^{\beta \epsilon}
+    \end{array}\right]=e^{\beta \epsilon}+e^{-\beta \epsilon} X
+    \label{a行列}
+\end{equation}
+である．ここで，$\alpha$と$\theta$を定数として
+\begin{equation}
+  \bm{a} 
+  = \alpha e^{\theta X}
+  = \alpha (\cosh{\theta} + X \sinh{\theta})
+\end{equation}
+とする．式(\ref{a行列})と係数比較すれば，
+\begin{equation}
+  \begin{cases}
+    e^{\beta \epsilon} = \alpha \cosh{\theta} \\
+    e^{- \beta \epsilon} = \alpha \sinh{\theta}
+  \end{cases}
+\end{equation}
+となり，これを解くことで
+\begin{equation}
+  \bm{a}
+  =\sqrt{2 \sinh (2 \beta \epsilon)} e^{\theta X}, \quad
+  \tanh \theta \equiv e^{-2 \beta \epsilon}
+\end{equation}
+である．したがって
+\begin{equation}
+  \mathrm{V}_1'=[2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} e^{\theta X} \otimes e^{\theta X} \otimes \cdots \otimes e^{\theta X}
+\end{equation}
+と表せる．ここで，
+\begin{align}
+  &e^{\theta X} \otimes e^{\theta X} \otimes \cdots \otimes e^{\theta X} \\
+  &= (e^{\theta X} \otimes 1 \otimes \cdots \otimes 1) (1 \otimes e^{\theta X} \otimes \cdots \otimes 1) \cdots (1 \otimes 1 \otimes \cdots \otimes e^{\theta X}) \\
+  &= e^{\theta \mathrm{X}_1} e^{\theta \mathrm{X}_2} \cdots e^{\theta \mathrm{X}_n} \\
+  &= e^{\theta\left(\mathrm{X}_1+\mathrm{X}_2+\cdots+\mathrm{X}_n\right)}
+\end{align}
+と表せることを使う．2つ目の等式では$1 \otimes \cdots \otimes e^{\theta X} \otimes \cdots \otimes 1 = e^{\theta (1 \otimes \cdots \otimes X \otimes \cdots 1)}$を使った．これより，$\mathrm{V}'_1$は次のように書ける．
+\begin{align}
+  \mathrm{V}_1'
+   & =[2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{~V}_1                               \\
+  \mathrm{V}_1,
+   & =\prod_{\alpha=1}^n e^{\theta \mathrm{x}_{\alpha}}, \quad \tanh \theta \equiv e^{-2 \beta \epsilon}
+  \label{V1}
+\end{align}
+同様な考えより，$\mathrm{V}_2, \mathrm{V}_3$に関しても，
+\begin{align}
+  \mathrm{V}_2
+   & =\prod_{\alpha=1}^n e^{\beta \epsilon \mathbf{Z}_\alpha \mathbf{Z}_{\alpha+1}} \label{V2}\\
+  \mathrm{V}_3
+   & =\prod_{\alpha=1}^n e^{\beta H \mathbf{Z}_\alpha} \quad, \quad \mathbf{Z}_{n+1} \equiv \mathbf{Z}_1 \label{V3}
+\end{align}
+が示せる．したがって転送行列(\ref{転送行列})は
+\begin{equation}
+  \mathrm{P}
+  = [2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{V}_3 \mathrm{V}_2 \mathrm{V}_1
+  \label{行列P最終形態}
+\end{equation}
+と表すことができる．以下で示すように外部磁場$H=0$のとき，つまり$V_3 = 1$のとき，転送行列は対角化可能で2次元イジング模型を厳密に説くことができる．
+
+\section{数学的余談}
+磁場がない場合の2次元イジング模型の解法に関連する，一般的なクラスの行列の研究を以下に示す．\par
+次の反交換関係を満たす$2n$個の行列$\Gamma_{\mu} (\mu = 1,\dots,2n)$を定義する．
+\begin{equation}
+  \{\Gamma_{\mu}, \Gamma_{\nu}\}
+  =\Gamma_{\mu} \Gamma_{\nu} + \Gamma_{\nu} \Gamma_{\mu} 
+  = 2\delta_{\mu \nu}
+  \label{ガンマ反交換}
+\end{equation}
+これは2n次元clifford代数とよばれる．clifford代数の行列表現について以下が成り立つ．
+\begin{enumerate}[(a)]
+  \item $\Gamma_{\mu}$の次元は$2^n \times 2^n$より小さくならない
+  \item もし，$\Gamma_{\mu}$と$\Gamma'_{\mu}$が(\ref{ガンマ反交換})を満たす組ならば，$\Gamma_{\mu} = \mathrm{S} \Gamma'_{\mu} \mathrm{S}^{-1}$となる正則行列$\mathrm{S}$が必ず存在する．
+  \item すべての$2^n \times 2^n$行列は，単位行列，ガンマ行列$\Gamma_{\mu}$，およびガンマ行列の積$\Gamma_{\mu} \Gamma_{\nu}, \Gamma_{\mu} \Gamma_{\nu} \Gamma_{\lambda}, \cdots$の線形結合で表せる．
+\end{enumerate}
+$n=1$のとき，(\ref{ガンマ反交換})を満たすのは$2 \times 2$パウリスピン行列である．すべての$2 \times 2$行列が単位行列とパウリスピン行列の線形結合で表せることは明らかである．また，$n=2$のときはすべての$4 \times 4$のDirac行列$\gamma_{\mu}$となる．\par
+$2^n \times 2^n$行列の可能な$\{\Gamma_{\mu}\}$の表現は以下のように，nスピン系のスピン行列(\ref{2n2n行列})を用いて構成することができる．
+\begin{align*}
+  \Gamma_1 &= \mathrm{Z}_1 & \Gamma_2 &= \mathrm{Y}_1 \\
+  \Gamma_3 &= \mathrm{X}_1 \mathrm{Z}_2 & \Gamma_4 &= \mathrm{X}_1 \mathrm{Y}_1 \\
+  \Gamma_5 &= \mathrm{X}_1 \mathrm{X}_2 \mathrm{Z}_2 & \Gamma_6 &= \mathrm{X}_1 \mathrm{X}_2 \mathrm{Y}_1 \\
+  &\vdots & &\vdots
+\end{align*}
+つまり，
+\begin{align}
+  \begin{split}
+    \Gamma_{2\alpha-1} &= \mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Z}_{\alpha} \quad (\alpha=1,\dots,n) \\
+    \Gamma_{2\alpha} &= \mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_{\alpha} \quad (\alpha=1,\dots,n)
+  \end{split}
+\end{align}
+
+\section{厳密解}
+磁場がない，つまり$H=0$の場合，行列$\mathrm{P}$は
+\begin{align}
+  \mathrm{P}
+  &= [2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{V}_2 \mathrm{V}_1 \notag \\
+  &\equiv [2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{V}
+  \label{行列P磁場ゼロ}
+\end{align}
+となる．ここで，$\mathrm{V} = \mathrm{V}_1 \mathrm{V}_2$とした．
+式(\ref{n極限})より，
+\begin{align}
+  \lim_{N \rightarrow \infty} \frac{1}{N} \ln{Z(0, T)} 
+  &= \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\left\{[2 \sinh{2 \beta \epsilon}]^{\frac{n}{2}}\Lambda\right\}} \notag \\
+  &= \frac{1}{2} \ln{[2 \sinh{2 \beta \epsilon}]}
+  + \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\Lambda}
+\end{align}
+となる．ここで，$\Lambda$は$\mathrm{V} = \mathrm{V}_1 \mathrm{V}_2$の最大固有値である，$\mathrm{V}_1$は式(\ref{V1})，$\mathrm{V}_2$は(\ref{V2})で与えられる．これらの式は，$\mathrm{V}$の固有値がすべて正で，$\lim_{n \rightarrow \infty} n^{-1}\ln{\Lambda}$が存在する場合に成り立つ．したがって行列$\mathrm{V}$の対角化を考えればよい．
+
+\section{スピン代数による$\mathrm{V}$の表現}
+式(\ref{?})より，
+\begin{align}
+  \Gamma_{2\alpha}\Gamma_{2\alpha-1} 
+  &= (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_{\alpha}) (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Z}_{\alpha}) \notag \\
+  &= (\mathrm{X}_1)^2 (\mathrm{X}_2)^2 \cdots (\mathrm{X}_{\alpha-1})^2 \mathrm{Y}_{\alpha} \mathrm{Z}_{\alpha} \notag \\
+  &= \mathrm{Y}_{\alpha} \mathrm{Z}_{\alpha} \notag \\
+  &= i \mathrm{X}_{\alpha},
+\end{align}
+\begin{align}
+  \Gamma_{2\alpha+1}\Gamma_{2\alpha} 
+  &= (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha} \mathrm{Z}_{\alpha+1}) (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_{\alpha}) \notag \\
+  &= (\mathrm{X}_1)^2 (\mathrm{X}_2)^2 \cdots (\mathrm{X}_{\alpha-1})^2 \mathrm{X}_{\alpha} \mathrm{Z}_{\alpha+1} \mathrm{Y}_{\alpha} \notag \\
+  &= \mathrm{X}_{\alpha} \mathrm{Z}_{\alpha+1} \mathrm{Y}_{\alpha} \notag \\
+  &= \mathrm{X}_{\alpha} \mathrm{Y}_{\alpha} \mathrm{Z}_{\alpha+1} \notag \\
+  &= i \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1},
+\end{align}
+\begin{align}
+  \Gamma_1\Gamma_{2n} 
+  &= \mathrm{Z}_1 (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_n) \notag \\
+  &= -i \mathrm{Z}_1 \mathrm{Z}_n (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_n) \notag \\
+  &\equiv -i \mathrm{Z}_1 \mathrm{Z}_n \mathrm{U}.
+\end{align}
+ただし，$\mathrm{U}=\mathrm{X}_1\mathrm{X}_2\cdots\mathrm{X}_n$である．これより，
+\begin{equation}
+  \mathrm{V_1}
+  = \prod_{\alpha=1}^{n} e^{\theta \mathrm{X}_{\alpha}}
+  = \prod_{\alpha=1}^{n} e^{-i \theta \Gamma_{2\alpha} \Gamma_{2\alpha-1}}，
+\end{equation}
+\begin{align}
+  \mathrm{V}_2
+  &= \prod_{\alpha=1}^{n} e^{\beta \epsilon \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}} \notag \\
+  &= \left[ \prod_{\alpha=1}^{n-1} e^{\beta \epsilon \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}} \right] e^{\beta \epsilon \mathrm{Z}_n \mathrm{Z}_1} \notag \\
+  &= e^{\beta \epsilon \mathrm{Z}_n \mathrm{Z}_1} \left[ \prod_{\alpha=1}^{n-1} e^{\beta \epsilon \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}} \right] \notag \\
+  &= e^{i \beta \epsilon \mathrm{U} \Gamma_1 \Gamma_{2n}} \prod_{\alpha=1}^{n-1} e^{-i \beta \epsilon \Gamma_{2\alpha+1} \Gamma_{2\alpha}}.
+\end{align}
+したがって，$\phi = \beta \epsilon$として
+\begin{equation}
+  \mathrm{V} \equiv \mathrm{V}_1 \mathrm{V}_2
+  = e^{i \beta \epsilon \mathrm{U} \Gamma_1 \Gamma_{2n}}\left[ \prod_{\alpha=1}^{n-1} e^{-i \beta \epsilon \Gamma_{2\alpha+1} \Gamma_{2\alpha}} \right] \left[ \prod_{\lambda=1}^{n} e^{-i \theta \Gamma_{2\lambda} \Gamma_{2\lambda-1}} \right]
+\end{equation}
+ここで，いくつか$\mathrm{U}$の性質を書く
+\begin{enumerate}[(a)]
+  \item $\mathrm{U}^2 = 1, \quad \mathrm{U}(1 + \mathrm{U}) = 1 + \mathrm{U}, \quad \mathrm{U}(1 - \mathrm{U}) = -(1 - \mathrm{U})$
+  \item $\mathrm{U} = i^n \Gamma_1 \Gamma_2 \cdots \Gamma_{2n}$
+  \item $\{\mathrm{U}, \Gamma_{\mu}\} = 0$
+\end{enumerate}
+ここで，$\mathrm{U}$は4次元Dirac理論におけるカイラル行列$\gamma_s$に相当する．これらの性質を用いることで，
+\begin{align}
+  e^{i \phi \Gamma_1 \Gamma_{2n}}
+  &= \left[\frac{1}{2} (1 + \mathrm{U}) + \frac{1}{2} (1 + \mathrm{U})\right]\left[\cosh{\phi} + i \Gamma_1 \Gamma_{2n} \sinh{\phi}\right]
+  \notag \\
+  &= \frac{1}{2} (1 + \mathrm{U})\left[\cosh{\phi} + i \Gamma_1 \Gamma_{2n} \sinh{\phi}\right]
+  + \frac{1}{2} (1 - \mathrm{U})\left[\cosh{\phi} - i \Gamma_1 \Gamma_{2n} \sinh{\phi}\right] \notag \\
+  &= \frac{1}{2} (1 + \mathrm{U}) e^{i \phi \Gamma_1 \Gamma_{2n}}
+  + \frac{1}{2} (1 - \mathrm{U}) e^{-i \phi \Gamma_1 \Gamma_{2n}},
+\end{align}
+したがって
+\begin{equation}
+  \mathrm{V} 
+  = \frac{1}{2} (1 + \mathrm{U}) \mathrm{V}^+
+  + \frac{1}{2} (1 - \mathrm{U}) \mathrm{V}^-,
+\end{equation}
+\begin{equation}
+  \mathrm{V}^{\pm}
+  \equiv e^{\pm i \phi \mathrm{U} \Gamma_1 \Gamma_{2n}}\left[ \prod_{\alpha=1}^{n-1} e^{-i \phi \Gamma_{2\alpha+1} \Gamma_{2\alpha}} \right] \left[ \prod_{\lambda=1}^{n} e^{-i \theta \Gamma_{2\lambda} \Gamma_{2\lambda-1}} \right].
+\end{equation}
+
+
+\section{bbb}
+bbb
 
 
 \end{document}

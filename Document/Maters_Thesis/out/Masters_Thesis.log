@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.10.16)  2 FEB 2024 14:42
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.10.16)  3 FEB 2024 18:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -948,21 +948,21 @@ File: image/CIFAR10.png Graphic file (type bmp)
 File: image/多項式回帰(a).png Graphic file (type bmp)
 <image/多項式回帰(a).png>
 
-Overfull \hbox (16.76009pt too wide) in paragraph at lines 1230--1231
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 769--770
  [][] 
  []
 
 File: image/多項式回帰(b).png Graphic file (type bmp)
 <image/多項式回帰(b).png>
 
-Overfull \hbox (16.76009pt too wide) in paragraph at lines 1235--1236
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 774--775
  [][] 
  []
 
 File: image/多項式回帰(c).png Graphic file (type bmp)
 <image/多項式回帰(c).png>
 
-Overfull \hbox (16.76009pt too wide) in paragraph at lines 1240--1241
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 779--780
  [][] 
  []
 
@@ -977,12 +977,12 @@ File: image/単純型細胞.png Graphic file (type bmp)
 File: image/複雑型細胞.png Graphic file (type bmp)
 <image/複雑型細胞.png>
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 1923--1935
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 1462--1474
 [][] [] 
  []
 
 
-LaTeX Warning: Reference `単純型細胞と複雑型細胞' on page 48 undefined on input line 1939.
+LaTeX Warning: Reference `単純型細胞と複雑型細胞' on page 48 undefined on input line 1478.
 
 [48]
 File: image/Kチャンネル画像.png Graphic file (type bmp)
@@ -999,7 +999,7 @@ File: image/勾配法課題(a).png Graphic file (type bmp)
 File: image/勾配法課題(b).png Graphic file (type bmp)
 <image/勾配法課題(b).png>
 
-Overfull \hbox (0.89943pt too wide) in paragraph at lines 2123--2124
+Overfull \hbox (0.89943pt too wide) in paragraph at lines 1662--1663
  [][] 
  []
 
@@ -1024,7 +1024,7 @@ File: image/相分類CNNモデル.png Graphic file (type bmp)
 [78]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 2712.
+               Default added (so using `tbp') on input line 2251.
 
 File: image/plot_square_FCNN_2.png Graphic file (type bmp)
 <image/plot_square_FCNN_2.png>
@@ -1034,14 +1034,14 @@ File: image/plot_square_CNN_2.png Graphic file (type bmp)
 File: image/plot_square_FCNN.png Graphic file (type bmp)
 <image/plot_square_FCNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2747--2748
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2286--2287
  [] 
  []
 
 File: image/plot_square_CNN.png Graphic file (type bmp)
 <image/plot_square_CNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2754--2755
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2293--2294
  [] 
  []
 
@@ -1055,14 +1055,14 @@ File: image/温度測定器CNN.png Graphic file (type bmp)
 File: image/L8_FCNN_weight.png Graphic file (type bmp)
 <image/L8_FCNN_weight.png>
 
-Overfull \hbox (12.04085pt too wide) in paragraph at lines 2883--2884
+Overfull \hbox (12.04085pt too wide) in paragraph at lines 2422--2423
  [] 
  []
 
 File: image/L8_CNN_weight.png Graphic file (type bmp)
 <image/L8_CNN_weight.png>
 
-Overfull \hbox (12.04085pt too wide) in paragraph at lines 2889--2890
+Overfull \hbox (12.04085pt too wide) in paragraph at lines 2428--2429
  [] 
  []
 
@@ -1075,14 +1075,14 @@ File: image/L8_CNN_weight_sum.png Graphic file (type bmp)
 File: image/L16_FCNN_weight.png Graphic file (type bmp)
 <image/L16_FCNN_weight.png>
 
-Overfull \hbox (33.72318pt too wide) in paragraph at lines 2916--2917
+Overfull \hbox (33.72318pt too wide) in paragraph at lines 2455--2456
  [] 
  []
 
 File: image/L16_CNN_weight_2.png Graphic file (type bmp)
 <image/L16_CNN_weight_2.png>
 
-Overfull \hbox (33.72318pt too wide) in paragraph at lines 2922--2923
+Overfull \hbox (33.72318pt too wide) in paragraph at lines 2461--2462
  [] 
  []
 
@@ -1093,20 +1093,20 @@ File: image/L16_CNN_weight_sum_2.png Graphic file (type bmp)
 <image/L16_CNN_weight_sum_2.png>
 [87] [88] [89] [90] [91]
 
-LaTeX Warning: Reference `' on page 92 undefined on input line 3111.
+LaTeX Warning: Reference `' on page 92 undefined on input line 2650.
 
 [92] [93]
 
-LaTeX Warning: Reference `correlation' on page 94 undefined on input line 3159.
+LaTeX Warning: Reference `correlation' on page 94 undefined on input line 2698.
 
 
-LaTeX Warning: Reference `correlation' on page 94 undefined on input line 3159.
+LaTeX Warning: Reference `correlation' on page 94 undefined on input line 2698.
 
 
-LaTeX Warning: Reference `correlation' on page 94 undefined on input line 3159.
+LaTeX Warning: Reference `correlation' on page 94 undefined on input line 2698.
 
 
-LaTeX Warning: Reference `correlation' on page 94 undefined on input line 3160.
+LaTeX Warning: Reference `correlation' on page 94 undefined on input line 2699.
 
 [94] [95] [96] [97
 
@@ -1114,20 +1114,94 @@ LaTeX Warning: Reference `correlation' on page 94 undefined on input line 3160.
 
 ]) [99
 
-] (out/Masters_Thesis.aux)
+]
+付録A
+[100
+
+] [101]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 2967.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 2967.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DualLang@Mfontsw' on input line 2967.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 2967.
+
+[102] [103]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 3075.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 3075.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DualLang@Mfontsw' on input line 3075.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 3075.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DualLang@Mfontsw' on input line 3075.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 3075.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DualLang@Mfontsw' on input line 3075.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 3075.
+
+[104] [105]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 3195.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<let>-command' on input line 3195.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\DualLang@Mfontsw' on input line 3195.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 3195.
+
+
+LaTeX Warning: Reference `?' on page 106 undefined on input line 3196.
+
+[106] [107] [108] (out/Masters_Thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Masters_Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1E554EBB0B68A924BF46DD548506939E;1990.
+(rerunfilecheck)             Checksum: A57C6FDF9D1E6482DBA782DDB72EE60E;2806.
  ) 
 Here is how much of TeX's memory you used:
- 28900 strings out of 476693
- 547637 string characters out of 5808556
+ 28927 strings out of 476693
+ 547957 string characters out of 5808556
  1865203 words of memory out of 5000000
- 48796 multiletter control sequences out of 15000+600000
- 567467 words of font info for 144 fonts, out of 8000000 for 9000
+ 48822 multiletter control sequences out of 15000+600000
+ 569634 words of font info for 152 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  84i,24n,89p,1403b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Masters_Thesis.dvi (101 pages, 597456 bytes).
+Output written on out/Masters_Thesis.dvi (110 pages, 646684 bytes).
