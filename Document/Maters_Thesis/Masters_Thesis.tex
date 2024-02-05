@@ -149,7 +149,7 @@ setpagesize=false,
 \section{強磁性イジング模型}
 これまで，最も身近な相転移という理由で物質の三態を扱ってきたが，実は固相，液相，気相のあいだの相転移についての理論な現状，理論的な理解は進んでいない．しかし，もう一つ我々の身近にある物質である磁石，物理学の用語で言い換えると強磁性体に関係する相転移はよく知られている．そのため，本論文では強磁性体の相転移を扱う．\par
 この節では，強磁性体の相転移を調べるために，強磁性イジング模型(本論文では以降，単にイジング模型とよぶ)を定義する．イジング模型は，実在の強磁性体のモデルとしては全く忠実ではないが，強磁性体での相転移の本質をつかむためには，きわめてすぐれたモデルである．つまり，相転移や臨界現象を引き起こすために必要最低限の要素だけを持ったモデルと言える．\par
-「イジング模型」という呼び名は，このモデルの一次元でのふるまいを1924年の学位論文で調べたイジングにちなんだものである．ただし，モデルの発案者は当時イジングの指導教員であったレンツである．\par
+「イジング模型」という呼び名は，このモデルの1次元でのふるまいを1924年の学位論文で調べたイジングにちなんだものである．ただし，モデルの発案者は当時イジングの指導教員であったレンツである．\par
 \subsection{強磁性イジング模型の定義}
 \begin{figure}[H]
   \begin{center}
@@ -270,14 +270,35 @@ setpagesize=false,
 のように書け，磁化は磁場の反転について反対称になることがわかる．\par
 $f_L(\beta, H)$が微分可能なので，$m_L(\beta, H)$はすべての$\beta, H$において定義されている．よって式(\ref{磁化反対称性})で$H=0$とすれば，$m_L(\beta, 0) = -m_L(\beta, 0)$となり，$m_L(\beta, 0)=0$が得られる．したがって，有限系では$0\leq \beta < \infty$の任意の逆温度$\beta$で磁化がゼロになり，相転移を示さないことがわかる．
 
-\section{一次元イジング模型}
-一次元のイジング模型を考える．ハミルトニアンは
+\section{1次元イジング模型}
+\begin{figure}[H]
+  \begin{center}
+    \begin{tikzpicture}[scale=1]
+      \draw (-5,0) -- (5,0);
+      \draw (-5,0) node[left]{$\cdots$};
+      \draw (5,0) node[right]{$\cdots$};
+      \filldraw[fill=white] (-4,0) circle[radius=0.25];
+      \filldraw[fill=white] (-2,0) circle[radius=0.25];
+      \filldraw[fill=white] (0,0) circle[radius=0.25];
+      \filldraw[fill=white] (2,0) circle[radius=0.25];
+      \filldraw[fill=white] (4,0) circle[radius=0.25];
+      \draw (-4,-0.4) node[below]{$\sigma_{i-2}$};
+      \draw (-2,-0.4) node[below]{$\sigma_{i-1}$};
+      \draw (0,-0.4) node[below]{$\sigma_i$};
+      \draw (2,-0.4) node[below]{$\sigma_{i+1}$};
+      \draw (4,-0.4) node[below]{$\sigma_{i+2}$};
+    \end{tikzpicture}
+    \caption{1次元イジング模型の格子構造}
+    \label{1次元イジング模型格子構造}
+  \end{center}
+\end{figure}
+1次元のイジング模型を考える．図\ref{1次元イジング模型格子構造}は1次元イジング模型の格子構造で，スピンが等間隔で1列に並んでいる構造をしている．ハミルトニアンは
 \begin{equation}
-  H = -J \sum_{i=1}^N \sigma_i \sigma_j - h \sum_{i=1}^N \sigma_i \label{一次元イジングエネルギー}
+  H = -J \sum_{i=1}^N \sigma_i \sigma_j - h \sum_{i=1}^N \sigma_i \label{1次元イジングエネルギー}
 \end{equation}
-なり，周期的境界条件$\sigma_{N+1} = \sigma_{1}$を課す．分配関数は
+で与えられる．また，ここでは周期的境界条件$\sigma_{N+1} = \sigma_{1}$を課す．このとき分配関数は
 \begin{equation}
-  Z = \sum_{(\sigma_i,\dots,\sigma_N)} \exp{\left[ \beta J \sum_{i=1}^N \sigma_i \sigma_j + \beta h \sum_{i=1}^N \sigma_i \right]} \label{一次元イジング分配関数}
+  Z = \sum_{(\sigma_i,\dots,\sigma_N)} \exp{\left[ \beta J \sum_{i=1}^N \sigma_i \sigma_j + \beta h \sum_{i=1}^N \sigma_i \right]} \label{1次元イジング分配関数}
 \end{equation}
 となる．ここで，次のような対称行列$\mathrm{T}$を定義する．
 \begin{equation}
@@ -293,7 +314,7 @@ $f_L(\beta, H)$が微分可能なので，$m_L(\beta, H)$はすべての$\beta, 
     e^{-\beta J}          & e^{\beta J - \beta h}
   \end{pmatrix}
 \end{equation}
-このようにすることで，分配関数(\ref{一次元イジング分配関数})を
+このようにすることで，分配関数(\ref{1次元イジング分配関数})を
 \begin{align}
   Z
    & = \sum_{(\sigma_i,\dots,\sigma_N)} (\mathrm{T})_{\sigma_1, \sigma_2} (\mathrm{T})_{\sigma_2, \sigma_3} \cdots (\mathrm{T})_{\sigma_N, \sigma_1} \notag \\
@@ -368,7 +389,7 @@ $f_L(\beta, H)$が微分可能なので，$m_L(\beta, H)$はすべての$\beta, 
    & =  \frac{1}{\cosh{\beta h} + \sqrt{(\sinh{\beta h})^2 + e^{-4\beta J}}} \left\{ \sinh{\beta h} + \frac{2\sinh{\beta h} \cosh{\beta h}}{2 \sqrt{(\sinh{\beta h})^2 + e^{-4\beta J}}} \right\} \notag \\
    & = \frac{\sinh{\beta h}}{\sqrt{(\sinh{\beta h})^2 + e^{-4\beta J}}}
 \end{align}
-となる．これは明らかに$\beta$と$h$について連続な関数である．特に$h=0$のとすれば$m(\beta, 0) = 0$となる．つまり，有限温度の一次元イジング模型での自発磁化は$0$であり，この系は相転移を示さないことがわかる．\par
+となる．これは明らかに$\beta$と$h$について連続な関数である．特に$h=0$のとすれば$m(\beta, 0) = 0$となる．つまり，有限温度の1次元イジング模型での自発磁化は$0$であり，この系は相転移を示さないことがわかる．\par
 さらに，この結果を使って磁化率$\chi(\beta)$を求めると，
 \begin{align}
   \chi(\beta)
@@ -409,7 +430,57 @@ $f_L(\beta, H)$が微分可能なので，$m_L(\beta, H)$はすべての$\beta, 
   \caption{$h=0$での自己整合方程式$\psi = \tanh{(\beta ZJ\psi)}$}
 \end{figure}
 
-\section{二次元イジング模型}
+\section{2次元イジング模型}
+\begin{figure}[H]
+  \begin{center}
+    \begin{tikzpicture}[scale=0.75]
+      \draw (-2, 0) -- (-6, 0);
+      \draw (-2, 2) -- (-6, 2);
+      \draw (-2,-2) -- (-6,-2);
+      \draw (-2,-2) -- (-2, 2);
+      \draw (-4,-2) -- (-4, 2);
+      \draw (-6,-2) -- (-6, 2);
+      \draw ( 2, 0)    -- ( 6, 0);
+      \draw ( 3, 1.73) -- ( 7, 1.73);
+      \draw ( 1,-1.73) -- ( 5,-1.73);
+      \draw ( 1,-1.73) -- ( 3, 1.73);
+      \draw ( 3,-1.73) -- ( 5, 1.73);
+      \draw ( 5,-1.73) -- ( 7, 1.73);
+      \draw ( 2, 0   ) -- ( 3,-1.73);
+      \draw ( 3, 1.73) -- ( 5,-1.73);
+      \draw ( 5, 1.73) -- ( 6, 0);
+      \filldraw[fill=white] (-6,0) circle[radius=0.25];
+      \filldraw[fill=white] (-4,0) circle[radius=0.25];
+      \filldraw[fill=white] (-2,0) circle[radius=0.25];
+      \filldraw[fill=white] (-6,2) circle[radius=0.25];
+      \filldraw[fill=white] (-4,2) circle[radius=0.25];
+      \filldraw[fill=white] (-2,2) circle[radius=0.25];
+      \filldraw[fill=white] (-6,-2) circle[radius=0.25];
+      \filldraw[fill=white] (-4,-2) circle[radius=0.25];
+      \filldraw[fill=white] (-2,-2) circle[radius=0.25];
+      \filldraw[fill=white] (2,0) circle[radius=0.25];
+      \filldraw[fill=white] (4,0) circle[radius=0.25];
+      \filldraw[fill=white] (6,0) circle[radius=0.25];
+      \filldraw[fill=white] (3,1.73) circle[radius=0.25];
+      \filldraw[fill=white] (5,1.73) circle[radius=0.25];
+      \filldraw[fill=white] (7,1.73) circle[radius=0.25];
+      \filldraw[fill=white] (1,-1.73) circle[radius=0.25];
+      \filldraw[fill=white] (3,-1.73) circle[radius=0.25];
+      \filldraw[fill=white] (5,-1.73) circle[radius=0.25];
+    \end{tikzpicture}
+    \caption{2次元イジング模型の代表的な格子構造．左は正方イジング模型または，単にイジング模型とよばれ，右は三角イジング模型とよばれる．}
+    \label{2次元イジング模型格子構造}
+  \end{center}
+\end{figure}
+次に，2次元イジング模型を考える．2次元イジング模型は2次元平面状に$L \times L$個の格子点が等間隔に配置された模型である．図\ref{2次元イジング模型格子構造}は2次元イジング模型の代表的な格子構造である．左は正方イジング模型とよばれるもので最も基本的な格子構造である．一般的に2次元イジング模型と書かれたら，正方イジング模型のことを指す．そのため本論文でも正方イジング模型を単にイジング模型とよぶことにする．右は三角イジング模型とよばれる．\par
+ハミルトニアンは
+\begin{equation}
+  H = - \sum_{i=1}^{L^2} \sum_{j \in \mathcal{N}(i)} \sigma_i \sigma_j
+  - h \sum_{i=1}^{L^2} \sigma_i
+\end{equation}
+で与えられる．ここで$\mathcal{N}(i)$はサイト$i$の最近接サイトの集合を表す．例えば，正方イジング模型であれが最近接サイトの数は4つあり，三角イジング模型であれば6つあるということである．\par
+$h=0$のときに限り，2次元イジング模型の厳密解が計算されている．正方イジング模型の場合は相転移逆温度は$\beta = \frac{1}{2}\log{(\sqrt{2}+1)} \approx 0.44$であり，三角イジング模型の場合$\beta = \frac{1}{4}\log{3} \approx 0.27$である．この導出は1次元イジング模型の時と比べはるかに計算が複雑になる．
+
 
 
 \chapter{機械学習と深層学習}
@@ -2187,7 +2258,7 @@ $\beta=0.4$と$\beta=0.5$でスピンの揃い具合に大きく違いが表れ�
   \end{center}
 \end{figure}
 
-2次元のスピン配位は適切な方法で一次元化を行ったあとにニューラルネットワークの入力層のユニットに入力させる．このニューラルネットワークは隠れ層が1層のシンプルな全結合ニューラルネットワークを採用した．
+2次元のスピン配位は適切な方法で1次元化を行ったあとにニューラルネットワークの入力層のユニットに入力させる．このニューラルネットワークは隠れ層が1層のシンプルな全結合ニューラルネットワークを採用した．
 入力層は入力データが入力されるため，ユニットの数はスピン配位の数と等しい値にしなければならない．今回$32 \times 32 = 1024$個のスピン変数が入力されるため，1024個のユニットで設定した．次に隠れ層のユニット数であるが，これは任意に選ぶことができる．今回はユニット数100で設定した．また，隠れ層のユニットには活性化関数としてReLU関数を用いた．したがって，隠れ層での出力$z_i$は
 \begin{equation}
   z_i 
@@ -2239,12 +2310,12 @@ $\beta=0.4$と$\beta=0.5$でスピンの揃い具合に大きく違いが表れ�
    \end{center}
 \end{figure}
 
-FCNモデルとの違いは，一次元化を行う前にフィルタによる畳み込みを行っているということである．今回は$32 \times 32$のスピン配位に対して，$4 \times 4$のフィルターで畳み込みを行った．フィルターの数は1つにし，ストライドは$(4,4)$にした．また，パディングは行っていない．そのため，畳み込みを行った後，配位のサイズは$8 \times 8$に縮小する．各変数の値は次のようになる．
+FCNモデルとの違いは，1次元化を行う前にフィルタによる畳み込みを行っているということである．今回は$32 \times 32$のスピン配位に対して，$4 \times 4$のフィルターで畳み込みを行った．フィルターの数は1つにし，ストライドは$(4,4)$にした．また，パディングは行っていない．そのため，畳み込みを行った後，配位のサイズは$8 \times 8$に縮小する．各変数の値は次のようになる．
 \begin{equation}
   z_{(i,j)}^{(1)}
   = \sum_{p,q=0}^{3} w_{p,q}^{(1)} \sigma_{4i+p,4j+q}^{(1)}
 \end{equation}
-ただし，畳み込み層ではバイアスを入れていない．畳み込みにより，配位のサイズが$8 \times 8$に縮小された後に，一次元化を行う．したがって，全結合部分の最初の層のユニット数は$8 \times 8 = 64$に設定する必要がある．それ以降の層はFCNモデルと全く同じに設定した．\par
+ただし，畳み込み層ではバイアスを入れていない．畳み込みにより，配位のサイズが$8 \times 8$に縮小された後に，1次元化を行う．したがって，全結合部分の最初の層のユニット数は$8 \times 8 = 64$に設定する必要がある．それ以降の層はFCNモデルと全く同じに設定した．\par
 この2種類のモデルを作成した1800個のデータセットを使って学習させる．今回，1800個あるデータを各ラベル45個ずつの900個のデータセット2つに分割し，片方を学習データ，もう片方をテストデータとして用いた．\par
 学習データによるモデルを学習では，精度を向上させるためにいくつか工夫を行った．以下の表は実際の学習で用いたものである．
 

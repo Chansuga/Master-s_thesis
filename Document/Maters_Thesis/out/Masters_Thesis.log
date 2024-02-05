@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.10.16)  3 FEB 2024 18:52
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.10.16)  5 FEB 2024 11:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -924,284 +924,284 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10] [11] [12] [13] [14]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <8> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 397.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 418.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 397.
+(Font)              scaled to size 7.68799pt on input line 418.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 397.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 418.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 397.
-[15]
+(Font)              scaled to size 7.68799pt on input line 418.
+[15] [16]
 第3章
-[16
+[17
 
 ]
 File: image/機械学習概要図.png Graphic file (type bmp)
 <image/機械学習概要図.png>
-[17]
+[18]
 File: image/mnist.png Graphic file (type bmp)
 <image/mnist.png>
-[18]
+[19]
 File: image/CIFAR10.png Graphic file (type bmp)
 <image/CIFAR10.png>
-[19] [20] [21] [22] [23] [24] [25] [26] [27] [28]
+[20] [21] [22] [23] [24] [25] [26] [27] [28] [29]
 File: image/多項式回帰(a).png Graphic file (type bmp)
 <image/多項式回帰(a).png>
 
-Overfull \hbox (16.76009pt too wide) in paragraph at lines 769--770
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 840--841
  [][] 
  []
 
 File: image/多項式回帰(b).png Graphic file (type bmp)
 <image/多項式回帰(b).png>
 
-Overfull \hbox (16.76009pt too wide) in paragraph at lines 774--775
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 845--846
  [][] 
  []
 
 File: image/多項式回帰(c).png Graphic file (type bmp)
 <image/多項式回帰(c).png>
 
-Overfull \hbox (16.76009pt too wide) in paragraph at lines 779--780
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 850--851
  [][] 
  []
 
-[29] [30] [31] [32] [33] [34]
+[30] [31] [32] [33] [34] [35]
 File: image/ニューロン.png Graphic file (type bmp)
 <image/ニューロン.png>
 File: image/シナプス.png Graphic file (type bmp)
 <image/シナプス.png>
-[35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47]
+[36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48]
 File: image/単純型細胞.png Graphic file (type bmp)
 <image/単純型細胞.png>
 File: image/複雑型細胞.png Graphic file (type bmp)
 <image/複雑型細胞.png>
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 1462--1474
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 1533--1545
 [][] [] 
  []
 
 
-LaTeX Warning: Reference `単純型細胞と複雑型細胞' on page 48 undefined on input line 1478.
+LaTeX Warning: Reference `単純型細胞と複雑型細胞' on page 49 undefined on input line 1549.
 
-[48]
+[49]
 File: image/Kチャンネル画像.png Graphic file (type bmp)
 <image/Kチャンネル画像.png>
-[49] [50]
+[50] [51]
 File: image/畳み込み演算の例.png Graphic file (type bmp)
 <image/畳み込み演算の例.png>
-[51] [52] [53]
+[52] [53] [54]
 File: image/gradient_decent.png Graphic file (type bmp)
 <image/gradient_decent.png>
-[54] [55] [56]
+[55] [56] [57]
 File: image/勾配法課題(a).png Graphic file (type bmp)
 <image/勾配法課題(a).png>
 File: image/勾配法課題(b).png Graphic file (type bmp)
 <image/勾配法課題(b).png>
 
-Overfull \hbox (0.89943pt too wide) in paragraph at lines 1662--1663
+Overfull \hbox (0.89943pt too wide) in paragraph at lines 1733--1734
  [][] 
  []
 
 File: image/勾配法課題(c).png Graphic file (type bmp)
 <image/勾配法課題(c).png>
-[57]
+[58]
 File: image/モーメンタム法.png Graphic file (type bmp)
 <image/モーメンタム法.png>
-[58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69]
+[59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70]
 第4章
-[70
+[71
 
-] [71] [72] [73] [74]
+] [72] [73] [74] [75]
 File: image/配位ラベルと相転移ラベル.png Graphic file (type bmp)
 <image/配位ラベルと相転移ラベル.png>
-[75]
+[76]
 File: image/相分類FCNモデル.png Graphic file (type bmp)
 <image/相分類FCNモデル.png>
-[76] [77]
+[77] [78]
 File: image/相分類CNNモデル.png Graphic file (type bmp)
 <image/相分類CNNモデル.png>
-[78]
+[79]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 2251.
+               Default added (so using `tbp') on input line 2322.
 
 File: image/plot_square_FCNN_2.png Graphic file (type bmp)
 <image/plot_square_FCNN_2.png>
 File: image/plot_square_CNN_2.png Graphic file (type bmp)
 <image/plot_square_CNN_2.png>
-[79]
+[80]
 File: image/plot_square_FCNN.png Graphic file (type bmp)
 <image/plot_square_FCNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2286--2287
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2357--2358
  [] 
  []
 
 File: image/plot_square_CNN.png Graphic file (type bmp)
 <image/plot_square_CNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2293--2294
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2364--2365
  [] 
  []
 
-[80] [81]
+[81] [82]
 File: image/温度測定器FCN.png Graphic file (type bmp)
 <image/温度測定器FCN.png>
-[82]
+[83]
 File: image/温度測定器CNN.png Graphic file (type bmp)
 <image/温度測定器CNN.png>
-[83]
+[84]
 File: image/L8_FCNN_weight.png Graphic file (type bmp)
 <image/L8_FCNN_weight.png>
 
-Overfull \hbox (12.04085pt too wide) in paragraph at lines 2422--2423
+Overfull \hbox (12.04085pt too wide) in paragraph at lines 2493--2494
  [] 
  []
 
 File: image/L8_CNN_weight.png Graphic file (type bmp)
 <image/L8_CNN_weight.png>
 
-Overfull \hbox (12.04085pt too wide) in paragraph at lines 2428--2429
+Overfull \hbox (12.04085pt too wide) in paragraph at lines 2499--2500
  [] 
  []
 
-[84]
+[85]
 File: image/L8_FCNN_weight_sum.png Graphic file (type bmp)
 <image/L8_FCNN_weight_sum.png>
 File: image/L8_CNN_weight_sum.png Graphic file (type bmp)
 <image/L8_CNN_weight_sum.png>
-[85]
+[86]
 File: image/L16_FCNN_weight.png Graphic file (type bmp)
 <image/L16_FCNN_weight.png>
 
-Overfull \hbox (33.72318pt too wide) in paragraph at lines 2455--2456
+Overfull \hbox (33.72318pt too wide) in paragraph at lines 2526--2527
  [] 
  []
 
 File: image/L16_CNN_weight_2.png Graphic file (type bmp)
 <image/L16_CNN_weight_2.png>
 
-Overfull \hbox (33.72318pt too wide) in paragraph at lines 2461--2462
+Overfull \hbox (33.72318pt too wide) in paragraph at lines 2532--2533
  [] 
  []
 
-[86]
+[87]
 File: image/L16_FCNN_weight_sum.png Graphic file (type bmp)
 <image/L16_FCNN_weight_sum.png>
 File: image/L16_CNN_weight_sum_2.png Graphic file (type bmp)
 <image/L16_CNN_weight_sum_2.png>
-[87] [88] [89] [90] [91]
+[88] [89] [90] [91] [92]
 
-LaTeX Warning: Reference `' on page 92 undefined on input line 2650.
+LaTeX Warning: Reference `' on page 93 undefined on input line 2721.
 
-[92] [93]
+[93] [94]
 
-LaTeX Warning: Reference `correlation' on page 94 undefined on input line 2698.
-
-
-LaTeX Warning: Reference `correlation' on page 94 undefined on input line 2698.
+LaTeX Warning: Reference `correlation' on page 95 undefined on input line 2769.
 
 
-LaTeX Warning: Reference `correlation' on page 94 undefined on input line 2698.
+LaTeX Warning: Reference `correlation' on page 95 undefined on input line 2769.
 
 
-LaTeX Warning: Reference `correlation' on page 94 undefined on input line 2699.
+LaTeX Warning: Reference `correlation' on page 95 undefined on input line 2769.
 
-[94] [95] [96] [97
 
-] (out/Masters_Thesis.bbl [98
+LaTeX Warning: Reference `correlation' on page 95 undefined on input line 2770.
 
-]) [99
+[95] [96] [97] [98
+
+] (out/Masters_Thesis.bbl [99
+
+]) [100
 
 ]
 付録A
-[100
+[101
 
-] [101]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2967.
-
+] [102]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 2967.
+(hyperref)                removing `math shift' on input line 3038.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\DualLang@Mfontsw' on input line 2967.
+(hyperref)                removing `\<let>-command' on input line 3038.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2967.
-
-[102] [103]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3075.
+(hyperref)                removing `\DualLang@Mfontsw' on input line 3038.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 3075.
+(hyperref)                removing `math shift' on input line 3038.
+
+[103] [104]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 3146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\DualLang@Mfontsw' on input line 3075.
+(hyperref)                removing `\<let>-command' on input line 3146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 3075.
+(hyperref)                removing `\DualLang@Mfontsw' on input line 3146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\DualLang@Mfontsw' on input line 3075.
+(hyperref)                removing `\<let>-command' on input line 3146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 3075.
+(hyperref)                removing `\DualLang@Mfontsw' on input line 3146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\DualLang@Mfontsw' on input line 3075.
+(hyperref)                removing `\<let>-command' on input line 3146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3075.
-
-[104] [105]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3195.
+(hyperref)                removing `\DualLang@Mfontsw' on input line 3146.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 3195.
+(hyperref)                removing `math shift' on input line 3146.
+
+[105] [106]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 3266.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\DualLang@Mfontsw' on input line 3195.
+(hyperref)                removing `\<let>-command' on input line 3266.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 3195.
+(hyperref)                removing `\DualLang@Mfontsw' on input line 3266.
 
 
-LaTeX Warning: Reference `?' on page 106 undefined on input line 3196.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 3266.
 
-[106] [107] [108] (out/Masters_Thesis.aux)
+
+LaTeX Warning: Reference `?' on page 107 undefined on input line 3267.
+
+[107] [108] [109] (out/Masters_Thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Masters_Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A57C6FDF9D1E6482DBA782DDB72EE60E;2806.
+(rerunfilecheck)             Checksum: 4F602D8476FA4BE6B9C5AFCF36391025;2802.
  ) 
 Here is how much of TeX's memory you used:
- 28927 strings out of 476693
- 547957 string characters out of 5808556
- 1865203 words of memory out of 5000000
- 48822 multiletter control sequences out of 15000+600000
+ 28932 strings out of 476693
+ 548059 string characters out of 5808556
+ 1867203 words of memory out of 5000000
+ 48827 multiletter control sequences out of 15000+600000
  569634 words of font info for 152 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  84i,24n,89p,1403b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Masters_Thesis.dvi (110 pages, 646684 bytes).
+Output written on out/Masters_Thesis.dvi (111 pages, 664784 bytes).
