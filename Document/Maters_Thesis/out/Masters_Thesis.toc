@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {3.2.1}標本と推定}{21}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}点推定}{22}{subsection.3.2.2}%
 \contentsline {subsubsection}{ガウス分布の場合}{23}{section*.20}%
-\contentsline {subsubsection}{ベルヌーイ分布の場合}{24}{section*.21}%
+\contentsline {subsubsection}{ベルヌーイ分布の場合}{25}{section*.21}%
 \contentsline {subsection}{\numberline {3.2.3}最尤推定}{25}{subsection.3.2.3}%
 \contentsline {subsubsection}{ガウス分布の場合}{26}{section*.22}%
 \contentsline {subsubsection}{ベルヌーイ分布の場合}{27}{section*.23}%
@@ -30,10 +30,10 @@
 \contentsline {subsection}{\numberline {3.3.1}教師あり学習}{27}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}最小二乗法による線形回帰}{28}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}訓練誤差と汎化誤差}{29}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}学習不足と過学習}{29}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.4}学習不足と過学習}{30}{subsection.3.3.4}%
 \contentsline {subsection}{\numberline {3.3.5}正則化}{31}{subsection.3.3.5}%
 \contentsline {subsection}{\numberline {3.3.6}クラス分類}{32}{subsection.3.3.6}%
-\contentsline {subsection}{\numberline {3.3.7}クラス分類へのアプローチ}{32}{subsection.3.3.7}%
+\contentsline {subsection}{\numberline {3.3.7}クラス分類へのアプローチ}{33}{subsection.3.3.7}%
 \contentsline {subsection}{\numberline {3.3.8}ロジスティック回帰}{33}{subsection.3.3.8}%
 \contentsline {subsection}{\numberline {3.3.9}ソフトマックス回帰}{35}{subsection.3.3.9}%
 \contentsline {section}{\numberline {3.4}ニューラルネットワーク}{36}{section.3.4}%
