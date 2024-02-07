@@ -21,6 +21,8 @@
 \@writefile{lot}{\addvspace {10\jsc@mpt }}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}研究背景}{3}{section.1.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}研究目的}{3}{section.1.2}\protected@file@percent }
+\citation{高橋2017相転移}
+\citation{田崎統計力学2}
 \@writefile{toc}{\contentsline {chapter}{\numberline {第2章}イジング模型の相転移}{5}{chapter.2}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\jsc@mpt }}
 \@writefile{lot}{\addvspace {10\jsc@mpt }}
@@ -31,10 +33,10 @@
 \newlabel{三態相図}{{2.1}{6}{典型的な三態の相図．\relax }{figure.caption.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}臨界現象とは}{7}{subsection.2.1.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2.2}強磁性イジング模型}{7}{section.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}モデルの定義}{8}{subsection.2.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}強磁性イジング模型の定義}{8}{subsection.2.2.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces $d=2, L=5$の場合の格子．25個の格子点上にそれぞれスピンがのっている．線分で結ばれた2つのスピンは相互作用している．離れたスピンは直接相互作用しないが，間にあるスピンを介して，間接的に相互作用している．\relax }}{8}{figure.caption.3}\protected@file@percent }
-\newlabel{イジングエネルギー}{{2.3}{8}{モデルの定義}{equation.2.2.3}{}}
-\newlabel{相互作用項場合分け}{{2.4}{8}{モデルの定義}{equation.2.2.4}{}}
+\newlabel{イジングエネルギー}{{2.3}{8}{強磁性イジング模型の定義}{equation.2.2.3}{}}
+\newlabel{相互作用項場合分け}{{2.4}{8}{強磁性イジング模型の定義}{equation.2.2.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}平衡状態での物理量}{9}{subsection.2.2.2}\protected@file@percent }
 \newlabel{イジング分配関数}{{2.5}{9}{平衡状態での物理量}{equation.2.2.5}{}}
 \newlabel{自由エネルギー}{{2.7}{9}{平衡状態での物理量}{equation.2.2.7}{}}
@@ -46,191 +48,243 @@
 \newlabel{絶対零度磁化}{{2.4}{11}{絶対零度でのイジング模型の磁化のふるまい．$H=0$を境に，$-\mu _0$から$\mu _0$に不連続に変化する．\relax }{figure.caption.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}無限体積の極限}{11}{subsection.2.2.4}\protected@file@percent }
 \newlabel{磁化反対称性}{{2.15}{12}{無限体積の極限}{equation.2.2.15}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}一次元イジング模型}{12}{section.2.3}\protected@file@percent }
-\newlabel{一次元イジングエネルギー}{{2.16}{12}{一次元イジング模型}{equation.2.3.16}{}}
-\newlabel{一次元イジング分配関数}{{2.17}{12}{一次元イジング模型}{equation.2.3.17}{}}
-\newlabel{1Dイジング分配関数トレース}{{2.22}{13}{一次元イジング模型}{equation.2.3.22}{}}
-\newlabel{1Dイジング分配関数}{{2.25}{13}{一次元イジング模型}{equation.2.3.25}{}}
-\newlabel{1D自由エネルギー}{{2.27}{14}{一次元イジング模型}{equation.2.3.27}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces $h=0$での自己整合方程式$\psi = \tanh {(\beta ZJ\psi )}$\relax }}{15}{figure.caption.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}二次元イジング模型}{15}{section.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}1次元イジング模型}{12}{section.2.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces 1次元イジング模型の格子構造\relax }}{12}{figure.caption.6}\protected@file@percent }
+\newlabel{1次元イジング模型格子構造}{{2.5}{12}{1次元イジング模型の格子構造\relax }{figure.caption.6}{}}
+\newlabel{1次元イジングエネルギー}{{2.16}{12}{1次元イジング模型}{equation.2.3.16}{}}
+\newlabel{1次元イジング分配関数}{{2.17}{12}{1次元イジング模型}{equation.2.3.17}{}}
+\newlabel{1Dイジング分配関数トレース}{{2.22}{13}{1次元イジング模型}{equation.2.3.22}{}}
+\newlabel{1Dイジング分配関数}{{2.25}{14}{1次元イジング模型}{equation.2.3.25}{}}
+\newlabel{1D自由エネルギー}{{2.27}{14}{1次元イジング模型}{equation.2.3.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces $h=0$での自己整合方程式$\psi = \tanh {(\beta ZJ\psi )}$\relax }}{15}{figure.caption.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}2次元イジング模型}{16}{section.2.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces 2次元イジング模型の代表的な格子構造．左は正方イジング模型または，単にイジング模型とよばれ，右は三角イジング模型とよばれる．\relax }}{16}{figure.caption.8}\protected@file@percent }
+\newlabel{2次元イジング模型格子構造}{{2.7}{16}{2次元イジング模型の代表的な格子構造．左は正方イジング模型または，単にイジング模型とよばれ，右は三角イジング模型とよばれる．\relax }{figure.caption.8}{}}
+\citation{瀧2017これなら}
+\citation{富谷2021これなら}
+\citation{田中2019ディープ}
+\citation{福嶋2022基礎からの}
 \citation{Tom1997Machine}
-\@writefile{toc}{\contentsline {chapter}{\numberline {第3章}機械学習と深層学習}{16}{chapter.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {第3章}機械学習と深層学習}{17}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\jsc@mpt }}
 \@writefile{lot}{\addvspace {10\jsc@mpt }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}学習とは}{16}{section.3.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces 機械学習における学習の大まかな流れ\relax }}{17}{figure.caption.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}代表的なタスク}{17}{subsection.3.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}データセットの例}{18}{subsection.3.1.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces MNISTデータセットの一部\relax }}{18}{figure.caption.11}\protected@file@percent }
-\newlabel{MNIST}{{3.2}{18}{MNISTデータセットの一部\relax }{figure.caption.11}{}}
-\@writefile{toc}{\contentsline {subsubsection}{CIFAR-10}{19}{section*.12}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces CIFAT-10データセットの一部\relax }}{19}{figure.caption.13}\protected@file@percent }
-\newlabel{CIFAR10}{{3.3}{19}{CIFAT-10データセットの一部\relax }{figure.caption.13}{}}
-\@writefile{toc}{\contentsline {subsubsection}{ImageNet}{19}{section*.14}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}統計入門}{19}{section.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}標本と推定}{20}{subsection.3.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}点推定}{21}{subsection.3.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{ガウス分布の場合}{22}{section*.18}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{ベルヌーイ分布の場合}{23}{section*.19}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}最尤推定}{24}{subsection.3.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{ガウス分布の場合}{25}{section*.20}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{ベルヌーイ分布の場合}{26}{section*.21}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}機械学習の基礎}{26}{section.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}教師あり学習}{26}{subsection.3.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}最小二乗法による線形回帰}{27}{subsection.3.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}訓練誤差と汎化誤差}{28}{subsection.3.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}学習不足と過学習}{28}{subsection.3.3.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces 1次元データの線形回帰の例．\relax }}{29}{figure.caption.22}\protected@file@percent }
-\newlabel{線形回帰}{{3.4}{29}{1次元データの線形回帰の例．\relax }{figure.caption.22}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.5}正則化}{30}{subsection.3.3.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.6}クラス分類}{31}{subsection.3.3.6}\protected@file@percent }
-\newlabel{one-hot成分}{{3.52}{31}{多クラス分類の場合}{equation.3.3.52}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.7}クラス分類へのアプローチ}{31}{subsection.3.3.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.8}ロジスティック回帰}{32}{subsection.3.3.8}\protected@file@percent }
-\newlabel{条件付き確率がシグモイド}{{3.56}{32}{ロジスティック回帰}{equation.3.3.56}{}}
-\newlabel{ロジスティック回帰}{{3.59}{33}{ロジスティック回帰}{equation.3.3.59}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.9}ソフトマックス回帰}{34}{subsection.3.3.9}\protected@file@percent }
-\newlabel{ソフトマックス回帰の尤度}{{3.64}{34}{ソフトマックス回帰}{equation.3.3.64}{}}
-\newlabel{対数オッズ}{{3.68}{34}{ソフトマックス回帰}{equation.3.3.68}{}}
-\newlabel{ソフトマックス交差エントロピー}{{3.70}{35}{ソフトマックス回帰}{equation.3.3.70}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}ニューラルネットワーク}{35}{section.3.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}神経細胞のネットワーク}{36}{subsection.3.4.1}\protected@file@percent }
-\newlabel{ニューロン}{{3.5a}{36}{ニューロンの概要図\relax }{figure.caption.28}{}}
-\newlabel{sub@ニューロン}{{a}{36}{ニューロンの概要図\relax }{figure.caption.28}{}}
-\newlabel{シナプス}{{3.5b}{36}{シナプスの概要図\relax }{figure.caption.28}{}}
-\newlabel{sub@シナプス}{{b}{36}{シナプスの概要図\relax }{figure.caption.28}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces ニューロンとシナプスの概要図\relax }}{36}{figure.caption.28}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}形式ニューロン}{37}{subsection.3.4.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces 形式ニューロンの例\relax }}{37}{figure.caption.29}\protected@file@percent }
-\newlabel{形式ニューロン}{{3.6}{37}{形式ニューロンの例\relax }{figure.caption.29}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces 簡単なニューロン回路の例\relax }}{38}{figure.caption.30}\protected@file@percent }
-\newlabel{ニューロン回路の例}{{3.7}{38}{簡単なニューロン回路の例\relax }{figure.caption.30}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}パーセプトロン}{39}{subsection.3.4.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces 2層のパーセプトロン\relax }}{39}{figure.caption.31}\protected@file@percent }
-\newlabel{2層パーセプトロン}{{3.8}{39}{2層のパーセプトロン\relax }{figure.caption.31}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}順伝播ニューラルネットワーク}{40}{subsection.3.4.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces ユニットの構造．$x_1,x_2,\dots  $の入力を受け，$z$を出力する\relax }}{40}{figure.caption.32}\protected@file@percent }
-\newlabel{ユニットの構造}{{3.9}{40}{ユニットの構造．$x_1,x_2,\dots $の入力を受け，$z$を出力する\relax }{figure.caption.32}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces シグモイド関数\relax }}{41}{figure.caption.33}\protected@file@percent }
-\newlabel{シグモイド関数}{{3.10}{41}{シグモイド関数\relax }{figure.caption.33}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces 入力層と3層からなる順伝播ニューラルネットワークの例．ユニットを表す丸の中に書かれた変数は，各ユニットの出力値を意味する．\relax }}{41}{figure.caption.34}\protected@file@percent }
-\newlabel{順伝播ニューラルネットワークの例}{{3.11}{41}{入力層と3層からなる順伝播ニューラルネットワークの例．ユニットを表す丸の中に書かれた変数は，各ユニットの出力値を意味する．\relax }{figure.caption.34}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}ニューラルネットワークによる機械あり学習}{43}{section.3.5}\protected@file@percent }
-\newlabel{NN出力}{{3.89}{43}{ニューラルネットワークによる機械あり学習}{equation.3.5.89}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}中間層で使われる活性化関数}{46}{subsection.3.5.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces 双曲線正接関数\relax }}{47}{figure.caption.39}\protected@file@percent }
-\newlabel{双曲線正接関数}{{3.12}{47}{双曲線正接関数\relax }{figure.caption.39}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces ReLU接関数\relax }}{47}{figure.caption.41}\protected@file@percent }
-\newlabel{ReLU関数}{{3.13}{47}{ReLU接関数\relax }{figure.caption.41}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}畳み込みニューラルネットワーク}{48}{section.3.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}一次視覚野と畳み込み}{48}{subsection.3.6.1}\protected@file@percent }
-\newlabel{単純型細胞}{{3.14a}{48}{単純型細胞\relax }{figure.caption.42}{}}
-\newlabel{sub@単純型細胞}{{a}{48}{単純型細胞\relax }{figure.caption.42}{}}
-\newlabel{複雑型細胞}{{3.14b}{48}{複雑型細胞\relax }{figure.caption.42}{}}
-\newlabel{sub@複雑型細胞}{{b}{48}{複雑型細胞\relax }{figure.caption.42}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces 単純型細胞と複雑型細胞\relax }}{48}{figure.caption.42}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.2}ニューラルネットワークと畳み込み}{49}{subsection.3.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.3}画像データの扱い}{50}{subsection.3.6.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces $K$チャンネルからなる$W \times W$画像\relax }}{50}{figure.caption.43}\protected@file@percent }
-\newlabel{Kチャンネル画像}{{3.15}{50}{$K$チャンネルからなる$W \times W$画像\relax }{figure.caption.43}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.4}畳み込み層}{50}{subsection.3.6.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces $3 \times 3$に対する$2 \times 2$フィルタの畳み込みの例．\relax }}{51}{figure.caption.44}\protected@file@percent }
-\newlabel{畳み込み演算の例}{{3.16}{51}{$3 \times 3$に対する$2 \times 2$フィルタの畳み込みの例．\relax }{figure.caption.44}{}}
-\newlabel{畳み込み計算式}{{3.110}{52}{畳み込み層}{equation.3.6.110}{}}
-\newlabel{畳み込み計算式2}{{3.111}{52}{畳み込み層}{equation.3.6.111}{}}
-\@writefile{toc}{\contentsline {subsubsection}{ストライド}{52}{section*.45}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{パディング}{53}{section*.46}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.5}プーリング層}{53}{subsection.3.6.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces 勾配降下法による極小値の見つけ方\relax }}{54}{figure.caption.47}\protected@file@percent }
-\newlabel{勾配降下法イメージ図}{{3.17}{54}{勾配降下法による極小値の見つけ方\relax }{figure.caption.47}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.7}勾配降下法}{54}{section.3.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.1}勾配降下法}{54}{subsection.3.7.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.2}局所的最小値の問題}{55}{subsection.3.7.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.3}確率的勾配降下法}{55}{subsection.3.7.3}\protected@file@percent }
-\newlabel{勾配降下法}{{3.120}{56}{確率的勾配降下法}{equation.3.7.120}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.4}ミニバッチの作り方}{57}{subsection.3.7.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.8}改良された勾配降下法}{57}{section.3.8}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.1}勾配降下法の課題}{57}{subsection.3.8.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.2}モーメンタム法}{57}{subsection.3.8.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces (a)谷で振動.(b)プラトーで停止．(c)絶壁で反射\relax }}{58}{figure.caption.48}\protected@file@percent }
-\newlabel{勾配法の課題}{{3.18}{58}{(a)谷で振動.(b)プラトーで停止．(c)絶壁で反射\relax }{figure.caption.48}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.19}{\ignorespaces モーメンタム法による谷での振動の抑制\relax }}{58}{figure.caption.49}\protected@file@percent }
-\newlabel{モーメンタム法による勾配抑制図}{{3.19}{58}{モーメンタム法による谷での振動の抑制\relax }{figure.caption.49}{}}
-\newlabel{モーメンタム法}{{3.126}{58}{モーメンタム法}{equation.3.8.126}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.3}AdaGrad}{59}{subsection.3.8.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.4}RMSprop}{59}{subsection.3.8.4}\protected@file@percent }
-\newlabel{RMSprop}{{3.129}{60}{RMSprop}{equation.3.8.129}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.5}Adam}{60}{subsection.3.8.5}\protected@file@percent }
-\newlabel{Adam}{{3.133}{60}{Adam}{equation.3.8.133}{}}
-\newlabel{Adam2}{{3.134}{60}{Adam}{equation.3.8.134}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.9}誤差逆伝播法}{61}{section.3.9}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.1}パーセプトロンの学習測とデルタ則}{62}{subsection.3.9.1}\protected@file@percent }
-\newlabel{現代パーセプトロンの学習則}{{3.142}{63}{パーセプトロンの学習測とデルタ則}{equation.3.9.142}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.2}誤差逆伝播法の考え方}{63}{subsection.3.9.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.20}{\ignorespaces 1つのユニットからなる層を1列につなげたニューラルネットワークの第$l$層に注目した図\relax }}{64}{figure.caption.50}\protected@file@percent }
-\newlabel{チェインニューラルネットワーク}{{3.20}{64}{1つのユニットからなる層を1列につなげたニューラルネットワークの第$l$層に注目した図\relax }{figure.caption.50}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.3}誤差関数の勾配計算}{65}{subsection.3.9.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.21}{\ignorespaces 1つのユニットからなる層を1列につなげたニューラルネットワークの第$l$層に注目した図\relax }}{65}{figure.caption.51}\protected@file@percent }
-\newlabel{誤差逆伝播法の例}{{3.21}{65}{1つのユニットからなる層を1列につなげたニューラルネットワークの第$l$層に注目した図\relax }{figure.caption.51}{}}
-\newlabel{ニューラルネットワークパラメータ微分}{{3.148}{66}{誤差関数の勾配計算}{equation.3.9.148}{}}
-\newlabel{デルタ逆伝播}{{3.152}{66}{誤差関数の勾配計算}{equation.3.9.152}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.4}逆伝播計算の初期値}{67}{subsection.3.9.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.5}勾配計算}{68}{subsection.3.9.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.6}デルタの意味}{68}{subsection.3.9.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {第4章}機械学習によるイジング模型の相転移検出}{70}{chapter.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}学習とは}{17}{section.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces 機械学習における学習の大まかな流れ\relax }}{18}{figure.caption.9}\protected@file@percent }
+\newlabel{機械学習の大まかな流れ}{{3.1}{18}{機械学習における学習の大まかな流れ\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}代表的なタスク}{18}{subsection.3.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}データセットの例}{19}{subsection.3.1.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces MNISTデータセットの一部\relax }}{19}{figure.caption.13}\protected@file@percent }
+\newlabel{MNIST}{{3.2}{19}{MNISTデータセットの一部\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{CIFAR-10}{20}{section*.14}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces CIFAT-10データセットの一部\relax }}{20}{figure.caption.15}\protected@file@percent }
+\newlabel{CIFAR10}{{3.3}{20}{CIFAT-10データセットの一部\relax }{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {subsubsection}{ImageNet}{20}{section*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}統計入門}{20}{section.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}標本と推定}{21}{subsection.3.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}点推定}{22}{subsection.3.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{ガウス分布の場合}{23}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{ベルヌーイ分布の場合}{25}{section*.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}最尤推定}{25}{subsection.3.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{ガウス分布の場合}{26}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{ベルヌーイ分布の場合}{27}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}機械学習の基礎}{27}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}教師あり学習}{27}{subsection.3.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}最小二乗法による線形回帰}{28}{subsection.3.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}訓練誤差と汎化誤差}{29}{subsection.3.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}学習不足と過学習}{30}{subsection.3.3.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces 1次元データの線形回帰の例．\relax }}{30}{figure.caption.24}\protected@file@percent }
+\newlabel{線形回帰}{{3.4}{30}{1次元データの線形回帰の例．\relax }{figure.caption.24}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.5}正則化}{31}{subsection.3.3.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.6}クラス分類}{32}{subsection.3.3.6}\protected@file@percent }
+\newlabel{one-hot成分}{{3.52}{32}{多クラス分類の場合}{equation.3.3.52}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.7}クラス分類へのアプローチ}{33}{subsection.3.3.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.8}ロジスティック回帰}{33}{subsection.3.3.8}\protected@file@percent }
+\newlabel{条件付き確率がシグモイド}{{3.56}{34}{ロジスティック回帰}{equation.3.3.56}{}}
+\newlabel{ロジスティック回帰}{{3.59}{34}{ロジスティック回帰}{equation.3.3.59}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.9}ソフトマックス回帰}{35}{subsection.3.3.9}\protected@file@percent }
+\newlabel{ソフトマックス回帰の尤度}{{3.64}{35}{ソフトマックス回帰}{equation.3.3.64}{}}
+\newlabel{対数オッズ}{{3.68}{35}{ソフトマックス回帰}{equation.3.3.68}{}}
+\newlabel{ソフトマックス交差エントロピー}{{3.70}{36}{ソフトマックス回帰}{equation.3.3.70}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}ニューラルネットワーク}{36}{section.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}神経細胞のネットワーク}{37}{subsection.3.4.1}\protected@file@percent }
+\newlabel{ニューロン}{{3.5a}{37}{ニューロンの概要図\relax }{figure.caption.30}{}}
+\newlabel{sub@ニューロン}{{a}{37}{ニューロンの概要図\relax }{figure.caption.30}{}}
+\newlabel{シナプス}{{3.5b}{37}{シナプスの概要図\relax }{figure.caption.30}{}}
+\newlabel{sub@シナプス}{{b}{37}{シナプスの概要図\relax }{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces ニューロンとシナプスの概要図\relax }}{37}{figure.caption.30}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}形式ニューロン}{38}{subsection.3.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces 形式ニューロンの例\relax }}{38}{figure.caption.31}\protected@file@percent }
+\newlabel{形式ニューロン}{{3.6}{38}{形式ニューロンの例\relax }{figure.caption.31}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces 簡単なニューロン回路の例\relax }}{39}{figure.caption.32}\protected@file@percent }
+\newlabel{ニューロン回路の例}{{3.7}{39}{簡単なニューロン回路の例\relax }{figure.caption.32}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}パーセプトロン}{40}{subsection.3.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces 2層のパーセプトロン\relax }}{40}{figure.caption.33}\protected@file@percent }
+\newlabel{2層パーセプトロン}{{3.8}{40}{2層のパーセプトロン\relax }{figure.caption.33}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}順伝播ニューラルネットワーク}{41}{subsection.3.4.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces ユニットの構造．$x_1,x_2,\dots  $の入力を受け，$z$を出力する\relax }}{41}{figure.caption.34}\protected@file@percent }
+\newlabel{ユニットの構造}{{3.9}{41}{ユニットの構造．$x_1,x_2,\dots $の入力を受け，$z$を出力する\relax }{figure.caption.34}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces シグモイド関数\relax }}{42}{figure.caption.35}\protected@file@percent }
+\newlabel{シグモイド関数}{{3.10}{42}{シグモイド関数\relax }{figure.caption.35}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces 入力層と3層からなる順伝播ニューラルネットワークの例．ユニットを表す丸の中に書かれた変数は，各ユニットの出力値を意味する．\relax }}{42}{figure.caption.36}\protected@file@percent }
+\newlabel{順伝播ニューラルネットワークの例}{{3.11}{42}{入力層と3層からなる順伝播ニューラルネットワークの例．ユニットを表す丸の中に書かれた変数は，各ユニットの出力値を意味する．\relax }{figure.caption.36}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}ニューラルネットワークによる機械あり学習}{44}{section.3.5}\protected@file@percent }
+\newlabel{NN出力}{{3.89}{44}{ニューラルネットワークによる機械あり学習}{equation.3.5.89}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}中間層で使われる活性化関数}{47}{subsection.3.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces 双曲線正接関数\relax }}{48}{figure.caption.41}\protected@file@percent }
+\newlabel{双曲線正接関数}{{3.12}{48}{双曲線正接関数\relax }{figure.caption.41}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces ReLU接関数\relax }}{48}{figure.caption.43}\protected@file@percent }
+\newlabel{ReLU関数}{{3.13}{48}{ReLU接関数\relax }{figure.caption.43}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}畳み込みニューラルネットワーク}{49}{section.3.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}一次視覚野と畳み込み}{49}{subsection.3.6.1}\protected@file@percent }
+\newlabel{単純型細胞}{{3.14a}{49}{単純型細胞\relax }{figure.caption.44}{}}
+\newlabel{sub@単純型細胞}{{a}{49}{単純型細胞\relax }{figure.caption.44}{}}
+\newlabel{複雑型細胞}{{3.14b}{49}{複雑型細胞\relax }{figure.caption.44}{}}
+\newlabel{sub@複雑型細胞}{{b}{49}{複雑型細胞\relax }{figure.caption.44}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces 単純型細胞と複雑型細胞\relax }}{49}{figure.caption.44}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.2}ニューラルネットワークと畳み込み}{50}{subsection.3.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.3}画像データの扱い}{51}{subsection.3.6.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces $K$チャンネルからなる$W \times W$画像\relax }}{51}{figure.caption.45}\protected@file@percent }
+\newlabel{Kチャンネル画像}{{3.15}{51}{$K$チャンネルからなる$W \times W$画像\relax }{figure.caption.45}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.4}畳み込み層}{51}{subsection.3.6.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces $3 \times 3$に対する$2 \times 2$フィルタの畳み込みの例．\relax }}{52}{figure.caption.46}\protected@file@percent }
+\newlabel{畳み込み演算の例}{{3.16}{52}{$3 \times 3$に対する$2 \times 2$フィルタの畳み込みの例．\relax }{figure.caption.46}{}}
+\newlabel{畳み込み計算式}{{3.110}{53}{畳み込み層}{equation.3.6.110}{}}
+\newlabel{畳み込み計算式2}{{3.111}{53}{畳み込み層}{equation.3.6.111}{}}
+\@writefile{toc}{\contentsline {subsubsection}{ストライド}{53}{section*.47}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{パディング}{54}{section*.48}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.5}プーリング層}{54}{subsection.3.6.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces 勾配降下法による極小値の見つけ方\relax }}{55}{figure.caption.49}\protected@file@percent }
+\newlabel{勾配降下法イメージ図}{{3.17}{55}{勾配降下法による極小値の見つけ方\relax }{figure.caption.49}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.7}勾配降下法}{55}{section.3.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.1}勾配降下法}{55}{subsection.3.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.2}局所的最小値の問題}{56}{subsection.3.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.3}確率的勾配降下法}{56}{subsection.3.7.3}\protected@file@percent }
+\newlabel{勾配降下法}{{3.120}{57}{確率的勾配降下法}{equation.3.7.120}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.4}ミニバッチの作り方}{58}{subsection.3.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.8}改良された勾配降下法}{58}{section.3.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.1}勾配降下法の課題}{58}{subsection.3.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.2}モーメンタム法}{58}{subsection.3.8.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces (a)谷で振動.(b)プラトーで停止．(c)絶壁で反射\relax }}{59}{figure.caption.50}\protected@file@percent }
+\newlabel{勾配法の課題}{{3.18}{59}{(a)谷で振動.(b)プラトーで停止．(c)絶壁で反射\relax }{figure.caption.50}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.19}{\ignorespaces モーメンタム法による谷での振動の抑制\relax }}{59}{figure.caption.51}\protected@file@percent }
+\newlabel{モーメンタム法による勾配抑制図}{{3.19}{59}{モーメンタム法による谷での振動の抑制\relax }{figure.caption.51}{}}
+\newlabel{モーメンタム法}{{3.126}{59}{モーメンタム法}{equation.3.8.126}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.3}AdaGrad}{60}{subsection.3.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.4}RMSprop}{60}{subsection.3.8.4}\protected@file@percent }
+\newlabel{RMSprop}{{3.129}{61}{RMSprop}{equation.3.8.129}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.5}Adam}{61}{subsection.3.8.5}\protected@file@percent }
+\newlabel{Adam}{{3.133}{61}{Adam}{equation.3.8.133}{}}
+\newlabel{Adam2}{{3.134}{61}{Adam}{equation.3.8.134}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.9}誤差逆伝播法}{62}{section.3.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.1}パーセプトロンの学習測とデルタ則}{63}{subsection.3.9.1}\protected@file@percent }
+\newlabel{現代パーセプトロンの学習則}{{3.142}{64}{パーセプトロンの学習測とデルタ則}{equation.3.9.142}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.2}誤差逆伝播法の考え方}{64}{subsection.3.9.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.20}{\ignorespaces 1つのユニットからなる層を1列につなげたニューラルネットワークの第$l$層に注目した図\relax }}{65}{figure.caption.52}\protected@file@percent }
+\newlabel{チェインニューラルネットワーク}{{3.20}{65}{1つのユニットからなる層を1列につなげたニューラルネットワークの第$l$層に注目した図\relax }{figure.caption.52}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.3}誤差関数の勾配計算}{66}{subsection.3.9.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.21}{\ignorespaces 1つのユニットからなる層を1列につなげたニューラルネットワークの第$l$層に注目した図\relax }}{66}{figure.caption.53}\protected@file@percent }
+\newlabel{誤差逆伝播法の例}{{3.21}{66}{1つのユニットからなる層を1列につなげたニューラルネットワークの第$l$層に注目した図\relax }{figure.caption.53}{}}
+\newlabel{ニューラルネットワークパラメータ微分}{{3.148}{67}{誤差関数の勾配計算}{equation.3.9.148}{}}
+\newlabel{デルタ逆伝播}{{3.152}{67}{誤差関数の勾配計算}{equation.3.9.152}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.4}逆伝播計算の初期値}{68}{subsection.3.9.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.5}勾配計算}{69}{subsection.3.9.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.6}デルタの意味}{69}{subsection.3.9.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {第4章}機械学習によるイジング模型の相転移検出}{71}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\jsc@mpt }}
 \@writefile{lot}{\addvspace {10\jsc@mpt }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}イジング模型のモンテカルロ法}{71}{section.4.1}\protected@file@percent }
-\newlabel{スピン配位の実現確率}{{4.1}{71}{イジング模型のモンテカルロ法}{equation.4.1.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}マルコフ連鎖モンテカルロ法}{71}{subsection.4.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}イジング模型に対するメトロポリス法}{72}{subsection.4.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}イジング模型の熱浴法}{73}{subsection.4.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}相の分類器による相転移検出}{74}{section.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}データセットの作成}{74}{subsection.4.2.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces 2次元正方イジング模型のサンプルデータの例\relax }}{75}{figure.caption.52}\protected@file@percent }
-\newlabel{相の分類器データセット}{{4.1}{75}{2次元正方イジング模型のサンプルデータの例\relax }{figure.caption.52}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}モデルの構築と学習}{76}{subsection.4.2.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces FCNモデル\relax }}{76}{figure.caption.54}\protected@file@percent }
-\newlabel{相分類FCNモデル}{{4.2}{76}{FCNモデル\relax }{figure.caption.54}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces CNNモデル\relax }}{77}{figure.caption.55}\protected@file@percent }
-\newlabel{相分類CNNモデル}{{4.3}{77}{CNNモデル\relax }{figure.caption.55}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces hoge\relax }}{78}{table.caption.56}\protected@file@percent }
-\newlabel{学習で用いたもの}{{4.1}{78}{hoge\relax }{table.caption.56}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces 正方イジング模型，FCNモデル\relax }}{78}{figure.caption.57}\protected@file@percent }
-\newlabel{正方イジングFCNloss}{{4.4}{78}{正方イジング模型，FCNモデル\relax }{figure.caption.57}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces 正方イジング模型，CNNモデル\relax }}{79}{figure.caption.58}\protected@file@percent }
-\newlabel{正方イジングCNNloss}{{4.5}{79}{正方イジング模型，CNNモデル\relax }{figure.caption.58}{}}
-\newlabel{相分類器FCN結果}{{4.6a}{79}{FCN\relax }{figure.caption.59}{}}
-\newlabel{sub@相分類器FCN結果}{{a}{79}{FCN\relax }{figure.caption.59}{}}
-\newlabel{相分類器CNN結果}{{4.6b}{79}{CNN\relax }{figure.caption.59}{}}
-\newlabel{sub@相分類器CNN結果}{{b}{79}{CNN\relax }{figure.caption.59}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}温度測定器による相転移自動検出}{79}{section.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}学習データ}{80}{subsection.4.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}モデルの構築と学習}{81}{subsection.4.3.2}\protected@file@percent }
-\newlabel{温度測定器FCNモデル}{{4.7a}{81}{全結合ニューラルネットワーク(FCN)モデル\relax }{figure.caption.60}{}}
-\newlabel{sub@温度測定器FCNモデル}{{a}{81}{全結合ニューラルネットワーク(FCN)モデル\relax }{figure.caption.60}{}}
-\newlabel{温度測定器CNNモデル}{{4.7b}{81}{畳み込みニューラルネットワーク(CNN)モデル\relax }{figure.caption.60}{}}
-\newlabel{sub@温度測定器CNNモデル}{{b}{81}{畳み込みニューラルネットワーク(CNN)モデル\relax }{figure.caption.60}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces 温度測定器の作成に用いたニューラルネットワークモデル，\relax }}{81}{figure.caption.60}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces hoge\relax }}{83}{table.caption.61}\protected@file@percent }
-\newlabel{学習で用いたもの2}{{4.2}{83}{hoge\relax }{table.caption.61}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces ccc\relax }}{84}{figure.caption.63}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces ccc\relax }}{86}{figure.caption.65}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{87}{section.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}臨界温度予測}{87}{subsection.4.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}2次元イジング模型}{88}{subsection.4.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}ニューラルネットワークでエンコードされた磁化}{89}{subsection.4.4.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}エネルギーと温度の予測}{91}{subsection.4.4.4}\protected@file@percent }
-\newlabel{conv model}{{4.4.4}{91}{エネルギーと温度の予測}{equation.4.4.38}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}結論}{94}{section.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}イジング模型のモンテカルロ法}{72}{section.4.1}\protected@file@percent }
+\newlabel{スピン配位の実現確率}{{4.1}{72}{イジング模型のモンテカルロ法}{equation.4.1.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}マルコフ連鎖モンテカルロ法}{72}{subsection.4.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}イジング模型に対するメトロポリス法}{73}{subsection.4.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}イジング模型の熱浴法}{74}{subsection.4.1.3}\protected@file@percent }
+\citation{carrasquilla2017machine}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}相の分類器による相転移検出}{75}{section.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}データセットの作成}{75}{subsection.4.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces 2次元正方イジング模型のサンプルデータの例\relax }}{76}{figure.caption.54}\protected@file@percent }
+\newlabel{相の分類器データセット}{{4.1}{76}{2次元正方イジング模型のサンプルデータの例\relax }{figure.caption.54}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}モデルの構築と学習}{77}{subsection.4.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces FCNモデル\relax }}{78}{figure.caption.56}\protected@file@percent }
+\newlabel{相分類FCNモデル}{{4.2}{78}{FCNモデル\relax }{figure.caption.56}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces CNNモデル\relax }}{79}{figure.caption.57}\protected@file@percent }
+\newlabel{相分類CNNモデル}{{4.3}{79}{CNNモデル\relax }{figure.caption.57}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces 学習の設定値\relax }}{80}{table.caption.58}\protected@file@percent }
+\newlabel{学習で用いたもの}{{4.1}{80}{学習の設定値\relax }{table.caption.58}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces FCNモデルによる正方イジング模型のスピン配位の学習結果．横軸はエポック数である．縦軸は左の図は損失関数，右の図は精度である．\relax }}{81}{figure.caption.59}\protected@file@percent }
+\newlabel{正方イジングFCNloss}{{4.4}{81}{FCNモデルによる正方イジング模型のスピン配位の学習結果．横軸はエポック数である．縦軸は左の図は損失関数，右の図は精度である．\relax }{figure.caption.59}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces CNNモデルによる正方イジング模型のスピン配位の学習結果．横軸はエポック数である．縦軸は左の図は損失関数，右の図は精度である．\relax }}{81}{figure.caption.60}\protected@file@percent }
+\newlabel{正方イジングCNNloss}{{4.5}{81}{CNNモデルによる正方イジング模型のスピン配位の学習結果．横軸はエポック数である．縦軸は左の図は損失関数，右の図は精度である．\relax }{figure.caption.60}{}}
+\citation{tanaka2017detection}
+\newlabel{相分類器FCN結果}{{4.6a}{82}{FCN\relax }{figure.caption.61}{}}
+\newlabel{sub@相分類器FCN結果}{{a}{82}{FCN\relax }{figure.caption.61}{}}
+\newlabel{相分類器CNN結果}{{4.6b}{82}{CNN\relax }{figure.caption.61}{}}
+\newlabel{sub@相分類器CNN結果}{{b}{82}{CNN\relax }{figure.caption.61}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces 各温度ラベルにおける出力値の平均をプロットした図．左の図はFCNモデルの結果，右の図はCNNモデルの結果である．また，赤のプロットは常磁性相である確率，青のプロットは強磁性相である確率にである．\relax }}{82}{figure.caption.61}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}温度測定器による相転移自動検出}{82}{section.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}学習データ}{82}{subsection.4.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}モデルの構築と学習}{83}{subsection.4.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces FCNモデル\relax }}{83}{figure.caption.62}\protected@file@percent }
+\newlabel{温度測定器FCNモデル}{{4.7}{83}{FCNモデル\relax }{figure.caption.62}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces CNNモデル\relax }}{84}{figure.caption.63}\protected@file@percent }
+\newlabel{温度測定器CNNモデル}{{4.8}{84}{CNNモデル\relax }{figure.caption.63}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces hoge\relax }}{85}{table.caption.64}\protected@file@percent }
+\newlabel{学習で用いたもの2}{{4.2}{85}{hoge\relax }{table.caption.64}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces $8 \times 8$スピン配位での重み行列の各成分の値をプロットした図\relax }}{86}{figure.caption.65}\protected@file@percent }
+\newlabel{温度測定器ヒートマップ8}{{4.9}{86}{$8 \times 8$スピン配位での重み行列の各成分の値をプロットした図\relax }{figure.caption.65}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces ccc\relax }}{87}{figure.caption.66}\protected@file@percent }
+\newlabel{温度測定器プロット8}{{4.10}{87}{ccc\relax }{figure.caption.66}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces $16 \times 16$スピン配位での重み行列の各成分の値をプロットした図\relax }}{88}{figure.caption.67}\protected@file@percent }
+\newlabel{温度測定器ヒートマップ16}{{4.11}{88}{$16 \times 16$スピン配位での重み行列の各成分の値をプロットした図\relax }{figure.caption.67}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces ccc\relax }}{89}{figure.caption.68}\protected@file@percent }
+\newlabel{温度測定器プロット16}{{4.12}{89}{ccc\relax }{figure.caption.68}{}}
+\citation{10.1093/ptep/ptz082}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{90}{section.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.1}臨界温度予測}{90}{subsection.4.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.2}2次元イジング模型}{92}{subsection.4.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.3}ニューラルネットワークでエンコードされた磁化}{92}{subsection.4.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4.4}エネルギーと温度の予測}{94}{subsection.4.4.4}\protected@file@percent }
+\newlabel{conv model}{{4.4.4}{94}{エネルギーと温度の予測}{equation.4.4.40}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}結論}{97}{section.4.5}\protected@file@percent }
 \bibdata{reference}
-\@writefile{toc}{\contentsline {chapter}{謝辞}{96}{chapter*.67}\protected@file@percent }
-\bibcite{Tom1997Machine}{1}
+\@writefile{toc}{\contentsline {chapter}{謝辞}{99}{chapter*.70}\protected@file@percent }
+\bibcite{高橋2017相転移}{1}
+\bibcite{田崎統計力学2}{2}
+\bibcite{瀧2017これなら}{3}
+\bibcite{富谷2021これなら}{4}
+\bibcite{田中2019ディープ}{5}
+\bibcite{福嶋2022基礎からの}{6}
+\bibcite{Tom1997Machine}{7}
+\bibcite{carrasquilla2017machine}{8}
+\bibcite{tanaka2017detection}{9}
+\bibcite{10.1093/ptep/ptz082}{10}
 \bibstyle{junsrt}
-\@writefile{toc}{\contentsline {chapter}{参考文献}{97}{chapter*.68}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {付録A}aaa}{98}{appendix.A}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{参考文献}{100}{chapter*.71}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {付録A}2次元イジング模型の厳密解の計算}{101}{appendix.A}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\jsc@mpt }}
 \@writefile{lot}{\addvspace {10\jsc@mpt }}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}bbb}{98}{section.A.1}\protected@file@percent }
-\gdef \@abspage@last{100}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}二次元イジング模型の厳密解の計算}{101}{section.A.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}転送行列を用いた定式化}{101}{section.A.2}\protected@file@percent }
+\newlabel{イジングエネルギー２}{{A.5}{101}{転送行列を用いた定式化}{equation.A.2.5}{}}
+\newlabel{行列要素}{{A.8}{102}{転送行列を用いた定式化}{equation.A.2.8}{}}
+\newlabel{最大固有値有限}{{A.13}{102}{転送行列を用いた定式化}{equation.A.2.13}{}}
+\newlabel{n極限}{{A.16}{103}{転送行列を用いた定式化}{equation.A.2.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.3}転送行列$\mathrm   {P}$}{103}{section.A.3}\protected@file@percent }
+\newlabel{V1'}{{A.18}{103}{転送行列$\mathrm {P}$}{equation.A.3.18}{}}
+\newlabel{転送行列}{{A.22}{103}{転送行列$\mathrm {P}$}{equation.A.3.22}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.4}行列の直積}{104}{section.A.4}\protected@file@percent }
+\newlabel{直積公式}{{A.25}{104}{行列の直積}{equation.A.4.25}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.5}スピン行列}{105}{section.A.5}\protected@file@percent }
+\newlabel{スピン行列性質}{{A.28}{105}{スピン行列}{equation.A.5.28}{}}
+\newlabel{2n2n行列}{{A.30}{105}{スピン行列}{equation.A.5.30}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.6}行列$\mathrm   {V}'_1, \mathrm   {V}_2, \mathrm   {V}_3$}{105}{section.A.6}\protected@file@percent }
+\newlabel{a行列}{{A.33}{105}{行列$\mathrm {V}'_1, \mathrm {V}_2, \mathrm {V}_3$}{equation.A.6.33}{}}
+\newlabel{V1}{{A.43}{106}{行列$\mathrm {V}'_1, \mathrm {V}_2, \mathrm {V}_3$}{equation.A.6.43}{}}
+\newlabel{V2}{{A.44}{106}{行列$\mathrm {V}'_1, \mathrm {V}_2, \mathrm {V}_3$}{equation.A.6.44}{}}
+\newlabel{V3}{{A.45}{106}{行列$\mathrm {V}'_1, \mathrm {V}_2, \mathrm {V}_3$}{equation.A.6.45}{}}
+\newlabel{行列P最終形態}{{A.46}{106}{行列$\mathrm {V}'_1, \mathrm {V}_2, \mathrm {V}_3$}{equation.A.6.46}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.7}数学的余談}{106}{section.A.7}\protected@file@percent }
+\newlabel{ガンマ反交換}{{A.47}{107}{数学的余談}{equation.A.7.47}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.8}厳密解}{107}{section.A.8}\protected@file@percent }
+\newlabel{行列P磁場ゼロ}{{A.49}{107}{厳密解}{equation.A.8.49}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.9}スピン代数による$\mathrm   {V}$の表現}{108}{section.A.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A.10}bbb}{109}{section.A.10}\protected@file@percent }
+\gdef \@abspage@last{111}
