@@ -81,21 +81,17 @@
 \contentsline {subsection}{\numberline {4.3.1}学習データ}{82}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}モデルの構築と学習}{83}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{90}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}臨界温度予測}{90}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}2次元イジング模型}{92}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}ニューラルネットワークでエンコードされた磁化}{92}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}エネルギーと温度の予測}{94}{subsection.4.4.4}%
-\contentsline {section}{\numberline {4.5}結論}{97}{section.4.5}%
-\contentsline {chapter}{謝辞}{99}{chapter*.70}%
-\contentsline {chapter}{参考文献}{100}{chapter*.71}%
-\contentsline {chapter}{\numberline {付録A}2次元イジング模型の厳密解の計算}{101}{appendix.A}%
-\contentsline {section}{\numberline {A.1}二次元イジング模型の厳密解の計算}{101}{section.A.1}%
-\contentsline {section}{\numberline {A.2}転送行列を用いた定式化}{101}{section.A.2}%
-\contentsline {section}{\numberline {A.3}転送行列$\mathrm {P}$}{103}{section.A.3}%
-\contentsline {section}{\numberline {A.4}行列の直積}{104}{section.A.4}%
-\contentsline {section}{\numberline {A.5}スピン行列}{105}{section.A.5}%
-\contentsline {section}{\numberline {A.6}行列$\mathrm {V}'_1, \mathrm {V}_2, \mathrm {V}_3$}{105}{section.A.6}%
-\contentsline {section}{\numberline {A.7}数学的余談}{106}{section.A.7}%
-\contentsline {section}{\numberline {A.8}厳密解}{107}{section.A.8}%
-\contentsline {section}{\numberline {A.9}スピン代数による$\mathrm {V}$の表現}{108}{section.A.9}%
-\contentsline {section}{\numberline {A.10}bbb}{109}{section.A.10}%
+\contentsline {subsection}{\numberline {4.4.1}温度測定器の作成}{90}{subsection.4.4.1}%
+\contentsline {chapter}{謝辞}{93}{chapter*.70}%
+\contentsline {chapter}{参考文献}{94}{chapter*.71}%
+\contentsline {chapter}{\numberline {付録A}2次元イジング模型の厳密解の計算}{95}{appendix.A}%
+\contentsline {section}{\numberline {A.1}二次元イジング模型の厳密解の計算}{95}{section.A.1}%
+\contentsline {section}{\numberline {A.2}転送行列を用いた定式化}{95}{section.A.2}%
+\contentsline {section}{\numberline {A.3}転送行列$\mathrm {P}$}{97}{section.A.3}%
+\contentsline {section}{\numberline {A.4}行列の直積}{98}{section.A.4}%
+\contentsline {section}{\numberline {A.5}スピン行列}{99}{section.A.5}%
+\contentsline {section}{\numberline {A.6}行列$\mathrm {V}'_1, \mathrm {V}_2, \mathrm {V}_3$}{99}{section.A.6}%
+\contentsline {section}{\numberline {A.7}数学的余談}{100}{section.A.7}%
+\contentsline {section}{\numberline {A.8}厳密解}{101}{section.A.8}%
+\contentsline {section}{\numberline {A.9}スピン代数による$\mathrm {V}$の表現}{102}{section.A.9}%
+\contentsline {section}{\numberline {A.10}bbb}{103}{section.A.10}%
