@@ -42,13 +42,11 @@ Gazzetta medica italiana 第 33 巻.
 \bibitem{mcculloch43a}
 Warren Mcculloch and Walter Pitts.
 \newblock A logical calculus of ideas immanent in nervous activity.
-\newblock {\em Bulletin of Mathematical Biophysics}, Vol.~5, pp. 127--147,
-  1943.
+\newblock {\em Bulletin of Mathematical Biophysics}, Vol.~5, pp. 127--147, 1943.
 
 \bibitem{Sanger1958ThePA}
 Terence Sanger and Pallavi~N. Baljekar.
-\newblock The perceptron: a probabilistic model for information storage and
-  organization in the brain.
+\newblock The perceptron: a probabilistic model for information storage and organization in the brain.
 \newblock {\em Psychological review}, Vol. 65 6, pp. 386--408, 1958.
 
 \bibitem{carrasquilla2017machine}
@@ -59,13 +57,11 @@ Juan Carrasquilla and Roger~G Melko.
 \bibitem{tanaka2017detection}
 Akinori Tanaka and Akio Tomiya.
 \newblock Detection of phase transition via convolutional neural networks.
-\newblock {\em Journal of the Physical Society of Japan}, Vol.~86, No.~6, p.
-  063001, 2017.
+\newblock {\em Journal of the Physical Society of Japan}, Vol.~86, No.~6, p. 063001, 2017.
 
 \bibitem{10.1093/ptep/ptz082}
 Kouji Kashiwa, Yuta Kikuchi, and Akio Tomiya.
 \newblock {Phase transition encoded in neural network}.
-\newblock {\em Progress of Theoretical and Experimental Physics}, Vol. 2019,
-  No.~8, p. 083A04, 08 2019.
+\newblock {\em Progress of Theoretical and Experimental Physics}, Vol. 2019, No.~8, p. 083A04, 08 2019.
 
 \end{thebibliography}

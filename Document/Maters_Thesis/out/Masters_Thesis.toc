@@ -82,16 +82,16 @@
 \contentsline {subsection}{\numberline {4.3.2}モデルの構築と学習}{83}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{90}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}温度測定器の作成}{90}{subsection.4.4.1}%
-\contentsline {chapter}{謝辞}{93}{chapter*.70}%
-\contentsline {chapter}{参考文献}{94}{chapter*.71}%
-\contentsline {chapter}{\numberline {付録A}2次元イジング模型の厳密解の計算}{95}{appendix.A}%
-\contentsline {section}{\numberline {A.1}二次元イジング模型の厳密解の計算}{95}{section.A.1}%
-\contentsline {section}{\numberline {A.2}転送行列を用いた定式化}{95}{section.A.2}%
-\contentsline {section}{\numberline {A.3}転送行列$\mathrm {P}$}{97}{section.A.3}%
-\contentsline {section}{\numberline {A.4}行列の直積}{98}{section.A.4}%
-\contentsline {section}{\numberline {A.5}スピン行列}{99}{section.A.5}%
-\contentsline {section}{\numberline {A.6}行列$\mathrm {V}'_1, \mathrm {V}_2, \mathrm {V}_3$}{99}{section.A.6}%
-\contentsline {section}{\numberline {A.7}数学的余談}{100}{section.A.7}%
-\contentsline {section}{\numberline {A.8}厳密解}{101}{section.A.8}%
-\contentsline {section}{\numberline {A.9}スピン代数による$\mathrm {V}$の表現}{102}{section.A.9}%
-\contentsline {section}{\numberline {A.10}bbb}{103}{section.A.10}%
+\contentsline {chapter}{謝辞}{94}{chapter*.72}%
+\contentsline {chapter}{参考文献}{95}{chapter*.73}%
+\contentsline {chapter}{\numberline {付録A}2次元イジング模型の厳密解の計算}{96}{appendix.A}%
+\contentsline {section}{\numberline {A.1}二次元イジング模型の厳密解の計算}{96}{section.A.1}%
+\contentsline {section}{\numberline {A.2}転送行列を用いた定式化}{96}{section.A.2}%
+\contentsline {section}{\numberline {A.3}転送行列$\mathrm {P}$}{98}{section.A.3}%
+\contentsline {section}{\numberline {A.4}行列の直積}{99}{section.A.4}%
+\contentsline {section}{\numberline {A.5}スピン行列}{100}{section.A.5}%
+\contentsline {section}{\numberline {A.6}行列$\mathrm {V}'_1, \mathrm {V}_2, \mathrm {V}_3$}{100}{section.A.6}%
+\contentsline {section}{\numberline {A.7}数学的余談}{101}{section.A.7}%
+\contentsline {section}{\numberline {A.8}厳密解}{102}{section.A.8}%
+\contentsline {section}{\numberline {A.9}スピン代数による$\mathrm {V}$の表現}{103}{section.A.9}%
+\contentsline {section}{\numberline {A.10}bbb}{104}{section.A.10}%
