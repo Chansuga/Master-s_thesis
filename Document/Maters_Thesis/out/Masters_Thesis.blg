@@ -3,53 +3,48 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Masters_Thesis.aux
 The style file: junsrt.bst
 Database file #1: reference.bib
-Warning--can't use both author and editor fields in 高橋2017相転移
-Warning--can't use both author and editor fields in 瀧2017これなら
-Warning--can't use both author and editor fields in 富谷2021これなら
-Warning--can't use both author and editor fields in 田中2019ディープ
-Warning--can't use both author and editor fields in 福嶋2022基礎からの
 Warning--empty author and editor in Gazzetta
 Warning--empty publisher in Gazzetta
-You've used 13 entries,
+You've used 14 entries,
             2270 wiz_defined-function locations,
-            616 strings with 5510 characters,
-and the built_in function-call counts, 3559 in all, are:
-= -- 268
-> -- 79
-< -- 13
-+ -- 35
-- -- 22
-* -- 139
-:= -- 413
-add.period$ -- 38
-call.type$ -- 13
-change.case$ -- 5
+            620 strings with 5592 characters,
+and the built_in function-call counts, 3941 in all, are:
+= -- 301
+> -- 89
+< -- 16
++ -- 39
+- -- 25
+* -- 147
+:= -- 459
+add.period$ -- 41
+call.type$ -- 14
+change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 273
-empty$ -- 372
-format.name$ -- 44
-if$ -- 894
+cite$ -- 16
+duplicate$ -- 299
+empty$ -- 409
+format.name$ -- 50
+if$ -- 998
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 20
-newline$ -- 67
-num.names$ -- 12
-pop$ -- 112
+int.to.str$ -- 14
+missing$ -- 21
+newline$ -- 72
+num.names$ -- 13
+pop$ -- 125
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 198
+skip$ -- 218
 stack$ -- 0
-substring$ -- 116
-swap$ -- 72
-text.length$ -- 13
+substring$ -- 144
+swap$ -- 78
+text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 7
-while$ -- 22
-width$ -- 15
-write$ -- 134
-is.kanji.str$ -- 129
-(There were 7 warnings)
+warning$ -- 2
+while$ -- 25
+width$ -- 16
+write$ -- 145
+is.kanji.str$ -- 142
+(There were 2 warnings)

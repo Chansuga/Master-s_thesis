@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex out/Masters_Thesis"] 1707795332 "out/Masters_Thesis.aux" "out/Masters_Thesis.bbl" "out/Masters_Thesis" 1707795370 0
-  "./reference.bib" 1707751053 5472 d0a2029ee7a60dd4c5329dd338d4585d ""
+["bibtex out/Masters_Thesis"] 1707833713 "out/Masters_Thesis.aux" "out/Masters_Thesis.bbl" "out/Masters_Thesis" 1707833755 0
+  "./reference.bib" 1707810512 5624 5bd4e9b13ae521e0f834e9b428d67076 ""
   "junsrt.bst" 0 -1 0 ""
-  "out/Masters_Thesis.aux" 1707795356 34348 ddeb78c91115aaad4fe62de7771afc25 "latex"
+  "out/Masters_Thesis.aux" 1707833741 35856 192a41a305de0d47f4c014eb3cbe0eec "latex"
   (generated)
   "out/Masters_Thesis.bbl"
   "out/Masters_Thesis.blg"
   (rewritten before read)
-["dvipdf"] 1707795357 "out/Masters_Thesis.dvi" "out/Masters_Thesis.pdf" "out/Masters_Thesis" 1707795370 0
-  "out/Masters_Thesis.dvi" 1707795356 632504 ea835e420fa1caa7d193dcdb4a6aad7d "latex"
+["dvipdf"] 1707833743 "out/Masters_Thesis.dvi" "out/Masters_Thesis.pdf" "out/Masters_Thesis" 1707833755 0
+  "out/Masters_Thesis.dvi" 1707833741 577880 b28dcd6bf835d634598983c25a938005 "latex"
   (generated)
   "out/Masters_Thesis.pdf"
   (rewritten before read)
-["latex"] 1707795332 "c:/Users/sugay/Desktop/Master-s_thesis/Document/Maters_Thesis/Masters_Thesis.tex" "out/Masters_Thesis.dvi" "Masters_Thesis" 1707795370 0
-  "Masters_Thesis.tex" 1707795311 308187 e58f4e52184f5cd1e0f3b59acfc174a4 ""
-  "c:/Users/sugay/Desktop/Master-s_thesis/Document/Maters_Thesis/Masters_Thesis.tex" 1707795311 308187 e58f4e52184f5cd1e0f3b59acfc174a4 ""
+["latex"] 1707833713 "c:/Users/sugay/Desktop/Master-s_thesis/Document/Maters_Thesis/Masters_Thesis.tex" "out/Masters_Thesis.dvi" "Masters_Thesis" 1707833755 0
+  "Masters_Thesis.tex" 1707833684 300320 3795b4f70948dd43de691a9af31de761 ""
+  "c:/Users/sugay/Desktop/Master-s_thesis/Document/Maters_Thesis/Masters_Thesis.tex" 1707833684 300320 3795b4f70948dd43de691a9af31de761 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1697430804 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1697432237 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1697432237 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -49,8 +49,6 @@
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm" 1697430236 1336 3125ccb448c1a09074e3aa4a9832f130 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm" 1697430236 1332 1fde11373e221473104d6cc5993f046e ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm" 1697430236 1328 5442e22a7072966dbaf88ca900acf3f0 ""
-  "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1697430236 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
-  "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1697430236 1524 4414a8315f39513458b80dfc63bff03a ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1697430236 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1697430236 1520 eccf95517727cb11801f4f1aee3a21b4 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm" 1697430236 1524 d89e2d087a9828407a196f428428ef4a ""
@@ -64,7 +62,6 @@
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss10.tfm" 1697430236 1316 b636689f1933f24d1294acdf6041daaa ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss12.tfm" 1697430236 1324 37b971caf729d7edd9cbb9f9b0ea76eb ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss17.tfm" 1697430236 1320 ed93d62c5f2c16343826001f03341dbc ""
-  "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1697430236 1124 6c73e740cf17375f03eec0ee63599741 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1697430236 1116 933a60c408fc0a863a92debe84b2d294 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1697430236 1120 8b7d695260f3cff42e636090a8002094 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm" 1697430236 1116 25a7bf822c58caf309a702ef79f4afbb ""
@@ -253,6 +250,16 @@
   "image/シナプス.png" 1703648878 367868 4f71b68c34dba5e83ace68789876a282 ""
   "image/ニューロン.png" 1703648652 358318 0b6957d9c635ec4c2b7f82704ff248fd ""
   "image/モーメンタム法.png" 1701752156 96677 6ebf4040d0fec7dd304319cc7a9c5959 ""
+  "image/温度測定器2_L16_CNN_Nh3_internal.png" 1707800232 36007 964d0a36680a09f480ffbe8ea8c83147 ""
+  "image/温度測定器2_L16_CNN_Nh3_loss.png" 1707798809 58576 cd01d54023b6edaff7c3630ae1eae8c5 ""
+  "image/温度測定器2_L16_CNN_Nh3_mag.png" 1707800230 52216 38f8f20150e61154474f435f19f7e67f ""
+  "image/温度測定器2_L16_CNN_Nh3_pram.png" 1707814775 15724 7c6855a231e4a2250576181efcc8f00d ""
+  "image/温度測定器2_L16_CNN_Nh3_weight_plot.png" 1707814903 46931 9646a5bd5214bd8987ecc0ef32e988f4 ""
+  "image/温度測定器2_L16_FCN_Nh3_loss.png" 1707815444 96071 b128026f35c747e83317c99cf5941674 ""
+  "image/温度測定器2_L16_FCN_Nh3_mag.png" 1707824452 45048 910e3bc9cea27de4d2acdab161eb1177 ""
+  "image/温度測定器2_L16_FCN_Nh3_pram.png" 1707816456 17391 3ab6f64d244321e0be897b93e717ff1d ""
+  "image/温度測定器2_L16_FCN_Nh3_weight_plot.png" 1707824421 39449 5587e7f404e09fbdab7a553b87c0e277 ""
+  "image/温度測定器2理論的重み.png" 1700443836 15555 7359a98fd03f0b457a5f826a77f7bc43 ""
   "image/温度測定器CNN.png" 1707751052 202598 8778488abfa696cf94ed1947b9d47aa0 ""
   "image/温度測定器CNN2.png" 1707795211 199056 a09de73d5eccb197929f75b394708893 ""
   "image/温度測定器FCN.png" 1707751052 345701 ee5d940ea4f663f038915d1d31eee706 ""
@@ -272,10 +279,10 @@
   "image/単純型細胞.png" 1705020017 81102 4052fc0fe3f9080d7474d8754398e457 ""
   "image/配位ラベルと相転移ラベル.png" 1705647261 264517 8a6cc53bdc086a7ff1f466372a8a3bfa ""
   "image/複雑型細胞.png" 1705020017 79919 60247ad719917aa94311ee5e06609d02 ""
-  "out/Masters_Thesis.aux" 1707795356 34348 ddeb78c91115aaad4fe62de7771afc25 "latex"
-  "out/Masters_Thesis.bbl" 1707795332 2195 8d693428c0a2497ee6f5c63012ff56da "bibtex out/Masters_Thesis"
-  "out/Masters_Thesis.out" 1707795356 2746 2b92338c98732ec29e499ce60f156d7b "latex"
-  "out/Masters_Thesis.toc" 1707795356 8774 95e3dc0d2d2bde5680c84ce5e15ab822 "latex"
+  "out/Masters_Thesis.aux" 1707833741 35856 192a41a305de0d47f4c014eb3cbe0eec "latex"
+  "out/Masters_Thesis.bbl" 1707833713 2392 65a7b6eb38e4722ed5f34fe90353d4a7 "bibtex out/Masters_Thesis"
+  "out/Masters_Thesis.out" 1707833741 1930 d04f578836ae973fc54f79f7c1d16923 "latex"
+  "out/Masters_Thesis.toc" 1707833741 8018 4350617771d8efae3d255e2124942af1 "latex"
   (generated)
   "out/Masters_Thesis.aux"
   "out/Masters_Thesis.dvi"

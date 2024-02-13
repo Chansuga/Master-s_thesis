@@ -406,29 +406,29 @@ $f_L(\beta, H)$が微分可能なので，$m_L(\beta, H)$はすべての$\beta, 
 
 
 
-\begin{figure}[htbp]
-  \begin{minipage}[b]{0.45\linewidth}
-    \centering
-    \begin{tikzpicture}[scale=1,samples=300]
-      \draw[->,>=stealth,semithick](-3,0)--(3,0)node[below]{$\psi$};%x軸
-      \draw[->,>=stealth,semithick](0,-2)--(0,2)node[left]{$y$};%y軸
-      \draw[draw=gray,semithick,domain=-2:2] plot(\x,\x);
-      \draw[draw=magenta,thick,domain=-3:3] plot(\x,{1.5*tanh(0.5*\x)});
-    \end{tikzpicture}
-    \subcaption{$\beta zJ \leq 1$}
-  \end{minipage}
-  \begin{minipage}[b]{0.45\linewidth}
-    \centering
-    \begin{tikzpicture}[scale=1,samples=300]
-      \draw[->,>=stealth,semithick](-3,0)--(3,0)node[below]{$\psi$};%x軸
-      \draw[->,>=stealth,semithick](0,-2)--(0,2)node[left]{$y$};%y軸
-      \draw[draw=gray,semithick,domain=-2:2] plot(\x,\x);
-      \draw[draw=magenta,thick,domain=-3:3] plot(\x,{1.5*tanh(2*\x)});
-    \end{tikzpicture}
-    \subcaption{$\beta zJ > 1$}
-  \end{minipage}
-  \caption{$h=0$での自己整合方程式$\psi = \tanh{(\beta ZJ\psi)}$}
-\end{figure}
+% \begin{figure}[htbp]
+%   \begin{minipage}[b]{0.45\linewidth}
+%     \centering
+%     \begin{tikzpicture}[scale=1,samples=300]
+%       \draw[->,>=stealth,semithick](-3,0)--(3,0)node[below]{$\psi$};%x軸
+%       \draw[->,>=stealth,semithick](0,-2)--(0,2)node[left]{$y$};%y軸
+%       \draw[draw=gray,semithick,domain=-2:2] plot(\x,\x);
+%       \draw[draw=magenta,thick,domain=-3:3] plot(\x,{1.5*tanh(0.5*\x)});
+%     \end{tikzpicture}
+%     \subcaption{$\beta zJ \leq 1$}
+%   \end{minipage}
+%   \begin{minipage}[b]{0.45\linewidth}
+%     \centering
+%     \begin{tikzpicture}[scale=1,samples=300]
+%       \draw[->,>=stealth,semithick](-3,0)--(3,0)node[below]{$\psi$};%x軸
+%       \draw[->,>=stealth,semithick](0,-2)--(0,2)node[left]{$y$};%y軸
+%       \draw[draw=gray,semithick,domain=-2:2] plot(\x,\x);
+%       \draw[draw=magenta,thick,domain=-3:3] plot(\x,{1.5*tanh(2*\x)});
+%     \end{tikzpicture}
+%     \subcaption{$\beta zJ > 1$}
+%   \end{minipage}
+%   \caption{$h=0$での自己整合方程式$\psi = \tanh{(\beta ZJ\psi)}$}
+% \end{figure}
 
 \section{2次元イジング模型}
 \begin{figure}[H]
@@ -1648,11 +1648,11 @@ CNNがパターン抽出のためのモデルであるならば，パターン�
 
 
 \section{勾配降下法}
-ニューラルネットワークの学習は損失関数の最小化によって行われる．つまり，ネットワークパラメータの空間上でスカラー関数$L(\bm{\theta})$の最小値を探すという最適化問題を解くことになる．
+ニューラルネットワークの学習は誤差関数の最小化によって行われる．つまり，ネットワークパラメータの空間上でスカラー関数$L(\bm{\theta})$の最小値を探すという最適化問題を解くことになる．
 \begin{equation}
   \bm{\theta}^* = \underset{\bm{\theta}} {\operatorname{argmin}} \ L(\bm{\theta})
 \end{equation}
-損失関数は基本的に多くのパラメータを含む複雑な関数であるため，このような最適化問題を厳密に解くことはできない．そのため，計算機によって数値的に近似解を求めることになる．\par
+誤差関数は基本的に多くのパラメータを含む複雑な関数であるため，このような最適化問題を厳密に解くことはできない．そのため，計算機によって数値的に近似解を求めることになる．\par
 
 \subsection{勾配降下法}
 誤差関数$E(\bm{\theta})$の最小点を見つける手法のうち，最も直観的で単純なアイデアは図\ref{勾配降下法イメージ図}のように，誤差関数のグラフの形状をした凹みにおいて．上のほうからボールを転がり落してボールの一番低いところにたどり着くまで待つ方法である．これがまさに勾配降下法の考え方である．\par
@@ -2232,14 +2232,14 @@ $\beta=0.4$と$\beta=0.5$でスピンの揃い具合に大きく違いが表れ�
 \begin{equation}
   \left[
     \begin{aligned}
-      & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{Ising configs on} \ L \times L \ \text{lattice.} \right\} \\
+      & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{イジング configs on} \ L \times L \ \text{lattice.} \right\} \\
        & \downarrow
       \begin{cases}
         \text{Flatten} \\
         \text{Fully-connected layer} \\
         \text{ReLU activation}
       \end{cases} \\
-       & x_i \in \mathbb{R}^{N_h} \ \text{: hidden units} \\
+       & x_i \in \mathbb{R}^{N_{\text{h}}} \ \text{: hidden units} \\
        & \downarrow
       \begin{cases}
         \text{Fully-connected layer} \\
@@ -2259,8 +2259,8 @@ $\beta=0.4$と$\beta=0.5$でスピンの揃い具合に大きく違いが表れ�
   \end{center}
 \end{figure}
 
-2次元のスピン配位は適切な方法で1次元化を行ったあとにニューラルネットワークの入力層のユニットに入力させる．このニューラルネットワークは隠れ層が1層のシンプルな全結合ニューラルネットワークを採用した．
-入力層は入力データが入力されるため，ユニットの数はスピン配位の数と等しい値にしなければならない．今回$32 \times 32 = 1024$個のスピン変数が入力されるため，1024個のユニットで設定した．次に隠れ層のユニット数であるが，これは任意に選ぶことができる．今回はユニット数100で設定した．また，隠れ層のユニットには活性化関数としてReLU関数を用いた．したがって，隠れ層での出力$z_i$は
+2次元のスピン配位は適切な方法で1次元化を行ったあとにニューラルネットワークの入力層のユニットに入力させる．このニューラルネットワークは中間層が1層のシンプルな全結合ニューラルネットワークを採用した．
+入力層は入力データが入力されるため，ユニットの数はスピン配位の数と等しい値にしなければならない．今回$32 \times 32 = 1024$個のスピン変数が入力されるため，1024個のユニットで設定した．次に中間層のユニット数であるが，これは任意に選ぶことができる．今回はユニット数100で設定した．また，中間層のユニットには活性化関数としてReLU関数を用いた．したがって，中間層での出力$z_i$は
 \begin{equation}
   z_i 
   = \mathrm{max}\{0,u_i\}, \quad
@@ -2278,20 +2278,20 @@ $\beta=0.4$と$\beta=0.5$でスピンの揃い具合に大きく違いが表れ�
 \begin{equation}
   \begin{bmatrix}
     \begin{aligned}
-       & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{Ising configs on} \ L \times L \ \text{lattice.} \right\} \\
+       & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{イジング configs on} \ L \times L \ \text{lattice.} \right\} \\
        & \downarrow
       \begin{cases}
         \text{Convolutional Layer}_{[N_f^2\text{-filter}, \ (s,s)\text{-stride}]} \\
         \text{ReLU activation} \\
         \text{Flatten}
       \end{cases} \\
-       & z_i^{(1)} \in \mathbb{R}^{N_h^{(1)} = L^2/s^2} \ \text{: hidden units} \\
+       & z_i^{(1)} \in \mathbb{R}^{N_{\text{h}}^{(1)} = L^2/s^2} \ \text{: hidden units} \\
        & \downarrow
       \begin{cases}
         \text{Fully-connected layer} \\
         \text{ReLU activation}
       \end{cases} \\
-       & z_i^{(2)} \in \mathbb{R}^{N_h^{(2)}} \ \text{: hidden units} \\
+       & z_i^{(2)} \in \mathbb{R}^{N_{\text{h}}^{(2)}} \ \text{: hidden units} \\
        & \downarrow
       \begin{cases}
         \text{Fully-connected layer} \\
@@ -2334,19 +2334,19 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
 \end{table}
 
 今回，バッチサイズ32のミニバッチ学習で学習を行った．エポック数とは全学習データを何周学習させるかを表すパラメータである．この値は，学習の収束具合をみて設定する必要がある．今回はFCNモデルには10,CNNモデルには20で設定した．また，誤差関数は2値分類のタスクに最適な交差エントロピー誤差を採用し，最適化アルゴリズムにはAdamを使用し，学習率はどちらのモデルも0.001で設定した．\par
-この設定で2種類のモデルを誤差逆伝播法よりパラメータ最適化を行った．学習を行っただけでは，過学習が起きている可能性があるため，テストデータで精度を確認しながら学習を行った．次の図\ref{正方イジングFCNloss}，図\ref{正方イジングCNNloss}はそれぞれ，エポックごとの損失関数と精度の値を訓練データとテストデータに対してプロットしたグラフである．グラフを見てわかる通り，エポックが増えるごとに訓練データとテストデータどちらも損失関数の値が小さくなり，精度も上がっていることが見て取れる．これは，学習がうまく進んでいることを表している．
+この設定で2種類のモデルを誤差逆伝播法よりパラメータ最適化を行った．学習を行っただけでは，過学習が起きている可能性があるため，テストデータで精度を確認しながら学習を行った．次の図\ref{正方イジングFCNloss}，図\ref{正方イジングCNNloss}はそれぞれ，エポックごとの誤差関数と精度の値を訓練データとテストデータに対してプロットしたグラフである．グラフを見てわかる通り，エポックが増えるごとに訓練データとテストデータどちらも誤差関数の値が小さくなり，精度も上がっていることが見て取れる．これは，学習がうまく進んでいることを表している．
 
 \begin{figure}[H]
   \begin{center}
     \includegraphics[width=\linewidth]{image/plot_square_FCNN_2.png}
-    \caption{FCNモデルによる正方イジング模型のスピン配位の学習結果．横軸はエポック数である．縦軸は左の図は損失関数，右の図は精度である．}
+    \caption{FCNモデルによる正方イジング模型のスピン配位の学習結果．横軸はエポック数である．縦軸は左の図は誤差関数，右の図は精度である．}
     \label{正方イジングFCNloss}
   \end{center}
 \end{figure}
 \begin{figure}[H]
   \begin{center}
     \includegraphics[width=\linewidth]{image/plot_square_CNN_2.png}
-    \caption{CNNモデルによる正方イジング模型のスピン配位の学習結果．横軸はエポック数である．縦軸は左の図は損失関数，右の図は精度である．}
+    \caption{CNNモデルによる正方イジング模型のスピン配位の学習結果．横軸はエポック数である．縦軸は左の図は誤差関数，右の図は精度である．}
     \label{正方イジングCNNloss}
   \end{center}
 \end{figure}
@@ -2401,20 +2401,20 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
 \begin{equation}
   \left[
     \begin{aligned}
-      & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{Ising configs on} \ L \times L \ \text{lattice.} \right\} \\
+      & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{イジング configs on} \ L \times L \ \text{lattice.} \right\} \\
        & \downarrow
       \begin{cases}
         \text{Flatten} \\
         \text{Fully-connected layer} \\
         \text{ReLU activation}
       \end{cases} \\
-       & x_a \in \mathbb{R}^{N_h} \ \text{: hidden units} \\
+       & x_a \in \mathbb{R}^{N_{\text{h}}} \ \text{: hidden units} \\
        & \downarrow
       \begin{cases}
         \text{Fully-connected layer} \\
         \text{Softmax activation}
       \end{cases} \\
-       & y_K \in [0,1]^{N_o=100} \ \text{: output units}
+       & y_K \in [0,1]^{N_{\text{o}}=100} \ \text{: output units}
     \end{aligned}
     \right]
 \end{equation}
@@ -2426,12 +2426,12 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
     \label{温度測定器FCNモデル}
   \end{center}
 \end{figure}
-これは中間層が1層のシンプルな全結合ニューラルネットワークである．活性化関数は中間層でReLU関数，出力層では確率で出力するためにSoftmax関数を使用した．今回中間層のユニットの個数は$L=8$のとき$N_h=80$，$L=16$のとき$N_h=320$で学習を行った．\par
+これは中間層が1層のシンプルな全結合ニューラルネットワークである．活性化関数は中間層でReLU関数，出力層では確率で出力するためにSoftmax関数を使用した．今回中間層のユニットの個数は$L=8$のとき$N_{\text{h}}=80$，$L=16$のとき$N_{\text{h}}=320$で学習を行った．\par
 次にCNNモデルについて説明する．CNNモデルでは次のような順伝播を行うモデルを使用した．
 \begin{equation}
   \begin{bmatrix}
     \begin{aligned}
-       & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{Ising configs on} \ L \times L \ \text{lattice.} \right\} \\
+       & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{イジング configs on} \ L \times L \ \text{lattice.} \right\} \\
        & \downarrow
       \begin{cases}
         \text{Convolutional Layer}_{[N_f^2\text{-filter}, \ (s,s)\text{-stride}, \ C_1\text{-channels}]} \\
@@ -2441,13 +2441,13 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
         \text{ReLU activation} \\
         \text{Flatten}
       \end{cases} \\
-       & x_a \in \mathbb{R}^{N_h = L^2/s^2 \times C_i} \ \text{: hidden units} \\
+       & x_a \in \mathbb{R}^{N_{\text{h}} = L^2/s^2 \times C_i} \ \text{: hidden units} \\
        & \downarrow
       \begin{cases}
         \text{Fully-connected layer} \\
         \text{Softmax activation}
       \end{cases} \\
-       & y_K \in [0,1]^{N_o} \ \text{: output units}
+       & y_K \in [0,1]^{N_{\text{o}}} \ \text{: output units}
     \end{aligned}
   \end{bmatrix}
 \end{equation}
@@ -2565,28 +2565,38 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
 \begin{equation}
   \left[
     \begin{aligned}
-       & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{Ising configs on} \ L \times L \ \text{lattice.} \right\} \\
+       & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{イジング configs on} \ L \times L \ \text{lattice.} \right\} \\
        & \downarrow
       \begin{cases}
         \text{Fully-connected layer} \\
         \text{Softmax activation}
       \end{cases}                                                                            \\
-       & x_a \in [0,1]^{N_h} \ \text{: hidden units}                                                                  \\
+       & x_a \in [0,1]^{N_{\text{h}}} \ \text{: hidden units}                                                                  \\
        & \downarrow
       \begin{cases}
         \text{Fully-connected layer} \\
         \text{Softmax activation}
       \end{cases}                                                                            \\
-       & y_K \in [0,1]^{N_o} \ \text{: output}
+       & y_K \in [0,1]^{N_{\text{o}}} \ \text{: output}
     \end{aligned}
     \right]
 \end{equation}
-4.3章の実験との違いは，中間層での活性化関数がReLU関数からSoftmax関数に変わっているところのみである．これにより，中間層からの出力値は0から1の範囲で正規化されることになる．そして4.3章の時と同様，$N_h$は中間層のノード数，$N_o$は出力層のノード数を表す．\par
+また，図\ref{温度測定器FCN2}は具体的なニューラルネットワーク構造を示した図である．
+
+\begin{figure}[H]
+  \begin{center}
+      \includegraphics[height=5cm]{image/温度測定器FCN2.png}
+      \caption{FCNモデル}
+      \label{温度測定器FCN2}
+  \end{center}
+\end{figure}
+
+4.3章の実験との違いは，中間層での活性化関数がReLU関数からSoftmax関数に変わっているところのみである．これにより，中間層からの出力値は0から1の範囲で正規化されることになる．そして4.3章の時と同様，$N_{\text{h}}$は中間層のノード数，$N_{\text{o}}$は出力層のノード数を表す．\par
 次にCNNモデルについて説明する．4.3章での実験ではFCNモデルとCNNモデルのどちらも相転移の検出に成功しており．精度に関してはCNNモデルの方が少し高かったがそれほどの差はなかった．ただ，2つのモデルでの大きな違いは，温度測定の精度である．温度測定の精度の違いでニューラルネットワーク内にエンコードされている情報に違いがあるかどうかを確かめるために，CNNモデルでも実験を行う．そのため，今回構築したいCNNモデルはできるだけ温度測定の精度が高くなるように構築した．
 \begin{equation}
   \begin{bmatrix}
     \begin{aligned}
-       & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{Ising configs on} \ L \times L \ \text{lattice.} \right\} \\
+       & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{イジング configs on} \ L \times L \ \text{lattice.} \right\} \\
        & \downarrow
       \begin{cases}
         \text{Convolution}_{[(s_1,s_1)\text{-filter}, \ (s_1,s_1)\text{-stride}, \ C_1\text{-channels}]} \\
@@ -2597,7 +2607,7 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
         \text{ReLU activation} \\
         \text{Flatten}
       \end{cases} \\
-       & x_a \in [0,1]^{N_h = L^2/(s_1s_2s_3)^2 \times C_3} \ \text{: hidden units} \\
+       & x_a \in [0,1]^{N_{\text{h}} = L^2/(s_1s_2s_3)^2 \times C_3} \ \text{: hidden units} \\
        & \downarrow
       \begin{cases}
         \text{Fully-connected (Dense) layer} \\
@@ -2607,20 +2617,17 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
     \end{aligned}
   \end{bmatrix}
 \end{equation} \label{conv model}
-4.3章でのCNNモデルと違い，畳み込みを3回行うように構築した．これによりスピン配位がもつ画像としての特徴をより細かく抽出するのが狙いである．また，中間層での活性化関数をReLU関数からSoftmax関数に変更した．\par
+4.3章でのCNNモデルと違い，畳み込みを3回行っている．これによりスピン配位2次元的構造をより細かく捉えるのが狙いである．また，中間層での活性化関数をReLU関数からSoftmax関数に変更した．\par
 以上のような2種類の順伝播ニューラルネットワークを用いて学習を行う．データセットの生成も4.3章のときと同じ方法を用いた．ただし，今回は出力層のニューロンの数，つまり目標温度の数を20に設定し，各温度で100個の配位を生成した．つまり，2000個の教師ありデータセットを用いた．以下に具体的な温度ラベルを示す．
 \begin{equation}
   \beta = 0.05, 0.1, 0.15, \dots, 1.0
 \end{equation}
-そして，格子サイズは$L=16$とした．また，今回の実験ではパラメータ分析を行うため，大胆にも隠れ層のニューロンの数を3に減らした．\par
-
-\begin{figure}[H]
-   \begin{center}
-       \includegraphics[width=\linewidth]{image/温度測定器FCN2.png}
-       \caption{FCNモデル}
-       \label{温度測定器FCN2}
-   \end{center}
-\end{figure}
+そして，格子サイズは$L=16$とした．また，今回の実験ではパラメータ分析を行うため，大胆にも中間層のニューロンの数を3に減らした．\par
+図\ref{温度測定器FCN2}と図\ref{温度測定器CNN2}は具体的なニューラルネットワーク構造を示した図である．畳み込みニューラルネットワークモデルではハイパーパラメータを次のように設定した．
+\begin{equation}
+  L = 16, \ \ (s_1, s_2, s_3) = (2, 2, 4), \ \ (C_1, C_2, C_3) = (64, 32, 3)
+\end{equation}
+これにより，中間層のユニット数を$N_{\text{h}}=3$にすることができる．また，パディングの手法として周期パディングを採用した．次の図\ref{温度測定器CNN2}はCNNもモデルの詳細を表した図である．
 
 \begin{figure}[H]
   \begin{center}
@@ -2630,289 +2637,224 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
   \end{center}
 \end{figure}
 
+なお，学習手法は4.3章と同じく，誤差関数には交差エントロピー誤差，最適化手法にはAdamを用いた．
 
-% 2次元イジング模型を考える．ハミルトニアンは
-% \begin{equation*}
-%   H(\bm{\sigma}) = - J \sum_{\langle i,j \rangle} \sigma_i \sigma_j
-% \end{equation*}
-% ここで，$J$は結合定数，$\sigma_i \in \{ -1, 1 \}$は，サイズが$L \times L$の正方格子のサイトに存在するスピンの自由度(スピン変数)で，周期的境界条件が課されている．和は最近接に対するサイトにわたる．結合定数をボルツマン重みに吸収させて，$e^{-KH}/Z, \ \ K = \beta J$とすることで，ハミルトニアンを次のように再定義する．
-% \begin{equation}
-%   H(\bm{\sigma}) = - \sum_{\langle i,j \rangle} \sigma_i \sigma_j
-% \end{equation}
-% ここで，$Z = \sum_{\bm{\sigma}}e^{-KH(\bm{\sigma})}$は分配関数である．\par
-% 私たちは，その2次相転移に関連する臨界温度を検出しようと試みている．しかしながら，最初は，教師あり順伝播ニューラルネットワークを用いて温度測定器を構築することを行う．その後，学習されたニューラルネットワークの重みとバイアスを調べ，2次元イジング模型と3状態のポッツ模型の臨界温度を特定しようと試みる．\par
-% メトロポリス・ヘイスティングス法を用いて，各温度で2000個のイジングスピン配位を生成する．これらは，20の目標温度と一緒にニューラルネットワークに供給される．私たちは，TENSORFLOWをバックエンドに使用したKERASパッケージを用いて，全結合ニューラルネットワークと畳み込みニューラルネットワークの2種類のアーキテクチャを実装した．\par
-% 全結合ニューラルネットワーク：
-% \begin{equation}
-%   \left[
-%     \begin{aligned}
-%        & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{Ising configs on} \ L \times L \ \text{lattice.} \right\} \\
-%        & \downarrow
-%       \begin{cases}
-%         \text{Fully-connected (Dense) layer} \\
-%         \text{Softmax activation}
-%       \end{cases}                                                                            \\
-%        & x_a \in [0,1]^{N_h} \ \text{: hidden units}                                                                  \\
-%        & \downarrow
-%       \begin{cases}
-%         \text{Fully-connected (Dense) layer} \\
-%         \text{Softmax activation}
-%       \end{cases}                                                                            \\
-%        & y_K \in [0,1]^{N_o} \ \text{: output}
-%     \end{aligned}
-%     \right]
-% \end{equation}
+\subsection{FCNモデルの学習結果とモデリング}
+まずFCNモデルのモデルの実験結果をまとめる．学習率を0.003に設定し，100エポックで学習を行った．図\ref{温度測定器FCN2lossと精度}はエポックに対する誤差関数と精度の値をプロットしたものである．
 
-% 入力の自由度は$\{ \sigma_i \} \ (i=1,2,\dots,L \times L)$で，イジングモデルの場合スピンに対応する．隠れ層のユニット$x_a \ (a=1,2,\dots,N_b)$は
-% \begin{equation}
-%   x_a = \text{softmax}(w_{ai}^{(1)}\sigma_i + b_a^{(1)})
-%   \equiv \frac{e^{w_{ai}^{(1)}\sigma_i + b_a^{(1)}}}{\sum_a e^{w_{ai}^{(1)}\sigma_i + b_a^{(1)}}}
-% \end{equation}
-% ここで，アインシュタインの縮約記法を使用していることに注意．2つ目の層は，重み$w_{\alpha a}^{(2)}$とバイアス$b_{\alpha}^{(2)}$に置き換えたものである．最終層の変数$y_K \ (K=1,2,\dots,N_o)$は隠れ層と同じ形をとる
-% \begin{equation}
-%   y_k = \text{softmax}(w_{ai}^{(2)}\sigma_i + b_a^{(2)})
-% \end{equation}
-% 出力$\{ y_K \}$に基づいて，入力配位の温度は
-% \begin{equation}
-%   K^{\text{output}} = \underset{K} {\operatorname{argmax}} (y_K)
-% \end{equation}
-% で決定される．つまり，温度$\alpha$は確率分布$y_K$の中から最も値が高い成分が採用されるということである．学習は，Adamという最適化手法を用いて，交差エントロピー
-% \begin{equation}
-%   E(y_K,\bm{1}_{K=K_i^{\text{target}}}) = - \frac{1}{N_o}\sum_i \bm{1}_{K=K_i^{\text{target}}} \ln{y_k}
-% \end{equation}
-% という誤差関数を最小することによって実装した．ここで，$i$ は入力配位のラベルを示す．インジケーター関数は次のように定義される．\par
-% \begin{equation}
-%   \bm{1}_{K=K_i^{\text{target}}} =
-%   \begin{cases}
-%     1 & (K=K_i^{\text{target}}) \\
-%     0 & (\text{otherwize})
-%   \end{cases}
-% \end{equation}
+\begin{figure}[H]
+  \begin{center}
+      \includegraphics[width=\linewidth]{image/温度測定器2_L16_FCN_Nh3_loss.png}
+      \caption{左の図は各エポックに対するLossの値，右の図は各エポックに対する精度の値をプロットしたもの．}
+      \label{温度測定器FCN2lossと精度}
+  \end{center}
+\end{figure}
 
-% 畳み込みニューラルネットワークは3つの畳み込み層と最後の全結合層からなる構成をしており，式(\ref{conv model})である．これについての詳細はセクション3.2で説明する．\par
-% 配位生成から相転移検出までの手順を以下に示す．
-% \begin{enumerate}
-%   \item マルコフ連鎖モンテカルロ法より，配位を生成：
-%   \item ニューラルネットワークを温度計として学習する．入力はスピン配位，出力は予測温度．
-%   \item ニューラルネットワークに現れる学習済みの重みとバイアスを分析する．マシンパラメーターに相転移の情報がどのように含まれるかについて説明する．
-% \end{enumerate}
+そして，学習済みモデルの中間層と出力層の間の重みパラメータの値をヒートマップ図にプロットしたものが
+見てわかるように中間層のユニット数を$N_{\text{h}}=3$と図\ref{温度測定器FCN2重みプロット}の左である．この図を見て明らかなように，4.3章のときと同様に，相転移点を境に重みの構造が変化しており，$N_{\text{h}}=3$でも相転移を検出できていることがわかる．右の図は，左図の縦の3つのヒートマップに対してそれぞれ値を折れ線グラフでプロットしたものである．\par
 
-% \subsection{2次元イジング模型}
-% % \begin{figure}[hb]
-% %   \begin{center}
-% %     \includegraphics[height=5cm]{image/Figure1.png}
-% %     \caption{2次元イジング模型における学習後の全結合層での重みの値とそれらを平均した値．横軸はそれぞれ入力配位の温度$K$を表している．縦軸は左の図はニューラルネットワークの隠れ層につながるエッジにおける重みの値に対応し，右の図はその重みの値を$K$での平均をとったものである．重みの平均の値は，厳密な臨界温度$K_{\text{c}}^{\text{exact}}\simeq 0.4407$付近で大きく変化していることが見て取れる．}
-% %   \end{center}
-% % \end{figure}
-% 最初に，[4] (田中さんと富谷さんの論文)で既に研究されている2D Ising模型を見ていく．このモデルは，100の目標温度で調査され，その重みは秩序変数のように振る舞い，すなわち自発的な磁化を示す．私たちの主な目的は臨界温度を定量的に推定することではなく，そのメカニズムを理解することなので，目標温度の数を20に減少させる．具体的には，$K = 0.05, 0.1, 0.15, \dots, 1.0$のような値である．ニューラルネットワークより教師あり機械学習を行った．
+\begin{figure}[H]
+  \begin{minipage}[b]{0.45\linewidth}
+    \begin{center}
+      \includegraphics[keepaspectratio, scale=0.4]{image/温度測定器2_L16_FCN_Nh3_pram.png}
+    \end{center}
+  \end{minipage}
+  \begin{minipage}[b]{0.45\linewidth}
+    \begin{center}
+      \includegraphics[keepaspectratio, scale=0.4]{image/温度測定器2_L16_FCN_Nh3_weight_plot.png}
+    \end{center}
+  \end{minipage}
+  \caption{中間層のユニットが3つ$(N_{\text{h}}=3)$の学習済みニューラルネットワークにおける全結合層の重み$w_{Ka}^{(2)}$の値．横軸は2次元イジング模型での温度ラベルを表している．臨界温度付近で構造に変化が起きていることがわかる．下の重みだけ値が反対になっている．}
+  \label{温度測定器FCN2重みプロット}
+\end{figure}
 
-% 図1の2D Ising模型の場合，全結合層の重みおよびそれらの学習後の平均について説明する．横軸は入力配位の温度Kを表し，左のパネルの縦軸はニューラルネットワークの隠れユニットに接続された成分に対応している．右のパネルの縦軸は，各Kに対する重みの平均を示している．重みの平均値は，正確な臨界温度$K_e^{\text{exact}} \approx 0.4407$の周りで著しく変化している．
+これまでの結果から，FCNニューラルネットワークモデルの第2層の重みパラメータの値の変化が相転移点を表していることを確認できた．これは，相転移の情報が何らかの形で学習済みニューラルネットワークにコード化されていることを示している．そこで今度は第1層の重みに着目してみる．\par
+2次元イジング模型の相転移の秩序変数は自発磁化であることから，学習後にはその情報がニューラルネットワークモデルにエンコードされていると考えるのが自然である．そのため，中間層の3つのユニットへの入力値$\tilde{x}_a \equiv w_{ai}^{(1)}\sigma_i + b_a^{(1)}$とスピン配位の磁化密度の相関を調べてみる．図\ref{温度測定器2磁化との相関}は横軸を入力スピン配位の磁化密度，縦軸を中間層への入力値$\tilde{x}_a \equiv w_{ai}^{(1)}\sigma_i + b_a^{(1)}$としてプロットしたものである．3つの中間ユニットに対応する3つのラインが表れていることがわかる．\par
 
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=\linewidth]{image/温度測定器2_L16_FCN_Nh3_mag.png}
+    \caption{磁化との相関}
+    \label{温度測定器2磁化との相関}
+  \end{center}
+\end{figure}
 
-% 格子サイズは$L = 16$であり,隠れユニットの数は$N_h = 80$，そして$N_o = 20$はそれぞれ20の目標温度に対応している．臨界温度は正確に知られており，$K_c^{\text{exact}} = \frac{1}{2}\ln{\sqrt{2}+1} \approx 0.4407$である．学習後の2層目の重みが図1である([4]より)．臨界温度は重みの和を$c_1 \tanh{[c_2(K-K_c)]}$でフィッティングしてパラメータ$c_1,c_2,c_3$を導くことで予想する．実験では格子サイズ$L=8,16,32$で行った．実際，最終的な重みの平均は秩序変数のように振る舞うようです（図1の右パネル）．次のセクションで重みの詳細な構造について議論する．
-
-% \subsection{ニューラルネットワークでエンコードされた磁化}
-% % \begin{figure}[H]
-% %   \begin{center}
-% %     \includegraphics[height=5cm]{image/Figure3.png}
-% %     \caption{隠れ層のユニットが3つ$(N_h=3)$の学習済みニューラルネットワークにおける全結合層の重み$w_{Ka}^{(2)}$の値．横軸は2次元イジング模型での温度$K$を表している．臨界温度付近で構造に変化が起きていることがわかる．真ん中の重みだけ値が反対になっている．}
-% %   \end{center}
-% % \end{figure}
-% % \begin{figure}[hb]
-% %   \begin{center}
-% %     \includegraphics[height=5cm]{image/Figure4.png}
-% %     \caption{(a)第1層目の出力と入力配位の磁化の相関．横軸は入力配位の各サイトでの磁化，縦軸は$\tilde{x}_a=w_{ai}^{(1)}\sigma_i+b_a^{(1)}$である．(b)フィッティングしたもの．}
-% %   \end{center}
-% % \end{figure}
-% 相転移の秩序変数が2D Ising模型において自発磁化であることから，学習後にはその情報がニューラルネットワークにエンコードされていることは自然なことと言える．定量的な論拠を示すために，2D Ising模型の場合において学習されたニューラルネットワークの重みとバイアスを調査して，簡略化されたモデルを構築する．最初に、簡略化のために（2）の中の隠れユニットの数を80から3に減少させる．図3に示されているように，それでも臨界温度を捉えていることに気づく．\par
-% 第二層をモデリングする前に，まず最初の層の特性を調査する．図4は，式（3）の第一層の出力$\tilde{x}_a \equiv w_{ai}^{(1)}\sigma_i + b_a^{(1)}$と，入力のIsingスピン配位の磁化密度との相関を示している．この観察から，私たちはこれらの出力から，図4bに示すように，磁化$m(\{ \sigma \})$に対して線形な三つのラインでモデリングする．
-% \begin{equation}
-%   \tilde{x} =
-%   \begin{pmatrix}
-%     \tilde{x}_0 \\ \tilde{x}_1 \\ \tilde{x}_2
-%   \end{pmatrix}
-%   =
-%   \begin{pmatrix}
-%     -m \\ \epsilon \\ m
-%   \end{pmatrix}
-% \end{equation}
-% ここで，$\epsilon > 0$は定数である．さらに，活性化関数として，私たちの目的のためにsoftmaxの代わりに最大値を1，それ以外を0にする最大値関数を使用している．この変更は最終結果に影響を与えない．$x_a = \max{(\tilde{x}_a)}$は次のベクトルを生成する．
-% \begin{equation}
-%   m<-\epsilon : x=
-%   \begin{pmatrix}
-%     1 \\ 0 \\ 0
-%   \end{pmatrix}, \
-%   -\epsilon \leq m < \epsilon : x=
-%   \begin{pmatrix}
-%     0 \\ 1 \\ 0
-%   \end{pmatrix}, \
-%   \epsilon \leq m : x=
-%   \begin{pmatrix}
-%     0 \\ 0 \\ 1
-%   \end{pmatrix},
-% \end{equation}
-% パラメータ$\epsilon$は、強磁性相と常磁性相を分離する閾値磁化と解釈できる[3].\par
-% 三つの隠れユニットの磁化依存性を理解したら，次に第二層を分析する．この層の重みは図3に示されている．温度を低温，臨界温度，高温の三つの部分に分割する．それぞれ以下のベクトルで表される．
-% \begin{equation}
-%   \text{Low} \ \text{K} :
-%   \begin{pmatrix}
-%     1 \\ 0 \\ 0
-%   \end{pmatrix}, \
-%   \text{Critical} \ \text{K} :
-%   \begin{pmatrix}
-%     0 \\ 1 \\ 0
-%   \end{pmatrix}, \
-%   \text{High} \ \text{K} :
-%   \begin{pmatrix}
-%     0 \\ 0 \\ 1
-%   \end{pmatrix},
-% \end{equation}
-% No-dimensional output spaceにおいて．この手法により，出力次元$N_o$を実質的に3に削減する．図3に従って，私たちは以下のように重みをパラメータ化する．
-% \begin{equation}
-%   w^{(2)} =
-%   \begin{pmatrix}
-%     -\Delta & 0       & -\Delta \\
-%     -\delta & -\delta & -\delta \\
-%     0       & -\Delta & 0
-%   \end{pmatrix}
-% \end{equation}
-% ここで，$\Delta > \delta > 0$．行列$w^{(2)}$の$Ka$成分は$w_{Ka}^{(2)}$に対応する．バイアスは重みよりもはるかに小さいため，無視する．厳密なパラメータ化は，以下の議論には必要ない．このとき，$y_K = \max{(\tilde{y}_K)}=\max{(w_{Ka}^{(2)}x_a+b_K^{(2)})}$は以下の出力を生む．
-% \begin{align}
-%   m<-\epsilon : y_K = \max(w_{K0}^{(2)}) =
-%   \begin{pmatrix}
-%     0 \\ 0 \\ 1
-%   \end{pmatrix}, \\
-%   -\epsilon \leq m < \epsilon : y_K = \max(w_{K1}^{(2)}) =
-%   \begin{pmatrix}
-%     1 \\ 0 \\ 0
-%   \end{pmatrix}, \\
-%   \epsilon \leq m : y_K = \max(w_{K2}^{(2)}) =
-%   \begin{pmatrix}
-%     0 \\ 0 \\ 1
-%   \end{pmatrix},
-% \end{align}
-% これらはそれぞれ，低温，高温，低温と予想される．$m<-\epsilon$と$m>\epsilon$のスピン配位は秩序相にあるため，正しく予想できている．また，$-\epsilon \leq m < \epsilon$もまた，正しく予想されている．ただし，この場合には中間温度，つまり臨界温度を検出することができない．さらに，式(\ref{}) に三つ以上の対象温度を導入しても，学習されたニューラルネットワークは順序/無秩序相内の異なる温度を区別することができない．なぜなら，図3で示されているように，重み（およびバイアス）の上部ブランチはそれぞれ$K_c$より上と下でほぼ温度に依存しないからである．したがって，高温または低温のみを区別することができる．\par
-% これは，三つの隠れユニットにより単一の閾値パラメータ$\epsilon$しか持たないことが原因かもれない．隠れユニットをさらに導入することで閾値パラメータの数を増やすことができる．しかし，これは温度の高い精度にはつながらない．実際，隠れユニットの数を増やしても、，二層の重みは温度依存性の二つのパターンしか示さない．つまり，多くは図3の青と緑の曲線のようにふるまい，残りはオレンジの振舞いを見せる．これは，図1で観察されている現象とまさに一致している．隠れユニットを増やすことは単に，すでに図3で観察された第二層の重みを複製する結果となり，その結果，導入された隠れユニットの数に関係なく，予測される温度は高いか低いかのどちらかとなる．\par
-% 上記の分析から得られた結論は次の通りである．
-% ネットワークは，第一層の出力で示す磁化の情報を取得した．しかしながら，ニューラルネットワークは磁化に基づいて秩序相と無秩序相の違いを除いて，温度を区別することは難しい．機械学習パラメータの観点から見ると，これは第二層の重みが臨界温度の周りを除いて温度に依存しないという事実に起因している．
-
-% \subsection{エネルギーと温度の予測}
-% 前のサブセクションで，2次元イジング模型の磁化が温度の教師あり全結合ニューラルネットワークに組み込まれていることがわかった．これにより，その重み構造から臨界温度を読み取ることが可能になる．臨界温度はうまく検出されているようだが，温度そのものの予測自体についてはまだ議論していない．興味深いことに，2次元イジング模型の場合，上記の設定で温度学習の精度は理論的に$40.1\%$と計算できる．これは機械学習による温度予測の精度の上限を示している．ただし、全結合ニューラルネットワークによる温度予測のテスト精度は$16.8\%$であり，理論的に予測された$40.1\%$の精度にはほど遠い．これまで，磁化の特徴抽出による相転移の検出を見てきたが，温度測定の観点で学習を行うことでより良い学習ができるのではないか．温度の予測精度が向上するようなニューラルネットワークを構築できた場合，どのようなことが起こるのか？\par
-% この疑問に答えるために，次に示す畳み込みニューラルネットワークを使用して，より高い精度を実現した．
-% % \begin{equation}
-% %   \begin{bmatrix}
-% %     \begin{aligned}
-% %        & \mathcal{I} = \left\{ \{ \sigma_i \} \Big| \ \text{Ising configs on} \ L \times L \ \text{lattice.} \right\} \\
-% %        & \downarrow
-% %       \begin{cases}
-% %         \text{Convolution}_{[(s_1,s_1)\text{-filter}, \ (s_1,s_1)\text{-stride}, \ C_1\text{-channels}]} \\
-% %         \text{ReLU activation} \\
-% %         \text{Convolution}_{[(s_2,s_2)\text{-filter}, \ (s_2,s_2)\text{-stride}, \ C_2\text{-channels}]} \\
-% %         \text{ReLU activation} \\
-% %         \text{Convolution}_{[(s_3,s_3)\text{-filter}, \ (s_3,s_3)\text{-stride}, \ C_3\text{-channels}]} \\
-% %         \text{ReLU activation} \\
-% %         \text{Flatten}
-% %       \end{cases} \\
-% %        & x_a \in [0,1]^{N_h = L^2/(s_1s_2s_3)^2 \times C_3} \ \text{: hidden units} \\
-% %        & \downarrow
-% %       \begin{cases}
-% %         \text{Fully-connected (Dense) layer} \\
-% %         \text{Softmax activation}
-% %       \end{cases} \\
-% %        & y_{\alpha} \in [0,1]^{N_t} \ \text{: output}
-% %     \end{aligned}
-% %   \end{bmatrix}
-% % \end{equation} \label{conv model}
-% このネットワークは，3つの畳み込み層から配位されている．それぞれフィルタサイズ$(s_i,s_i)$，ストライド$(s_i,s_i)$，そして，チャンネル数$C_i$であり，それらの間にはReLU関数が入る．その後，出力は全結合層に渡される．この層の入力と出力は私たち興味の対象であり，詳細に分析される．第二最終層の出力，記号で$x_a$と示されるものは，以下のように表される．
-% \begin{equation}
-%   x_a = \text{ReLU}(\tilde{x}_a) = \text{Max}(\tilde{x}_a,0)
-% \end{equation}
-% これは$[0,\infty)$の範囲の値をとる．$\tilde{x}_a$は前の層のReLU関数の渡す前の出力である．その後、出力$x_a$は全結合層の入力として機能し,式(4)と(5)を通じて温度の予測を行う．\par
-% 前のサブセクションに続き，私たちは，全結合層の入力として機能する3つの隠れユニットを配置し，学習の結果としてニューラルネットワークが何を学習するかを理解しようとする．この目的のために，パラメータは以下のように設定する:
-% \begin{equation}
-%   L = 16, \ \ (s_1, s_2, s_3) = (2, 2, 4), \ \ (C_1, C_2, C_3) = (64, 32, 3)
-% \end{equation}
-% これにより，隠れ層のユニット数を$N_{\text{h}}=3$にすることができる．このセットアップでは，テストデータセットにたいして$35.9\%$の精度を出すことができた．これは全結合層よりも2倍高いが，統計の不足と非常に少ない隠れユニット数のため，まだ境界に非常に近いわけではない．\par
-% % \begin{figure}[ht]
-% %   \begin{center}
-% %     \includegraphics[height=5cm]{image/Figure5.png}
-% %     \caption{学習されたニューラルネットワークの全結合層の重みと物理量との相関を示すもので，それぞれが左パネルおよび右パネルの垂直軸に対応する5つの隠れユニットがある．(a) および (b) の水平軸は，それぞれ2D Ising 配位の磁化および内部エネルギーを示す．\label{correlation}}
-% %   \end{center}
-% % \end{figure}
-% 図\ref{correlation}は，第1層の出力と磁化（図\ref{correlation}a）および内部エネルギー（図\ref{correlation}b）との相関を示している．はっきりとニューラルネットワークが学習した内容の変遷が見て取れる．第1層の出力は，今では入力配位の磁化よりももしろ内部エネルギーに比例している．また，第2層の重みは温度に対して穏やかな依存性を示しており，臨界温度の情報がぼやけていることに気付く（図7）；すぐに見るように，振動するオレンジの線は温度の予測には関係ない．\par
-% 次は，最後の2層の簡略なパラメータ設定に進む．ここで，$(w_{ai}^{(1)}, b_a^{(1)})$および$(w_{ai}^{(2)}, b_a^{(2)})$はそれぞれ，最後から2番目の層および最後の層の重みとバイアスを表す．すでに述べたように，および図\ref{correlation}bで確認したように，第1層の出力は入力配位$\{ \sigma_i \}$のエネルギー$E(\{ \sigma_i \})$に比例している．ReLU関数を通ると，
-% \begin{equation}
-%   x_a = \text{ReLU}(w_{ai}^{(1)}\sigma_i + b_a^{(1)}), \ \
-%   x = \begin{pmatrix} x_0 \\ x_1 \\ x_2 \end{pmatrix}
-%   = \begin{pmatrix} E+2\epsilon \\ 0 \\ -\phi E \end{pmatrix}
-% \end{equation}
-% ここで，$\epsilon$と$\phi$は正の定数である．$E$の定義域は、$x_a$が負の値を取らないように制限されている．\par
-% 全結合層の入力が$E$に比例していることを観察したので，入力配位 $\{\sigma_i\}$の温度の最適な推定が何であるかを考えてみよう．配位$\{ \sigma_i \}$が温度$K$で現れる確率$P(\{ \sigma_i \} ; K )$は
-% \begin{equation}
-%   P(\{ \sigma_i \} ; K )
-%   = \frac{e^{-KE(\{ \sigma_i \})}}{Z(K)}
-%   = e^{-KE(\{ \sigma_i \}) - \ln{Z(K)}}
-%   = e^{-KE(\{ \sigma_i \}) + F(K)}
-% \end{equation}
-% と表せされる．したがって，${\sigma_i}$ が温度$K$で生成される尤度は,
-% 次の「確率」で表される．
-% \begin{equation}
-%   y_K^{\text{theory}} = \frac{P(\{\sigma_i ; K \})}{\sum_{K'}P(\{\sigma_i ; K' \})} = \text{softmax}(-KE + F)
-% \end{equation}
-% ここで，$F = -\ln{Z(K)}$は自由エネルギーで$K'$はすべてのターゲット温度での足し上げを意味する．このとき，私たちが得る推定温度は
-% \begin{equation}
-%   K^{\text{output}} =
-%   \underset{K} {\operatorname{argmax}} \left[\text{softmax}(-KE + F)\right]
-% \end{equation}
-% となる．ここで注記するのは，自由エネルギーが温度$K$の関数であり，有限な系では真の特異性を示さないものの，相転移の情報を保持しているということである．\par
-% 上記の考察に基づいて，私たちのニューラルネットワークの全結合の重みを，その結果の出力が(21)のように振る舞うように推測する．その後，学習されたネットワークの実際のパラメータと比較する，このために，重みを以下のようにパラメータ化する．
-% \begin{equation}
-%   w_{K0}^{(2)} = -\phi G(K) - pK + q, \ \
-%   w_{K2}^{(2)} = -G(K) + rK + s
-% \end{equation}
-% 定数パラメータ$p,q,r,s$および共通の非線形関数$G(K)$を持つようにする．図7のオレンジの曲線，$w^{(2)}_{K1}$は，$x_1 = \text{ReLU}(\tilde{x}_1) = 0$となるため，私たちの考慮には関係ない．バイアスの値が重みの値よりもはるかに小さい場合，バイアスを無視するというシミュレーションからの観察を利用している．\par
-% それでは，$y_K = \text{softmax}(w_{Ka}^{(2)}x_a + b_K^{(2)})$で式(19)と(23)を用いると，次のような出力が得られる．
-% \begin{equation}
-%   y_K = \text{softmax}(-(p+r)KE - 2\epsilon(\phi G(K) + pK))
-% \end{equation}
-% ここで，$\text{max}$関数に影響を与えないため，$K$に依存しない項は落とした．この式は，実際に$-2\epsilon (\phi G(K) + pK) = (p + r)F$が満たされる場合，$y_K^{\text{theory}}$の形をとる．理論的に予測された重みを図6にプロットした．
-% \begin{equation}
-%   w_{K0}^{(2)} = \frac{p+r}{2\epsilon}F(K) + q, \ \
-%   w_{K2}^{(2)} = \frac{p+r}{2\epsilon \phi}F(K) + \left( \frac{p}{\phi} + r \right)K + s
-% \end{equation}
-% % \begin{figure}
-% %   \begin{center}
-% %     \includegraphics[height=4cm]{image/Figure6.png}
-% %     \caption{青，緑の線はそれぞれ式(23)の$w_{K0}^{(2)}$と$w_{K2}^{(2)}$を表している．水平軸は，入力の2D Ising配位の温度Kを表している．詳細は本文を参照．}
-% %   \end{center}
-% % \end{figure}
-% % \begin{figure}
-% %   \begin{center}
-% %     \includegraphics[height=4cm]{image/Figure7.png}
-% %     \caption{3つの隠れユニット$H_{\text{h}}=3$を持つ学習された畳み込みニューラルネットワークの全結合の重み．水平軸は，入力の2次元Ising模型の温度$K$を表している．最初と最後の重みの値は，以前のケースとは対照的に，温度が上昇するにつれて徐々に変化する．詳細な議論については本文を参照．}
-% %   \end{center}
-% % \end{figure}
-% $F(K)$は2次元Ising模型で解析的に計算された自由エネルギーである．これは，図7に示される学習されたニューラルネットワークから得られた実際の重みと非常によく一致している(青と緑の曲線).これらの考察に基づいて，相転移の情報は再び全結合の重みに符号化されていると結論する．なぜなら，式(23)の$G(K)$は直接的に自由エネルギーと関連しているからである．特に，臨界温度は，温度に関する重みの2階導関数の増加を検出することによって得られる．\par
-% 上記で示したモデルや重みのパラメータ設定は，同じ温度予測を生じる多くの可能性のうちの一つであることに注意してほしい．たとえば．2次の$K$依存性は，重みではなく最後の層のバイアスから生じる可能性がある[32]．その場合，相転移や自由エネルギーの情報はバイアスに符号化されるはずである．物理的な情報が機械のパラメータにどのように格納されるかは、隠れユニットの数や活性化関数などを含むニューラルネットワークのアーキテクチャに依存する\par
-% ニューラルネットワークの内部構造に対する洞察を得たことから，物理的な観点から畳み込みニューラルネットワークが完全に接続された層だけから成るネットワークよりも温度をより正確に予測できる理由について論じる．このセクションで観察したように，後者は中間層で磁化を捉えるが，前者は内部エネルギーを抽出し，それに基づいて温度を推測しようとする．ただし，Ising模型における磁化の温度依存性は，臨界温度周辺以外では内部エネルギーと比較して小さい．したがって，ニューラルネットワークがより正確な温度予測のために内部エネルギーの情報を抽出するのは妥当である．実際，畳み込みニューラルネットワークは内部エネルギーを成功裏に学習して，より高い精度を実現している．畳み込みニューラルネットワークの方が優れたパフォーマンスを発揮する理由は，畳み込み層がIsingスピンの空間的な相関などの空間構造を利用して，入力スピン構造の特徴を識別する能力があるためである．一方で，全結合層はその構造には無視されます．最後に，2次元Ising模型に対して与えられた議論は，3状態ポッツモデルにも当てはまることを触れておく．\par
-
-% \section{結論}
-% 私たちは，温度による教師あり機械学習を用いて2次元Ising模型の相転移検出を再検証し，その基本的なメカニズムを明らかにした．\par
-% まず，全結合ニューラルネットワークが2次元Ising模型および3状態ポッツ模型の学習の結果として，第2層の重み構造に急激な変化を示すことを示した．3つの隠れユニットを持つニューラルネットワークを詳しく調べると，実際には第1層で磁化を捉えていることが明らかになった．相転移の検出は，臨界温度周辺以外の入力配位に対する温度の低い予測精度の結果である．\par
-% 一方で，畳み込みニューラルネットワークを使用することで，温度予測の精度を向上させることに成功した．学習された畳み込みネットワークは，磁化ではなく入力配位の内部エネルギーを捉えていることが判明した．また，最後の全結合層の重みは，前者のケースとは対照的に値に急激な変化を示さず，これは最適な温度予測の観点から理解できます．この場合，重みは自由エネルギーに比例しており，したがって，臨界温度を含む物理的な情報が再びこれに符号化されている．\par
-% 興味深いことに，学習されたニューラルネットワークは，どのように学習されたかによって異なる物理的な情報を抽出する．温度予測の観点から見て「悪い」ニューラルネットワークは，入力スピン構造の磁化を捉えようとしますが，これは臨界温度を検出するのに便利であることがある(これは秩序変数であるため)．ネットワークアーキテクチャの改善により，「良い(より良い)」温度予測器を構築することができる．ただし，相転移の情報はネットワークにより暗黙的に符号化される．
+この結果に対してモデリングを行う．3つのラインが表れていることから磁化$m(\{\bm{\sigma}\})$に対して線形な3つの直線でモデリングする．
+\begin{equation}
+  \tilde{x} =
+  \begin{pmatrix}
+    \tilde{x}_0 \\ \tilde{x}_1 \\ \tilde{x}_2
+  \end{pmatrix}
+  =
+  \begin{pmatrix}
+    \epsilon \\ m \\ -m
+  \end{pmatrix}
+\end{equation}
+ここで，$\epsilon > 0$は定数である．さらに，活性化関数として，Softmax関数の代わりに最大値を1，それ以外を0にするMax関数を使用する．この変更は最終結果に影響を与えない．このようにすることで$x_a = \max{(\tilde{x}_a)}$は次のベクトルを生成する．
+\begin{equation}
+  m<-\epsilon : x=
+  \begin{pmatrix}
+    0 \\ 0 \\ 1
+  \end{pmatrix}, \
+  -\epsilon \leq m < \epsilon : x=
+  \begin{pmatrix}
+    1 \\ 0 \\ 0
+  \end{pmatrix}, \
+  \epsilon \leq m : x=
+  \begin{pmatrix}
+    0 \\ 1 \\ 0
+  \end{pmatrix},
+\end{equation}
+このことからパラメータ$\epsilon$は、強磁性相と常磁性相を分離する閾値磁化と解釈できる.\par
+3つの中間ユニットの磁化依存性を理解したため，次に第2層を分析する．この層の重みは図\ref{温度測定器FCN2重みプロット}に示されている．温度を低温，相転移温度，高温の3つの部分に分割する．それぞれ以下のベクトルで表される．
+\begin{equation}
+  \text{High} \ \text{K} :
+  \begin{pmatrix}
+    0 \\ 0 \\ 1
+  \end{pmatrix}, \
+  \text{Low} \ \text{K} :
+  \begin{pmatrix}
+    1 \\ 0 \\ 0
+  \end{pmatrix}, \
+  \text{High} \ \text{K} :
+  \begin{pmatrix}
+    0 \\ 1 \\ 0
+  \end{pmatrix},
+\end{equation}
+これにより，出力次元$N_{\text{o}}$を実質的に3に削減する．そして図\ref{温度測定器FCN2重みプロット}に従って，次のように重みをパラメータ化する．
+\begin{equation}
+  w^{(2)} =
+  \begin{pmatrix}
+    0       & -\Delta & -\Delta \\
+    -\delta & -\delta & -\delta \\
+    -\Delta & 0       & 0
+  \end{pmatrix}
+\end{equation}
+ここで，$\Delta > \delta > 0$．行列$w^{(2)}$の$Ka$成分は$w_{Ka}^{(2)}$に対応する．またバイアスは重みよりもはるかに小さいため無視した．厳密なパラメータ化は，以下の議論には必要ない．このとき，$y_K = \max{(\tilde{y}_K)}=\max{(w_{Ka}^{(2)}x_a+b_K^{(2)})}$は以下の出力を生む．
+\begin{align}
+  m<-\epsilon : y_K = \max(w_{K0}^{(2)}) =
+  \begin{pmatrix}
+    0 \\ 0 \\ 1
+  \end{pmatrix}, \\
+  -\epsilon \leq m < \epsilon : y_K = \max(w_{K1}^{(2)}) =
+  \begin{pmatrix}
+    1 \\ 0 \\ 0
+  \end{pmatrix}, \\
+  \epsilon \leq m : y_K = \max(w_{K2}^{(2)}) =
+  \begin{pmatrix}
+    0 \\ 0 \\ 1
+  \end{pmatrix},
+\end{align}
+これらはそれぞれ，低温，高温，低温と予想される．$m<-\epsilon$と$m>\epsilon$のスピン配位は強磁性相に属する．また，$-\epsilon \leq m < \epsilon$のスピン配位は常磁性相に属する，したがってモデリングしたこれらの出力は正しく予想されている．\par
+このようにモデリングを行ったことでニューラルネットワークが入力スピン配位の自発磁化の情報を入手し，その値がある閾値の絶対値より大きいか小さいかで常磁性相に属するか強磁性相に属するかを分類していることがわかる．図\ref{温度測定器FCN2lossと精度}の右図からFCNモデルで学習を行っても温度測定の精度は約16\%と高くないがそれでも相転移を検出できるのはスピン配位から相転移に重要な磁化の情報を学習しているからである．
 
 
 
-% \chapter{機械学習と繰り込み群}
-% \section{繰り込み群と特徴抽出}
+\subsection{CNNモデルの学習結果とモデリング}
+次にCNNモデルの結果についてまとめる．CNNモデルでは温度測定器としての精度をできるだけ高くするようにモデルを構築した．興味深いことに，2次元イジング模型の場合，この設定で温度測定の精度は理論的に40.1\%と計算することができることが明らかになっている\cite{aoki2018}．今回の実験では最高精度34.8\%まで上げることができた(図\ref{温度測定器CNN2lossと精度})．
+
+\begin{figure}[H]
+  \begin{center}
+      \includegraphics[width=\linewidth]{image/温度測定器2_L16_CNN_Nh3_loss.png}
+      \caption{lossと精度}
+      \label{温度測定器CNN2lossと精度}
+  \end{center}
+\end{figure}
+
+また，このとき学習済みモデルの中間層と出力層の間の重みパラメータに注目し，ヒートマップ図にプロットしたものが図\ref{温度測定器CNN2重みプロット}の左の図である．また，右の図は，左図の縦の3つのヒートマップに対してそれぞれ値を折れ線グラフでプロットしたものである．CNNモデルの場合でも第2層の重みから相転移を検出可能であることがわかる．\par
+
+\begin{figure}[H]
+  \begin{minipage}[b]{0.45\linewidth}
+    \begin{center}
+      \includegraphics[keepaspectratio, scale=0.4]{image/温度測定器2_L16_CNN_Nh3_pram.png}
+    \end{center}
+  \end{minipage}
+  \begin{minipage}[b]{0.45\linewidth}
+    \begin{center}
+      \includegraphics[keepaspectratio, scale=0.4]{image/温度測定器2_L16_CNN_Nh3_weight_plot.png}
+    \end{center}
+  \end{minipage}
+  \caption{3つの隠れユニット$N_{\text{h}}=3$を持つ学習された畳み込みニューラルネットワークの全結合の重み．水平軸は，入力の2次元イジング模型の温度$K$を表している．最初と最後の重みの値は，以前のケースとは対照的に，温度が上昇するにつれて徐々に変化する．}
+  \label{温度測定器CNN2重みプロット}
+\end{figure}
+
+では，温度測定の精度を上げたCNNモデルでは第1層のパラメータには何の情報がコード化されているのか調べる．まずは，FCNモデルのときと同様，中間層への入力値とスピン配位の磁化の相関を調べた．その結果が図\ref{温度測定器CNN2磁化との相関}である．この結果見ると，FCNモデルのときと違いプロットが直線になっていないことがわかる．そこで，次に中間層への入力値とスピン配位の自由エネルギーの相関をプロットした．それが図\ref{温度測定器CNN2自由エネルギーとの相関}である．これを見ると，中間層への入力値は磁化よりもむしろ内部エネルギーに比例していることがわかる．\par
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=\linewidth]{image/温度測定器2_L16_CNN_Nh3_mag.png}
+    \subcaption{磁化との相関}
+    \label{温度測定器CNN2磁化との相関}
+    \includegraphics[width=\linewidth]{image/温度測定器2_L16_CNN_Nh3_internal.png}
+    \subcaption{自由エネルギーとの相関}
+    \label{温度測定器CNN2内部エネルギーとの相関}
+  \end{center}
+  \caption{学習されたニューラルネットワークの全結合層の重みと物理量との相関を示すもので，それぞれが左パネルおよび右パネルの垂直軸に対応する5つの隠れユニットがある．(a) および (b) の水平軸は，それぞれ2次元イジング配位の磁化および内部エネルギーを示す．}
+\end{figure}
+
+中間層への入力と内部エネルギーの依存性がわかったのでその結果からCNNモデルでのモデリングを行う．ここで，$(w_{ai}^{(1)}, b_a^{(1)})$および$(w_{ai}^{(2)}, b_a^{(2)})$はそれぞれ，最後から2番目の層および最後の層の重みとバイアスを表す．プロットの結果(図\ref{温度測定器CNN2内部エネルギーとの相関})から全結合ニューラルネットワークの最初の入力は内部エネルギー$E$を用いて次のように表現できる．
+\begin{equation}
+  x_a = \text{ReLU}(w_{ai}^{(1)}\sigma_i + b_a^{(1)}), \ \
+  x = \begin{pmatrix} x_0 \\ x_1 \\ x_2 \end{pmatrix}
+  = \begin{pmatrix} E+2\epsilon \\ 0 \\ -\phi E \end{pmatrix}
+  \label{(19)}
+\end{equation}
+ここで，$\epsilon$と$\phi$は正の定数である．また，$E$の定義域は$x_a$が負の値を取らないように制限されている．\par
+全結合層の入力が$E$に比例していることを観察したので，入力配位 $\{\sigma_i\}$の温度の最適な推定が何であるかを考えてみる．配位$\{ \sigma_i \}$が温度$K$で現れる確率$P(\{ \sigma_i \} ; K )$は
+\begin{equation}
+  P(\{ \sigma_i \} ; K )
+  = \frac{e^{-KE(\{ \sigma_i \})}}{Z(K)}
+  = e^{-KE(\{ \sigma_i \}) - \ln{Z(K)}}
+  = e^{-KE(\{ \sigma_i \}) + F(K)}
+\end{equation}
+と表せされる．したがって，${\sigma_i}$ が温度$K$で生成される尤度は,
+次の「確率」で表される．
+\begin{equation}
+  y_K^{\text{theory}} = \frac{P(\{\sigma_i ; K \})}{\sum_{K'}P(\{\sigma_i ; K' \})} = \text{softmax}(-KE + F) \label{(21)}
+\end{equation}
+ここで，$F = -\ln{Z(K)}$は自由エネルギーで$K'$はすべての目標温度での足し上げを意味する．このとき，私たちが得る推定温度は
+\begin{equation}
+  K^{\text{output}} =
+  \underset{K} {\operatorname{argmax}} \left[\text{softmax}(-KE + F)\right]
+\end{equation}
+となる．ここで注記するのは，自由エネルギーが温度$K$の関数であり，有限な系では真の特異性を示さないものの，相転移の情報を保持しているということである．\par
+上記の考察に基づいて，私たちのニューラルネットワークの全結合の重みを，その結果の出力が式(\ref{(21)})のように振る舞うように推測する．その後，学習されたネットワークの実際のパラメータと比較する，このために，重みを以下のようにパラメータ化する．
+\begin{equation}
+  w_{K0}^{(2)} = -\phi G(K) - pK + q, \ \
+  w_{K2}^{(2)} = -G(K) + rK + s \label{(23)}
+\end{equation}
+定数パラメータ$p,q,r,s$および共通の非線形関数$G(K)$を持つようにする．図\ref{温度測定器CNN2重みプロット}の青の線，$w^{(2)}_{K1}$は，$x_1 = \text{ReLU}(\tilde{x}_1) = 0$となるため，ここでは無視する．バイアスの値が重みの値よりもはるかに小さい場合，バイアスを無視するというシミュレーションからの観察を利用している．\par
+それでは，$y_K = \text{softmax}(w_{Ka}^{(2)}x_a + b_K^{(2)})$で式\ref{(19)}と\ref{(23)}を用いると，次のような出力が得られる．
+\begin{equation}
+  y_K = \text{softmax}(-(p+r)KE - 2\epsilon(\phi G(K) + pK))
+\end{equation}
+ここで，$\text{max}$関数に影響を与えないため，$K$に依存しない項は落とした．この式は，実際に$-2\epsilon (\phi G(K) + pK) = (p + r)F$が満たされる場合，$y_K^{\text{theory}}$の形をとる．理論的に予測された重みを図\ref{温度測定器2理論的重み.png}にプロットした．
+
+\begin{figure}[H]
+   \begin{center}
+       \includegraphics[height=5cm]{image/温度測定器2理論的重み.png}
+       \caption{青，緑の線はそれぞれ式(\ref{(23)})の$w_{K0}^{(2)}$と$w_{K2}^{(2)}$}を表している．横軸は入力の2次元イジング配位の温度ラベルを表している．
+   \end{center}
+\end{figure}
+
+\begin{equation}
+  w_{K0}^{(2)} = \frac{p+r}{2\epsilon}F(K) + q, \ \
+  w_{K2}^{(2)} = \frac{p+r}{2\epsilon \phi}F(K) + \left( \frac{p}{\phi} + r \right)K + s
+\end{equation}
+
+$F(K)$は2次元イジング模型で解析的に計算された自由エネルギーである．これは，図\ref{温度測定器CNN2重みプロット}に示される学習されたニューラルネットワークから得られた実際の重みと非常によく一致している(青と緑の曲線).これらの考察に基づいて，相転移の情報は再び全結合の重みに符号化されていると結論する．なぜなら，式\ref{(23)}の$G(K)$は直接的に自由エネルギーと関連しているからである．特に，臨界温度は，温度に関する重みの2階導関数の増加を検出することによって得られる．\par
+上記で示したモデルや重みのパラメータ設定は，同じ温度予測を生じる多くの可能性のうちの一つであることに注意してほしい．たとえば．2次の$K$依存性は，重みではなく最後の層のバイアスから生じる可能性がある．その場合，相転移や自由エネルギーの情報はバイアスに符号化されるはずである．物理的な情報が機械のパラメータにどのように格納されるかは、隠れユニットの数や活性化関数などを含むニューラルネットワークのアーキテクチャに依存する\par
+ニューラルネットワークの内部構造に対する洞察を得たことから，物理的な観点から畳み込みニューラルネットワークが完全に接続された層だけから成るネットワークよりも温度をより正確に予測できる理由について論じる．この節で観察したように，後者は中間層で磁化を捉えるが，前者は内部エネルギーを抽出し，それに基づいて温度を推測しようとする．ただし，イジング模型における磁化の温度依存性は，臨界温度周辺以外では内部エネルギーと比較して小さい．したがって，ニューラルネットワークがより正確な温度予測のために内部エネルギーの情報を抽出するのは妥当である．実際，畳み込みニューラルネットワークは内部エネルギーを成功裏に学習して，より高い精度を実現している．畳み込みニューラルネットワークの方が優れたパフォーマンスを発揮する理由は，畳み込み層がイジングスピンの空間的な相関などの空間構造を利用して，入力スピン構造の特徴を識別する能力があるためである．一方で，全結合層はその構造には無視される．\par
+この節では温度による教師あり機械学習を用いて2次元イジング模型の相転移検出を再検証し，その基本的なメカニズムを明らかにした．\par
+まず，全結合ニューラルネットワークが2次元イジング模型および3状態ポッツ模型の学習の結果として，第2層の重み構造に急激な変化を示すことを示した．3つの隠れユニットを持つニューラルネットワークを詳しく調べると，実際には第1層で磁化を捉えていることが明らかになった．相転移の検出は，臨界温度周辺以外の入力配位に対する温度の低い予測精度の結果である．\par
+一方で，畳み込みニューラルネットワークを使用することで，温度予測の精度を向上させることに成功した．学習された畳み込みネットワークは，磁化ではなく入力配位の内部エネルギーを捉えていることが判明した．また，最後の全結合層の重みは，前者のケースとは対照的に値に急激な変化を示さず，これは最適な温度予測の観点から理解できます．この場合，重みは自由エネルギーに比例しており，したがって，臨界温度を含む物理的な情報が再びこれに符号化されている．\par
+興味深いことに，学習されたニューラルネットワークは，どのように学習されたかによって異なる物理的な情報を抽出する．温度予測の観点から見て「悪い」ニューラルネットワークは，入力スピン構造の磁化を捉えようとするが，これは相転移を検出するのに便利であることがある(これは秩序変数であるため)．ネットワークアーキテクチャの改善により，「良い(より良い)」温度予測器を構築することができる．ただし，相転移の情報はネットワークにより暗黙的に符号化される．
 
 
 \chapter*{まとめ}
-論文では1章で相転移現象とイジング模型についての基本的な説明を行った後，2章で機械学習の概要を述べた．そのあと，機械学習を活用してイジング模型の相転移を検出する研究として，相の分類器による検出，温度測定器による検出，そして，なぜ相転移を検出できたのかについての理論的考察を紹介した．\par
+本論文では1章で相転移現象とイジング模型についての基本的な説明を行った後，2章で機械学習の概要を述べた．そのあと，機械学習を活用してイジング模型の相転移を検出する研究として，相の分類器による検出，温度測定器による検出，そして，なぜ相転移を検出できたのかについての理論的考察を紹介した．\par
 この研究により，最近注目されているAIや機械学習の分野が物理学の研究にどのように貢献しているかを感じることができた．相転移や臨界現象は物理学において非常に重要な物理現象であり，これらを機械学習で応用することは将来の物理学の発展に大いに寄与するだろう．本論文では，大学物理で習う非常に基本的な相転移現象であるイジング模型に焦点を当てたが，一般には未知の相転移現象が多く存在し，そうした未知の領域で機械学習を活用できれば，物理学における機械学習の応用が一層進展することだろう．\par
-近年では，トポロジカル絶縁体の相転移現象に関する研究においても機械学習が活用されており，未知の物理現象への応用というのがすでに始まっている．
-
+近年では，トポロジカル絶縁体の相転移現象に関する研究やくりこみ群に関する応用研究など，最先端の物理学の研究に機械学習が活用されており，今後の進展さらに期待が高まっている．
 %=====================================================================================
 \chapter*{謝辞} %章を付けずにタイトル表示
 \addcontentsline{toc}{chapter}{謝辞} %章立てせずに目次に追加するおまじない
@@ -2930,15 +2872,15 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
 \bibliographystyle{junsrt} %本文に\cite{}を入れることで，参考文献表示
 
 % 付録
-\appendix
-\renewcommand{\thechapter}{\Alph{chapter}}
-\renewcommand{\thesection}{\Alph{chapter}.\arabic{section}}
-\setcounter{section}{0}
-\renewcommand{\theequation}{\Alph{chapter}.\arabic{equation}}
-\setcounter{equation}{0}
+% \appendix
+% \renewcommand{\thechapter}{\Alph{chapter}}
+% \renewcommand{\thesection}{\Alph{chapter}.\arabic{section}}
+% \setcounter{section}{0}
+% \renewcommand{\theequation}{\Alph{chapter}.\arabic{equation}}
+% \setcounter{equation}{0}
 
-\chapter{2次元イジング模型の厳密解の計算}
-\section{二次元イジング模型の厳密解の計算}
+% \chapter{2次元イジング模型の厳密解の計算}
+% \section{二次元イジング模型の厳密解の計算}
 % 二次元イジング模型の厳密解はOnsagerによって求められた．Onsagerは，転送行列を対角化することで磁場のないときの自由エネルギーを求め，比熱をある温度で発散することを示した．いくつかの解法があるが，ここでは，高温展開を用いた解法を説明する．高温展開は，温度が高いとして自由エネルギーを$\beta J$のべきで展開する方法である．十分高温であれば，その展開を数項で打ち切って自由エネルギーの近似値とする．計算が比較的簡単なため，汎用的な手法として用いられているが，近似の正当性に十分に注意する必要がある．この近似のみを用いて相転移を調べることはできない．有限項の和から特異性が生じることはないからである．本節では，無限和を計算することにより厳密解を求め，特異性が生じることを示す．\par
 % $h=0$の場合に高温展開を行う．二次元イジング模型の分配関数は
 % \begin{equation}
@@ -3023,390 +2965,390 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
 %     \right]
 % \end{equation}
 
-\section{転送行列を用いた定式化}
-2次元イジング模型の厳密解に向けた前段階として，転送行列の観点で2次元イジング模型の定式化を行う．$n$行$n$列の正方格子上にある$N=n^2$個のスピンを考える．そして，周期的境界条件を課す．\par
-スピン座標の$\alpha$列にあるスピンをまとめて次のように表す．
-\begin{equation}
-  \mu_{\alpha}
-  \equiv \{\sigma_1, \sigma_2, \dots, \sigma_n\}
-\end{equation}
-ここで，$\mu$について次の境界条件が成り立つ．
-\begin{equation}
-  \mu_{n+1} = \mu_1 
-\end{equation}
-また，スピン配位全体を$\{\mu_1, \dots, \mu_n\}$で表す．イジング模型では，$\alpha$列にあるスピンと相互作用する列は$(\alpha-1)$列と$(\alpha+1)$列のみある．そこで，$\alpha$列と$\alpha+1$列との相互作用エネルギーを$E(\mu_{\alpha}, \mu_{\alpha+1})$，$\alpha$列のスピン内でのスピン同士の相互作用エネルギーと磁場との相互作用エネルギーの総和を$E(\mu_{\alpha})$とすると，それぞれ次のようになる．
-\begin{align}
-  E(\mu, \mu')
-   & = -\epsilon \sum_{k=1}^n s_k s'_k                         \\
-  E(\mu)
-   & = -\epsilon \sum_{k=1}^n s_k s_{k+1} - H \sum_{k=1}^n s_k
-\end{align}
-ここで，$\mu$と$\mu'$はそれぞれ，隣り合った列のスピン座標の集まりである．
-\begin{align}
-  \mu  & \equiv \{s_1, \dots, s_n \} \notag \\
-  \mu' & \equiv \{s'_1, \dots, s'_n \}
-  \label{イジングエネルギー２}
-\end{align}
-配位$\{\mu_1, \dots, \mu_n\}$における全エネルギーは
-\begin{equation}
-  E_t\{\mu_1, \dots, \mu_n \}
-  = \sum_{\alpha=1}^n [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})]
-\end{equation}
-となり，分配関数は
-\begin{equation}
-  Z(H,T)
-  = \sum_{\mu_1} \cdots \sum_{\mu_n} \exp{\left\{ -\beta \sum_{\alpha=1}^n [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})] \right\}}
-\end{equation}
-で与えられる．\par
-ここで，次のように行列要素が定義された，$2^n \times 2^n$行列$\mathrm{P}$を考える．
-\begin{equation}
-  \bra{\mu} \mathrm{P} \ket{\mu'} \equiv e^{-\beta [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})]}
-  \label{行列要素}
-\end{equation}
-これを用いると分配関数は
-\begin{align}
-  Z(H,T)
-   & = \sum_{\mu_1} \cdots \sum_{\mu_n} \bra{\mu_1} \mathrm{P} \ket{\mu_2}\bra{\mu_2} \mathrm{P} \ket{\mu_3}\cdots\bra{\mu_n} \mathrm{P} \ket{\mu_1} \\
-   & = \sum_{\mu_1}\bra{\mu_1} \mathrm{P}^n \ket{\mu_1} = \mathrm{Tr} \ \mathrm{P}^n
-\end{align}
-と$\mathrm{P}^n$のトレースで表せることがわかる．ここで，$\mathrm{P}^n$は転送行列とよばれる．行列のトレースは行列の表現から独立しているため，上式のトレースは，以下のような対角化された$\mathrm{P}$で評価しても結果に影響を与えない．
-\begin{equation}
-  \mathrm{P} = \begin{bmatrix}
-    \lambda_1 &           &        &               \\
-              & \lambda_2 &        &               \\
-              &           & \ddots &               \\
-              &           &        & \lambda_{2^n} \\
-  \end{bmatrix}
-\end{equation}
-ここで，$\lambda_1, \lambda_2, \dots, \lambda_{2^n}$は$\mathrm{P}$の固有値である．$\mathrm{P}^n$もまた対角行列であり，対角成分は$(\lambda_1)^n, (\lambda_2)^n, \dots, (\lambda_{2^n})^n$である．したがって，分配関数は
-\begin{equation}
-  Z(H,T)
-  = \sum_{\alpha=1}^{2^n} (\lambda_\alpha)^n
-\end{equation}
-で表される．$E(\mu, \mu')$と$E(\mu)$は$n$のオーダーであるため，式(\ref{行列要素})の形式から，$n$が大きい場合，$\mathrm{P}$の固有値は一般に$e^n$のオーダーであることが予想される．$\lambda_{\text{max}}$を$\mathrm{P}$の最大固有値とすると，
-\begin{equation}
-  \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\lambda}_{\text{max}}
-  = \text{finite number}
-  \label{最大固有値有限}
-\end{equation}
-と予想される．そして，もしこれが正しく，すべての固有値$\lambda_{\alpha}$が正ならば，
-\begin{equation}
-  (\lambda_{\text{max}})^n \leq Z \leq 2^n (\lambda_{\max})^n
-\end{equation}
-もしくは
-\begin{equation}
-  \frac{1}{n}\ln{\lambda_{\text{max}}}
-  \leq \frac{1}{n^2}\ln{Z}
-  \leq \frac{1}{n}\ln{\lambda_{\text{max}}} + \frac{1}{n} \ln{2}
-\end{equation}
-となる．したがって，はさみうちの原理より，
-\begin{equation}
-  \lim_{N \rightarrow \infty} \frac{1}{N} \ln{Z}
-  = \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\lambda_{\text{max}}}
-  \label{n極限}
-\end{equation}
-か成り立つことがわかる．$N=n^2$．式(\ref{最大固有値有限}) が真であり，すべての固有値$\lambda_{\alpha}$が正であるという仮定が正しいことは後でわかる．したがって，$P$の最大の固有値が分かれば$n \rightarrow \infty$での分配関数が分かる．このセクションの残りの部分は，$P$の明示的な表現の説明に当てられる．
+% \section{転送行列を用いた定式化}
+% 2次元イジング模型の厳密解に向けた前段階として，転送行列の観点で2次元イジング模型の定式化を行う．$n$行$n$列の正方格子上にある$N=n^2$個のスピンを考える．そして，周期的境界条件を課す．\par
+% スピン座標の$\alpha$列にあるスピンをまとめて次のように表す．
+% \begin{equation}
+%   \mu_{\alpha}
+%   \equiv \{\sigma_1, \sigma_2, \dots, \sigma_n\}
+% \end{equation}
+% ここで，$\mu$について次の境界条件が成り立つ．
+% \begin{equation}
+%   \mu_{n+1} = \mu_1 
+% \end{equation}
+% また，スピン配位全体を$\{\mu_1, \dots, \mu_n\}$で表す．イジング模型では，$\alpha$列にあるスピンと相互作用する列は$(\alpha-1)$列と$(\alpha+1)$列のみある．そこで，$\alpha$列と$\alpha+1$列との相互作用エネルギーを$E(\mu_{\alpha}, \mu_{\alpha+1})$，$\alpha$列のスピン内でのスピン同士の相互作用エネルギーと磁場との相互作用エネルギーの総和を$E(\mu_{\alpha})$とすると，それぞれ次のようになる．
+% \begin{align}
+%   E(\mu, \mu')
+%    & = -\epsilon \sum_{k=1}^n s_k s'_k                         \\
+%   E(\mu)
+%    & = -\epsilon \sum_{k=1}^n s_k s_{k+1} - H \sum_{k=1}^n s_k
+% \end{align}
+% ここで，$\mu$と$\mu'$はそれぞれ，隣り合った列のスピン座標の集まりである．
+% \begin{align}
+%   \mu  & \equiv \{s_1, \dots, s_n \} \notag \\
+%   \mu' & \equiv \{s'_1, \dots, s'_n \}
+%   \label{イジングエネルギー２}
+% \end{align}
+% 配位$\{\mu_1, \dots, \mu_n\}$における全エネルギーは
+% \begin{equation}
+%   E_t\{\mu_1, \dots, \mu_n \}
+%   = \sum_{\alpha=1}^n [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})]
+% \end{equation}
+% となり，分配関数は
+% \begin{equation}
+%   Z(H,T)
+%   = \sum_{\mu_1} \cdots \sum_{\mu_n} \exp{\left\{ -\beta \sum_{\alpha=1}^n [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})] \right\}}
+% \end{equation}
+% で与えられる．\par
+% ここで，次のように行列要素が定義された，$2^n \times 2^n$行列$\mathrm{P}$を考える．
+% \begin{equation}
+%   \bra{\mu} \mathrm{P} \ket{\mu'} \equiv e^{-\beta [E(\mu_{\alpha}, \mu_{\alpha+1}) + E(\mu_{\alpha})]}
+%   \label{行列要素}
+% \end{equation}
+% これを用いると分配関数は
+% \begin{align}
+%   Z(H,T)
+%    & = \sum_{\mu_1} \cdots \sum_{\mu_n} \bra{\mu_1} \mathrm{P} \ket{\mu_2}\bra{\mu_2} \mathrm{P} \ket{\mu_3}\cdots\bra{\mu_n} \mathrm{P} \ket{\mu_1} \\
+%    & = \sum_{\mu_1}\bra{\mu_1} \mathrm{P}^n \ket{\mu_1} = \mathrm{Tr} \ \mathrm{P}^n
+% \end{align}
+% と$\mathrm{P}^n$のトレースで表せることがわかる．ここで，$\mathrm{P}^n$は転送行列とよばれる．行列のトレースは行列の表現から独立しているため，上式のトレースは，以下のような対角化された$\mathrm{P}$で評価しても結果に影響を与えない．
+% \begin{equation}
+%   \mathrm{P} = \begin{bmatrix}
+%     \lambda_1 &           &        &               \\
+%               & \lambda_2 &        &               \\
+%               &           & \ddots &               \\
+%               &           &        & \lambda_{2^n} \\
+%   \end{bmatrix}
+% \end{equation}
+% ここで，$\lambda_1, \lambda_2, \dots, \lambda_{2^n}$は$\mathrm{P}$の固有値である．$\mathrm{P}^n$もまた対角行列であり，対角成分は$(\lambda_1)^n, (\lambda_2)^n, \dots, (\lambda_{2^n})^n$である．したがって，分配関数は
+% \begin{equation}
+%   Z(H,T)
+%   = \sum_{\alpha=1}^{2^n} (\lambda_\alpha)^n
+% \end{equation}
+% で表される．$E(\mu, \mu')$と$E(\mu)$は$n$のオーダーであるため，式(\ref{行列要素})の形式から，$n$が大きい場合，$\mathrm{P}$の固有値は一般に$e^n$のオーダーであることが予想される．$\lambda_{\text{max}}$を$\mathrm{P}$の最大固有値とすると，
+% \begin{equation}
+%   \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\lambda}_{\text{max}}
+%   = \text{finite number}
+%   \label{最大固有値有限}
+% \end{equation}
+% と予想される．そして，もしこれが正しく，すべての固有値$\lambda_{\alpha}$が正ならば，
+% \begin{equation}
+%   (\lambda_{\text{max}})^n \leq Z \leq 2^n (\lambda_{\max})^n
+% \end{equation}
+% もしくは
+% \begin{equation}
+%   \frac{1}{n}\ln{\lambda_{\text{max}}}
+%   \leq \frac{1}{n^2}\ln{Z}
+%   \leq \frac{1}{n}\ln{\lambda_{\text{max}}} + \frac{1}{n} \ln{2}
+% \end{equation}
+% となる．したがって，はさみうちの原理より，
+% \begin{equation}
+%   \lim_{N \rightarrow \infty} \frac{1}{N} \ln{Z}
+%   = \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\lambda_{\text{max}}}
+%   \label{n極限}
+% \end{equation}
+% か成り立つことがわかる．$N=n^2$．式(\ref{最大固有値有限}) が真であり，すべての固有値$\lambda_{\alpha}$が正であるという仮定が正しいことは後でわかる．したがって，$P$の最大の固有値が分かれば$n \rightarrow \infty$での分配関数が分かる．このセクションの残りの部分は，$P$の明示的な表現の説明に当てられる．
 
 
-\section{転送行列$\mathrm{P}$}
-式(\ref{行列要素})と式(\ref{イジングエネルギー２})から我々は$\mathrm{P}$の行列要素を
-\begin{align}
-  \bra{s_1,\dots,s_n}\mathrm{P}\ket{s'_1,\dots,s'_n}
-   & = e^{-\beta[E(\mu, \mu') + E(\mu)]} \notag                                                        \\
-   & = e^{\beta \sum_{k=1}^{n}} \left( \epsilon s_k s'_k + \epsilon s_k s_{k+1} + H s_k \right) \notag \\
-   & = \prod_{k=1}^n e^{\beta H s_k} e^{\beta \epsilon s_k s_{k+1}} e^{\beta \epsilon s_k s'_k}
-\end{align}
-のように得た．ここで，$2^n \times 2^n$の3つの行列$V'_1, V_2, V_3$を定義する．それぞれ行列要素は次のように与える．
-\begin{align}
-  \bra{s_1,\dots,s_n}V'_1\ket{s'_1,\dots,s'_n}
-   & \equiv \prod_{k=1}^n e^{\beta \epsilon s_k s'_k} \label{V1'}                                 \\
-  \bra{s_1,\dots,s_n}V_2\ket{s'_1,\dots,s'_n}
-   & \equiv \delta_{s_1 s'_1}\dots\delta_{s_n s'_n} \prod_{k=1}^n e^{\beta \epsilon s_k s_{k+1}} \\
-  \bra{s_1,\dots,s_n}V_3\ket{s'_1,\dots,s'_n}
-   & \equiv \delta_{s_1 s'_1}\dots\delta_{s_n s'_n} \prod_{k=1}^n e^{\beta \epsilon H s_k}       \\
-\end{align}
-ここで，$\delta_{ss'}$はクロネッカーのデルタ記号である．したがって，この表現では$V_2$と$V_3$は対角行列になる．それは簡単に示せる．
-\begin{equation}
-  \mathrm{P} = V_3 V_2 V'_1
-  \label{転送行列}
-\end{equation}
-行列乗算の通常の意味で，つまり
-\begin{align*}
-  & \bra{s_1,\dots,s_n}\mathrm{V}_3\mathrm{V}_2\mathrm{V}'_1\ket{s'_1,\dots,s'_n}                                                            \\
-  & = \sum_{s''_1, \dots, s''_n} \sum_{s'''_1, \dots, s'''_n} \bra{s_1,\dots,s_n}\mathrm{V}_3\ket{s''_1,\dots,s''_n} \bra{s''_1,\dots,s''_n}\mathrm{V}_2\ket{s'''_1,\dots,s'''_n}       \\
-  & \times \bra{s'''_1,\dots,s'''_n}\mathrm{V}'_1\ket{s'_1,\dots,s'_n} \\
-  & = \sum_{s''_1, \dots, s''_n} \sum_{s'''_1, \dots, s'''_n}
-  \delta_{s_1s''_1} \cdots \delta_{s_ns''_n} \delta_{s''_1s'''_1} \cdots \delta_{s''_ns'''_n} \prod_{k =1}^{n} e^{\beta H s_k} e^{\beta \epsilon s''_k s'''_{k+1}} e^{\beta \epsilon s'''_k s'_k} \\
-  & = \sum_{s''_1, \dots, s''_n} 
-  \delta_{s_1s''_1} \cdots \delta_{s_ns''_n} \prod_{k =1}^{n} e^{\beta H s_k} e^{\beta \epsilon s''_k s''_{k+1}} e^{\beta \epsilon s''_k s'_k} \\
-  & = \prod_{k =1}^{n} e^{\beta H s_k} e^{\beta \epsilon s_k s_{k+1}} e^{\beta \epsilon s_k s'_k}
-\end{align*}
+% \section{転送行列$\mathrm{P}$}
+% 式(\ref{行列要素})と式(\ref{イジングエネルギー２})から我々は$\mathrm{P}$の行列要素を
+% \begin{align}
+%   \bra{s_1,\dots,s_n}\mathrm{P}\ket{s'_1,\dots,s'_n}
+%    & = e^{-\beta[E(\mu, \mu') + E(\mu)]} \notag                                                        \\
+%    & = e^{\beta \sum_{k=1}^{n}} \left( \epsilon s_k s'_k + \epsilon s_k s_{k+1} + H s_k \right) \notag \\
+%    & = \prod_{k=1}^n e^{\beta H s_k} e^{\beta \epsilon s_k s_{k+1}} e^{\beta \epsilon s_k s'_k}
+% \end{align}
+% のように得た．ここで，$2^n \times 2^n$の3つの行列$V'_1, V_2, V_3$を定義する．それぞれ行列要素は次のように与える．
+% \begin{align}
+%   \bra{s_1,\dots,s_n}V'_1\ket{s'_1,\dots,s'_n}
+%    & \equiv \prod_{k=1}^n e^{\beta \epsilon s_k s'_k} \label{V1'}                                 \\
+%   \bra{s_1,\dots,s_n}V_2\ket{s'_1,\dots,s'_n}
+%    & \equiv \delta_{s_1 s'_1}\dots\delta_{s_n s'_n} \prod_{k=1}^n e^{\beta \epsilon s_k s_{k+1}} \\
+%   \bra{s_1,\dots,s_n}V_3\ket{s'_1,\dots,s'_n}
+%    & \equiv \delta_{s_1 s'_1}\dots\delta_{s_n s'_n} \prod_{k=1}^n e^{\beta \epsilon H s_k}       \\
+% \end{align}
+% ここで，$\delta_{ss'}$はクロネッカーのデルタ記号である．したがって，この表現では$V_2$と$V_3$は対角行列になる．それは簡単に示せる．
+% \begin{equation}
+%   \mathrm{P} = V_3 V_2 V'_1
+%   \label{転送行列}
+% \end{equation}
+% 行列乗算の通常の意味で，つまり
+% \begin{align*}
+%   & \bra{s_1,\dots,s_n}\mathrm{V}_3\mathrm{V}_2\mathrm{V}'_1\ket{s'_1,\dots,s'_n}                                                            \\
+%   & = \sum_{s''_1, \dots, s''_n} \sum_{s'''_1, \dots, s'''_n} \bra{s_1,\dots,s_n}\mathrm{V}_3\ket{s''_1,\dots,s''_n} \bra{s''_1,\dots,s''_n}\mathrm{V}_2\ket{s'''_1,\dots,s'''_n}       \\
+%   & \times \bra{s'''_1,\dots,s'''_n}\mathrm{V}'_1\ket{s'_1,\dots,s'_n} \\
+%   & = \sum_{s''_1, \dots, s''_n} \sum_{s'''_1, \dots, s'''_n}
+%   \delta_{s_1s''_1} \cdots \delta_{s_ns''_n} \delta_{s''_1s'''_1} \cdots \delta_{s''_ns'''_n} \prod_{k =1}^{n} e^{\beta H s_k} e^{\beta \epsilon s''_k s'''_{k+1}} e^{\beta \epsilon s'''_k s'_k} \\
+%   & = \sum_{s''_1, \dots, s''_n} 
+%   \delta_{s_1s''_1} \cdots \delta_{s_ns''_n} \prod_{k =1}^{n} e^{\beta H s_k} e^{\beta \epsilon s''_k s''_{k+1}} e^{\beta \epsilon s''_k s'_k} \\
+%   & = \prod_{k =1}^{n} e^{\beta H s_k} e^{\beta \epsilon s_k s_{k+1}} e^{\beta \epsilon s_k s'_k}
+% \end{align*}
 
-\section{行列の直積}
-ここで，$\mathrm{V}_3, \mathrm{V}_2, \mathrm{V}'_1$による便利な方法を述べる前に，行列の積の概念を導入する．\par
-$m \times m$の２つの行列$A, B$を考える．行列要素はそれぞれ，$\bra{i}A\ket{j}, \bra{i}B\ket{j}$である．$i, j$はそれぞれ$1, 2, \dots, m$の値をとる．このとき，直積$A \times B$は$m^2 \times m^2$の行列となり，行列要素は
-\begin{equation}
-  \bra{ii'}A \times B\ket{jj'}
-  \equiv \bra{i} A \ket{j} \bra{i'} B \ket{j'}
-\end{equation}
-と定義する．3つ以上の行列の直積$A \times B \times \cdots \times C$にも拡張でき，行列要素は
-\begin{equation}
-  \bra{ii' \cdots i''} A \times B \times \cdots \times C \ket{jj' \cdots j''}
-  \equiv \bra{i}A\ket{j} \bra{i'}B\ket{j'} \cdots \bra{i''}A\ket{j''}
-\end{equation}
-で表される．もし$AB$が通常の行列乗算のもとでの行列$A$と$B$の積を表すなら，次のようになる．
-\begin{equation}
-  (A \times B)(C \times D) = (AC) \times (BD)
-  \label{直積公式}
-\end{equation}
-これは以下のように示せる．
-\begin{align*}
-  \bra{ii'} (A \times B)(C \times D) \ket{jj'}
-   & = \sum_{kk'} \bra{ii'} A \times B \ket{kk'} \bra{kk'} C \times D \ket{jj'} \\
-   & = \bra{i} AC \ket{j} \bra{i'} BD \ket{j'}                                  \\
-   & = \bra{ii'} (AC) \times (BD) \ket{jj'}
-\end{align*}
-式(\ref{直積公式})を一般化した，以下の等式も成り立つ．
-\begin{equation}
-  (A \times B \times \cdots \times C) (D \times E \times \cdots \times F)
-  = (AD) \times (BE) \times \cdots \times (CF)
-\end{equation}
+% \section{行列の直積}
+% ここで，$\mathrm{V}_3, \mathrm{V}_2, \mathrm{V}'_1$による便利な方法を述べる前に，行列の積の概念を導入する．\par
+% $m \times m$の２つの行列$A, B$を考える．行列要素はそれぞれ，$\bra{i}A\ket{j}, \bra{i}B\ket{j}$である．$i, j$はそれぞれ$1, 2, \dots, m$の値をとる．このとき，直積$A \times B$は$m^2 \times m^2$の行列となり，行列要素は
+% \begin{equation}
+%   \bra{ii'}A \times B\ket{jj'}
+%   \equiv \bra{i} A \ket{j} \bra{i'} B \ket{j'}
+% \end{equation}
+% と定義する．3つ以上の行列の直積$A \times B \times \cdots \times C$にも拡張でき，行列要素は
+% \begin{equation}
+%   \bra{ii' \cdots i''} A \times B \times \cdots \times C \ket{jj' \cdots j''}
+%   \equiv \bra{i}A\ket{j} \bra{i'}B\ket{j'} \cdots \bra{i''}A\ket{j''}
+% \end{equation}
+% で表される．もし$AB$が通常の行列乗算のもとでの行列$A$と$B$の積を表すなら，次のようになる．
+% \begin{equation}
+%   (A \times B)(C \times D) = (AC) \times (BD)
+%   \label{直積公式}
+% \end{equation}
+% これは以下のように示せる．
+% \begin{align*}
+%   \bra{ii'} (A \times B)(C \times D) \ket{jj'}
+%    & = \sum_{kk'} \bra{ii'} A \times B \ket{kk'} \bra{kk'} C \times D \ket{jj'} \\
+%    & = \bra{i} AC \ket{j} \bra{i'} BD \ket{j'}                                  \\
+%    & = \bra{ii'} (AC) \times (BD) \ket{jj'}
+% \end{align*}
+% 式(\ref{直積公式})を一般化した，以下の等式も成り立つ．
+% \begin{equation}
+%   (A \times B \times \cdots \times C) (D \times E \times \cdots \times F)
+%   = (AD) \times (BE) \times \cdots \times (CF)
+% \end{equation}
 
-\section{スピン行列}
-ここで，$\mathrm{V}'_1, \mathrm{V}_2, \mathrm{V}_3$を便利に表現できる特別な行列をいくつか紹介する．よく知られた3つの$2 \times 2$パウリスピン行列を$X, Y, Z$とする．
-\begin{equation}
-  X \equiv \begin{pmatrix}
-    0 & 1 \\ 1 & 0
-  \end{pmatrix}, \ \ \
-  Y \equiv \begin{pmatrix}
-    0 & -i \\ i & 0
-  \end{pmatrix}, \ \ \
-  Z \equiv \begin{pmatrix}
-    1 & 0 \\ 0 & -1
-  \end{pmatrix}
-\end{equation}
-これらパウリ行列は次の関係式を満たす．\par
-\begin{equation*}
-  X^2 = Y^2 = Z^2 = 1
-\end{equation*}
-\begin{equation}
-  XY + YX = 0, \ \ YZ + ZY = 0, \ \ ZX + XZ = 0
-  \label{スピン行列性質}
-\end{equation}
-\begin{equation*}
-  XY = iZ, \ \ YZ = iX, \ \ ZX = iY
-\end{equation*}
-ここで，$2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\alpha}$を定義する．
-\begin{align}
-  \mathrm{X}_{\alpha} \equiv 1 \otimes 1 \otimes \cdots \otimes \mathrm{X} \otimes \cdots \otimes 1 \notag \\
-  \mathrm{Y}_{\alpha} \equiv 1 \otimes 1 \otimes \cdots \otimes \mathrm{Y} \otimes \cdots \otimes 1        \\
-  \mathrm{Z}_{\alpha} \equiv 1 \otimes 1 \otimes \cdots \otimes \mathrm{Z} \otimes \cdots \otimes 1 \notag
-  \label{2n2n行列}
-\end{align}
-$\alpha \neq \beta$のとき以下の関係式が成り立つ．
-\begin{align}
-   & [\mathrm{X}_{\alpha}, \mathrm{X}_{\beta}]
-  = [\mathrm{Y}_{\alpha}, \mathrm{Y}_{\beta}]
-  = [\mathrm{Z}_{\alpha}, \mathrm{Z}_{\beta}]
-  = 0 \notag                                   \\
-   & [\mathrm{X}_{\alpha}, \mathrm{Y}_{\beta}]
-  = [\mathrm{X}_{\alpha}, \mathrm{Z}_{\beta}]
-  = [\mathrm{Y}_{\alpha}, \mathrm{Z}_{\beta}]
-  = 0
-\end{align}
-$2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\alpha}$は(\ref{スピン行列性質})のすべての関係式を満たす．
+% \section{スピン行列}
+% ここで，$\mathrm{V}'_1, \mathrm{V}_2, \mathrm{V}_3$を便利に表現できる特別な行列をいくつか紹介する．よく知られた3つの$2 \times 2$パウリスピン行列を$X, Y, Z$とする．
+% \begin{equation}
+%   X \equiv \begin{pmatrix}
+%     0 & 1 \\ 1 & 0
+%   \end{pmatrix}, \ \ \
+%   Y \equiv \begin{pmatrix}
+%     0 & -i \\ i & 0
+%   \end{pmatrix}, \ \ \
+%   Z \equiv \begin{pmatrix}
+%     1 & 0 \\ 0 & -1
+%   \end{pmatrix}
+% \end{equation}
+% これらパウリ行列は次の関係式を満たす．\par
+% \begin{equation*}
+%   X^2 = Y^2 = Z^2 = 1
+% \end{equation*}
+% \begin{equation}
+%   XY + YX = 0, \ \ YZ + ZY = 0, \ \ ZX + XZ = 0
+%   \label{スピン行列性質}
+% \end{equation}
+% \begin{equation*}
+%   XY = iZ, \ \ YZ = iX, \ \ ZX = iY
+% \end{equation*}
+% ここで，$2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\alpha}$を定義する．
+% \begin{align}
+%   \mathrm{X}_{\alpha} \equiv 1 \otimes 1 \otimes \cdots \otimes \mathrm{X} \otimes \cdots \otimes 1 \notag \\
+%   \mathrm{Y}_{\alpha} \equiv 1 \otimes 1 \otimes \cdots \otimes \mathrm{Y} \otimes \cdots \otimes 1        \\
+%   \mathrm{Z}_{\alpha} \equiv 1 \otimes 1 \otimes \cdots \otimes \mathrm{Z} \otimes \cdots \otimes 1 \notag
+%   \label{2n2n行列}
+% \end{align}
+% $\alpha \neq \beta$のとき以下の関係式が成り立つ．
+% \begin{align}
+%    & [\mathrm{X}_{\alpha}, \mathrm{X}_{\beta}]
+%   = [\mathrm{Y}_{\alpha}, \mathrm{Y}_{\beta}]
+%   = [\mathrm{Z}_{\alpha}, \mathrm{Z}_{\beta}]
+%   = 0 \notag                                   \\
+%    & [\mathrm{X}_{\alpha}, \mathrm{Y}_{\beta}]
+%   = [\mathrm{X}_{\alpha}, \mathrm{Z}_{\beta}]
+%   = [\mathrm{Y}_{\alpha}, \mathrm{Z}_{\beta}]
+%   = 0
+% \end{align}
+% $2^n \times 2^n$行列$\mathrm{X}_{\alpha}, \mathrm{Y}_{\alpha}, \mathrm{Z}_{\alpha}$は(\ref{スピン行列性質})のすべての関係式を満たす．
 
-\section{行列$\mathrm{V}'_1, \mathrm{V}_2, \mathrm{V}_3$}
-式(\ref{V1'})から，$\mathrm{V}'_1$が$n$個の同じ$2 \times 2$行列の直積で表せることがわかる．
-\begin{equation}
-  \mathrm{V}_1'=\bm{a} \times \bm{a} \times \cdots \times \bm{a}
-\end{equation}
-ここで，
-\begin{equation}
-  \bra{s}\bm{a} \ket{s'}
-  =e^{\beta \epsilon s s'}
-\end{equation}
-である．したがって，
-\begin{equation}
-  \bm{a}=\left[\begin{array}{cc}
-      e^{\beta \epsilon}  & e^{-\beta \epsilon} \\
-      e^{-\beta \epsilon} & e^{\beta \epsilon}
-    \end{array}\right]=e^{\beta \epsilon}+e^{-\beta \epsilon} X
-    \label{a行列}
-\end{equation}
-である．ここで，$\alpha$と$\theta$を定数として
-\begin{equation}
-  \bm{a} 
-  = \alpha e^{\theta X}
-  = \alpha (\cosh{\theta} + X \sinh{\theta})
-\end{equation}
-とする．式(\ref{a行列})と係数比較すれば，
-\begin{equation}
-  \begin{cases}
-    e^{\beta \epsilon} = \alpha \cosh{\theta} \\
-    e^{- \beta \epsilon} = \alpha \sinh{\theta}
-  \end{cases}
-\end{equation}
-となり，これを解くことで
-\begin{equation}
-  \bm{a}
-  =\sqrt{2 \sinh (2 \beta \epsilon)} e^{\theta X}, \quad
-  \tanh \theta \equiv e^{-2 \beta \epsilon}
-\end{equation}
-である．したがって
-\begin{equation}
-  \mathrm{V}_1'=[2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} e^{\theta X} \otimes e^{\theta X} \otimes \cdots \otimes e^{\theta X}
-\end{equation}
-と表せる．ここで，
-\begin{align}
-  &e^{\theta X} \otimes e^{\theta X} \otimes \cdots \otimes e^{\theta X} \\
-  &= (e^{\theta X} \otimes 1 \otimes \cdots \otimes 1) (1 \otimes e^{\theta X} \otimes \cdots \otimes 1) \cdots (1 \otimes 1 \otimes \cdots \otimes e^{\theta X}) \\
-  &= e^{\theta \mathrm{X}_1} e^{\theta \mathrm{X}_2} \cdots e^{\theta \mathrm{X}_n} \\
-  &= e^{\theta\left(\mathrm{X}_1+\mathrm{X}_2+\cdots+\mathrm{X}_n\right)}
-\end{align}
-と表せることを使う．2つ目の等式では$1 \otimes \cdots \otimes e^{\theta X} \otimes \cdots \otimes 1 = e^{\theta (1 \otimes \cdots \otimes X \otimes \cdots 1)}$を使った．これより，$\mathrm{V}'_1$は次のように書ける．
-\begin{align}
-  \mathrm{V}_1'
-   & =[2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{~V}_1                               \\
-  \mathrm{V}_1,
-   & =\prod_{\alpha=1}^n e^{\theta \mathrm{x}_{\alpha}}, \quad \tanh \theta \equiv e^{-2 \beta \epsilon}
-  \label{V1}
-\end{align}
-同様な考えより，$\mathrm{V}_2, \mathrm{V}_3$に関しても，
-\begin{align}
-  \mathrm{V}_2
-   & =\prod_{\alpha=1}^n e^{\beta \epsilon \mathbf{Z}_\alpha \mathbf{Z}_{\alpha+1}} \label{V2}\\
-  \mathrm{V}_3
-   & =\prod_{\alpha=1}^n e^{\beta H \mathbf{Z}_\alpha} \quad, \quad \mathbf{Z}_{n+1} \equiv \mathbf{Z}_1 \label{V3}
-\end{align}
-が示せる．したがって転送行列(\ref{転送行列})は
-\begin{equation}
-  \mathrm{P}
-  = [2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{V}_3 \mathrm{V}_2 \mathrm{V}_1
-  \label{行列P最終形態}
-\end{equation}
-と表すことができる．以下で示すように外部磁場$H=0$のとき，つまり$V_3 = 1$のとき，転送行列は対角化可能で2次元イジング模型を厳密に説くことができる．
+% \section{行列$\mathrm{V}'_1, \mathrm{V}_2, \mathrm{V}_3$}
+% 式(\ref{V1'})から，$\mathrm{V}'_1$が$n$個の同じ$2 \times 2$行列の直積で表せることがわかる．
+% \begin{equation}
+%   \mathrm{V}_1'=\bm{a} \times \bm{a} \times \cdots \times \bm{a}
+% \end{equation}
+% ここで，
+% \begin{equation}
+%   \bra{s}\bm{a} \ket{s'}
+%   =e^{\beta \epsilon s s'}
+% \end{equation}
+% である．したがって，
+% \begin{equation}
+%   \bm{a}=\left[\begin{array}{cc}
+%       e^{\beta \epsilon}  & e^{-\beta \epsilon} \\
+%       e^{-\beta \epsilon} & e^{\beta \epsilon}
+%     \end{array}\right]=e^{\beta \epsilon}+e^{-\beta \epsilon} X
+%     \label{a行列}
+% \end{equation}
+% である．ここで，$\alpha$と$\theta$を定数として
+% \begin{equation}
+%   \bm{a} 
+%   = \alpha e^{\theta X}
+%   = \alpha (\cosh{\theta} + X \sinh{\theta})
+% \end{equation}
+% とする．式(\ref{a行列})と係数比較すれば，
+% \begin{equation}
+%   \begin{cases}
+%     e^{\beta \epsilon} = \alpha \cosh{\theta} \\
+%     e^{- \beta \epsilon} = \alpha \sinh{\theta}
+%   \end{cases}
+% \end{equation}
+% となり，これを解くことで
+% \begin{equation}
+%   \bm{a}
+%   =\sqrt{2 \sinh (2 \beta \epsilon)} e^{\theta X}, \quad
+%   \tanh \theta \equiv e^{-2 \beta \epsilon}
+% \end{equation}
+% である．したがって
+% \begin{equation}
+%   \mathrm{V}_1'=[2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} e^{\theta X} \otimes e^{\theta X} \otimes \cdots \otimes e^{\theta X}
+% \end{equation}
+% と表せる．ここで，
+% \begin{align}
+%   &e^{\theta X} \otimes e^{\theta X} \otimes \cdots \otimes e^{\theta X} \\
+%   &= (e^{\theta X} \otimes 1 \otimes \cdots \otimes 1) (1 \otimes e^{\theta X} \otimes \cdots \otimes 1) \cdots (1 \otimes 1 \otimes \cdots \otimes e^{\theta X}) \\
+%   &= e^{\theta \mathrm{X}_1} e^{\theta \mathrm{X}_2} \cdots e^{\theta \mathrm{X}_n} \\
+%   &= e^{\theta\left(\mathrm{X}_1+\mathrm{X}_2+\cdots+\mathrm{X}_n\right)}
+% \end{align}
+% と表せることを使う．2つ目の等式では$1 \otimes \cdots \otimes e^{\theta X} \otimes \cdots \otimes 1 = e^{\theta (1 \otimes \cdots \otimes X \otimes \cdots 1)}$を使った．これより，$\mathrm{V}'_1$は次のように書ける．
+% \begin{align}
+%   \mathrm{V}_1'
+%    & =[2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{~V}_1                               \\
+%   \mathrm{V}_1,
+%    & =\prod_{\alpha=1}^n e^{\theta \mathrm{x}_{\alpha}}, \quad \tanh \theta \equiv e^{-2 \beta \epsilon}
+%   \label{V1}
+% \end{align}
+% 同様な考えより，$\mathrm{V}_2, \mathrm{V}_3$に関しても，
+% \begin{align}
+%   \mathrm{V}_2
+%    & =\prod_{\alpha=1}^n e^{\beta \epsilon \mathbf{Z}_\alpha \mathbf{Z}_{\alpha+1}} \label{V2}\\
+%   \mathrm{V}_3
+%    & =\prod_{\alpha=1}^n e^{\beta H \mathbf{Z}_\alpha} \quad, \quad \mathbf{Z}_{n+1} \equiv \mathbf{Z}_1 \label{V3}
+% \end{align}
+% が示せる．したがって転送行列(\ref{転送行列})は
+% \begin{equation}
+%   \mathrm{P}
+%   = [2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{V}_3 \mathrm{V}_2 \mathrm{V}_1
+%   \label{行列P最終形態}
+% \end{equation}
+% と表すことができる．以下で示すように外部磁場$H=0$のとき，つまり$V_3 = 1$のとき，転送行列は対角化可能で2次元イジング模型を厳密に説くことができる．
 
-\section{数学的余談}
-磁場がない場合の2次元イジング模型の解法に関連する，一般的なクラスの行列の研究を以下に示す．\par
-次の反交換関係を満たす$2n$個の行列$\Gamma_{\mu} (\mu = 1,\dots,2n)$を定義する．
-\begin{equation}
-  \{\Gamma_{\mu}, \Gamma_{\nu}\}
-  =\Gamma_{\mu} \Gamma_{\nu} + \Gamma_{\nu} \Gamma_{\mu} 
-  = 2\delta_{\mu \nu}
-  \label{ガンマ反交換}
-\end{equation}
-これは2n次元clifford代数とよばれる．clifford代数の行列表現について以下が成り立つ．
-\begin{enumerate}[(a)]
-  \item $\Gamma_{\mu}$の次元は$2^n \times 2^n$より小さくならない
-  \item もし，$\Gamma_{\mu}$と$\Gamma'_{\mu}$が(\ref{ガンマ反交換})を満たす組ならば，$\Gamma_{\mu} = \mathrm{S} \Gamma'_{\mu} \mathrm{S}^{-1}$となる正則行列$\mathrm{S}$が必ず存在する．
-  \item すべての$2^n \times 2^n$行列は，単位行列，ガンマ行列$\Gamma_{\mu}$，およびガンマ行列の積$\Gamma_{\mu} \Gamma_{\nu}, \Gamma_{\mu} \Gamma_{\nu} \Gamma_{\lambda}, \cdots$の線形結合で表せる．
-\end{enumerate}
-$n=1$のとき，(\ref{ガンマ反交換})を満たすのは$2 \times 2$パウリスピン行列である．すべての$2 \times 2$行列が単位行列とパウリスピン行列の線形結合で表せることは明らかである．また，$n=2$のときはすべての$4 \times 4$のDirac行列$\gamma_{\mu}$となる．\par
-$2^n \times 2^n$行列の可能な$\{\Gamma_{\mu}\}$の表現は以下のように，nスピン系のスピン行列(\ref{2n2n行列})を用いて構成することができる．
-\begin{align*}
-  \Gamma_1 &= \mathrm{Z}_1 & \Gamma_2 &= \mathrm{Y}_1 \\
-  \Gamma_3 &= \mathrm{X}_1 \mathrm{Z}_2 & \Gamma_4 &= \mathrm{X}_1 \mathrm{Y}_1 \\
-  \Gamma_5 &= \mathrm{X}_1 \mathrm{X}_2 \mathrm{Z}_2 & \Gamma_6 &= \mathrm{X}_1 \mathrm{X}_2 \mathrm{Y}_1 \\
-  &\vdots & &\vdots
-\end{align*}
-つまり，
-\begin{align}
-  \begin{split}
-    \Gamma_{2\alpha-1} &= \mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Z}_{\alpha} \quad (\alpha=1,\dots,n) \\
-    \Gamma_{2\alpha} &= \mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_{\alpha} \quad (\alpha=1,\dots,n)
-  \end{split}
-\end{align}
+% \section{数学的余談}
+% 磁場がない場合の2次元イジング模型の解法に関連する，一般的なクラスの行列の研究を以下に示す．\par
+% 次の反交換関係を満たす$2n$個の行列$\Gamma_{\mu} (\mu = 1,\dots,2n)$を定義する．
+% \begin{equation}
+%   \{\Gamma_{\mu}, \Gamma_{\nu}\}
+%   =\Gamma_{\mu} \Gamma_{\nu} + \Gamma_{\nu} \Gamma_{\mu} 
+%   = 2\delta_{\mu \nu}
+%   \label{ガンマ反交換}
+% \end{equation}
+% これは2n次元clifford代数とよばれる．clifford代数の行列表現について以下が成り立つ．
+% \begin{enumerate}[(a)]
+%   \item $\Gamma_{\mu}$の次元は$2^n \times 2^n$より小さくならない
+%   \item もし，$\Gamma_{\mu}$と$\Gamma'_{\mu}$が(\ref{ガンマ反交換})を満たす組ならば，$\Gamma_{\mu} = \mathrm{S} \Gamma'_{\mu} \mathrm{S}^{-1}$となる正則行列$\mathrm{S}$が必ず存在する．
+%   \item すべての$2^n \times 2^n$行列は，単位行列，ガンマ行列$\Gamma_{\mu}$，およびガンマ行列の積$\Gamma_{\mu} \Gamma_{\nu}, \Gamma_{\mu} \Gamma_{\nu} \Gamma_{\lambda}, \cdots$の線形結合で表せる．
+% \end{enumerate}
+% $n=1$のとき，(\ref{ガンマ反交換})を満たすのは$2 \times 2$パウリスピン行列である．すべての$2 \times 2$行列が単位行列とパウリスピン行列の線形結合で表せることは明らかである．また，$n=2$のときはすべての$4 \times 4$のDirac行列$\gamma_{\mu}$となる．\par
+% $2^n \times 2^n$行列の可能な$\{\Gamma_{\mu}\}$の表現は以下のように，nスピン系のスピン行列(\ref{2n2n行列})を用いて構成することができる．
+% \begin{align*}
+%   \Gamma_1 &= \mathrm{Z}_1 & \Gamma_2 &= \mathrm{Y}_1 \\
+%   \Gamma_3 &= \mathrm{X}_1 \mathrm{Z}_2 & \Gamma_4 &= \mathrm{X}_1 \mathrm{Y}_1 \\
+%   \Gamma_5 &= \mathrm{X}_1 \mathrm{X}_2 \mathrm{Z}_2 & \Gamma_6 &= \mathrm{X}_1 \mathrm{X}_2 \mathrm{Y}_1 \\
+%   &\vdots & &\vdots
+% \end{align*}
+% つまり，
+% \begin{align}
+%   \begin{split}
+%     \Gamma_{2\alpha-1} &= \mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Z}_{\alpha} \quad (\alpha=1,\dots,n) \\
+%     \Gamma_{2\alpha} &= \mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_{\alpha} \quad (\alpha=1,\dots,n)
+%   \end{split}
+% \end{align}
 
-\section{厳密解}
-磁場がない，つまり$H=0$の場合，行列$\mathrm{P}$は
-\begin{align}
-  \mathrm{P}
-  &= [2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{V}_2 \mathrm{V}_1 \notag \\
-  &\equiv [2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{V}
-  \label{行列P磁場ゼロ}
-\end{align}
-となる．ここで，$\mathrm{V} = \mathrm{V}_1 \mathrm{V}_2$とした．
-式(\ref{n極限})より，
-\begin{align}
-  \lim_{N \rightarrow \infty} \frac{1}{N} \ln{Z(0, T)} 
-  &= \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\left\{[2 \sinh{2 \beta \epsilon}]^{\frac{n}{2}}\Lambda\right\}} \notag \\
-  &= \frac{1}{2} \ln{[2 \sinh{2 \beta \epsilon}]}
-  + \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\Lambda}
-\end{align}
-となる．ここで，$\Lambda$は$\mathrm{V} = \mathrm{V}_1 \mathrm{V}_2$の最大固有値である，$\mathrm{V}_1$は式(\ref{V1})，$\mathrm{V}_2$は(\ref{V2})で与えられる．これらの式は，$\mathrm{V}$の固有値がすべて正で，$\lim_{n \rightarrow \infty} n^{-1}\ln{\Lambda}$が存在する場合に成り立つ．したがって行列$\mathrm{V}$の対角化を考えればよい．
+% \section{厳密解}
+% 磁場がない，つまり$H=0$の場合，行列$\mathrm{P}$は
+% \begin{align}
+%   \mathrm{P}
+%   &= [2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{V}_2 \mathrm{V}_1 \notag \\
+%   &\equiv [2 \sinh (2 \beta \epsilon)]^{\frac{n}{2}} \mathrm{V}
+%   \label{行列P磁場ゼロ}
+% \end{align}
+% となる．ここで，$\mathrm{V} = \mathrm{V}_1 \mathrm{V}_2$とした．
+% 式(\ref{n極限})より，
+% \begin{align}
+%   \lim_{N \rightarrow \infty} \frac{1}{N} \ln{Z(0, T)} 
+%   &= \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\left\{[2 \sinh{2 \beta \epsilon}]^{\frac{n}{2}}\Lambda\right\}} \notag \\
+%   &= \frac{1}{2} \ln{[2 \sinh{2 \beta \epsilon}]}
+%   + \lim_{n \rightarrow \infty} \frac{1}{n} \ln{\Lambda}
+% \end{align}
+% となる．ここで，$\Lambda$は$\mathrm{V} = \mathrm{V}_1 \mathrm{V}_2$の最大固有値である，$\mathrm{V}_1$は式(\ref{V1})，$\mathrm{V}_2$は(\ref{V2})で与えられる．これらの式は，$\mathrm{V}$の固有値がすべて正で，$\lim_{n \rightarrow \infty} n^{-1}\ln{\Lambda}$が存在する場合に成り立つ．したがって行列$\mathrm{V}$の対角化を考えればよい．
 
-\section{スピン代数による$\mathrm{V}$の表現}
-式(\ref{?})より，
-\begin{align}
-  \Gamma_{2\alpha}\Gamma_{2\alpha-1} 
-  &= (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_{\alpha}) (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Z}_{\alpha}) \notag \\
-  &= (\mathrm{X}_1)^2 (\mathrm{X}_2)^2 \cdots (\mathrm{X}_{\alpha-1})^2 \mathrm{Y}_{\alpha} \mathrm{Z}_{\alpha} \notag \\
-  &= \mathrm{Y}_{\alpha} \mathrm{Z}_{\alpha} \notag \\
-  &= i \mathrm{X}_{\alpha},
-\end{align}
-\begin{align}
-  \Gamma_{2\alpha+1}\Gamma_{2\alpha} 
-  &= (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha} \mathrm{Z}_{\alpha+1}) (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_{\alpha}) \notag \\
-  &= (\mathrm{X}_1)^2 (\mathrm{X}_2)^2 \cdots (\mathrm{X}_{\alpha-1})^2 \mathrm{X}_{\alpha} \mathrm{Z}_{\alpha+1} \mathrm{Y}_{\alpha} \notag \\
-  &= \mathrm{X}_{\alpha} \mathrm{Z}_{\alpha+1} \mathrm{Y}_{\alpha} \notag \\
-  &= \mathrm{X}_{\alpha} \mathrm{Y}_{\alpha} \mathrm{Z}_{\alpha+1} \notag \\
-  &= i \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1},
-\end{align}
-\begin{align}
-  \Gamma_1\Gamma_{2n} 
-  &= \mathrm{Z}_1 (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_n) \notag \\
-  &= -i \mathrm{Z}_1 \mathrm{Z}_n (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_n) \notag \\
-  &\equiv -i \mathrm{Z}_1 \mathrm{Z}_n \mathrm{U}.
-\end{align}
-ただし，$\mathrm{U}=\mathrm{X}_1\mathrm{X}_2\cdots\mathrm{X}_n$である．これより，
-\begin{equation}
-  \mathrm{V_1}
-  = \prod_{\alpha=1}^{n} e^{\theta \mathrm{X}_{\alpha}}
-  = \prod_{\alpha=1}^{n} e^{-i \theta \Gamma_{2\alpha} \Gamma_{2\alpha-1}}，
-\end{equation}
-\begin{align}
-  \mathrm{V}_2
-  &= \prod_{\alpha=1}^{n} e^{\beta \epsilon \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}} \notag \\
-  &= \left[ \prod_{\alpha=1}^{n-1} e^{\beta \epsilon \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}} \right] e^{\beta \epsilon \mathrm{Z}_n \mathrm{Z}_1} \notag \\
-  &= e^{\beta \epsilon \mathrm{Z}_n \mathrm{Z}_1} \left[ \prod_{\alpha=1}^{n-1} e^{\beta \epsilon \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}} \right] \notag \\
-  &= e^{i \beta \epsilon \mathrm{U} \Gamma_1 \Gamma_{2n}} \prod_{\alpha=1}^{n-1} e^{-i \beta \epsilon \Gamma_{2\alpha+1} \Gamma_{2\alpha}}.
-\end{align}
-したがって，$\phi = \beta \epsilon$として
-\begin{equation}
-  \mathrm{V} \equiv \mathrm{V}_1 \mathrm{V}_2
-  = e^{i \beta \epsilon \mathrm{U} \Gamma_1 \Gamma_{2n}}\left[ \prod_{\alpha=1}^{n-1} e^{-i \beta \epsilon \Gamma_{2\alpha+1} \Gamma_{2\alpha}} \right] \left[ \prod_{\lambda=1}^{n} e^{-i \theta \Gamma_{2\lambda} \Gamma_{2\lambda-1}} \right]
-\end{equation}
-ここで，いくつか$\mathrm{U}$の性質を書く
-\begin{enumerate}[(a)]
-  \item $\mathrm{U}^2 = 1, \quad \mathrm{U}(1 + \mathrm{U}) = 1 + \mathrm{U}, \quad \mathrm{U}(1 - \mathrm{U}) = -(1 - \mathrm{U})$
-  \item $\mathrm{U} = i^n \Gamma_1 \Gamma_2 \cdots \Gamma_{2n}$
-  \item $\{\mathrm{U}, \Gamma_{\mu}\} = 0$
-\end{enumerate}
-ここで，$\mathrm{U}$は4次元Dirac理論におけるカイラル行列$\gamma_s$に相当する．これらの性質を用いることで，
-\begin{align}
-  e^{i \phi \Gamma_1 \Gamma_{2n}}
-  &= \left[\frac{1}{2} (1 + \mathrm{U}) + \frac{1}{2} (1 + \mathrm{U})\right]\left[\cosh{\phi} + i \Gamma_1 \Gamma_{2n} \sinh{\phi}\right]
-  \notag \\
-  &= \frac{1}{2} (1 + \mathrm{U})\left[\cosh{\phi} + i \Gamma_1 \Gamma_{2n} \sinh{\phi}\right]
-  + \frac{1}{2} (1 - \mathrm{U})\left[\cosh{\phi} - i \Gamma_1 \Gamma_{2n} \sinh{\phi}\right] \notag \\
-  &= \frac{1}{2} (1 + \mathrm{U}) e^{i \phi \Gamma_1 \Gamma_{2n}}
-  + \frac{1}{2} (1 - \mathrm{U}) e^{-i \phi \Gamma_1 \Gamma_{2n}},
-\end{align}
-したがって
-\begin{equation}
-  \mathrm{V} 
-  = \frac{1}{2} (1 + \mathrm{U}) \mathrm{V}^+
-  + \frac{1}{2} (1 - \mathrm{U}) \mathrm{V}^-,
-\end{equation}
-\begin{equation}
-  \mathrm{V}^{\pm}
-  \equiv e^{\pm i \phi \mathrm{U} \Gamma_1 \Gamma_{2n}}\left[ \prod_{\alpha=1}^{n-1} e^{-i \phi \Gamma_{2\alpha+1} \Gamma_{2\alpha}} \right] \left[ \prod_{\lambda=1}^{n} e^{-i \theta \Gamma_{2\lambda} \Gamma_{2\lambda-1}} \right].
-\end{equation}
+% \section{スピン代数による$\mathrm{V}$の表現}
+% 式(\ref{?})より，
+% \begin{align}
+%   \Gamma_{2\alpha}\Gamma_{2\alpha-1} 
+%   &= (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_{\alpha}) (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Z}_{\alpha}) \notag \\
+%   &= (\mathrm{X}_1)^2 (\mathrm{X}_2)^2 \cdots (\mathrm{X}_{\alpha-1})^2 \mathrm{Y}_{\alpha} \mathrm{Z}_{\alpha} \notag \\
+%   &= \mathrm{Y}_{\alpha} \mathrm{Z}_{\alpha} \notag \\
+%   &= i \mathrm{X}_{\alpha},
+% \end{align}
+% \begin{align}
+%   \Gamma_{2\alpha+1}\Gamma_{2\alpha} 
+%   &= (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha} \mathrm{Z}_{\alpha+1}) (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_{\alpha}) \notag \\
+%   &= (\mathrm{X}_1)^2 (\mathrm{X}_2)^2 \cdots (\mathrm{X}_{\alpha-1})^2 \mathrm{X}_{\alpha} \mathrm{Z}_{\alpha+1} \mathrm{Y}_{\alpha} \notag \\
+%   &= \mathrm{X}_{\alpha} \mathrm{Z}_{\alpha+1} \mathrm{Y}_{\alpha} \notag \\
+%   &= \mathrm{X}_{\alpha} \mathrm{Y}_{\alpha} \mathrm{Z}_{\alpha+1} \notag \\
+%   &= i \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1},
+% \end{align}
+% \begin{align}
+%   \Gamma_1\Gamma_{2n} 
+%   &= \mathrm{Z}_1 (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_{\alpha-1} \mathrm{Y}_n) \notag \\
+%   &= -i \mathrm{Z}_1 \mathrm{Z}_n (\mathrm{X}_1 \mathrm{X}_2 \cdots \mathrm{X}_n) \notag \\
+%   &\equiv -i \mathrm{Z}_1 \mathrm{Z}_n \mathrm{U}.
+% \end{align}
+% ただし，$\mathrm{U}=\mathrm{X}_1\mathrm{X}_2\cdots\mathrm{X}_n$である．これより，
+% \begin{equation}
+%   \mathrm{V_1}
+%   = \prod_{\alpha=1}^{n} e^{\theta \mathrm{X}_{\alpha}}
+%   = \prod_{\alpha=1}^{n} e^{-i \theta \Gamma_{2\alpha} \Gamma_{2\alpha-1}}，
+% \end{equation}
+% \begin{align}
+%   \mathrm{V}_2
+%   &= \prod_{\alpha=1}^{n} e^{\beta \epsilon \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}} \notag \\
+%   &= \left[ \prod_{\alpha=1}^{n-1} e^{\beta \epsilon \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}} \right] e^{\beta \epsilon \mathrm{Z}_n \mathrm{Z}_1} \notag \\
+%   &= e^{\beta \epsilon \mathrm{Z}_n \mathrm{Z}_1} \left[ \prod_{\alpha=1}^{n-1} e^{\beta \epsilon \mathrm{Z}_{\alpha} \mathrm{Z}_{\alpha+1}} \right] \notag \\
+%   &= e^{i \beta \epsilon \mathrm{U} \Gamma_1 \Gamma_{2n}} \prod_{\alpha=1}^{n-1} e^{-i \beta \epsilon \Gamma_{2\alpha+1} \Gamma_{2\alpha}}.
+% \end{align}
+% したがって，$\phi = \beta \epsilon$として
+% \begin{equation}
+%   \mathrm{V} \equiv \mathrm{V}_1 \mathrm{V}_2
+%   = e^{i \beta \epsilon \mathrm{U} \Gamma_1 \Gamma_{2n}}\left[ \prod_{\alpha=1}^{n-1} e^{-i \beta \epsilon \Gamma_{2\alpha+1} \Gamma_{2\alpha}} \right] \left[ \prod_{\lambda=1}^{n} e^{-i \theta \Gamma_{2\lambda} \Gamma_{2\lambda-1}} \right]
+% \end{equation}
+% ここで，いくつか$\mathrm{U}$の性質を書く
+% \begin{enumerate}[(a)]
+%   \item $\mathrm{U}^2 = 1, \quad \mathrm{U}(1 + \mathrm{U}) = 1 + \mathrm{U}, \quad \mathrm{U}(1 - \mathrm{U}) = -(1 - \mathrm{U})$
+%   \item $\mathrm{U} = i^n \Gamma_1 \Gamma_2 \cdots \Gamma_{2n}$
+%   \item $\{\mathrm{U}, \Gamma_{\mu}\} = 0$
+% \end{enumerate}
+% ここで，$\mathrm{U}$は4次元Dirac理論におけるカイラル行列$\gamma_s$に相当する．これらの性質を用いることで，
+% \begin{align}
+%   e^{i \phi \Gamma_1 \Gamma_{2n}}
+%   &= \left[\frac{1}{2} (1 + \mathrm{U}) + \frac{1}{2} (1 + \mathrm{U})\right]\left[\cosh{\phi} + i \Gamma_1 \Gamma_{2n} \sinh{\phi}\right]
+%   \notag \\
+%   &= \frac{1}{2} (1 + \mathrm{U})\left[\cosh{\phi} + i \Gamma_1 \Gamma_{2n} \sinh{\phi}\right]
+%   + \frac{1}{2} (1 - \mathrm{U})\left[\cosh{\phi} - i \Gamma_1 \Gamma_{2n} \sinh{\phi}\right] \notag \\
+%   &= \frac{1}{2} (1 + \mathrm{U}) e^{i \phi \Gamma_1 \Gamma_{2n}}
+%   + \frac{1}{2} (1 - \mathrm{U}) e^{-i \phi \Gamma_1 \Gamma_{2n}},
+% \end{align}
+% したがって
+% \begin{equation}
+%   \mathrm{V} 
+%   = \frac{1}{2} (1 + \mathrm{U}) \mathrm{V}^+
+%   + \frac{1}{2} (1 - \mathrm{U}) \mathrm{V}^-,
+% \end{equation}
+% \begin{equation}
+%   \mathrm{V}^{\pm}
+%   \equiv e^{\pm i \phi \mathrm{U} \Gamma_1 \Gamma_{2n}}\left[ \prod_{\alpha=1}^{n-1} e^{-i \phi \Gamma_{2\alpha+1} \Gamma_{2\alpha}} \right] \left[ \prod_{\lambda=1}^{n} e^{-i \theta \Gamma_{2\lambda} \Gamma_{2\lambda-1}} \right].
+% \end{equation}
 
 
-\section{bbb}
-bbb
+% \section{bbb}
+% bbb
 
 
 \end{document}
