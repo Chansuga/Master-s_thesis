@@ -114,7 +114,7 @@ setpagesize=false,
 
 
 \chapter{イジング模型の相転移}
-本論文ではイジング模型の相転移を扱うため，この章では相転移とは何かについて，それからイジング模型とは何かについて簡単に述べる．\cite{高橋2017相転移}\cite{田崎統計力学2}
+この章では相転移，臨界現象とは何かについて説明した後，イジング模型を定義し，イジング模型の相転移について説明する．\cite{高橋2017相転移}\cite{田崎統計力学2}
 \section{相転移，臨界現象とは}
 \subsection{物質の三態と相転移}
 本論文ではイジング模型の相転移を扱うが，まずは相転移とは何かを理解するために，物質の三態について説明する．私たちにとって最も身近な相転移現象は水(\ce{H2O})の状態変化であろう．水は固体(氷)，液体(水)，気体(水蒸気)の3つの状態をとる．これら状態には明確な規則性があり，一気圧の環境であれば，氷点下，つまり摂氏0℃以下のとき水(\ce{H2O})は氷になる．そこから温度を徐々に上げていくと，ちょうど摂氏0℃で氷から水へ状態変化がおき，さらにその水を温めておけば，ちょうど100℃で水から水蒸気への状態変化が起きる．\footnote{そもそも摂氏という温度目盛りは1気圧の環境で水と氷が共存するときを0，水と水蒸気が共存するときを100と定義しているのである．}.\par
@@ -213,8 +213,8 @@ setpagesize=false,
 まずは，絶対零度での系のふるまいを見ていく．つまり，基底状態を求めるということである．\par
 式(\ref{相互作用項場合分け})から，一つのスピンに着目すれば，$\sigma_i = \sigma_j$のときエネルギーが最小になる．したがって，相互作用項$-J\sigma_i \sigma_j$を最小化する状態は，すべてのスピンが等しくなっているときであることがわかる．つまり，すべての$i$について$\sigma_i = +1$もしくは$\sigma_i = -1$のいずれかの状態である．\par
 一方，外部磁場とスピンの相互作用項$-\mu_0 H \sigma_i$を最小化する状態は，磁場の符号によって変わってくる．式(\ref{イジングエネルギー})の第二項を最小化するのは，$H>0$なら，すべての$i$について$\sigma_i=1$とした状態であり，$H<0$なら，すべての$i$について$\sigma_i=-1$とした状態である．$H=0$のときは，値は常に$0$になるため，すべてのスピン配位で最小値を与える．\par
-以上をまとめると，$H \geq 0$のときはすべての$i$について，$\sigma_i=+1$としたものが基底状態となり，$H \leq 0$のときはすべての$i$について，$\sigma_i=-1$としたものが基底状態となる(図\ref{絶対零度スピン配位})．\par
-\begin{figure}[h]
+以上をまとめると，$H \geq 0$のときはすべての$i$について，$\sigma_i=+1$としたものが基底状態となり，$H \leq 0$のときはすべての$i$について，$\sigma_i=-1$としたものが基底状態となる．(図\ref{絶対零度スピン配位})\par
+\begin{figure}[H]
   \begin{center}
     \includegraphics[height=5cm]{image/絶対零度スピン配位.png}
     \caption{絶対零度でのイジング模型の基底状態．$H>0$のときはスピンはすべて上向きになり，$H<0$のときはスピンがすべて下向きになる$H=0$のときは，これら両方の状態が基底状態になる． \label{絶対零度スピン配位}}
@@ -365,7 +365,7 @@ $f_L(\beta, H)$が微分可能なので，$m_L(\beta, H)$はすべての$\beta, 
    & = (\lambda_{+})^N + (\lambda_{-})^N \label{1Dイジング分配関数}
 \end{align}
 と表すことができる．\par
-(\ref{1Dイジング分配関数})より，スピン一つあたりの自由エネルギー$f$は
+式(\ref{1Dイジング分配関数})より，スピン一つあたりの自由エネルギー$f$は
 \begin{align}
   f
    & = -\frac{1}{\beta L} \ln{Z} \notag                                                                                              \\
@@ -1041,10 +1041,10 @@ $\bm{w}$はモデルのパラメータをまとめて表したベクトルであ
 \begin{figure}[H]
   \begin{center}
     \includegraphics[height=7cm]{image/ニューロン.png}
-    \subcaption{ニューロンの概要図}
+    \subcaption{ニューロン}
     \label{ニューロン}
     \includegraphics[height=6cm]{image/シナプス.png}
-    \subcaption{シナプスの概要図}
+    \subcaption{シナプス}
     \label{シナプス}
   \end{center}
   \caption{ニューロンとシナプスの概要図}
@@ -2356,25 +2356,43 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
   \begin{minipage}[b]{0.45\linewidth}
     \begin{center}
       \includegraphics[keepaspectratio, scale=0.4]{image/plot_square_FCNN.png}
-      \subcaption{FCN}
+      \subcaption{FCNモデル}
       \label{相分類器FCN結果}
     \end{center}
   \end{minipage}
   \begin{minipage}[b]{0.45\linewidth}
     \begin{center}
       \includegraphics[keepaspectratio, scale=0.4]{image/plot_square_CNN.png}
-      \subcaption{CNN}
+      \subcaption{CNNモデル}
       \label{相分類器CNN結果}
     \end{center}
   \end{minipage}
-  \caption{各温度ラベルにおける出力値の平均をプロットした図．左の図はFCNモデルの結果，右の図はCNNモデルの結果である．また，赤のプロットは常磁性相である確率，青のプロットは強磁性相である確率にである．}
+  \caption{各温度ラベルにおける出力値の平均をプロットした図．左の図はFCNモデルの結果，右の図はCNNモデルの結果である．また，赤のプロットは常磁性相である確率，青のプロットは強磁性相である確率である．}
 \end{figure}
 図からわかるように，どちらのモデルの強磁性相か常磁性相かを正しく分類できていることがわかる．また，この実験では強磁性相はどちらのモデルも精度がほぼ100\%となり，常磁性相ではFCNモデルでは約90\%，CNNモデルではほぼ100\%という結果になった．画像に特化している畳み込み演算を加えたモデルのほうが精度が高いのは納得がいく．
 
 
-% \subsection{三角イジング模型の相の分類}
-% 正方イジング模型の相分類器のモデルをそのまま三角イジング模型から作成した教師ありデータで相の分類を行えるかの実験を行った．結果は以下のようになった．
-
+\subsection{三角イジング模型の相の分類}
+もう一つの実験として正方イジング模型の相分類器のモデルをそのまま三角イジング模型から作成した教師ありデータで相の分類を行えるかの実験を行った．\par
+前節の実験で得た学習済みのFCNモデルとCNNモデルに対して，生成した三角イジング模型のスピン配位データを入力し，相転移を検出できるかを調べた．以下がその結果である．\par
+\begin{figure}[H]
+  \begin{minipage}[b]{0.45\linewidth}
+    \begin{center}
+      \includegraphics[keepaspectratio, scale=0.4]{image/plot_square_FCN_tridata.png}
+      \subcaption{FCNモデル}
+      \label{相分類器FCN結果tri}
+    \end{center}
+  \end{minipage}
+  \begin{minipage}[b]{0.45\linewidth}
+    \begin{center}
+      \includegraphics[keepaspectratio, scale=0.4]{image/plot_square_CNN_tridata.png}
+      \subcaption{CNNモデル}
+      \label{相分類器CNN結果tri}
+    \end{center}
+  \end{minipage}
+  \caption{正方イジング模型のスピン配位で学習したモデルに三角イジング模型のスピン配位を入力したときの各温度ラベルにおける出力値の平均をプロットした図．}
+\end{figure}
+結果を見て明らかなように三角イジング模型のスピン配位を入力として用いても相転移を検出できるという結果になった．これはつまり，ニューラルネットワークが正方イジング模型と三角イジング模型で共通にもつスピン配位の特徴を学習したことを示している．
 
 
 
@@ -2492,13 +2510,13 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
   \begin{minipage}[b]{0.45\linewidth}
     \begin{center}
       \includegraphics[keepaspectratio, scale=0.45]{image/L8_FCNN_weight.png}
-      \subcaption{L8_FCN}
+      \subcaption{FCNモデル}
     \end{center}
   \end{minipage}
   \begin{minipage}[b]{0.45\linewidth}
     \begin{center}
       \includegraphics[keepaspectratio, scale=0.45]{image/L8_CNN_weight.png}
-      \subcaption{L8_CNN}
+      \subcaption{CNNモデル}
     \end{center}
   \end{minipage}
   \caption{$8 \times 8$スピン配位での重み行列の各成分の値をプロットした図}
@@ -2511,11 +2529,11 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
 \begin{figure}[H]
   \begin{center}
     \includegraphics[width=\linewidth]{image/L8_FCNN_weight_sum.png}
-    \subcaption{aaa}
+    \subcaption{FCNモデル}
     \includegraphics[width=\linewidth]{image/L8_CNN_weight_sum.png}
-    \subcaption{bbb}
+    \subcaption{CNNモデル}
   \end{center}
-  \caption{ccc}
+  \caption{格子サイズ8の結果}
   \label{温度測定器プロット8}
 \end{figure}
 
@@ -2525,13 +2543,13 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
   \begin{minipage}[b]{0.45\linewidth}
     \begin{center}
       \includegraphics[keepaspectratio, scale=0.5]{image/L16_FCNN_weight.png}
-      \subcaption{L16 FCN}
+      \subcaption{FCNモデル}
     \end{center}
   \end{minipage}
   \begin{minipage}[b]{0.45\linewidth}
     \begin{center}
-      \includegraphics[keepaspectratio, scale=0.5]{image/L16_CNN_weight_2.png}
-      \subcaption{L16 CNN}
+      \includegraphics[keepaspectratio, scale=0.5]{image/L16_CNN_weight.png}
+      \subcaption{CNNモデル}
     \end{center}
   \end{minipage}
   \caption{$16 \times 16$スピン配位での重み行列の各成分の値をプロットした図}
@@ -2541,11 +2559,11 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
 \begin{figure}[H]
   \begin{center}
     \includegraphics[width=\linewidth]{image/L16_FCNN_weight_sum.png}
-    \subcaption{aaa}
-    \includegraphics[width=\linewidth]{image/L16_CNN_weight_sum_2.png}
-    \subcaption{bbb}
+    \subcaption{FCNモデル}
+    \includegraphics[width=\linewidth]{image/L16_CNN_weight_sum.png}
+    \subcaption{CNNモデル}
   \end{center}
-  \caption{ccc}
+  \caption{格子サイズ16}
   \label{温度測定器プロット16}
 \end{figure}
 
@@ -2553,7 +2571,14 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
 
 %表を挿入する
 
-この表を見てわかる通り，2次元正方イジング模型の相転移点に近い値を検出することができている．\par
+この表を見てわかる通り，2次元正方イジング模型の相転移点に近い値を検出することができている．図はそれぞれのフィッティングの結果から算出された相転移温度を表でまとめたものである．
+\begin{figure}[H]
+   \begin{center}
+       \includegraphics[height=3cm]{image/温度測定器検出結果.png}
+       \caption{フィッティングによって算出された相転移温度}
+   \end{center}
+\end{figure}
+この結果からFCNモデル，CNNモデルどちらも相転移温度を検出できることがわかる．精度は格子サイズが8よりも16のほうが高くなる傾向がある．しかし，モデルの違いで精度に違いはほとんど現れなかった．\par
 以上から，ニューラルネットワークによるシンプルな教師あり学習を行って，温度測定器を作成することで，その学習済みモデルの重みの値から，大まかな相転移点を検出することができることがわかる．この検出方法では学習の際にスピン配位とその配位に対する温度しかニューラルネットワークに与えていない．つまり，相転移の情報を一切与えることなく機械が自動的に相転移の情報を学習したことになる．これは驚くべきことであり，相転移がよく知られていない系に対して，応用することができる可能性がある．
 
 \section{相転移検出がなぜ可能なのか？}

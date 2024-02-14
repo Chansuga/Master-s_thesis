@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex out/Masters_Thesis"] 1707833713 "out/Masters_Thesis.aux" "out/Masters_Thesis.bbl" "out/Masters_Thesis" 1707833755 0
+["bibtex out/Masters_Thesis"] 1707922832 "out/Masters_Thesis.aux" "out/Masters_Thesis.bbl" "out/Masters_Thesis" 1707923462 0
   "./reference.bib" 1707810512 5624 5bd4e9b13ae521e0f834e9b428d67076 ""
   "junsrt.bst" 0 -1 0 ""
-  "out/Masters_Thesis.aux" 1707833741 35856 192a41a305de0d47f4c014eb3cbe0eec "latex"
+  "out/Masters_Thesis.aux" 1707923450 36963 30945866a03bc7e7c2412074b1575a63 "latex"
   (generated)
   "out/Masters_Thesis.bbl"
   "out/Masters_Thesis.blg"
   (rewritten before read)
-["dvipdf"] 1707833743 "out/Masters_Thesis.dvi" "out/Masters_Thesis.pdf" "out/Masters_Thesis" 1707833755 0
-  "out/Masters_Thesis.dvi" 1707833741 577880 b28dcd6bf835d634598983c25a938005 "latex"
+["dvipdf"] 1707923451 "out/Masters_Thesis.dvi" "out/Masters_Thesis.pdf" "out/Masters_Thesis" 1707923462 0
+  "out/Masters_Thesis.dvi" 1707923450 581948 5d47be5d3f670a21da7dd9bfc2853d6b "latex"
   (generated)
   "out/Masters_Thesis.pdf"
   (rewritten before read)
-["latex"] 1707833713 "c:/Users/sugay/Desktop/Master-s_thesis/Document/Maters_Thesis/Masters_Thesis.tex" "out/Masters_Thesis.dvi" "Masters_Thesis" 1707833755 0
-  "Masters_Thesis.tex" 1707833684 300320 3795b4f70948dd43de691a9af31de761 ""
-  "c:/Users/sugay/Desktop/Master-s_thesis/Document/Maters_Thesis/Masters_Thesis.tex" 1707833684 300320 3795b4f70948dd43de691a9af31de761 ""
+["latex"] 1707923422 "c:/Users/sugay/Desktop/Master-s_thesis/Document/Maters_Thesis/Masters_Thesis.tex" "out/Masters_Thesis.dvi" "Masters_Thesis" 1707923462 0
+  "Masters_Thesis.tex" 1707923421 302375 64907ed3460276932de514420c4a54d7 ""
+  "c:/Users/sugay/Desktop/Master-s_thesis/Document/Maters_Thesis/Masters_Thesis.tex" 1707923421 302375 64907ed3460276932de514420c4a54d7 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1697430804 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1697432237 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1697432237 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -233,8 +233,8 @@
   "image/2次元格子.png" 1705890278 17650 65a2790dd53e9f390a0dcbb4d82da2d5 ""
   "image/CIFAR10.png" 1702881171 53096 61acde3d0705a3f9e472c5786d870aae ""
   "image/Kチャンネル画像.png" 1705020017 64115 ec7a72f6e30605bc6bb6214efc5b2b4d ""
-  "image/L16_CNN_weight_2.png" 1699401065 99757 b41d10ba1527e9f2f3a0e21ca347402b ""
-  "image/L16_CNN_weight_sum_2.png" 1699401065 23081 2397c5135b61c802d05396492711a3e6 ""
+  "image/L16_CNN_weight.png" 1699401065 98582 8e2f11b93e0b1e773b1c7fbedba07619 ""
+  "image/L16_CNN_weight_sum.png" 1699401065 23081 2397c5135b61c802d05396492711a3e6 ""
   "image/L16_FCNN_weight.png" 1699401065 100702 f87a44c8cf1ac81f1e2a01da7633b022 ""
   "image/L16_FCNN_weight_sum.png" 1699401065 22892 f51fcde0a769a62c6ecef6f3d0556217 ""
   "image/L8_CNN_weight.png" 1699401065 49838 3dd680530287350876e713172ded1f7e ""
@@ -245,8 +245,10 @@
   "image/mnist.png" 1702881150 12531 925c1eb4b954f5be151b13daaf7c63e7 ""
   "image/plot_square_CNN.png" 1705890278 22539 7b690881cd7323015871e78f14021fcc ""
   "image/plot_square_CNN_2.png" 1705890278 54478 99bfd6d2b38d684888b11375140e8ae9 ""
+  "image/plot_square_CNN_tridata.png" 1707154936 23015 06159bc61ae1fc9d5cd308ec6e8bf57e ""
   "image/plot_square_FCNN.png" 1705890278 24686 322ade66eee0bc1583cec6cd59350e55 ""
   "image/plot_square_FCNN_2.png" 1705890278 55310 4ace5d4b2474d50ea62a878ff1097acb ""
+  "image/plot_square_FCN_tridata.png" 1707155013 24341 898361e107ca93befb19c02ad6b345b6 ""
   "image/シナプス.png" 1703648878 367868 4f71b68c34dba5e83ace68789876a282 ""
   "image/ニューロン.png" 1703648652 358318 0b6957d9c635ec4c2b7f82704ff248fd ""
   "image/モーメンタム法.png" 1701752156 96677 6ebf4040d0fec7dd304319cc7a9c5959 ""
@@ -264,6 +266,7 @@
   "image/温度測定器CNN2.png" 1707795211 199056 a09de73d5eccb197929f75b394708893 ""
   "image/温度測定器FCN.png" 1707751052 345701 ee5d940ea4f663f038915d1d31eee706 ""
   "image/温度測定器FCN2.png" 1707793251 305723 36ce8eeaa32c665106d50d209b057d30 ""
+  "image/温度測定器検出結果.png" 1707923414 21723 76b99ea8b99ca3bee43816f91569e4fb ""
   "image/機械学習概要図.png" 1705020017 103131 7608ad1ed1736b4feabe3a49780b2129 ""
   "image/勾配法課題(a).png" 1701744550 36136 a35ff45b5bca2aa1833294accf0ed320 ""
   "image/勾配法課題(b).png" 1701744652 28404 094e6d29031876c85433d95a1cd93a3d ""
@@ -279,10 +282,10 @@
   "image/単純型細胞.png" 1705020017 81102 4052fc0fe3f9080d7474d8754398e457 ""
   "image/配位ラベルと相転移ラベル.png" 1705647261 264517 8a6cc53bdc086a7ff1f466372a8a3bfa ""
   "image/複雑型細胞.png" 1705020017 79919 60247ad719917aa94311ee5e06609d02 ""
-  "out/Masters_Thesis.aux" 1707833741 35856 192a41a305de0d47f4c014eb3cbe0eec "latex"
-  "out/Masters_Thesis.bbl" 1707833713 2392 65a7b6eb38e4722ed5f34fe90353d4a7 "bibtex out/Masters_Thesis"
-  "out/Masters_Thesis.out" 1707833741 1930 d04f578836ae973fc54f79f7c1d16923 "latex"
-  "out/Masters_Thesis.toc" 1707833741 8018 4350617771d8efae3d255e2124942af1 "latex"
+  "out/Masters_Thesis.aux" 1707923450 36963 30945866a03bc7e7c2412074b1575a63 "latex"
+  "out/Masters_Thesis.bbl" 1707922832 2392 65a7b6eb38e4722ed5f34fe90353d4a7 "bibtex out/Masters_Thesis"
+  "out/Masters_Thesis.out" 1707923450 1930 0b5522b315d01985dbd448646a15bf63 "latex"
+  "out/Masters_Thesis.toc" 1707923450 8128 31eae99b56a8791ea55e628f3154afea "latex"
   (generated)
   "out/Masters_Thesis.aux"
   "out/Masters_Thesis.dvi"

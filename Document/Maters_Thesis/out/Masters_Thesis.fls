@@ -1409,6 +1409,14 @@ INPUT ./image/plot_square_CNN.png
 INPUT ./image/plot_square_CNN.png
 INPUT image/plot_square_CNN.png
 INPUT extractbb -B cropbox -O image/plot_square_CNN.png
+INPUT ./image/plot_square_FCN_tridata.png
+INPUT ./image/plot_square_FCN_tridata.png
+INPUT image/plot_square_FCN_tridata.png
+INPUT extractbb -B cropbox -O image/plot_square_FCN_tridata.png
+INPUT ./image/plot_square_CNN_tridata.png
+INPUT ./image/plot_square_CNN_tridata.png
+INPUT image/plot_square_CNN_tridata.png
+INPUT extractbb -B cropbox -O image/plot_square_CNN_tridata.png
 INPUT ./image/温度測定器FCN.png
 INPUT ./image/温度測定器FCN.png
 INPUT image/温度測定器FCN.png
@@ -1437,18 +1445,22 @@ INPUT ./image/L16_FCNN_weight.png
 INPUT ./image/L16_FCNN_weight.png
 INPUT image/L16_FCNN_weight.png
 INPUT extractbb -B cropbox -O image/L16_FCNN_weight.png
-INPUT ./image/L16_CNN_weight_2.png
-INPUT ./image/L16_CNN_weight_2.png
-INPUT image/L16_CNN_weight_2.png
-INPUT extractbb -B cropbox -O image/L16_CNN_weight_2.png
+INPUT ./image/L16_CNN_weight.png
+INPUT ./image/L16_CNN_weight.png
+INPUT image/L16_CNN_weight.png
+INPUT extractbb -B cropbox -O image/L16_CNN_weight.png
 INPUT ./image/L16_FCNN_weight_sum.png
 INPUT ./image/L16_FCNN_weight_sum.png
 INPUT image/L16_FCNN_weight_sum.png
 INPUT extractbb -B cropbox -O image/L16_FCNN_weight_sum.png
-INPUT ./image/L16_CNN_weight_sum_2.png
-INPUT ./image/L16_CNN_weight_sum_2.png
-INPUT image/L16_CNN_weight_sum_2.png
-INPUT extractbb -B cropbox -O image/L16_CNN_weight_sum_2.png
+INPUT ./image/L16_CNN_weight_sum.png
+INPUT ./image/L16_CNN_weight_sum.png
+INPUT image/L16_CNN_weight_sum.png
+INPUT extractbb -B cropbox -O image/L16_CNN_weight_sum.png
+INPUT ./image/温度測定器検出結果.png
+INPUT ./image/温度測定器検出結果.png
+INPUT image/温度測定器検出結果.png
+INPUT extractbb -B cropbox -O image/温度測定器検出結果.png
 INPUT ./image/温度測定器FCN2.png
 INPUT ./image/温度測定器FCN2.png
 INPUT image/温度測定器FCN2.png

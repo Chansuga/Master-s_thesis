@@ -77,12 +77,13 @@
 \contentsline {section}{\numberline {4.2}相の分類器による相転移検出}{74}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}データセットの作成}{74}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}モデルの構築と学習}{76}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}温度測定器による相転移自動検出}{81}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}学習データ}{81}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}モデルの構築と学習}{82}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{89}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}温度測定器の作成}{89}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}FCNモデルの学習結果とモデリング}{91}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}CNNモデルの学習結果とモデリング}{94}{subsection.4.4.3}%
-\contentsline {chapter}{謝辞}{101}{chapter*.78}%
-\contentsline {chapter}{参考文献}{102}{chapter*.79}%
+\contentsline {subsection}{\numberline {4.2.3}三角イジング模型の相の分類}{81}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}温度測定器による相転移自動検出}{82}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}学習データ}{82}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}モデルの構築と学習}{83}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{90}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}温度測定器の作成}{90}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}FCNモデルの学習結果とモデリング}{93}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}CNNモデルの学習結果とモデリング}{96}{subsection.4.4.3}%
+\contentsline {chapter}{謝辞}{103}{chapter*.80}%
+\contentsline {chapter}{参考文献}{104}{chapter*.81}%
