@@ -5,46 +5,46 @@ The style file: junsrt.bst
 Database file #1: reference.bib
 Warning--empty author and editor in Gazzetta
 Warning--empty publisher in Gazzetta
-You've used 14 entries,
+You've used 16 entries,
             2270 wiz_defined-function locations,
-            620 strings with 5592 characters,
-and the built_in function-call counts, 3941 in all, are:
-= -- 301
-> -- 89
-< -- 16
-+ -- 39
-- -- 25
-* -- 147
-:= -- 459
-add.period$ -- 41
-call.type$ -- 14
-change.case$ -- 6
+            633 strings with 5863 characters,
+and the built_in function-call counts, 4684 in all, are:
+= -- 367
+> -- 100
+< -- 20
++ -- 44
+- -- 28
+* -- 183
+:= -- 542
+add.period$ -- 47
+call.type$ -- 16
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 299
-empty$ -- 409
-format.name$ -- 50
-if$ -- 998
+cite$ -- 18
+duplicate$ -- 349
+empty$ -- 481
+format.name$ -- 56
+if$ -- 1190
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 21
-newline$ -- 72
-num.names$ -- 13
-pop$ -- 125
+int.to.str$ -- 16
+missing$ -- 23
+newline$ -- 82
+num.names$ -- 15
+pop$ -- 134
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 218
+skip$ -- 264
 stack$ -- 0
-substring$ -- 144
-swap$ -- 78
-text.length$ -- 16
+substring$ -- 200
+swap$ -- 100
+text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 25
-width$ -- 16
-write$ -- 145
-is.kanji.str$ -- 142
+while$ -- 31
+width$ -- 18
+write$ -- 167
+is.kanji.str$ -- 162
 (There were 2 warnings)

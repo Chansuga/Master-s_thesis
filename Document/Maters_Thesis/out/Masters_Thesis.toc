@@ -41,7 +41,7 @@
 \contentsline {subsection}{\numberline {3.4.2}形式ニューロン}{37}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}パーセプトロン}{39}{subsection.3.4.3}%
 \contentsline {subsection}{\numberline {3.4.4}順伝播ニューラルネットワーク}{40}{subsection.3.4.4}%
-\contentsline {section}{\numberline {3.5}ニューラルネットワークによる機械あり学習}{43}{section.3.5}%
+\contentsline {section}{\numberline {3.5}ニューラルネットワークによる教師あり学習}{43}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}中間層で使われる活性化関数}{46}{subsection.3.5.1}%
 \contentsline {section}{\numberline {3.6}畳み込みニューラルネットワーク}{48}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}一次視覚野と畳み込み}{48}{subsection.3.6.1}%
@@ -63,7 +63,7 @@
 \contentsline {subsection}{\numberline {3.8.4}RMSprop}{59}{subsection.3.8.4}%
 \contentsline {subsection}{\numberline {3.8.5}Adam}{60}{subsection.3.8.5}%
 \contentsline {section}{\numberline {3.9}誤差逆伝播法}{61}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}パーセプトロンの学習測とデルタ則}{62}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.1}パーセプトロンの学習則とデルタ則}{62}{subsection.3.9.1}%
 \contentsline {subsection}{\numberline {3.9.2}誤差逆伝播法の考え方}{63}{subsection.3.9.2}%
 \contentsline {subsection}{\numberline {3.9.3}誤差関数の勾配計算}{65}{subsection.3.9.3}%
 \contentsline {subsection}{\numberline {3.9.4}逆伝播計算の初期値}{67}{subsection.3.9.4}%
@@ -84,6 +84,6 @@
 \contentsline {section}{\numberline {4.4}相転移検出がなぜ可能なのか？}{90}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}温度測定器の作成}{90}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}FCNモデルの学習結果とモデリング}{93}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}CNNモデルの学習結果とモデリング}{96}{subsection.4.4.3}%
-\contentsline {chapter}{謝辞}{103}{chapter*.80}%
-\contentsline {chapter}{参考文献}{104}{chapter*.81}%
+\contentsline {subsection}{\numberline {4.4.3}CNNモデルの学習結果とモデリング}{97}{subsection.4.4.3}%
+\contentsline {chapter}{謝辞}{104}{chapter*.80}%
+\contentsline {chapter}{参考文献}{105}{chapter*.81}%

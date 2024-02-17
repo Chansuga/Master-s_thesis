@@ -49,6 +49,16 @@ Terence Sanger and Pallavi~N. Baljekar.
 \newblock The perceptron: a probabilistic model for information storage and organization in the brain.
 \newblock {\em Psychological review}, Vol. 65 6, pp. 386--408, 1958.
 
+\bibitem{hubel1962}
+D.~H. Hubel and T.~N. Wiesel.
+\newblock Receptive fields, binocular interaction and functional architecture in the cat's visual cortex.
+\newblock {\em Physiology}, pp. 106--154, 1962.
+
+\bibitem{4039068}
+Shunichi Amari.
+\newblock A theory of adaptive pattern classifiers.
+\newblock {\em IEEE Transactions on Electronic Computers}, Vol. EC-16, No.~3, pp. 299--307, 1967.
+
 \bibitem{carrasquilla2017machine}
 Juan Carrasquilla and Roger~G Melko.
 \newblock Machine learning phases of matter.

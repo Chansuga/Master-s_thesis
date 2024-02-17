@@ -1485,6 +1485,10 @@ INPUT ./image/温度測定器2_L16_FCN_Nh3_mag.png
 INPUT ./image/温度測定器2_L16_FCN_Nh3_mag.png
 INPUT image/温度測定器2_L16_FCN_Nh3_mag.png
 INPUT extractbb -B cropbox -O image/温度測定器2_L16_FCN_Nh3_mag.png
+INPUT ./image/温度測定器2_FCN_modeling.png
+INPUT ./image/温度測定器2_FCN_modeling.png
+INPUT image/温度測定器2_FCN_modeling.png
+INPUT extractbb -B cropbox -O image/温度測定器2_FCN_modeling.png
 INPUT ./image/温度測定器2_L16_CNN_Nh3_loss.png
 INPUT ./image/温度測定器2_L16_CNN_Nh3_loss.png
 INPUT image/温度測定器2_L16_CNN_Nh3_loss.png

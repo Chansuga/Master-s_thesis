@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.10.16)  15 FEB 2024 00:10
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.10.16)  17 FEB 2024 23:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -981,9 +981,6 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 1534--1546
 [][] [] 
  []
 
-
-LaTeX Warning: Reference `単純型細胞と複雑型細胞' on page 48 undefined on input line 1550.
-
 [48]
 File: image/Kチャンネル画像.png Graphic file (type bmp)
 <image/Kチャンネル画像.png>
@@ -999,7 +996,7 @@ File: image/勾配法課題(a).png Graphic file (type bmp)
 File: image/勾配法課題(b).png Graphic file (type bmp)
 <image/勾配法課題(b).png>
 
-Overfull \hbox (0.89943pt too wide) in paragraph at lines 1734--1735
+Overfull \hbox (0.89943pt too wide) in paragraph at lines 1735--1736
  [][] 
  []
 
@@ -1024,7 +1021,7 @@ File: image/相分類CNNモデル.png Graphic file (type bmp)
 [78]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 2323.
+               Default added (so using `tbp') on input line 2324.
 
 File: image/plot_square_FCNN_2.png Graphic file (type bmp)
 <image/plot_square_FCNN_2.png>
@@ -1034,14 +1031,14 @@ File: image/plot_square_CNN_2.png Graphic file (type bmp)
 File: image/plot_square_FCNN.png Graphic file (type bmp)
 <image/plot_square_FCNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2358--2359
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2359--2360
  [] 
  []
 
 File: image/plot_square_CNN.png Graphic file (type bmp)
 <image/plot_square_CNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2365--2366
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2366--2367
  [] 
  []
 
@@ -1049,14 +1046,14 @@ Overfull \hbox (2.00185pt too wide) in paragraph at lines 2365--2366
 File: image/plot_square_FCN_tridata.png Graphic file (type bmp)
 <image/plot_square_FCN_tridata.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2381--2382
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2382--2383
  [] 
  []
 
 File: image/plot_square_CNN_tridata.png Graphic file (type bmp)
 <image/plot_square_CNN_tridata.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2388--2389
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2389--2390
  [] 
  []
 
@@ -1070,14 +1067,14 @@ File: image/温度測定器CNN.png Graphic file (type bmp)
 File: image/L8_FCNN_weight.png Graphic file (type bmp)
 <image/L8_FCNN_weight.png>
 
-Overfull \hbox (12.04085pt too wide) in paragraph at lines 2512--2513
+Overfull \hbox (12.04085pt too wide) in paragraph at lines 2513--2514
  [] 
  []
 
 File: image/L8_CNN_weight.png Graphic file (type bmp)
 <image/L8_CNN_weight.png>
 
-Overfull \hbox (12.04085pt too wide) in paragraph at lines 2518--2519
+Overfull \hbox (12.04085pt too wide) in paragraph at lines 2519--2520
  [] 
  []
 
@@ -1090,14 +1087,14 @@ File: image/L8_CNN_weight_sum.png Graphic file (type bmp)
 File: image/L16_FCNN_weight.png Graphic file (type bmp)
 <image/L16_FCNN_weight.png>
 
-Overfull \hbox (33.72318pt too wide) in paragraph at lines 2545--2546
+Overfull \hbox (33.72318pt too wide) in paragraph at lines 2546--2547
  [] 
  []
 
 File: image/L16_CNN_weight.png Graphic file (type bmp)
 <image/L16_CNN_weight.png>
 
-Overfull \hbox (33.72318pt too wide) in paragraph at lines 2551--2552
+Overfull \hbox (33.72318pt too wide) in paragraph at lines 2552--2553
  [] 
  []
 
@@ -1123,60 +1120,61 @@ File: image/温度測定器2_L16_FCN_Nh3_pram.png Graphic file (type bmp)
 File: image/温度測定器2_L16_FCN_Nh3_weight_plot.png Graphic file (type bmp)
 <image/温度測定器2_L16_FCN_Nh3_weight_plot.png>
 
-Overfull \hbox (48.17363pt too wide) in paragraph at lines 2689--2690
+Overfull \hbox (48.17363pt too wide) in paragraph at lines 2690--2691
  [] 
  []
 
 [93]
 File: image/温度測定器2_L16_FCN_Nh3_mag.png Graphic file (type bmp)
 <image/温度測定器2_L16_FCN_Nh3_mag.png>
-[94] [95]
+File: image/温度測定器2_FCN_modeling.png Graphic file (type bmp)
+<image/温度測定器2_FCN_modeling.png>
+[94] [95] [96]
 File: image/温度測定器2_L16_CNN_Nh3_loss.png Graphic file (type bmp)
 <image/温度測定器2_L16_CNN_Nh3_loss.png>
-[96]
 File: image/温度測定器2_L16_CNN_Nh3_pram.png Graphic file (type bmp)
 <image/温度測定器2_L16_CNN_Nh3_pram.png>
 File: image/温度測定器2_L16_CNN_Nh3_weight_plot.png Graphic file (type bmp)
 <image/温度測定器2_L16_CNN_Nh3_weight_plot.png>
 
-Overfull \hbox (48.17363pt too wide) in paragraph at lines 2799--2800
+Overfull \hbox (48.17363pt too wide) in paragraph at lines 2820--2821
  [] 
  []
 
-
-LaTeX Warning: Reference `温度測定器CNN2自由エネルギーとの相関' on page 97 undefined on input line 2806.
-
 [97]
+
+LaTeX Warning: Reference `温度測定器CNN2自由エネルギーとの相関' on page 98 undefined on input line 2827.
+
 File: image/温度測定器2_L16_CNN_Nh3_mag.png Graphic file (type bmp)
 <image/温度測定器2_L16_CNN_Nh3_mag.png>
 File: image/温度測定器2_L16_CNN_Nh3_internal.png Graphic file (type bmp)
 <image/温度測定器2_L16_CNN_Nh3_internal.png>
-[98]
+[98] [99]
 
-LaTeX Warning: Reference `温度測定器2理論的重み.png' on page 99 undefined on input line 2856.
+LaTeX Warning: Reference `温度測定器2理論的重み.png' on page 100 undefined on input line 2877.
 
 File: image/温度測定器2理論的重み.png Graphic file (type bmp)
 <image/温度測定器2理論的重み.png>
-[99] [100] [101] [102
+[100] [101] [102] [103
 
-] (out/Masters_Thesis.bbl [103
+] (out/Masters_Thesis.bbl [104
 
-]) [104
+]) [105
 
 ] (out/Masters_Thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Masters_Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 0B5522B315D01985DBD448646A15BF63;1930.
+(rerunfilecheck)             Checksum: 7CE7466E990A2D7723D5B48DC9A02BA4;1930.
  ) 
 Here is how much of TeX's memory you used:
- 28544 strings out of 476693
- 541631 string characters out of 5808556
+ 28554 strings out of 476693
+ 541917 string characters out of 5808556
  1867203 words of memory out of 5000000
- 48425 multiletter control sequences out of 15000+600000
+ 48434 multiletter control sequences out of 15000+600000
  567467 words of font info for 144 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  84i,24n,89p,1403b,831s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Masters_Thesis.dvi (106 pages, 581948 bytes).
+Output written on out/Masters_Thesis.dvi (107 pages, 584428 bytes).
