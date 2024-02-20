@@ -2837,7 +2837,7 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
 \begin{equation}
   x_a = \text{ReLU}(w_{ai}^{(1)}\sigma_i + b_a^{(1)}), \ \
   x = \begin{pmatrix} x_0 \\ x_1 \\ x_2 \end{pmatrix}
-  = \begin{pmatrix} E+2\epsilon \\ 0 \\ -\phi E \end{pmatrix}
+  = \begin{pmatrix} 0 \\ E+2\epsilon \\ -\phi E \end{pmatrix}
   \label{(19)}
 \end{equation}
 ここで，$\epsilon$と$\phi$は正の定数である．また，$E$の定義域は$x_a$が負の値を取らないように制限されている．\par
@@ -2861,7 +2861,7 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
 となる．ここで注記するのは，自由エネルギーが温度$\beta$の関数であり，有限な系では真の特異性を示さないものの，相転移の情報を保持しているということである．\par
 上記の考察に基づいて，私たちのニューラルネットワークの全結合の重みを，その結果の出力が式(\ref{(21)})のように振る舞うように推測する．その後，学習されたネットワークの実際のパラメータと比較する，このために，重みを以下のようにパラメータ化する．
 \begin{equation}
-  w_{\beta 0}^{(2)} = -\phi G(\beta) - p\beta + q, \ \
+  w_{\beta 1}^{(2)} = -\phi G(\beta) - p\beta + q, \ \
   w_{\beta 2}^{(2)} = -G(\beta) + r\beta + s \label{(23)}
 \end{equation}
 定数パラメータ$p,q,r,s$および共通の非線形関数$G(\beta)$を持つようにする．図\ref{温度測定器CNN2重みプロット}の青の線，$w^{(2)}_{\beta 1}$は，$x_1 = \text{ReLU}(\tilde{x}_1) = 0$となるため，ここでは無視する．バイアスの値が重みの値よりもはるかに小さい場合，バイアスを無視するというシミュレーションからの観察を利用している．\par
@@ -2873,14 +2873,14 @@ FCNモデルとの違いは，1次元化を行う前にフィルタによる畳�
 
 \begin{figure}[H]
   \begin{center}
-    \includegraphics[height=5cm]{image/温度測定器2理論的重み.png}
-    \caption{青，緑の線はそれぞれ式(\ref{(23)})の$w_{\beta 0}^{(2)}$と$w_{\beta 2}^{(2)}$を表している．横軸は入力の2次元イジング配位の温度ラベルを表している．}
+    \includegraphics[height=6cm]{image/温度測定器2理論的重み.png}
+    \caption{黄，緑の線はそれぞれ式(\ref{(23)})の$w_{\beta 1}^{(2)}$と$w_{\beta 2}^{(2)}$を表している．横軸は入力の2次元イジング配位の温度ラベルを表している．}
     \label{温度測定器2理論的重み}
   \end{center}
 \end{figure}
 
 \begin{align}
-  w_{\beta 0}^{(2)} &= \frac{p+r}{2\epsilon}F(\beta) + q, \\
+  w_{\beta 1}^{(2)} &= \frac{p+r}{2\epsilon}F(\beta) + q, \\
   w_{\beta 2}^{(2)} &= \frac{p+r}{2\epsilon \phi}F(\beta) + \left( \frac{p}{\phi} + r \right)\beta + s
 \end{align}
 
