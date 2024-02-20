@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.10.16)  17 FEB 2024 23:21
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.10.16)  20 FEB 2024 10:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1120,7 +1120,7 @@ File: image/温度測定器2_L16_FCN_Nh3_pram.png Graphic file (type bmp)
 File: image/温度測定器2_L16_FCN_Nh3_weight_plot.png Graphic file (type bmp)
 <image/温度測定器2_L16_FCN_Nh3_weight_plot.png>
 
-Overfull \hbox (48.17363pt too wide) in paragraph at lines 2690--2691
+Overfull \hbox (48.17363pt too wide) in paragraph at lines 2685--2686
  [] 
  []
 
@@ -1137,44 +1137,35 @@ File: image/温度測定器2_L16_CNN_Nh3_pram.png Graphic file (type bmp)
 File: image/温度測定器2_L16_CNN_Nh3_weight_plot.png Graphic file (type bmp)
 <image/温度測定器2_L16_CNN_Nh3_weight_plot.png>
 
-Overfull \hbox (48.17363pt too wide) in paragraph at lines 2820--2821
+Overfull \hbox (48.17363pt too wide) in paragraph at lines 2815--2816
  [] 
  []
 
 [97]
-
-LaTeX Warning: Reference `温度測定器CNN2自由エネルギーとの相関' on page 98 undefined on input line 2827.
-
 File: image/温度測定器2_L16_CNN_Nh3_mag.png Graphic file (type bmp)
 <image/温度測定器2_L16_CNN_Nh3_mag.png>
 File: image/温度測定器2_L16_CNN_Nh3_internal.png Graphic file (type bmp)
 <image/温度測定器2_L16_CNN_Nh3_internal.png>
 [98] [99]
-
-LaTeX Warning: Reference `温度測定器2理論的重み.png' on page 100 undefined on input line 2877.
-
 File: image/温度測定器2理論的重み.png Graphic file (type bmp)
 <image/温度測定器2理論的重み.png>
-[100] [101] [102] [103
+[100] [101] [102
 
-] (out/Masters_Thesis.bbl [104
+] (out/Masters_Thesis.bbl [103
 
-]) [105
+]) [104
 
 ] (out/Masters_Thesis.aux)
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `Masters_Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 7CE7466E990A2D7723D5B48DC9A02BA4;1930.
  ) 
 Here is how much of TeX's memory you used:
- 28554 strings out of 476693
- 541917 string characters out of 5808556
+ 28553 strings out of 476693
+ 541875 string characters out of 5808556
  1867203 words of memory out of 5000000
- 48434 multiletter control sequences out of 15000+600000
+ 48433 multiletter control sequences out of 15000+600000
  567467 words of font info for 144 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  84i,24n,89p,1403b,831s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Masters_Thesis.dvi (107 pages, 584428 bytes).
+Output written on out/Masters_Thesis.dvi (106 pages, 584036 bytes).
