@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.10.16)  20 FEB 2024 15:25
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2023.10.16)  21 FEB 2024 21:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -815,10 +815,12 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 79.
+(Font)              scaled to size 9.60999pt on input line 81.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 79.
+(Font)              scaled to size 9.60999pt on input line 81.
 [0
+
+] [1
 
 ] (out/Masters_Thesis.toc
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
@@ -846,72 +848,72 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 第1章
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 100.
+(Font)              scaled to size 19.9311pt on input line 115.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 100.
+(Font)              scaled to size 19.9311pt on input line 115.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 100.
+(Font)              scaled to size 19.9311pt on input line 115.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 100.
+(Font)              scaled to size 19.9311pt on input line 115.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 101.
+(Font)              scaled to size 13.83836pt on input line 116.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 101.
+(Font)              scaled to size 13.83836pt on input line 116.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 109.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 124.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 109.
+(Font)              scaled to size 9.60999pt on input line 124.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 109.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 124.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 109.
+(Font)              scaled to size 9.60999pt on input line 124.
 [2
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/m/sl' in size <10> not available
-(Font)              Font shape `JT1/mc/m/n' tried instead on input line 116.
+(Font)              Font shape `JT1/mc/m/n' tried instead on input line 131.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 116.
+(Font)              scaled to size 9.60999pt on input line 131.
 LaTeX Font Info:    Font shape `JY1/mc/m/sl' in size <10> not available
-(Font)              Font shape `JY1/mc/m/n' tried instead on input line 116.
+(Font)              Font shape `JY1/mc/m/n' tried instead on input line 131.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 116.
+(Font)              scaled to size 9.60999pt on input line 131.
 [3]
 第2章
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 119.
+(Font)              scaled to size 11.53198pt on input line 134.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 119.
+(Font)              scaled to size 11.53198pt on input line 134.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 119.
+(Font)              scaled to size 11.53198pt on input line 134.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 119.
+(Font)              scaled to size 11.53198pt on input line 134.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 120.
+(Font)              scaled to size 6.72699pt on input line 135.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 120.
+(Font)              scaled to size 4.805pt on input line 135.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 120.
+(Font)              scaled to size 5.76599pt on input line 135.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 120.
+(Font)              scaled to size 7.68799pt on input line 135.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 120.
+(Font)              scaled to size 5.76599pt on input line 135.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 120.
+(Font)              scaled to size 5.76599pt on input line 135.
 File: image/三態相図.png Graphic file (type bmp)
 <image/三態相図.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 125.
+(Font)              scaled to size 8.64899pt on input line 140.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 125.
+(Font)              scaled to size 8.64899pt on input line 140.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 125.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 140.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 125.
+(Font)              scaled to size 8.64899pt on input line 140.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 125.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 140.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 125.
+(Font)              scaled to size 8.64899pt on input line 140.
 [4
 
 ] [5]
@@ -940,29 +942,29 @@ File: image/CIFAR10.png Graphic file (type bmp)
 File: image/多項式回帰(a).png Graphic file (type bmp)
 <image/多項式回帰(a).png>
 
-Overfull \hbox (16.76009pt too wide) in paragraph at lines 841--842
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 856--857
  [][] 
  []
 
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <8> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 842.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 857.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 842.
+(Font)              scaled to size 7.68799pt on input line 857.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <8> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 842.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 857.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 842.
+(Font)              scaled to size 7.68799pt on input line 857.
 File: image/多項式回帰(b).png Graphic file (type bmp)
 <image/多項式回帰(b).png>
 
-Overfull \hbox (16.76009pt too wide) in paragraph at lines 846--847
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 861--862
  [][] 
  []
 
 File: image/多項式回帰(c).png Graphic file (type bmp)
 <image/多項式回帰(c).png>
 
-Overfull \hbox (16.76009pt too wide) in paragraph at lines 851--852
+Overfull \hbox (16.76009pt too wide) in paragraph at lines 866--867
  [][] 
  []
 
@@ -977,7 +979,7 @@ File: image/単純型細胞.png Graphic file (type bmp)
 File: image/複雑型細胞.png Graphic file (type bmp)
 <image/複雑型細胞.png>
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 1534--1546
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 1549--1561
 [][] [] 
  []
 
@@ -996,7 +998,7 @@ File: image/勾配法課題(a).png Graphic file (type bmp)
 File: image/勾配法課題(b).png Graphic file (type bmp)
 <image/勾配法課題(b).png>
 
-Overfull \hbox (0.89943pt too wide) in paragraph at lines 1735--1736
+Overfull \hbox (0.89943pt too wide) in paragraph at lines 1750--1751
  [][] 
  []
 
@@ -1021,7 +1023,7 @@ File: image/相分類CNNモデル.png Graphic file (type bmp)
 [78]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 2324.
+               Default added (so using `tbp') on input line 2339.
 
 File: image/plot_square_FCNN_2.png Graphic file (type bmp)
 <image/plot_square_FCNN_2.png>
@@ -1031,14 +1033,14 @@ File: image/plot_square_CNN_2.png Graphic file (type bmp)
 File: image/plot_square_FCNN.png Graphic file (type bmp)
 <image/plot_square_FCNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2359--2360
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2374--2375
  [] 
  []
 
 File: image/plot_square_CNN.png Graphic file (type bmp)
 <image/plot_square_CNN.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2366--2367
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2381--2382
  [] 
  []
 
@@ -1046,14 +1048,14 @@ Overfull \hbox (2.00185pt too wide) in paragraph at lines 2366--2367
 File: image/plot_square_FCN_tridata.png Graphic file (type bmp)
 <image/plot_square_FCN_tridata.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2382--2383
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2397--2398
  [] 
  []
 
 File: image/plot_square_CNN_tridata.png Graphic file (type bmp)
 <image/plot_square_CNN_tridata.png>
 
-Overfull \hbox (2.00185pt too wide) in paragraph at lines 2389--2390
+Overfull \hbox (2.00185pt too wide) in paragraph at lines 2404--2405
  [] 
  []
 
@@ -1067,14 +1069,14 @@ File: image/温度測定器CNN.png Graphic file (type bmp)
 File: image/L8_FCNN_weight.png Graphic file (type bmp)
 <image/L8_FCNN_weight.png>
 
-Overfull \hbox (12.04085pt too wide) in paragraph at lines 2513--2514
+Overfull \hbox (12.04085pt too wide) in paragraph at lines 2528--2529
  [] 
  []
 
 File: image/L8_CNN_weight.png Graphic file (type bmp)
 <image/L8_CNN_weight.png>
 
-Overfull \hbox (12.04085pt too wide) in paragraph at lines 2519--2520
+Overfull \hbox (12.04085pt too wide) in paragraph at lines 2534--2535
  [] 
  []
 
@@ -1087,14 +1089,14 @@ File: image/L8_CNN_weight_sum.png Graphic file (type bmp)
 File: image/L16_FCNN_weight.png Graphic file (type bmp)
 <image/L16_FCNN_weight.png>
 
-Overfull \hbox (33.72318pt too wide) in paragraph at lines 2546--2547
+Overfull \hbox (33.72318pt too wide) in paragraph at lines 2561--2562
  [] 
  []
 
 File: image/L16_CNN_weight.png Graphic file (type bmp)
 <image/L16_CNN_weight.png>
 
-Overfull \hbox (33.72318pt too wide) in paragraph at lines 2552--2553
+Overfull \hbox (33.72318pt too wide) in paragraph at lines 2567--2568
  [] 
  []
 
@@ -1120,7 +1122,7 @@ File: image/温度測定器2_L16_FCN_Nh3_pram.png Graphic file (type bmp)
 File: image/温度測定器2_L16_FCN_Nh3_weight_plot.png Graphic file (type bmp)
 <image/温度測定器2_L16_FCN_Nh3_weight_plot.png>
 
-Overfull \hbox (48.17363pt too wide) in paragraph at lines 2685--2686
+Overfull \hbox (48.17363pt too wide) in paragraph at lines 2700--2701
  [] 
  []
 
@@ -1137,7 +1139,7 @@ File: image/温度測定器2_L16_CNN_Nh3_pram.png Graphic file (type bmp)
 File: image/温度測定器2_L16_CNN_Nh3_weight_plot.png Graphic file (type bmp)
 <image/温度測定器2_L16_CNN_Nh3_weight_plot.png>
 
-Overfull \hbox (48.17363pt too wide) in paragraph at lines 2815--2816
+Overfull \hbox (48.17363pt too wide) in paragraph at lines 2830--2831
  [] 
  []
 
@@ -1162,10 +1164,10 @@ Package rerunfilecheck Info: File `Masters_Thesis.out' has not changed.
 Here is how much of TeX's memory you used:
  28553 strings out of 476693
  541875 string characters out of 5808556
- 1867203 words of memory out of 5000000
+ 1864203 words of memory out of 5000000
  48433 multiletter control sequences out of 15000+600000
  567467 words of font info for 144 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  84i,24n,89p,1403b,831s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on out/Masters_Thesis.dvi (107 pages, 584276 bytes).
+Output written on out/Masters_Thesis.dvi (108 pages, 586664 bytes).
